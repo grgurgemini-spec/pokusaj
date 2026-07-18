@@ -1,0 +1,67 @@
+name: Update prices & deploy site
+
+on:
+  schedule:
+    - cron: "37 6 * * *"   # daily, 06:37 UTC (off the :00 rush)
+  workflow_dispatch: {}
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: update-and-deploy
+  cancel-in-progress: false
+
+jobs:
+  update-and-deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      # A failed fetch (deck source down, API hiccup) must not take the site
+      # down - we still redeploy whatever data is already committed.
+      - name: Fetch today's prices
+        id: fetch
+        continue-on-error: true
+        run: python fetch_prices.py
+
+      - name: Commit updated data
+        if: steps.fetch.outcome == 'success'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add decks data
+          if ! git diff --cached --quiet; then
+            git commit -m "Daily price snapshot $(date -u +%F)"
+            git push
+          else
+            echo "No data changes today."
+          fi
+
+      - name: Report fetch failure
+        if: steps.fetch.outcome == 'failure'
+        run: echo "::warning::fetch_prices.py failed - deploying previously committed data."
+
+      - uses: actions/configure-pages@v5
+        with:
+          enablement: true
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+
+      - uses: actions/deploy-pages@v4
+        id: deployment
