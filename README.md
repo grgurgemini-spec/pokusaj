@@ -14,7 +14,22 @@ overview, sortable price tables, per-card price-history charts, and (optional)
 scraped Cardmarket listings with card language, seller country, and the top
 sellers in Croatia.
 
-## Quick start
+## Live site
+
+**https://grgurgemini-spec.github.io/pokusaj/** — hosted on GitHub Pages and
+mobile-friendly (on a phone you can "Add to Home Screen" to install it like an
+app).
+
+A GitHub Action (`.github/workflows/update-and-deploy.yml`) runs
+`fetch_prices.py` **every day**, commits the new price snapshot to `main`, and
+redeploys the site — the price-history charts grow automatically. To refresh
+right now: GitHub → *Actions* → *Update prices & deploy site* → *Run workflow*.
+If you run the listings scraper locally, commit and push `data/listings.json`
+and the next deploy will show the listings online too.
+
+You can still run everything fully locally instead:
+
+## Quick start (local)
 
 Python 3.9+ is all you need for the core workflow (no packages required).
 

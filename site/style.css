@@ -134,6 +134,8 @@ td .ext:hover { color: var(--accent); }
 
 /* ---- card detail ---- */
 .card-page { display: grid; grid-template-columns: 290px 1fr; gap: 28px; align-items: start; }
+.card-page > * { min-width: 0; }  /* grid children must be allowed to shrink */
+.stale, .listing-note { overflow-wrap: anywhere; }
 .card-page .art img { width: 100%; border-radius: 14px; display: block; }
 .backlink { display: inline-block; margin-bottom: 14px; color: var(--ink-2); }
 .stat-row { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 12px; margin: 14px 0 4px; }
@@ -167,6 +169,7 @@ td .ext:hover { color: var(--accent); }
 .chart-tip .d { color: var(--muted); margin-bottom: 2px; }
 .chart-tip .v { font-variant-numeric: tabular-nums; }
 .chart-empty { color: var(--muted); padding: 24px 6px 30px; font-size: 13.5px; }
+#hover-zone { touch-action: none; }  /* finger drag scrubs the chart, not the page */
 
 /* ---- listings ---- */
 .listing-note {
@@ -183,8 +186,35 @@ td .ext:hover { color: var(--accent); }
   color: var(--page); background: var(--ink-2); border-radius: 4px; padding: 1px 6px; vertical-align: 2px;
 }
 
+/* ---- responsive / mobile ---- */
 @media (max-width: 760px) {
   .card-page { grid-template-columns: 1fr; }
   .card-page .art { max-width: 260px; }
   .updated { display: none; }
+}
+
+@media (max-width: 640px) {
+  .topbar { padding: 10px 14px; gap: 12px; }
+  #nav { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; }
+  #nav::-webkit-scrollbar { display: none; }
+  #nav a { white-space: nowrap; }
+  main { padding: 16px 14px 40px; }
+  h1 { font-size: 20px; }
+
+  /* Slim tables down to what fits a phone: Card · EUR · 7d (details live on
+     the card page). */
+  .col-foil, .col-usd, .col-cm { display: none; }
+  table { min-width: 0; }
+  th, td { padding: 8px 8px; }
+  td.cardcell { min-width: 150px; }
+  .deck-grid { grid-template-columns: 1fr; }
+  .toolbar input { width: 100%; }
+  .stat-row { grid-template-columns: repeat(auto-fill, minmax(128px, 1fr)); }
+  .chart-box { padding: 12px 10px 6px; }
+}
+
+@media (max-width: 480px) {
+  .col-rarity, .col-cond, .col-qty { display: none; }
+  body { font-size: 14px; }
+  .deck-tile .value { font-size: 26px; }
 }

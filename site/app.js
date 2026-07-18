@@ -199,9 +199,9 @@ function renderDeck(deckId) {
   });
 
   const { total } = deckTotal(deck);
-  const th = (key, label, num) => {
+  const th = (key, label, num, cls = "") => {
     const arrow = sort.key === key ? `<span class="arrow">${sort.dir > 0 ? "▲" : "▼"}</span>` : "";
-    return `<th class="${num ? "num" : ""}" data-sort="${key}">${label} ${arrow}</th>`;
+    return `<th class="${num ? "num" : ""} ${cls}" data-sort="${key}">${label} ${arrow}</th>`;
   };
 
   $app.innerHTML = `
@@ -215,10 +215,10 @@ function renderDeck(deckId) {
     <div class="table-wrap">
       <table>
         <thead><tr>
-          ${th("name", "Card")}${th("rarity", "Rarity")}
-          ${th("eur", "EUR trend", true)}${th("foil", "Foil EUR", true)}
-          ${th("usd", "USD", true)}${th("d7", "7d", true)}
-          <th></th>
+          ${th("name", "Card")}${th("rarity", "Rarity", false, "col-rarity")}
+          ${th("eur", "EUR trend", true)}${th("foil", "Foil EUR", true, "col-foil")}
+          ${th("usd", "USD", true, "col-usd")}${th("d7", "7d", true)}
+          <th class="col-cm"></th>
         </tr></thead>
         <tbody>
           ${rows.map(r => `
@@ -228,12 +228,12 @@ function renderDeck(deckId) {
                 <span><span class="cn">${esc(r.c.name)}</span>${r.c.qty > 1 ? ` ×${r.c.qty}` : ""}<br>
                 <span class="ct">${esc(r.c.type_line || "")}</span></span>
               </td>
-              <td><span class="rarity ${esc(r.c.rarity)}">${esc(r.c.rarity || "")}</span></td>
+              <td class="col-rarity"><span class="rarity ${esc(r.c.rarity)}">${esc(r.c.rarity || "")}</span></td>
               <td class="num">${fmtEur(r.eur)}</td>
-              <td class="num">${fmtEur(r.foil)}</td>
-              <td class="num">${fmtUsd(r.usd)}</td>
+              <td class="num col-foil">${fmtEur(r.foil)}</td>
+              <td class="num col-usd">${fmtUsd(r.usd)}</td>
               <td class="num">${deltaHtml(r.d7, { arrow: false })}</td>
-              <td>${r.c.cardmarket_url
+              <td class="col-cm">${r.c.cardmarket_url
                 ? `<a class="ext" href="${esc(r.c.cardmarket_url)}" target="_blank" rel="noopener"
                      title="Open on Cardmarket">CM ↗</a>` : ""}</td>
             </tr>`).join("")}
@@ -334,15 +334,15 @@ function listingsSection(card, listing) {
     <div class="table-wrap">
       <table class="listings-table">
         <thead><tr><th>#</th><th>Price</th><th>Language</th><th>Seller country</th>
-          <th>Cond.</th><th>Qty</th><th>Seller</th></tr></thead>
+          <th class="col-cond">Cond.</th><th class="col-qty">Qty</th><th>Seller</th></tr></thead>
         <tbody>${rows.map((l, i) => `
           <tr>
             <td>${i + 1}</td>
             <td class="num"><strong>${fmtEur(l.price)}</strong></td>
             <td>${esc(l.language || "?")}</td>
             <td>${esc(l.country || "?")}</td>
-            <td>${l.condition ? `<span class="cond">${esc(l.condition)}</span>` : "?"}</td>
-            <td class="num">${l.qty ?? "?"}</td>
+            <td class="col-cond">${l.condition ? `<span class="cond">${esc(l.condition)}</span>` : "?"}</td>
+            <td class="num col-qty">${l.qty ?? "?"}</td>
             <td>${esc(l.seller || "?")}</td>
           </tr>`).join("")}
         </tbody>
@@ -498,6 +498,15 @@ function attachChartHover() {
   }
   zone.addEventListener("mousemove", onMove);
   zone.addEventListener("mouseleave", onLeave);
+  // Touch: finger drag moves the crosshair, lifting keeps the last tooltip.
+  const onTouch = (evt) => {
+    if (evt.touches.length) {
+      evt.preventDefault();
+      onMove(evt.touches[0]);
+    }
+  };
+  zone.addEventListener("touchstart", onTouch, { passive: false });
+  zone.addEventListener("touchmove", onTouch, { passive: false });
 }
 
 boot();
