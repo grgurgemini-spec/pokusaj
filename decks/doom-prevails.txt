@@ -1,0 +1,9 @@
+# name: Doom Prevails
+# commander: Doctor Doom, King of Latveria
+# source: archidekt:23394508
+# source: mtggoldfish:7838834
+# source: moxfield:mWQACuymy0OV-2MJgx2-TQ
+#
+# The card list below is downloaded automatically the first time you run:
+#   python fetch_prices.py
+# (or force a refresh with: python fetch_prices.py --sync-decks)

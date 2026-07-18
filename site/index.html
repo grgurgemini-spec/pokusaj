@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Precon Price Tracker</title>
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📈</text></svg>">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="#/">📈 Precon<span>Tracker</span></a>
+  <nav id="nav"></nav>
+  <span class="updated" id="updated"></span>
+</header>
+<main id="app">
+  <div class="loading">Loading data…</div>
+</main>
+<footer class="foot">
+  Prices: Cardmarket EUR trend &amp; TCGplayer USD via
+  <a href="https://scryfall.com" target="_blank" rel="noopener">Scryfall</a>,
+  refreshed each time you run <code>python fetch_prices.py</code>.
+  Listings are optional scraped snapshots — see the README.
+  Not affiliated with Cardmarket, MTGStocks or Wizards of the Coast.
+</footer>
+<script src="app.js"></script>
+</body>
+</html>

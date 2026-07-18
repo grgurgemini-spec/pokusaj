@@ -1,0 +1,3 @@
+# fetch_prices.py needs only the Python standard library (3.9+) - nothing to install.
+# The line below is ONLY needed for the optional Cardmarket listings scraper:
+playwright>=1.40

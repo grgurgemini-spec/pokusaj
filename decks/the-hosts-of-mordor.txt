@@ -1,0 +1,9 @@
+# name: The Hosts of Mordor
+# set: ltc
+# commander: Sauron, Lord of the Rings
+# source: archidekt:4725739
+# source: moxfield:Z4cD-XEZRUuH4W9jB_SvuA
+#
+# The card list below is downloaded automatically the first time you run:
+#   python fetch_prices.py
+# (or force a refresh with: python fetch_prices.py --sync-decks)
