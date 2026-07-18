@@ -85,19 +85,49 @@ this up automatically.
 > failures, and may break whenever Cardmarket changes its pages. The rest of
 > the tracker works fine without it.
 
-```bash
-pip install -r requirements.txt      # installs playwright (scraper only)
-playwright install chromium
+### Croatian sellers - quick start 🇭🇷
 
+On **your own computer** (it will not work from cloud servers):
+
+```bash
+git clone https://github.com/grgurgemini-spec/pokusaj && cd pokusaj
+pip install playwright && playwright install chromium
+
+# Croatian listings for every card worth at least 1 EUR (~1 page/card):
+python scrape_cardmarket.py --croatia-only --min-eur 1 --headed
+```
+
+On Windows you can simply double-click **`scrape_croatia.bat`** - it installs
+what's needed and runs the command above.
+
+When it finishes (or whenever you stop it - progress is saved after every
+card, and re-running skips anything scraped in the last 20 h), publish the
+results to the live site:
+
+```bash
+git add data/listings.json
+git commit -m "Update listings"
+git push
+```
+
+The push triggers the deploy workflow and each card's page on the site shows
+its listings and the "Top sellers in Croatia" panel.
+
+### More scraper options
+
+```bash
 python scrape_cardmarket.py --limit 10          # try a few cards first
 python scrape_cardmarket.py --deck doom-prevails
 python scrape_cardmarket.py --card "Sauron, Lord of the Rings"
-python scrape_cardmarket.py --headed            # visible browser window helps
-                                                # if Cloudflare challenges you
+python scrape_cardmarket.py                     # full mode: 10 cheapest
+                                                # listings + Croatia per card
+python scrape_cardmarket.py --force             # ignore the 20h freshness skip
 ```
 
-If it can't find listing rows, it saves the page HTML into
-`data/scrape_debug/` so the selectors can be fixed.
+`--headed` (visible browser window) noticeably helps against Cloudflare's bot
+checks. Basic lands are always skipped. If the script can't find listing rows,
+it saves the page HTML into `data/scrape_debug/` so the selectors can be
+fixed.
 
 ## Project layout
 
