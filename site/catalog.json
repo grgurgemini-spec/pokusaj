@@ -1,28 +1,33 @@
 {
   "sets": [
     {
-      "code": "msc",
-      "icon": "msc",
-      "name": "Marvel Super Heroes Commander",
-      "released": "June 2026",
-      "decks": [
-        { "id": "avengers-assemble", "name": "Avengers Assemble", "commander": "Captain America, Team Leader" },
-        { "id": "wakanda-forever", "name": "Wakanda Forever", "commander": "T'Challa, the Black Panther" },
-        { "id": "the-fantastic-four", "name": "The Fantastic Four", "commander": "Mister Fantastic, Invisible Woman, Human Torch & The Thing" },
-        { "id": "doom-prevails", "name": "Doom Prevails", "commander": "Doctor Doom, King of Latveria" }
-      ]
-    },
-    {
       "code": "ltc",
       "icon": "ltc",
       "name": "The Lord of the Rings: Tales of Middle-earth Commander",
       "released": "June 2023",
       "decks": [
-        { "id": "riders-of-rohan", "name": "Riders of Rohan", "commander": "Éowyn, Shieldmaiden" },
-        { "id": "food-and-fellowship", "name": "Food and Fellowship", "commander": "Frodo, Adventurous Hobbit & Sam, Loyal Attendant" },
-        { "id": "elven-council", "name": "Elven Council", "commander": "Galadriel, Elven-Queen" },
-        { "id": "the-hosts-of-mordor", "name": "The Hosts of Mordor", "commander": "Sauron, Lord of the Rings" }
-      ]
+        {
+          "id": "riders-of-rohan",
+          "name": "Riders of Rohan",
+          "commander": "Éowyn, Shieldmaiden"
+        },
+        {
+          "id": "food-and-fellowship",
+          "name": "Food and Fellowship",
+          "commander": "Frodo, Adventurous Hobbit & Sam, Loyal Attendant"
+        },
+        {
+          "id": "elven-council",
+          "name": "Elven Council",
+          "commander": "Galadriel, Elven-Queen"
+        },
+        {
+          "id": "the-hosts-of-mordor",
+          "name": "The Hosts of Mordor",
+          "commander": "Sauron, Lord of the Rings"
+        }
+      ],
+      "date": "2023-06-23"
     },
     {
       "code": "m3c",
@@ -30,23 +35,28 @@
       "name": "Modern Horizons 3 Commander",
       "released": "June 2024",
       "decks": [
-        { "id": "creative-energy", "name": "Creative Energy", "commander": "Satya, Aetherflux Genius" },
-        { "id": "eldrazi-incursion", "name": "Eldrazi Incursion", "commander": "Ulalek, Fused Atrocity" },
-        { "id": "tricky-terrain", "name": "Tricky Terrain", "commander": "Omo, Queen of Vesuva" },
-        { "id": "graveyard-overdrive", "name": "Graveyard Overdrive", "commander": "Disa the Restless" }
-      ]
-    },
-    {
-      "code": "fic",
-      "icon": "fic",
-      "name": "Final Fantasy Commander",
-      "released": "June 2025",
-      "decks": [
-        { "name": "Counter Blitz", "commander": "Tidus, Blitzball Star" },
-        { "name": "Cid's Brigade", "commander": "Cid, Timeless Artificer" },
-        { "name": "Limit Break", "commander": "Cloud, Ex-SOLDIER" },
-        { "name": "Scions & Spellcraft", "commander": "Terra, Herald of Hope" }
-      ]
+        {
+          "id": "creative-energy",
+          "name": "Creative Energy",
+          "commander": "Satya, Aetherflux Genius"
+        },
+        {
+          "id": "eldrazi-incursion",
+          "name": "Eldrazi Incursion",
+          "commander": "Ulalek, Fused Atrocity"
+        },
+        {
+          "id": "tricky-terrain",
+          "name": "Tricky Terrain",
+          "commander": "Omo, Queen of Vesuva"
+        },
+        {
+          "id": "graveyard-overdrive",
+          "name": "Graveyard Overdrive",
+          "commander": "Disa the Restless"
+        }
+      ],
+      "date": "2024-06-14"
     },
     {
       "code": "blc",
@@ -54,11 +64,78 @@
       "name": "Bloomburrow Commander",
       "released": "August 2024",
       "decks": [
-        { "name": "Squirreled Away", "commander": "Hazel of the Rootbloom" },
-        { "name": "Animated Army", "commander": "Bello, Bard of the Brambles" },
-        { "name": "Family Matters", "commander": "Zinnia, Valley's Voice" },
-        { "name": "Peace Offering", "commander": "Ms. Bumbleflower" }
-      ]
+        {
+          "name": "Squirreled Away",
+          "commander": "Hazel of the Rootbloom"
+        },
+        {
+          "name": "Animated Army",
+          "commander": "Bello, Bard of the Brambles"
+        },
+        {
+          "name": "Family Matters",
+          "commander": "Zinnia, Valley's Voice"
+        },
+        {
+          "name": "Peace Offering",
+          "commander": "Ms. Bumbleflower"
+        }
+      ],
+      "date": "2024-08-02"
+    },
+    {
+      "code": "fic",
+      "icon": "fic",
+      "name": "Final Fantasy Commander",
+      "released": "June 2025",
+      "decks": [
+        {
+          "name": "Counter Blitz",
+          "commander": "Tidus, Blitzball Star"
+        },
+        {
+          "name": "Cid's Brigade",
+          "commander": "Cid, Timeless Artificer"
+        },
+        {
+          "name": "Limit Break",
+          "commander": "Cloud, Ex-SOLDIER"
+        },
+        {
+          "name": "Scions & Spellcraft",
+          "commander": "Terra, Herald of Hope"
+        }
+      ],
+      "date": "2025-06-13"
+    },
+    {
+      "code": "msc",
+      "icon": "msc",
+      "name": "Marvel Super Heroes Commander",
+      "released": "June 2026",
+      "decks": [
+        {
+          "id": "avengers-assemble",
+          "name": "Avengers Assemble",
+          "commander": "Captain America, Team Leader"
+        },
+        {
+          "id": "wakanda-forever",
+          "name": "Wakanda Forever",
+          "commander": "T'Challa, the Black Panther"
+        },
+        {
+          "id": "the-fantastic-four",
+          "name": "The Fantastic Four",
+          "commander": "Mister Fantastic, Invisible Woman, Human Torch & The Thing"
+        },
+        {
+          "id": "doom-prevails",
+          "name": "Doom Prevails",
+          "commander": "Doctor Doom, King of Latveria"
+        }
+      ],
+      "date": "2026-06-26"
     }
   ]
 }
