@@ -1,0 +1,5 @@
+# name: Food and Fellowship
+# set: ltc
+# commander: Frodo, Adventurous Hobbit & Sam, Loyal Attendant
+# source: moxfield:S3X49Miklk6zsQk9VSrt2Q
+# source: moxfield:FswTCDPK00WUBDOQEeJfGA

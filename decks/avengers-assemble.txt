@@ -1,0 +1,5 @@
+# name: Avengers Assemble
+# set: msc
+# commander: Captain America, Team Leader
+# source: moxfield:VnAdVaM_b0u66KIAZCLI8A
+# source: moxfield:cgqfAVHYDnGI7oljzwNxZQ

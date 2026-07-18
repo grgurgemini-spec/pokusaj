@@ -1,0 +1,5 @@
+# name: Elven Council
+# set: ltc
+# commander: Galadriel, Elven-Queen
+# source: moxfield:4aKNkLrXmU-zsytziZ6JnQ
+# source: moxfield:Dqafv6vHYUuVkYP1lpH6Dw

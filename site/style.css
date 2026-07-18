@@ -76,7 +76,16 @@ h2 { font-size: 17px; margin: 26px 0 10px; }
   padding: 10px 14px; border-radius: 8px; overflow-x: auto; color: var(--ink);
 }
 
-/* ---- overview deck cards ---- */
+/* ---- overview: sets & deck cards ---- */
+.set-section { margin: 30px 0 8px; scroll-margin-top: 64px; }
+.set-head { display: flex; align-items: center; gap: 14px; margin-bottom: 14px; }
+.set-head h2 { margin: 0; font-size: 19px; }
+.set-sub { color: var(--muted); font-size: 12.5px; }
+.set-icon {
+  width: 40px; height: 40px; flex: none; object-fit: contain;
+  /* Scryfall set icons are black - render them light on the dark theme */
+  filter: invert(0.9);
+}
 .deck-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 18px; }
 .deck-tile {
   background: var(--surface); border: 1px solid var(--border);
@@ -84,6 +93,16 @@ h2 { font-size: 17px; margin: 26px 0 10px; }
   display: block; transition: border-color .15s;
 }
 .deck-tile:hover { border-color: var(--accent); text-decoration: none; }
+.deck-tile.off {
+  opacity: 0.45; filter: grayscale(1);
+  cursor: default; border-style: dashed;
+}
+.deck-tile.off:hover { border-color: var(--border); }
+.deck-tile .soon {
+  display: inline-block; margin-top: 10px; font-size: 12px;
+  color: var(--ink-2); border: 1px solid var(--baseline);
+  border-radius: 6px; padding: 2px 8px;
+}
 .deck-tile h3 { margin: 0 0 2px; font-size: 17px; }
 .deck-tile .cmd { color: var(--muted); font-size: 13px; margin-bottom: 12px; }
 .deck-tile .value { font-size: 30px; font-weight: 700; }

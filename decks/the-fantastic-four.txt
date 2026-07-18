@@ -1,0 +1,5 @@
+# name: The Fantastic Four
+# set: msc
+# commander: Mister Fantastic, Invisible Woman, Human Torch & The Thing
+# source: moxfield:C8ZTZpNsbk-uBqd69j4fMw
+# source: moxfield:Ke2eAXd5m3qCG7GfoXxGTQ

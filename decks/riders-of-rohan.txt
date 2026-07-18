@@ -1,0 +1,5 @@
+# name: Riders of Rohan
+# set: ltc
+# commander: Éowyn, Shieldmaiden
+# source: moxfield:wWL4dez0i0euOvWSpmQ7UQ
+# source: moxfield:mJiaNOntHUOR76aTmpBAcg
