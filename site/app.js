@@ -41,11 +41,12 @@ async function boot() {
 
   const when = state.cards.generated_at ? new Date(state.cards.generated_at) : null;
   if (when) $updated.textContent = "prices from " + when.toLocaleString();
-  $nav.innerHTML = state.catalog.sets
+  $nav.innerHTML = `<a href="#/" data-home="1">📚 Katalog</a>` + state.catalog.sets
     .filter(s => s.decks.some(d => d.id && findDeck(d.id)))
     .map(s => `<a href="#/set/${s.code}" data-set="${s.code}">${esc(shortSetName(s))}</a>`)
     .join("");
 
+  wireUpdateButton();
   window.addEventListener("hashchange", render);
   render();
 }
@@ -100,7 +101,8 @@ function findDeck(id) {
   return state.cards.decks.find(d => d.id === id) || null;
 }
 function shortSetName(set) {
-  return { msc: "Marvel", ltc: "LOTR", m3c: "MH3" }[set.code] || set.name;
+  return { msc: "Marvel", ltc: "LOTR", m3c: "MH3",
+           blc: "Bloomburrow", fic: "Final Fantasy" }[set.code] || set.name;
 }
 const SET_ICON = code =>
   code ? `https://svgs.scryfall.io/sets/${code}.svg` : null;
@@ -122,14 +124,14 @@ function render() {
     ? state.catalog.sets.find(s => s.decks.some(d => d.id === decodeURIComponent(arg)))
     : null;
   $nav.querySelectorAll("a").forEach(a => a.classList.toggle("active",
-    (route === "set" && a.dataset.set === arg) || (deckSet && a.dataset.set === deckSet.code)));
+    (route === "set" && a.dataset.set === arg) ||
+    (deckSet && a.dataset.set === deckSet.code) ||
+    (!["set", "deck", "card"].includes(route) && a.dataset.home)));
   window.scrollTo(0, 0);
   if (route === "deck" && arg) return renderDeck(decodeURIComponent(arg));
   if (route === "card" && arg) return renderCard(decodeURIComponent(arg));
-  renderOverview();
-  if (route === "set" && arg) {
-    document.getElementById(`set-${arg}`)?.scrollIntoView({ block: "start" });
-  }
+  if (route === "set" && arg) return renderSet(arg);
+  renderCatalog();
 }
 
 /* ---------------- views ---------------- */
@@ -185,36 +187,131 @@ function deckTileOff(entry) {
     </div>`;
 }
 
-function renderOverview() {
-  const sections = state.catalog.sets.map(set => {
-    const tiles = set.decks.map(entry => {
-      const deck = entry.id ? findDeck(entry.id) : null;
-      return deck ? deckTile(deck) : deckTileOff(entry);
-    }).join("");
-    const tracked = set.decks.filter(e => e.id && findDeck(e.id)).length;
+function setTracked(set) {
+  return set.decks.filter(e => e.id && findDeck(e.id)).length;
+}
+
+function renderCatalog() {
+  // catalog.json is kept in chronological release order.
+  const tiles = state.catalog.sets.map(set => {
+    const tracked = setTracked(set);
     const icon = SET_ICON(set.icon);
+    const year = (set.date || "").slice(0, 4);
     return `
-      <section class="set-section" id="set-${esc(set.code)}">
-        <div class="set-head">
-          ${icon ? `<img class="set-icon" src="${icon}" alt="" onerror="this.remove()">` : ""}
-          <div>
-            <h2>${esc(set.name)}</h2>
-            <div class="set-sub">${esc(set.released || "")}${set.released ? " · " : ""}${tracked}/${set.decks.length} decks tracked</div>
-          </div>
-        </div>
-        <div class="deck-grid">${tiles}</div>
-      </section>`;
+      <a class="set-tile ${tracked ? "" : "off"}" href="#/set/${esc(set.code)}">
+        ${icon ? `<img class="set-logo" src="${icon}" alt="" loading="lazy"
+           onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'set-logo-fallback',textContent:'${esc(set.code.toUpperCase())}'}))">` : ""}
+        <h3>${esc(set.name)}</h3>
+        <div class="set-sub">${esc(set.released || year)} ·
+          ${tracked ? `${tracked}/${set.decks.length} decks tracked` : "not tracked yet"}</div>
+      </a>`;
   }).join("");
 
   const snapshots = Object.values(state.history?.decks || {})[0]?.length || 0;
   $app.innerHTML = `
-    <h1>Precon price tracker</h1>
-    <p class="sub">Cardmarket EUR trend prices for every card in the tracked
-      preconstructed Commander decks, grouped by set. Greyed decks aren't
-      tracked yet. ${snapshots < 2
-        ? "History charts grow with each daily price snapshot."
-        : `${snapshots} daily snapshots collected.`}</p>
-    ${sections}`;
+    <h1>Katalog</h1>
+    <p class="sub">Commander precon sets in chronological order — pick a set to
+      see its decks and Cardmarket prices. Greyed sets aren't tracked yet.
+      ${snapshots >= 2 ? `${snapshots} daily price snapshots collected so far.` : ""}</p>
+    <div class="set-grid">${tiles}</div>`;
+}
+
+function renderSet(code) {
+  const set = state.catalog.sets.find(s => s.code === code);
+  if (!set) { $app.innerHTML = `<p>Unknown set.</p>`; return; }
+  const tiles = set.decks.map(entry => {
+    const deck = entry.id ? findDeck(entry.id) : null;
+    return deck ? deckTile(deck) : deckTileOff(entry);
+  }).join("");
+  const tracked = setTracked(set);
+  const icon = SET_ICON(set.icon);
+  $app.innerHTML = `
+    <a class="backlink" href="#/">← Katalog</a>
+    <div class="set-head">
+      ${icon ? `<img class="set-icon" src="${icon}" alt="" onerror="this.remove()">` : ""}
+      <div>
+        <h1 style="font-size:22px;margin:0">${esc(set.name)}</h1>
+        <div class="set-sub">${esc(set.released || "")}${set.released ? " · " : ""}${tracked}/${set.decks.length} decks tracked</div>
+      </div>
+    </div>
+    <div class="deck-grid" style="margin-top:16px">${tiles}</div>`;
+}
+
+/* ---------------- manual price update (GitHub workflow dispatch) ---------- */
+
+const GH_REPO = "grgurgemini-spec/pokusaj";
+const GH_WORKFLOW = "update-and-deploy.yml";
+
+function toast(msg, ms = 6000) {
+  let el = document.getElementById("toast");
+  if (!el) {
+    el = document.createElement("div");
+    el.id = "toast";
+    document.body.appendChild(el);
+  }
+  el.innerHTML = msg;
+  el.classList.add("show");
+  clearTimeout(el._t);
+  el._t = setTimeout(() => el.classList.remove("show"), ms);
+}
+
+async function dispatchUpdate(btn) {
+  const token = localStorage.getItem("gh_token");
+  if (!token) return showTokenPanel();
+  btn.disabled = true;
+  btn.textContent = "⏳ Pokrećem…";
+  try {
+    const res = await fetch(
+      `https://api.github.com/repos/${GH_REPO}/actions/workflows/${GH_WORKFLOW}/dispatches`,
+      {
+        method: "POST",
+        headers: {
+          "Authorization": `Bearer ${token}`,
+          "Accept": "application/vnd.github+json",
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ ref: "main" }),
+      });
+    if (res.status === 204) {
+      toast("✅ Update pokrenut! Svježe Cardmarket cijene bit će live za ~2–3 min " +
+            "(i spremljene u povijest/statistiku). Onda osvježi stranicu.", 10000);
+    } else if (res.status === 401 || res.status === 403) {
+      localStorage.removeItem("gh_token");
+      toast("❌ Token ne vrijedi ili nema ovlasti (Actions: write). Unesi novi.");
+      showTokenPanel();
+    } else {
+      toast(`❌ GitHub je vratio HTTP ${res.status}.`);
+    }
+  } catch (e) {
+    toast("❌ Ne mogu do GitHuba: " + esc(e.message));
+  }
+  btn.disabled = false;
+  btn.textContent = "⟳ Update";
+}
+
+function showTokenPanel() {
+  document.getElementById("update-panel").hidden = false;
+}
+
+function wireUpdateButton() {
+  const btn = document.getElementById("update-btn");
+  const panel = document.getElementById("update-panel");
+  if (!btn) return;
+  btn.addEventListener("click", () => {
+    if (!localStorage.getItem("gh_token")) {
+      panel.hidden = !panel.hidden;
+    } else {
+      dispatchUpdate(btn);
+    }
+  });
+  document.getElementById("token-save").addEventListener("click", () => {
+    const v = document.getElementById("token-input").value.trim();
+    if (!v) return;
+    localStorage.setItem("gh_token", v);
+    document.getElementById("token-input").value = "";
+    panel.hidden = true;
+    dispatchUpdate(btn);
+  });
 }
 
 function renderDeck(deckId) {
@@ -254,7 +351,9 @@ function renderDeck(deckId) {
     return `<th class="${num ? "num" : ""} ${cls}" data-sort="${key}">${label} ${arrow}</th>`;
   };
 
+  const parentSet = state.catalog.sets.find(s => s.decks.some(d => d.id === deckId));
   $app.innerHTML = `
+    <a class="backlink" href="${parentSet ? `#/set/${parentSet.code}` : "#/"}">← ${esc(parentSet ? parentSet.name : "Katalog")}</a>
     <h1>${esc(deck.name)}</h1>
     <p class="sub">${esc(deck.commander || "")} · set ${esc((deck.set || deck.cards[0]?.set || "?").toUpperCase())}
        · deck value <strong>€${total.toFixed(2)}</strong> (Cardmarket trend)</p>

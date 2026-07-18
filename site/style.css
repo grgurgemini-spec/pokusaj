@@ -51,6 +51,39 @@ code { background: var(--surface-2); padding: 1px 5px; border-radius: 4px; font-
 #nav a { color: var(--ink-2); padding: 3px 10px; border-radius: 6px; }
 #nav a.active, #nav a:hover { color: var(--ink); background: var(--surface-2); text-decoration: none; }
 .updated { margin-left: auto; color: var(--muted); font-size: 12.5px; }
+.update-btn {
+  background: var(--surface-2); color: var(--ink); border: 1px solid var(--border);
+  border-radius: 8px; padding: 6px 12px; font-size: 13.5px; cursor: pointer;
+  white-space: nowrap; font-family: inherit;
+}
+.update-btn:hover { border-color: var(--accent); }
+.update-btn:disabled { opacity: .6; cursor: wait; }
+.update-panel {
+  position: fixed; top: 58px; right: 16px; z-index: 40; max-width: 420px;
+  background: var(--surface); border: 1px solid var(--border); border-radius: 12px;
+  padding: 16px 18px; font-size: 13.5px; color: var(--ink-2);
+  box-shadow: 0 10px 30px rgba(0,0,0,.5);
+}
+.update-panel strong { color: var(--ink); }
+.update-panel ol { padding-left: 20px; margin: 8px 0; }
+.update-panel .alt { color: var(--muted); margin-bottom: 0; }
+.token-row { display: flex; gap: 8px; margin: 10px 0; }
+.token-row input {
+  flex: 1; background: var(--page); border: 1px solid var(--border); color: var(--ink);
+  border-radius: 8px; padding: 7px 10px; font-size: 13px; min-width: 0;
+}
+.token-row button {
+  background: var(--accent); color: #fff; border: none; border-radius: 8px;
+  padding: 7px 12px; cursor: pointer; font-size: 13px; white-space: nowrap; font-family: inherit;
+}
+#toast {
+  position: fixed; left: 50%; bottom: 26px; transform: translate(-50%, 20px);
+  background: var(--surface-2); color: var(--ink); border: 1px solid var(--border);
+  border-radius: 10px; padding: 12px 18px; font-size: 14px; z-index: 50;
+  opacity: 0; pointer-events: none; transition: all .25s; max-width: 90vw;
+  box-shadow: 0 8px 24px rgba(0,0,0,.5);
+}
+#toast.show { opacity: 1; transform: translate(-50%, 0); }
 main { flex: 1; width: 100%; max-width: 1180px; margin: 0 auto; padding: 24px 22px 48px; }
 .foot {
   padding: 16px 22px; border-top: 1px solid var(--border);
@@ -76,7 +109,27 @@ h2 { font-size: 17px; margin: 26px 0 10px; }
   padding: 10px 14px; border-radius: 8px; overflow-x: auto; color: var(--ink);
 }
 
-/* ---- overview: sets & deck cards ---- */
+/* ---- catalog: set logo tiles ---- */
+.set-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 18px; }
+.set-tile {
+  background: var(--surface); border: 1px solid var(--border); border-radius: 14px;
+  padding: 26px 20px 20px; text-align: center; color: var(--ink);
+  display: flex; flex-direction: column; align-items: center; gap: 10px;
+  transition: border-color .15s;
+}
+.set-tile:hover { border-color: var(--accent); text-decoration: none; }
+.set-tile h3 { margin: 0; font-size: 15.5px; line-height: 1.3; }
+.set-tile .set-sub { font-size: 12px; }
+.set-tile.off { opacity: .45; filter: grayscale(1); border-style: dashed; }
+.set-tile.off:hover { border-color: var(--accent); opacity: .7; }
+.set-logo { width: 84px; height: 84px; object-fit: contain; filter: invert(0.9); }
+.set-logo-fallback {
+  width: 84px; height: 84px; display: flex; align-items: center; justify-content: center;
+  border: 2px solid var(--baseline); border-radius: 50%; font-weight: 700; font-size: 19px;
+  color: var(--ink-2);
+}
+
+/* ---- set page & deck cards ---- */
 .set-section { margin: 30px 0 8px; scroll-margin-top: 64px; }
 .set-head { display: flex; align-items: center; gap: 14px; margin-bottom: 14px; }
 .set-head h2 { margin: 0; font-size: 19px; }
@@ -230,6 +283,12 @@ td .ext:hover { color: var(--accent); }
   .toolbar input { width: 100%; }
   .stat-row { grid-template-columns: repeat(auto-fill, minmax(128px, 1fr)); }
   .chart-box { padding: 12px 10px 6px; }
+  .update-btn { margin-left: auto; padding: 5px 9px; font-size: 12.5px; }
+  .update-panel { left: 12px; right: 12px; max-width: none; }
+  .set-grid { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 12px; }
+  .set-logo, .set-logo-fallback { width: 60px; height: 60px; }
+  .set-tile { padding: 18px 12px 14px; }
+  .set-tile h3 { font-size: 13.5px; }
 }
 
 @media (max-width: 480px) {
