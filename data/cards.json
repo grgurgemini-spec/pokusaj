@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-07-18T13:10:59+00:00",
+ "generated_at": "2026-07-18T16:57:03+00:00",
  "sources": {
   "cardmarket": "EUR trend prices via Scryfall (updated daily by Scryfall)",
   "tcgplayer": "USD prices via Scryfall"
@@ -14262,7 +14262,7 @@
        "eur_foil": 11.89
       },
       "tcgplayer": {
-       "usd": 16.58,
+       "usd": 16.55,
        "usd_foil": null
       }
      }
