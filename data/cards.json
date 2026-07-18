@@ -1,0 +1,4153 @@
+{
+ "generated_at": "2026-07-18T12:03:22+00:00",
+ "sources": {
+  "cardmarket": "EUR trend prices via Scryfall (updated daily by Scryfall)",
+  "tcgplayer": "USD prices via Scryfall"
+ },
+ "decks": [
+  {
+   "id": "doom-prevails",
+   "name": "Doom Prevails",
+   "set": null,
+   "commander": "Doctor Doom, King of Latveria",
+   "cards": [
+    {
+     "id": "426b0211-3d5d-4e53-bcf6-21823c655ffd",
+     "name": "Mountain",
+     "qty": 5,
+     "set": "msc",
+     "set_name": "Marvel Super Heroes Commander",
+     "collector_number": "858",
+     "rarity": "common",
+     "type_line": "Basic Land — Mountain",
+     "image": "https://cards.scryfall.io/normal/front/4/2/426b0211-3d5d-4e53-bcf6-21823c655ffd.jpg?1783902988",
+     "cardmarket_id": 892370,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=892370&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/msc/858/mountain?utm_source=api",
+     "prices": {
+      "cardmarket": {
+       "eur": 0.4,
+       "eur_foil": null
+      },
+      "tcgplayer": {
+       "usd": 0.18,
+       "usd_foil": null
+      }
+     }
+    },
+    {
+     "id": "74414c62-4b68-4e1b-9241-feff3231b9ee",
+     "name": "Swamp",
+     "qty": 6,
+     "set": "msh",
+     "set_name": "Marvel Super Heroes",
+     "collector_number": "291",
+     "rarity": "common",
+     "type_line": "Basic Land — Swamp",
+     "image": "https://cards.scryfall.io/normal/front/7/4/74414c62-4b68-4e1b-9241-feff3231b9ee.jpg?1783902875",
+     "cardmarket_id": 890601,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=890601&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/msh/291/swamp?utm_source=api",
+     "prices": {
+      "cardmarket": {
+       "eur": 0.1,
+       "eur_foil": 0.15
+      },
+      "tcgplayer": {
+       "usd": 0.14,
+       "usd_foil": 0.2
+      }
+     }
+    },
+    {
+     "id": "ee64d0dd-e3d8-4abc-b9d6-b19c505fbfa1",
+     "name": "Molecule Man",
+     "qty": 1,
+     "set": "msc",
+     "set_name": "Marvel Super Heroes Commander",
+     "collector_number": "9",
+     "rarity": "rare",
+     "type_line": "Legendary Creature — Human Villain",
+     "image": "https://cards.scryfall.io/normal/front/e/e/ee64d0dd-e3d8-4abc-b9d6-b19c505fbfa1.jpg?1783903300",
+     "cardmarket_id": 892388,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=892388&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/msc/9/molecule-man?utm_source=api",
+     "prices": {
+      "cardmarket": {
+       "eur": 20.55,
+       "eur_foil": null
+      },
+      "tcgplayer": {
+       "usd": 21.87,
+       "usd_foil": null
+      }
+     }
+    },
+    {
+     "id": "11aaa7c6-c79d-48f9-af66-3b360d3b15b5",
+     "name": "Extract Power",
+     "qty": 1,
+     "set": "msc",
+     "set_name": "Marvel Super Heroes Commander",
+     "collector_number": "29",
+     "rarity": "rare",
+     "type_line": "Sorcery",
+     "image": "https://cards.scryfall.io/normal/front/1/1/11aaa7c6-c79d-48f9-af66-3b360d3b15b5.jpg?1783903293",
+     "cardmarket_id": 892389,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=892389&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/msc/29/extract-power?utm_source=api",
+     "prices": {
+      "cardmarket": {
+       "eur": 0.33,
+       "eur_foil": null
+      },
+      "tcgplayer": {
+       "usd": 0.33,
+       "usd_foil": null
+      }
+     }
+    },
+    {
+     "id": "d78f2105-030f-4951-aa02-0d4db3d34f59",
+     "name": "Glorious Purpose",
+     "qty": 1,
+     "set": "msc",
+     "set_name": "Marvel Super Heroes Commander",
+     "collector_number": "31",
+     "rarity": "rare",
+     "type_line": "Enchantment — Plan",
+     "image": "https://cards.scryfall.io/normal/front/d/7/d78f2105-030f-4951-aa02-0d4db3d34f59.jpg?1783903293",
+     "cardmarket_id": 892390,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=892390&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/msc/31/glorious-purpose?utm_source=api",
+     "prices": {
+      "cardmarket": {
+       "eur": 0.34,
+       "eur_foil": null
+      },
+      "tcgplayer": {
+       "usd": 0.28,
+       "usd_foil": null
+      }
+     }
+    },
+    {
+     "id": "545f7f8d-f6a3-4e85-a53c-3eb9b28ebd14",
+     "name": "Helmut Zemo, Mastermind",
+     "qty": 1,
+     "set": "msc",
+     "set_name": "Marvel Super Heroes Commander",
+     "collector_number": "32",
+     "rarity": "rare",
+     "type_line": "Legendary Creature — Human Noble Villain",
+     "image": "https://cards.scryfall.io/normal/front/5/4/545f7f8d-f6a3-4e85-a53c-3eb9b28ebd14.jpg?1783903292",
+     "cardmarket_id": 892391,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=892391&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/msc/32/helmut-zemo-mastermind?utm_source=api",
+     "prices": {
+      "cardmarket": {
+       "eur": 0.36,
+       "eur_foil": null
+      },
+      "tcgplayer": {
+       "usd": 0.23,
+       "usd_foil": null
+      }
+     }
+    },
+    {
+     "id": "54050442-c9b1-481a-a1cd-77c147e9013e",
+     "name": "Age of Ultron",
+     "qty": 1,
+     "set": "msc",
+     "set_name": "Marvel Super Heroes Commander",
+     "collector_number": "41",
+     "rarity": "rare",
+     "type_line": "Enchantment — Saga",
+     "image": "https://cards.scryfall.io/normal/front/5/4/54050442-c9b1-481a-a1cd-77c147e9013e.jpg?1783903290",
+     "cardmarket_id": 892397,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=892397&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/msc/41/age-of-ultron?utm_source=api",
+     "prices": {
+      "cardmarket": {
+       "eur": 0.37,
+       "eur_foil": null
+      },
+      "tcgplayer": {
+       "usd": null,
+       "usd_foil": 4.11
+      }
+     }
+    },
+    {
+     "id": "89936964-7131-4ebf-b956-9692659866c1",
+     "name": "Damocles Base, Sword of Kang",
+     "qty": 1,
+     "set": "msc",
+     "set_name": "Marvel Super Heroes Commander",
+     "collector_number": "42",
+     "rarity": "rare",
+     "type_line": "Legendary Artifact — Vehicle",
+     "image": "https://cards.scryfall.io/normal/front/8/9/89936964-7131-4ebf-b956-9692659866c1.jpg?1783903287",
+     "cardmarket_id": 892398,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=892398&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/msc/42/damocles-base-sword-of-kang?utm_source=api",
+     "prices": {
+      "cardmarket": {
+       "eur": 0.23,
+       "eur_foil": null
+      },
+      "tcgplayer": {
+       "usd": 0.37,
+       "usd_foil": null
+      }
+     }
+    },
+    {
+     "id": "27da10b3-a131-4afc-ab84-5df93160d81f",
+     "name": "Endless Ranks of HYDRA",
+     "qty": 1,
+     "set": "msc",
+     "set_name": "Marvel Super Heroes Commander",
+     "collector_number": "43",
+     "rarity": "rare",
+     "type_line": "Sorcery",
+     "image": "https://cards.scryfall.io/normal/front/2/7/27da10b3-a131-4afc-ab84-5df93160d81f.jpg?1783903287",
+     "cardmarket_id": 892399,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=892399&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/msc/43/endless-ranks-of-hydra?utm_source=api",
+     "prices": {
+      "cardmarket": {
+       "eur": 0.21,
+       "eur_foil": null
+      },
+      "tcgplayer": {
+       "usd": null,
+       "usd_foil": 1.57
+      }
+     }
+    },
+    {
+     "id": "3e792132-de96-47aa-bcd5-58f1e9be5932",
+     "name": "The Frightful Four",
+     "qty": 1,
+     "set": "msc",
+     "set_name": "Marvel Super Heroes Commander",
+     "collector_number": "44",
+     "rarity": "rare",
+     "type_line": "Legendary Creature — Villain",
+     "image": "https://cards.scryfall.io/normal/front/3/e/3e792132-de96-47aa-bcd5-58f1e9be5932.jpg?1783903286",
+     "cardmarket_id": 892400,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=892400&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/msc/44/the-frightful-four?utm_source=api",
+     "prices": {
+      "cardmarket": {
+       "eur": 1.37,
+       "eur_foil": null
+      },
+      "tcgplayer": {
+       "usd": 1.33,
+       "usd_foil": null
+      }
+     }
+    },
+    {
+     "id": "799554d1-d1fb-4206-af9a-80d3582bedc0",
+     "name": "Iron Monger, Sadistic Tycoon",
+     "qty": 1,
+     "set": "msc",
+     "set_name": "Marvel Super Heroes Commander",
+     "collector_number": "45",
+     "rarity": "rare",
+     "type_line": "Legendary Artifact Creature — Human Villain",
+     "image": "https://cards.scryfall.io/normal/front/7/9/799554d1-d1fb-4206-af9a-80d3582bedc0.jpg?1783903288",
+     "cardmarket_id": 892401,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=892401&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/msc/45/iron-monger-sadistic-tycoon?utm_source=api",
+     "prices": {
+      "cardmarket": {
+       "eur": 0.29,
+       "eur_foil": null
+      },
+      "tcgplayer": {
+       "usd": null,
+       "usd_foil": 3.38
+      }
+     }
+    },
+    {
+     "id": "5c589d94-7cea-4d4c-91a8-4d939634a5e5",
+     "name": "Klaw, Master of Sound",
+     "qty": 1,
+     "set": "msc",
+     "set_name": "Marvel Super Heroes Commander",
+     "collector_number": "46",
+     "rarity": "rare",
+     "type_line": "Legendary Creature — Elemental Rogue Villain",
+     "image": "https://cards.scryfall.io/normal/front/5/c/5c589d94-7cea-4d4c-91a8-4d939634a5e5.jpg?1783903287",
+     "cardmarket_id": 892402,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=892402&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/msc/46/klaw-master-of-sound?utm_source=api",
+     "prices": {
+      "cardmarket": {
+       "eur": 0.28,
+       "eur_foil": null
+      },
+      "tcgplayer": {
+       "usd": 0.3,
+       "usd_foil": null
+      }
+     }
+    },
+    {
+     "id": "fddd2e68-8e1e-4162-a2c7-49da2c86d471",
+     "name": "Abomination, World Ravager",
+     "qty": 1,
+     "set": "msc",
+     "set_name": "Marvel Super Heroes Commander",
+     "collector_number": "47",
+     "rarity": "rare",
+     "type_line": "Legendary Creature — Gamma Berserker Villain",
+     "image": "https://cards.scryfall.io/normal/front/f/d/fddd2e68-8e1e-4162-a2c7-49da2c86d471.jpg?1783903286",
+     "cardmarket_id": 892412,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=892412&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/msc/47/abomination-world-ravager?utm_source=api",
+     "prices": {
+      "cardmarket": {
+       "eur": 0.28,
+       "eur_foil": null
+      },
+      "tcgplayer": {
+       "usd": 0.26,
+       "usd_foil": null
+      }
+     }
+    },
+    {
+     "id": "099ed408-9178-4403-8b2d-479ca3cbda9b",
+     "name": "Doctor Doom, King of Latveria",
+     "qty": 1,
+     "set": "msc",
+     "set_name": "Marvel Super Heroes Commander",
+     "collector_number": "6",
+     "rarity": "mythic",
+     "type_line": "Legendary Creature — Human Noble Villain",
+     "image": "https://cards.scryfall.io/normal/front/0/9/099ed408-9178-4403-8b2d-479ca3cbda9b.jpg?1783903303",
+     "cardmarket_id": 891085,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=891085&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/msc/6/doctor-doom-king-of-latveria?utm_source=api",
+     "prices": {
+      "cardmarket": {
+       "eur": 1.2,
+       "eur_foil": 0.94
+      },
+      "tcgplayer": {
+       "usd": 6.67,
+       "usd_foil": 3.1
+      }
+     }
+    },
+    {
+     "id": "e34e33ea-042e-409c-b304-52644ec5b1f5",
+     "name": "Batroc the Leaper",
+     "qty": 1,
+     "set": "msc",
+     "set_name": "Marvel Super Heroes Commander",
+     "collector_number": "49",
+     "rarity": "rare",
+     "type_line": "Legendary Creature — Human Villain",
+     "image": "https://cards.scryfall.io/normal/front/e/3/e34e33ea-042e-409c-b304-52644ec5b1f5.jpg?1783903286",
+     "cardmarket_id": 892413,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=892413&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/msc/49/batroc-the-leaper?utm_source=api",
+     "prices": {
+      "cardmarket": {
+       "eur": 0.29,
+       "eur_foil": null
+      },
+      "tcgplayer": {
+       "usd": null,
+       "usd_foil": 1.53
+      }
+     }
+    },
+    {
+     "id": "0ec1ec8b-24d7-40e4-9e9d-4d9ec4f0a4f8",
+     "name": "Killmonger, Ruthless Usurper",
+     "qty": 1,
+     "set": "msc",
+     "set_name": "Marvel Super Heroes Commander",
+     "collector_number": "53",
+     "rarity": "rare",
+     "type_line": "Legendary Creature — Human Villain",
+     "image": "https://cards.scryfall.io/normal/front/0/e/0ec1ec8b-24d7-40e4-9e9d-4d9ec4f0a4f8.jpg?1783903282",
+     "cardmarket_id": 892414,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=892414&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/msc/53/killmonger-ruthless-usurper?utm_source=api",
+     "prices": {
+      "cardmarket": {
+       "eur": 0.14,
+       "eur_foil": null
+      },
+      "tcgplayer": {
+       "usd": 0.26,
+       "usd_foil": null
+      }
+     }
+    },
+    {
+     "id": "44ac85d4-0429-4813-b7fe-eed1f6575b7d",
+     "name": "Lady Loki, Agent of Chaos",
+     "qty": 1,
+     "set": "msc",
+     "set_name": "Marvel Super Heroes Commander",
+     "collector_number": "54",
+     "rarity": "rare",
+     "type_line": "Legendary Creature — God Sorcerer Villain",
+     "image": "https://cards.scryfall.io/normal/front/4/4/44ac85d4-0429-4813-b7fe-eed1f6575b7d.jpg?1783903283",
+     "cardmarket_id": 891088,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=891088&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/msc/54/lady-loki-agent-of-chaos?utm_source=api",
+     "prices": {
+      "cardmarket": {
+       "eur": 0.54,
+       "eur_foil": null
+      },
+      "tcgplayer": {
+       "usd": 1.13,
+       "usd_foil": null
+      }
+     }
+    },
+    {
+     "id": "595ee0b4-393f-4bda-bcb4-f0fa43cf7ed2",
+     "name": "Living Laser",
+     "qty": 1,
+     "set": "msc",
+     "set_name": "Marvel Super Heroes Commander",
+     "collector_number": "55",
+     "rarity": "rare",
+     "type_line": "Legendary Creature — Elemental Villain",
+     "image": "https://cards.scryfall.io/normal/front/5/9/595ee0b4-393f-4bda-bcb4-f0fa43cf7ed2.jpg?1783903282",
+     "cardmarket_id": 892415,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=892415&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/msc/55/living-laser?utm_source=api",
+     "prices": {
+      "cardmarket": {
+       "eur": 0.31,
+       "eur_foil": null
+      },
+      "tcgplayer": {
+       "usd": null,
+       "usd_foil": 3.95
+      }
+     }
+    },
+    {
+     "id": "57e90938-9225-4c15-b4fb-aad2cced2e6a",
+     "name": "Loki's Scepter",
+     "qty": 1,
+     "set": "msc",
+     "set_name": "Marvel Super Heroes Commander",
+     "collector_number": "56",
+     "rarity": "rare",
+     "type_line": "Legendary Artifact",
+     "image": "https://cards.scryfall.io/normal/front/5/7/57e90938-9225-4c15-b4fb-aad2cced2e6a.jpg?1783903282",
+     "cardmarket_id": 891671,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=891671&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/msc/56/lokis-scepter?utm_source=api",
+     "prices": {
+      "cardmarket": {
+       "eur": 6.18,
+       "eur_foil": null
+      },
+      "tcgplayer": {
+       "usd": 6.0,
+       "usd_foil": null
+      }
+     }
+    },
+    {
+     "id": "ab888daa-1161-4917-bca0-efd5c430b2d9",
+     "name": "Puppet Master, String Puller",
+     "qty": 1,
+     "set": "msc",
+     "set_name": "Marvel Super Heroes Commander",
+     "collector_number": "59",
+     "rarity": "rare",
+     "type_line": "Legendary Creature — Human Artificer Villain",
+     "image": "https://cards.scryfall.io/normal/front/a/b/ab888daa-1161-4917-bca0-efd5c430b2d9.jpg?1783903279",
+     "cardmarket_id": 892417,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=892417&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/msc/59/puppet-master-string-puller?utm_source=api",
+     "prices": {
+      "cardmarket": {
+       "eur": 0.62,
+       "eur_foil": null
+      },
+      "tcgplayer": {
+       "usd": 0.87,
+       "usd_foil": null
+      }
+     }
+    },
+    {
+     "id": "7ffa820c-ac05-4b3d-a0ec-5cbd3c42ac9c",
+     "name": "Stilt-Man, Towering Terror",
+     "qty": 1,
+     "set": "msc",
+     "set_name": "Marvel Super Heroes Commander",
+     "collector_number": "61",
+     "rarity": "rare",
+     "type_line": "Legendary Creature — Human Rogue Villain",
+     "image": "https://cards.scryfall.io/normal/front/7/f/7ffa820c-ac05-4b3d-a0ec-5cbd3c42ac9c.jpg?1783903279",
+     "cardmarket_id": 892418,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=892418&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/msc/61/stilt-man-towering-terror?utm_source=api",
+     "prices": {
+      "cardmarket": {
+       "eur": 0.25,
+       "eur_foil": null
+      },
+      "tcgplayer": {
+       "usd": null,
+       "usd_foil": 1.12
+      }
+     }
+    },
+    {
+     "id": "31255422-9afa-416c-90b2-62baf1d02cca",
+     "name": "Titania, Proud Pummeler",
+     "qty": 1,
+     "set": "msc",
+     "set_name": "Marvel Super Heroes Commander",
+     "collector_number": "62",
+     "rarity": "rare",
+     "type_line": "Legendary Creature — Human Villain",
+     "image": "https://cards.scryfall.io/normal/front/3/1/31255422-9afa-416c-90b2-62baf1d02cca.jpg?1783903279",
+     "cardmarket_id": 892419,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=892419&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/msc/62/titania-proud-pummeler?utm_source=api",
+     "prices": {
+      "cardmarket": {
+       "eur": 0.26,
+       "eur_foil": null
+      },
+      "tcgplayer": {
+       "usd": 0.37,
+       "usd_foil": null
+      }
+     }
+    },
+    {
+     "id": "b440109f-af52-415e-94d3-d4997f5bee3e",
+     "name": "Archnemesis",
+     "qty": 1,
+     "set": "msc",
+     "set_name": "Marvel Super Heroes Commander",
+     "collector_number": "74",
+     "rarity": "rare",
+     "type_line": "Enchantment — Aura",
+     "image": "https://cards.scryfall.io/normal/front/b/4/b440109f-af52-415e-94d3-d4997f5bee3e.jpg?1783903274",
+     "cardmarket_id": 892424,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=892424&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/msc/74/archnemesis?utm_source=api",
+     "prices": {
+      "cardmarket": {
+       "eur": 0.53,
+       "eur_foil": null
+      },
+      "tcgplayer": {
+       "usd": 0.69,
+       "usd_foil": null
+      }
+     }
+    },
+    {
+     "id": "88cf0311-d7e3-40bb-85fa-3cca973c5e44",
+     "name": "Kang Prime",
+     "qty": 1,
+     "set": "msc",
+     "set_name": "Marvel Super Heroes Commander",
+     "collector_number": "85",
+     "rarity": "rare",
+     "type_line": "Legendary Creature — Human Villain",
+     "image": "https://cards.scryfall.io/normal/front/8/8/88cf0311-d7e3-40bb-85fa-3cca973c5e44.jpg?1783903271",
+     "cardmarket_id": 891091,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=891091&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/msc/85/kang-prime?utm_source=api",
+     "prices": {
+      "cardmarket": {
+       "eur": 0.37,
+       "eur_foil": null
+      },
+      "tcgplayer": {
+       "usd": 0.27,
+       "usd_foil": null
+      }
+     }
+    },
+    {
+     "id": "c0cd3d41-909b-4f20-a44b-db82807d10ae",
+     "name": "Loki, the Deceiver",
+     "qty": 1,
+     "set": "msc",
+     "set_name": "Marvel Super Heroes Commander",
+     "collector_number": "86",
+     "rarity": "mythic",
+     "type_line": "Legendary Creature — God Sorcerer Villain",
+     "image": "https://cards.scryfall.io/normal/front/c/0/c0cd3d41-909b-4f20-a44b-db82807d10ae.jpg?1783903269",
+     "cardmarket_id": 891093,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=891093&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/msc/86/loki-the-deceiver?utm_source=api",
+     "prices": {
+      "cardmarket": {
+       "eur": 0.35,
+       "eur_foil": null
+      },
+      "tcgplayer": {
+       "usd": 0.48,
+       "usd_foil": null
+      }
+     }
+    },
+    {
+     "id": "35bae013-51e9-4047-91e3-3b366ad0764e",
+     "name": "Red Ghost, Intangible Genius",
+     "qty": 1,
+     "set": "msc",
+     "set_name": "Marvel Super Heroes Commander",
+     "collector_number": "92",
+     "rarity": "rare",
+     "type_line": "Legendary Creature — Human Scientist Villain",
+     "image": "https://cards.scryfall.io/normal/front/3/5/35bae013-51e9-4047-91e3-3b366ad0764e.jpg?1783903265",
+     "cardmarket_id": 892425,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=892425&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/msc/92/red-ghost-intangible-genius?utm_source=api",
+     "prices": {
+      "cardmarket": {
+       "eur": 0.23,
+       "eur_foil": null
+      },
+      "tcgplayer": {
+       "usd": 0.32,
+       "usd_foil": null
+      }
+     }
+    },
+    {
+     "id": "96714d95-baef-45e3-a2b0-00a8bdb3a76d",
+     "name": "The Squadron Sinister",
+     "qty": 1,
+     "set": "msc",
+     "set_name": "Marvel Super Heroes Commander",
+     "collector_number": "96",
+     "rarity": "rare",
+     "type_line": "Legendary Creature — Human Villain",
+     "image": "https://cards.scryfall.io/normal/front/9/6/96714d95-baef-45e3-a2b0-00a8bdb3a76d.jpg?1783903271",
+     "cardmarket_id": 892427,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=892427&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/msc/96/the-squadron-sinister?utm_source=api",
+     "prices": {
+      "cardmarket": {
+       "eur": 0.32,
+       "eur_foil": null
+      },
+      "tcgplayer": {
+       "usd": 0.26,
+       "usd_foil": null
+      }
+     }
+    },
+    {
+     "id": "6880df6d-2ec3-459d-aa4f-92f595fab9b8",
+     "name": "Typhoid Mary, Fractured",
+     "qty": 1,
+     "set": "msc",
+     "set_name": "Marvel Super Heroes Commander",
+     "collector_number": "99",
+     "rarity": "rare",
+     "type_line": "Legendary Creature — Mutant Villain",
+     "image": "https://cards.scryfall.io/normal/front/6/8/6880df6d-2ec3-459d-aa4f-92f595fab9b8.jpg?1783903264",
+     "cardmarket_id": 892428,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=892428&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/msc/99/typhoid-mary-fractured?utm_source=api",
+     "prices": {
+      "cardmarket": {
+       "eur": 0.28,
+       "eur_foil": null
+      },
+      "tcgplayer": {
+       "usd": 0.3,
+       "usd_foil": null
+      }
+     }
+    },
+    {
+     "id": "bf5b410f-d6cb-4a74-a975-372975cf21f6",
+     "name": "Ultron, Unlimited",
+     "qty": 1,
+     "set": "msc",
+     "set_name": "Marvel Super Heroes Commander",
+     "collector_number": "100",
+     "rarity": "rare",
+     "type_line": "Legendary Artifact Creature — Robot Villain",
+     "image": "https://cards.scryfall.io/normal/front/b/f/bf5b410f-d6cb-4a74-a975-372975cf21f6.jpg?1783903261",
+     "cardmarket_id": 892429,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=892429&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/msc/100/ultron-unlimited?utm_source=api",
+     "prices": {
+      "cardmarket": {
+       "eur": 0.51,
+       "eur_foil": null
+      },
+      "tcgplayer": {
+       "usd": 1.23,
+       "usd_foil": null
+      }
+     }
+    },
+    {
+     "id": "6f7935d1-d588-40ca-804f-bac56d986d74",
+     "name": "Doom's Time Platform",
+     "qty": 1,
+     "set": "msc",
+     "set_name": "Marvel Super Heroes Commander",
+     "collector_number": "103",
+     "rarity": "rare",
+     "type_line": "Artifact",
+     "image": "https://cards.scryfall.io/normal/front/6/f/6f7935d1-d588-40ca-804f-bac56d986d74.jpg?1783903262",
+     "cardmarket_id": 892433,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=892433&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/msc/103/dooms-time-platform?utm_source=api",
+     "prices": {
+      "cardmarket": {
+       "eur": 1.8,
+       "eur_foil": null
+      },
+      "tcgplayer": {
+       "usd": 2.05,
+       "usd_foil": null
+      }
+     }
+    },
+    {
+     "id": "a4960ab8-fac3-4a11-a3f6-46527cf228ea",
+     "name": "Tri-Sentinel, Act of Vengeance",
+     "qty": 1,
+     "set": "msc",
+     "set_name": "Marvel Super Heroes Commander",
+     "collector_number": "115",
+     "rarity": "rare",
+     "type_line": "Legendary Artifact Creature — Robot Villain",
+     "image": "https://cards.scryfall.io/normal/front/a/4/a4960ab8-fac3-4a11-a3f6-46527cf228ea.jpg?1783903254",
+     "cardmarket_id": 892434,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=892434&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/msc/115/tri-sentinel-act-of-vengeance?utm_source=api",
+     "prices": {
+      "cardmarket": {
+       "eur": 0.3,
+       "eur_foil": null
+      },
+      "tcgplayer": {
+       "usd": 0.43,
+       "usd_foil": null
+      }
+     }
+    },
+    {
+     "id": "9d9ca869-e68a-4f53-9f52-85c714dac6f3",
+     "name": "Black Market Connections",
+     "qty": 1,
+     "set": "msc",
+     "set_name": "Marvel Super Heroes Commander",
+     "collector_number": "155",
+     "rarity": "rare",
+     "type_line": "Enchantment",
+     "image": "https://cards.scryfall.io/normal/front/9/d/9d9ca869-e68a-4f53-9f52-85c714dac6f3.jpg?1783903238",
+     "cardmarket_id": 892403,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=892403&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/msc/155/black-market-connections?utm_source=api",
+     "prices": {
+      "cardmarket": {
+       "eur": 11.78,
+       "eur_foil": null
+      },
+      "tcgplayer": {
+       "usd": null,
+       "usd_foil": 13.11
+      }
+     }
+    },
+    {
+     "id": "f6cd7c08-f5d4-4bdc-a254-809d900b0fc3",
+     "name": "Kindred Dominance",
+     "qty": 1,
+     "set": "msc",
+     "set_name": "Marvel Super Heroes Commander",
+     "collector_number": "156",
+     "rarity": "rare",
+     "type_line": "Sorcery",
+     "image": "https://cards.scryfall.io/normal/front/f/6/f6cd7c08-f5d4-4bdc-a254-809d900b0fc3.jpg?1783903243",
+     "cardmarket_id": 892404,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=892404&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/msc/156/kindred-dominance?utm_source=api",
+     "prices": {
+      "cardmarket": {
+       "eur": 5.06,
+       "eur_foil": null
+      },
+      "tcgplayer": {
+       "usd": 3.05,
+       "usd_foil": null
+      }
+     }
+    },
+    {
+     "id": "b2d9c467-6e56-401c-ade1-95dad7e4e766",
+     "name": "Lethal Scheme",
+     "qty": 1,
+     "set": "msc",
+     "set_name": "Marvel Super Heroes Commander",
+     "collector_number": "157",
+     "rarity": "rare",
+     "type_line": "Instant",
+     "image": "https://cards.scryfall.io/normal/front/b/2/b2d9c467-6e56-401c-ade1-95dad7e4e766.jpg?1783903236",
+     "cardmarket_id": 892405,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=892405&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/msc/157/lethal-scheme?utm_source=api",
+     "prices": {
+      "cardmarket": {
+       "eur": 0.18,
+       "eur_foil": null
+      },
+      "tcgplayer": {
+       "usd": null,
+       "usd_foil": 0.95
+      }
+     }
+    },
+    {
+     "id": "de5afccc-8d42-4bd6-b068-b9ea2361655e",
+     "name": "Toxic Deluge",
+     "qty": 1,
+     "set": "msc",
+     "set_name": "Marvel Super Heroes Commander",
+     "collector_number": "161",
+     "rarity": "rare",
+     "type_line": "Sorcery",
+     "image": "https://cards.scryfall.io/normal/front/d/e/de5afccc-8d42-4bd6-b068-b9ea2361655e.jpg?1783903236",
+     "cardmarket_id": 892410,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=892410&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/msc/161/toxic-deluge?utm_source=api",
+     "prices": {
+      "cardmarket": {
+       "eur": 5.28,
+       "eur_foil": null
+      },
+      "tcgplayer": {
+       "usd": 3.28,
+       "usd_foil": null
+      }
+     }
+    },
+    {
+     "id": "7d4b1d44-126e-4987-9a9f-f0f9627a09cb",
+     "name": "Blasphemous Act",
+     "qty": 1,
+     "set": "msc",
+     "set_name": "Marvel Super Heroes Commander",
+     "collector_number": "163",
+     "rarity": "rare",
+     "type_line": "Sorcery",
+     "image": "https://cards.scryfall.io/normal/front/7/d/7d4b1d44-126e-4987-9a9f-f0f9627a09cb.jpg?1783903234",
+     "cardmarket_id": 892420,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=892420&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/msc/163/blasphemous-act?utm_source=api",
+     "prices": {
+      "cardmarket": {
+       "eur": 1.15,
+       "eur_foil": null
+      },
+      "tcgplayer": {
+       "usd": null,
+       "usd_foil": 2.2
+      }
+     }
+    },
+    {
+     "id": "57f61970-382e-415c-868b-6bbb6c78825d",
+     "name": "Chaos Warp",
+     "qty": 1,
+     "set": "msc",
+     "set_name": "Marvel Super Heroes Commander",
+     "collector_number": "164",
+     "rarity": "rare",
+     "type_line": "Instant",
+     "image": "https://cards.scryfall.io/normal/front/5/7/57f61970-382e-415c-868b-6bbb6c78825d.jpg?1783903234",
+     "cardmarket_id": 892421,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=892421&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/msc/164/chaos-warp?utm_source=api",
+     "prices": {
+      "cardmarket": {
+       "eur": 0.37,
+       "eur_foil": null
+      },
+      "tcgplayer": {
+       "usd": 0.37,
+       "usd_foil": null
+      }
+     }
+    },
+    {
+     "id": "985b9779-b8f6-4d7e-9490-5d2b91ee8db2",
+     "name": "Bedevil",
+     "qty": 1,
+     "set": "msc",
+     "set_name": "Marvel Super Heroes Commander",
+     "collector_number": "182",
+     "rarity": "rare",
+     "type_line": "Instant",
+     "image": "https://cards.scryfall.io/normal/front/9/8/985b9779-b8f6-4d7e-9490-5d2b91ee8db2.jpg?1783903227",
+     "cardmarket_id": 892430,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=892430&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/msc/182/bedevil?utm_source=api",
+     "prices": {
+      "cardmarket": {
+       "eur": 0.2,
+       "eur_foil": null
+      },
+      "tcgplayer": {
+       "usd": 0.26,
+       "usd_foil": null
+      }
+     }
+    },
+    {
+     "id": "4eab054c-93f8-4da4-afb9-8f4c73c19213",
+     "name": "Currency Converter",
+     "qty": 1,
+     "set": "msc",
+     "set_name": "Marvel Super Heroes Commander",
+     "collector_number": "197",
+     "rarity": "rare",
+     "type_line": "Artifact",
+     "image": "https://cards.scryfall.io/normal/front/4/e/4eab054c-93f8-4da4-afb9-8f4c73c19213.jpg?1783903220",
+     "cardmarket_id": 892436,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=892436&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/msc/197/currency-converter?utm_source=api",
+     "prices": {
+      "cardmarket": {
+       "eur": 1.85,
+       "eur_foil": null
+      },
+      "tcgplayer": {
+       "usd": 0.58,
+       "usd_foil": null
+      }
+     }
+    },
+    {
+     "id": "55a7f877-dc7c-4c1b-b233-900958c9e8f5",
+     "name": "Progenitor's Icon",
+     "qty": 1,
+     "set": "msc",
+     "set_name": "Marvel Super Heroes Commander",
+     "collector_number": "208",
+     "rarity": "rare",
+     "type_line": "Artifact",
+     "image": "https://cards.scryfall.io/normal/front/5/5/55a7f877-dc7c-4c1b-b233-900958c9e8f5.jpg?1783903215",
+     "cardmarket_id": 892438,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=892438&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/msc/208/progenitors-icon?utm_source=api",
+     "prices": {
+      "cardmarket": {
+       "eur": 0.23,
+       "eur_foil": null
+      },
+      "tcgplayer": {
+       "usd": 0.26,
+       "usd_foil": null
+      }
+     }
+    },
+    {
+     "id": "1d8b007b-3169-4ee3-80c7-781fc096fc7a",
+     "name": "Skullclamp",
+     "qty": 1,
+     "set": "msc",
+     "set_name": "Marvel Super Heroes Commander",
+     "collector_number": "210",
+     "rarity": "rare",
+     "type_line": "Artifact — Equipment",
+     "image": "https://cards.scryfall.io/normal/front/1/d/1d8b007b-3169-4ee3-80c7-781fc096fc7a.jpg?1783903215",
+     "cardmarket_id": 892439,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=892439&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/msc/210/skullclamp?utm_source=api",
+     "prices": {
+      "cardmarket": {
+       "eur": 5.45,
+       "eur_foil": null
+      },
+      "tcgplayer": {
+       "usd": 4.38,
+       "usd_foil": null
+      }
+     }
+    },
+    {
+     "id": "587cc3ba-75c2-46a0-bd44-6f953fe1eb01",
+     "name": "Canyon Slough",
+     "qty": 1,
+     "set": "msc",
+     "set_name": "Marvel Super Heroes Commander",
+     "collector_number": "228",
+     "rarity": "rare",
+     "type_line": "Land — Swamp Mountain",
+     "image": "https://cards.scryfall.io/normal/front/5/8/587cc3ba-75c2-46a0-bd44-6f953fe1eb01.jpg?1783903208",
+     "cardmarket_id": 892453,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=892453&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/msc/228/canyon-slough?utm_source=api",
+     "prices": {
+      "cardmarket": {
+       "eur": 0.12,
+       "eur_foil": null
+      },
+      "tcgplayer": {
+       "usd": null,
+       "usd_foil": 0.43
+      }
+     }
+    },
+    {
+     "id": "0c37e84e-e7e0-4dfe-bf17-daeb2e434861",
+     "name": "Choked Estuary",
+     "qty": 1,
+     "set": "msc",
+     "set_name": "Marvel Super Heroes Commander",
+     "collector_number": "229",
+     "rarity": "rare",
+     "type_line": "Land",
+     "image": "https://cards.scryfall.io/normal/front/0/c/0c37e84e-e7e0-4dfe-bf17-daeb2e434861.jpg?1783903208",
+     "cardmarket_id": 892455,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=892455&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/msc/229/choked-estuary?utm_source=api",
+     "prices": {
+      "cardmarket": {
+       "eur": 0.2,
+       "eur_foil": null
+      },
+      "tcgplayer": {
+       "usd": null,
+       "usd_foil": 0.43
+      }
+     }
+    },
+    {
+     "id": "d2a70a9d-2d9f-4afd-9393-8d6518936ee2",
+     "name": "Coastal Peak",
+     "qty": 1,
+     "set": "msc",
+     "set_name": "Marvel Super Heroes Commander",
+     "collector_number": "232",
+     "rarity": "rare",
+     "type_line": "Land — Island Mountain",
+     "image": "https://cards.scryfall.io/normal/front/d/2/d2a70a9d-2d9f-4afd-9393-8d6518936ee2.jpg?1783903205",
+     "cardmarket_id": 891700,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=891700&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/msc/232/coastal-peak?utm_source=api",
+     "prices": {
+      "cardmarket": {
+       "eur": 0.27,
+       "eur_foil": null
+      },
+      "tcgplayer": {
+       "usd": 0.25,
+       "usd_foil": null
+      }
+     }
+    },
+    {
+     "id": "d20e433a-eb62-4301-bc20-bfe27468b033",
+     "name": "Dragonskull Summit",
+     "qty": 1,
+     "set": "msc",
+     "set_name": "Marvel Super Heroes Commander",
+     "collector_number": "238",
+     "rarity": "rare",
+     "type_line": "Land",
+     "image": "https://cards.scryfall.io/normal/front/d/2/d20e433a-eb62-4301-bc20-bfe27468b033.jpg?1783903203",
+     "cardmarket_id": 892459,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=892459&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/msc/238/dragonskull-summit?utm_source=api",
+     "prices": {
+      "cardmarket": {
+       "eur": 0.42,
+       "eur_foil": null
+      },
+      "tcgplayer": {
+       "usd": 0.37,
+       "usd_foil": null
+      }
+     }
+    },
+    {
+     "id": "ebea49ab-e5cf-46d9-ae35-226a7321ede0",
+     "name": "Drowned Catacomb",
+     "qty": 1,
+     "set": "msc",
+     "set_name": "Marvel Super Heroes Commander",
+     "collector_number": "239",
+     "rarity": "rare",
+     "type_line": "Land",
+     "image": "https://cards.scryfall.io/normal/front/e/b/ebea49ab-e5cf-46d9-ae35-226a7321ede0.jpg?1783903205",
+     "cardmarket_id": 892460,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=892460&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/msc/239/drowned-catacomb?utm_source=api",
+     "prices": {
+      "cardmarket": {
+       "eur": 1.11,
+       "eur_foil": null
+      },
+      "tcgplayer": {
+       "usd": null,
+       "usd_foil": 3.19
+      }
+     }
+    },
+    {
+     "id": "8853ff94-bf44-4cfd-9d3a-0743c361fb0d",
+     "name": "Exotic Orchard",
+     "qty": 1,
+     "set": "msc",
+     "set_name": "Marvel Super Heroes Commander",
+     "collector_number": "241",
+     "rarity": "rare",
+     "type_line": "Land",
+     "image": "https://cards.scryfall.io/normal/front/8/8/8853ff94-bf44-4cfd-9d3a-0743c361fb0d.jpg?1783903204",
+     "cardmarket_id": 891702,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=891702&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/msc/241/exotic-orchard?utm_source=api",
+     "prices": {
+      "cardmarket": {
+       "eur": 0.15,
+       "eur_foil": null
+      },
+      "tcgplayer": {
+       "usd": 0.26,
+       "usd_foil": null
+      }
+     }
+    },
+    {
+     "id": "5fa4556f-2fdc-42e6-98cb-291cee2ca3ac",
+     "name": "Fetid Pools",
+     "qty": 1,
+     "set": "msc",
+     "set_name": "Marvel Super Heroes Commander",
+     "collector_number": "243",
+     "rarity": "rare",
+     "type_line": "Land — Island Swamp",
+     "image": "https://cards.scryfall.io/normal/front/5/f/5fa4556f-2fdc-42e6-98cb-291cee2ca3ac.jpg?1783903202",
+     "cardmarket_id": 892461,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=892461&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/msc/243/fetid-pools?utm_source=api",
+     "prices": {
+      "cardmarket": {
+       "eur": 0.14,
+       "eur_foil": null
+      },
+      "tcgplayer": {
+       "usd": 0.23,
+       "usd_foil": null
+      }
+     }
+    },
+    {
+     "id": "76fdf6be-e13b-49ee-9d50-8625edb49951",
+     "name": "Foreboding Ruins",
+     "qty": 1,
+     "set": "msc",
+     "set_name": "Marvel Super Heroes Commander",
+     "collector_number": "244",
+     "rarity": "rare",
+     "type_line": "Land",
+     "image": "https://cards.scryfall.io/normal/front/7/6/76fdf6be-e13b-49ee-9d50-8625edb49951.jpg?1783903200",
+     "cardmarket_id": 892462,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=892462&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/msc/244/foreboding-ruins?utm_source=api",
+     "prices": {
+      "cardmarket": {
+       "eur": 0.22,
+       "eur_foil": null
+      },
+      "tcgplayer": {
+       "usd": null,
+       "usd_foil": 0.39
+      }
+     }
+    },
+    {
+     "id": "ae705a26-5371-4236-904c-fe3e58b4721d",
+     "name": "Frostboil Snarl",
+     "qty": 1,
+     "set": "msc",
+     "set_name": "Marvel Super Heroes Commander",
+     "collector_number": "246",
+     "rarity": "rare",
+     "type_line": "Land",
+     "image": "https://cards.scryfall.io/normal/front/a/e/ae705a26-5371-4236-904c-fe3e58b4721d.jpg?1783903201",
+     "cardmarket_id": 891703,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=891703&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/msc/246/frostboil-snarl?utm_source=api",
+     "prices": {
+      "cardmarket": {
+       "eur": 0.19,
+       "eur_foil": null
+      },
+      "tcgplayer": {
+       "usd": 0.27,
+       "usd_foil": null
+      }
+     }
+    },
+    {
+     "id": "3c409d1e-f634-44a2-8fcf-dcdcb0babc3f",
+     "name": "Luxury Suite",
+     "qty": 1,
+     "set": "msc",
+     "set_name": "Marvel Super Heroes Commander",
+     "collector_number": "252",
+     "rarity": "rare",
+     "type_line": "Land",
+     "image": "https://cards.scryfall.io/normal/front/3/c/3c409d1e-f634-44a2-8fcf-dcdcb0babc3f.jpg?1783903199",
+     "cardmarket_id": 892463,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=892463&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/msc/252/luxury-suite?utm_source=api",
+     "prices": {
+      "cardmarket": {
+       "eur": 9.75,
+       "eur_foil": null
+      },
+      "tcgplayer": {
+       "usd": 10.17,
+       "usd_foil": null
+      }
+     }
+    },
+    {
+     "id": "9fbe68ba-ffe5-4fe0-ac0a-0b3221e4f395",
+     "name": "Scavenger Grounds",
+     "qty": 1,
+     "set": "msc",
+     "set_name": "Marvel Super Heroes Commander",
+     "collector_number": "263",
+     "rarity": "rare",
+     "type_line": "Land — Desert",
+     "image": "https://cards.scryfall.io/normal/front/9/f/9fbe68ba-ffe5-4fe0-ac0a-0b3221e4f395.jpg?1783903197",
+     "cardmarket_id": 891714,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=891714&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/msc/263/scavenger-grounds?utm_source=api",
+     "prices": {
+      "cardmarket": {
+       "eur": 0.21,
+       "eur_foil": null
+      },
+      "tcgplayer": {
+       "usd": 0.18,
+       "usd_foil": null
+      }
+     }
+    },
+    {
+     "id": "43abdfba-0a55-4b8a-858e-3372ee40a579",
+     "name": "Scorched Geyser",
+     "qty": 1,
+     "set": "msc",
+     "set_name": "Marvel Super Heroes Commander",
+     "collector_number": "264",
+     "rarity": "rare",
+     "type_line": "Land — Island Mountain",
+     "image": "https://cards.scryfall.io/normal/front/4/3/43abdfba-0a55-4b8a-858e-3372ee40a579.jpg?1783903193",
+     "cardmarket_id": 891715,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=891715&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/msc/264/scorched-geyser?utm_source=api",
+     "prices": {
+      "cardmarket": {
+       "eur": 0.61,
+       "eur_foil": null
+      },
+      "tcgplayer": {
+       "usd": 0.37,
+       "usd_foil": null
+      }
+     }
+    },
+    {
+     "id": "d707c477-440f-417c-970a-0e7426a58045",
+     "name": "Smoldering Marsh",
+     "qty": 1,
+     "set": "msc",
+     "set_name": "Marvel Super Heroes Commander",
+     "collector_number": "266",
+     "rarity": "rare",
+     "type_line": "Land — Swamp Mountain",
+     "image": "https://cards.scryfall.io/normal/front/d/7/d707c477-440f-417c-970a-0e7426a58045.jpg?1783903193",
+     "cardmarket_id": 892465,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=892465&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/msc/266/smoldering-marsh?utm_source=api",
+     "prices": {
+      "cardmarket": {
+       "eur": 0.2,
+       "eur_foil": null
+      },
+      "tcgplayer": {
+       "usd": null,
+       "usd_foil": 0.55
+      }
+     }
+    },
+    {
+     "id": "c762f475-7e58-4477-839b-b3c55434b88f",
+     "name": "Sulfur Falls",
+     "qty": 1,
+     "set": "msc",
+     "set_name": "Marvel Super Heroes Commander",
+     "collector_number": "269",
+     "rarity": "rare",
+     "type_line": "Land",
+     "image": "https://cards.scryfall.io/normal/front/c/7/c762f475-7e58-4477-839b-b3c55434b88f.jpg?1783903193",
+     "cardmarket_id": 891718,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=891718&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/msc/269/sulfur-falls?utm_source=api",
+     "prices": {
+      "cardmarket": {
+       "eur": 0.27,
+       "eur_foil": null
+      },
+      "tcgplayer": {
+       "usd": 0.29,
+       "usd_foil": null
+      }
+     }
+    },
+    {
+     "id": "3a8eef9b-9b03-42cd-a27a-07021bf0b33f",
+     "name": "Sunken Hollow",
+     "qty": 1,
+     "set": "msc",
+     "set_name": "Marvel Super Heroes Commander",
+     "collector_number": "271",
+     "rarity": "rare",
+     "type_line": "Land — Island Swamp",
+     "image": "https://cards.scryfall.io/normal/front/3/a/3a8eef9b-9b03-42cd-a27a-07021bf0b33f.jpg?1783903191",
+     "cardmarket_id": 892467,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=892467&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/msc/271/sunken-hollow?utm_source=api",
+     "prices": {
+      "cardmarket": {
+       "eur": 0.21,
+       "eur_foil": null
+      },
+      "tcgplayer": {
+       "usd": 0.32,
+       "usd_foil": null
+      }
+     }
+    },
+    {
+     "id": "c0bd188b-7fb9-4070-a92b-80b81ba71c61",
+     "name": "Spark Double",
+     "qty": 1,
+     "set": "msc",
+     "set_name": "Marvel Super Heroes Commander",
+     "collector_number": "279",
+     "rarity": "rare",
+     "type_line": "Creature — Illusion",
+     "image": "https://cards.scryfall.io/normal/front/c/0/c0bd188b-7fb9-4070-a92b-80b81ba71c61.jpg?1783903188",
+     "cardmarket_id": 892395,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=892395&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/msc/279/spark-double?utm_source=api",
+     "prices": {
+      "cardmarket": {
+       "eur": 3.46,
+       "eur_foil": null
+      },
+      "tcgplayer": {
+       "usd": null,
+       "usd_foil": 8.6
+      }
+     }
+    },
+    {
+     "id": "6ac8eb8a-01b8-41b2-b725-01a1fc17fcb7",
+     "name": "Titan of Littjara",
+     "qty": 1,
+     "set": "msc",
+     "set_name": "Marvel Super Heroes Commander",
+     "collector_number": "280",
+     "rarity": "rare",
+     "type_line": "Creature — Illusion",
+     "image": "https://cards.scryfall.io/normal/front/6/a/6ac8eb8a-01b8-41b2-b725-01a1fc17fcb7.jpg?1783903188",
+     "cardmarket_id": 892396,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=892396&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/msc/280/titan-of-littjara?utm_source=api",
+     "prices": {
+      "cardmarket": {
+       "eur": 1.83,
+       "eur_foil": null
+      },
+      "tcgplayer": {
+       "usd": 1.02,
+       "usd_foil": null
+      }
+     }
+    },
+    {
+     "id": "1a1b2bd0-e17d-4b34-a8ee-7c913a6bc945",
+     "name": "Moonstone, Harsh Mistress",
+     "qty": 1,
+     "set": "msh",
+     "set_name": "Marvel Super Heroes",
+     "collector_number": "107",
+     "rarity": "uncommon",
+     "type_line": "Legendary Creature — Human Doctor Villain",
+     "image": "https://cards.scryfall.io/normal/front/1/a/1a1b2bd0-e17d-4b34-a8ee-7c913a6bc945.jpg?1783902940",
+     "cardmarket_id": 891533,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=891533&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/msh/107/moonstone-harsh-mistress?utm_source=api",
+     "prices": {
+      "cardmarket": {
+       "eur": 0.08,
+       "eur_foil": 0.18
+      },
+      "tcgplayer": {
+       "usd": 0.2,
+       "usd_foil": 0.3
+      }
+     }
+    },
+    {
+     "id": "fb96ee86-5139-472a-9c4b-8a8a4280fc7e",
+     "name": "Kang, Temporal Tyrant",
+     "qty": 1,
+     "set": "msh",
+     "set_name": "Marvel Super Heroes",
+     "collector_number": "217",
+     "rarity": "uncommon",
+     "type_line": "Legendary Creature — Human Villain",
+     "image": "https://cards.scryfall.io/normal/front/f/b/fb96ee86-5139-472a-9c4b-8a8a4280fc7e.jpg?1783902901",
+     "cardmarket_id": 890579,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=890579&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/msh/217/kang-temporal-tyrant?utm_source=api",
+     "prices": {
+      "cardmarket": {
+       "eur": 0.12,
+       "eur_foil": 0.18
+      },
+      "tcgplayer": {
+       "usd": 0.19,
+       "usd_foil": 0.34
+      }
+     }
+    },
+    {
+     "id": "822b0249-e1df-453d-8b60-75a5196ed818",
+     "name": "Villainous Hideout",
+     "qty": 1,
+     "set": "msh",
+     "set_name": "Marvel Super Heroes",
+     "collector_number": "276",
+     "rarity": "uncommon",
+     "type_line": "Land",
+     "image": "https://cards.scryfall.io/normal/front/8/2/822b0249-e1df-453d-8b60-75a5196ed818.jpg?1783902881",
+     "cardmarket_id": 891623,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=891623&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/msh/276/villainous-hideout?utm_source=api",
+     "prices": {
+      "cardmarket": {
+       "eur": 0.13,
+       "eur_foil": 0.14
+      },
+      "tcgplayer": {
+       "usd": 0.21,
+       "usd_foil": 0.29
+      }
+     }
+    },
+    {
+     "id": "050c52b1-5dea-4aae-aa32-e501d61b56e7",
+     "name": "Containment Construct",
+     "qty": 1,
+     "set": "msc",
+     "set_name": "Marvel Super Heroes Commander",
+     "collector_number": "284",
+     "rarity": "uncommon",
+     "type_line": "Artifact Creature — Construct",
+     "image": "https://cards.scryfall.io/normal/front/0/5/050c52b1-5dea-4aae-aa32-e501d61b56e7.jpg?1783903187",
+     "cardmarket_id": 892450,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=892450&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/msc/284/containment-construct?utm_source=api",
+     "prices": {
+      "cardmarket": {
+       "eur": 0.22,
+       "eur_foil": null
+      },
+      "tcgplayer": {
+       "usd": 0.24,
+       "usd_foil": null
+      }
+     }
+    },
+    {
+     "id": "dcc50ba7-c4be-4c20-a1fc-466194aab7c2",
+     "name": "Chameleon, Master of Disguise",
+     "qty": 1,
+     "set": "msc",
+     "set_name": "Marvel Super Heroes Commander",
+     "collector_number": "148",
+     "rarity": "uncommon",
+     "type_line": "Legendary Creature — Human Shapeshifter Villain",
+     "image": "https://cards.scryfall.io/normal/front/d/c/dcc50ba7-c4be-4c20-a1fc-466194aab7c2.jpg?1783903241",
+     "cardmarket_id": 892393,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=892393&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/msc/148/chameleon-master-of-disguise?utm_source=api",
+     "prices": {
+      "cardmarket": {
+       "eur": 0.31,
+       "eur_foil": null
+      },
+      "tcgplayer": {
+       "usd": null,
+       "usd_foil": 2.0
+      }
+     }
+    },
+    {
+     "id": "ac943e31-26bc-4b54-b73f-460e6e402d86",
+     "name": "Propaganda",
+     "qty": 1,
+     "set": "msc",
+     "set_name": "Marvel Super Heroes Commander",
+     "collector_number": "151",
+     "rarity": "uncommon",
+     "type_line": "Enchantment",
+     "image": "https://cards.scryfall.io/normal/front/a/c/ac943e31-26bc-4b54-b73f-460e6e402d86.jpg?1783903239",
+     "cardmarket_id": 892394,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=892394&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/msc/151/propaganda?utm_source=api",
+     "prices": {
+      "cardmarket": {
+       "eur": 2.03,
+       "eur_foil": null
+      },
+      "tcgplayer": {
+       "usd": 2.06,
+       "usd_foil": null
+      }
+     }
+    },
+    {
+     "id": "1ed2b60b-5f20-4ae6-93fb-51540ad9c9e7",
+     "name": "Night's Whisper",
+     "qty": 1,
+     "set": "msc",
+     "set_name": "Marvel Super Heroes Commander",
+     "collector_number": "158",
+     "rarity": "common",
+     "type_line": "Sorcery",
+     "image": "https://cards.scryfall.io/normal/front/1/e/1ed2b60b-5f20-4ae6-93fb-51540ad9c9e7.jpg?1783903240",
+     "cardmarket_id": 892406,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=892406&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/msc/158/nights-whisper?utm_source=api",
+     "prices": {
+      "cardmarket": {
+       "eur": 0.25,
+       "eur_foil": null
+      },
+      "tcgplayer": {
+       "usd": 0.31,
+       "usd_foil": null
+      }
+     }
+    },
+    {
+     "id": "be3f418b-25c3-4370-a1de-50e8e88c2ef6",
+     "name": "Syphon Mind",
+     "qty": 1,
+     "set": "msc",
+     "set_name": "Marvel Super Heroes Commander",
+     "collector_number": "159",
+     "rarity": "common",
+     "type_line": "Sorcery",
+     "image": "https://cards.scryfall.io/normal/front/b/e/be3f418b-25c3-4370-a1de-50e8e88c2ef6.jpg?1783903235",
+     "cardmarket_id": 892407,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=892407&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/msc/159/syphon-mind?utm_source=api",
+     "prices": {
+      "cardmarket": {
+       "eur": 0.17,
+       "eur_foil": null
+      },
+      "tcgplayer": {
+       "usd": null,
+       "usd_foil": 0.38
+      }
+     }
+    },
+    {
+     "id": "d3cd086b-8ffe-452f-9bb1-cc235058a3af",
+     "name": "Tombstone, Career Criminal",
+     "qty": 1,
+     "set": "msc",
+     "set_name": "Marvel Super Heroes Commander",
+     "collector_number": "160",
+     "rarity": "uncommon",
+     "type_line": "Legendary Creature — Human Villain",
+     "image": "https://cards.scryfall.io/normal/front/d/3/d3cd086b-8ffe-452f-9bb1-cc235058a3af.jpg?1783903236",
+     "cardmarket_id": 892408,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=892408&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/msc/160/tombstone-career-criminal?utm_source=api",
+     "prices": {
+      "cardmarket": {
+       "eur": 0.15,
+       "eur_foil": null
+      },
+      "tcgplayer": {
+       "usd": null,
+       "usd_foil": 0.45
+      }
+     }
+    },
+    {
+     "id": "06d44ada-f98e-405f-89d3-ac1002bfb854",
+     "name": "Withering Torment",
+     "qty": 1,
+     "set": "msc",
+     "set_name": "Marvel Super Heroes Commander",
+     "collector_number": "162",
+     "rarity": "uncommon",
+     "type_line": "Instant",
+     "image": "https://cards.scryfall.io/normal/front/0/6/06d44ada-f98e-405f-89d3-ac1002bfb854.jpg?1783903235",
+     "cardmarket_id": 892411,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=892411&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/msc/162/withering-torment?utm_source=api",
+     "prices": {
+      "cardmarket": {
+       "eur": 1.45,
+       "eur_foil": null
+      },
+      "tcgplayer": {
+       "usd": null,
+       "usd_foil": 3.94
+      }
+     }
+    },
+    {
+     "id": "bb759a0b-df7b-43c8-8e8e-bd52535cdbc0",
+     "name": "Superior Foes of Spider-Man",
+     "qty": 1,
+     "set": "msc",
+     "set_name": "Marvel Super Heroes Commander",
+     "collector_number": "167",
+     "rarity": "uncommon",
+     "type_line": "Creature — Human Rogue Villain",
+     "image": "https://cards.scryfall.io/normal/front/b/b/bb759a0b-df7b-43c8-8e8e-bd52535cdbc0.jpg?1783903232",
+     "cardmarket_id": 892422,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=892422&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/msc/167/superior-foes-of-spider-man?utm_source=api",
+     "prices": {
+      "cardmarket": {
+       "eur": 0.15,
+       "eur_foil": null
+      },
+      "tcgplayer": {
+       "usd": null,
+       "usd_foil": 0.54
+      }
+     }
+    },
+    {
+     "id": "71067239-d46f-4201-a91c-6aa4c41fa8b1",
+     "name": "Vandalblast",
+     "qty": 1,
+     "set": "msc",
+     "set_name": "Marvel Super Heroes Commander",
+     "collector_number": "168",
+     "rarity": "uncommon",
+     "type_line": "Sorcery",
+     "image": "https://cards.scryfall.io/normal/front/7/1/71067239-d46f-4201-a91c-6aa4c41fa8b1.jpg?1783903232",
+     "cardmarket_id": 892423,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=892423&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/msc/168/vandalblast?utm_source=api",
+     "prices": {
+      "cardmarket": {
+       "eur": 1.26,
+       "eur_foil": null
+      },
+      "tcgplayer": {
+       "usd": 0.97,
+       "usd_foil": null
+      }
+     }
+    },
+    {
+     "id": "08d18fce-e250-4bcb-9acf-08a8a6e4f1e2",
+     "name": "Prowler, Clawed Thief",
+     "qty": 1,
+     "set": "msc",
+     "set_name": "Marvel Super Heroes Commander",
+     "collector_number": "186",
+     "rarity": "uncommon",
+     "type_line": "Legendary Creature — Human Rogue Villain",
+     "image": "https://cards.scryfall.io/normal/front/0/8/08d18fce-e250-4bcb-9acf-08a8a6e4f1e2.jpg?1783903224",
+     "cardmarket_id": 892431,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=892431&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/msc/186/prowler-clawed-thief?utm_source=api",
+     "prices": {
+      "cardmarket": {
+       "eur": 0.16,
+       "eur_foil": null
+      },
+      "tcgplayer": {
+       "usd": 0.25,
+       "usd_foil": null
+      }
+     }
+    },
+    {
+     "id": "379ffc67-4142-4ead-a871-0f851523745e",
+     "name": "Terminate",
+     "qty": 1,
+     "set": "msc",
+     "set_name": "Marvel Super Heroes Commander",
+     "collector_number": "189",
+     "rarity": "uncommon",
+     "type_line": "Instant",
+     "image": "https://cards.scryfall.io/normal/front/3/7/379ffc67-4142-4ead-a871-0f851523745e.jpg?1783903230",
+     "cardmarket_id": 892432,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=892432&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/msc/189/terminate?utm_source=api",
+     "prices": {
+      "cardmarket": {
+       "eur": 0.26,
+       "eur_foil": null
+      },
+      "tcgplayer": {
+       "usd": 0.3,
+       "usd_foil": null
+      }
+     }
+    },
+    {
+     "id": "537ea7e7-e8e8-4736-bdd9-1085f1a7c259",
+     "name": "Patchwork Banner",
+     "qty": 1,
+     "set": "msc",
+     "set_name": "Marvel Super Heroes Commander",
+     "collector_number": "207",
+     "rarity": "uncommon",
+     "type_line": "Artifact",
+     "image": "https://cards.scryfall.io/normal/front/5/3/537ea7e7-e8e8-4736-bdd9-1085f1a7c259.jpg?1783903215",
+     "cardmarket_id": 892437,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=892437&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/msc/207/patchwork-banner?utm_source=api",
+     "prices": {
+      "cardmarket": {
+       "eur": 1.43,
+       "eur_foil": null
+      },
+      "tcgplayer": {
+       "usd": 1.86,
+       "usd_foil": null
+      }
+     }
+    },
+    {
+     "id": "6675632d-d74a-4b1e-8539-ac678d5545a5",
+     "name": "Swiftfoot Boots",
+     "qty": 1,
+     "set": "msc",
+     "set_name": "Marvel Super Heroes Commander",
+     "collector_number": "216",
+     "rarity": "uncommon",
+     "type_line": "Artifact — Equipment",
+     "image": "https://cards.scryfall.io/normal/front/6/6/6675632d-d74a-4b1e-8539-ac678d5545a5.jpg?1783903212",
+     "cardmarket_id": 892444,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=892444&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/msc/216/swiftfoot-boots?utm_source=api",
+     "prices": {
+      "cardmarket": {
+       "eur": 1.92,
+       "eur_foil": null
+      },
+      "tcgplayer": {
+       "usd": 2.11,
+       "usd_foil": null
+      }
+     }
+    },
+    {
+     "id": "00d4a1d4-b86a-4c05-9ecc-130e011e0486",
+     "name": "Talisman of Dominance",
+     "qty": 1,
+     "set": "msc",
+     "set_name": "Marvel Super Heroes Commander",
+     "collector_number": "219",
+     "rarity": "uncommon",
+     "type_line": "Artifact",
+     "image": "https://cards.scryfall.io/normal/front/0/0/00d4a1d4-b86a-4c05-9ecc-130e011e0486.jpg?1783903217",
+     "cardmarket_id": 892446,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=892446&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/msc/219/talisman-of-dominance?utm_source=api",
+     "prices": {
+      "cardmarket": {
+       "eur": 0.75,
+       "eur_foil": null
+      },
+      "tcgplayer": {
+       "usd": 0.86,
+       "usd_foil": null
+      }
+     }
+    },
+    {
+     "id": "ccacf88d-407d-465d-958a-1389b7d700e6",
+     "name": "Talisman of Indulgence",
+     "qty": 1,
+     "set": "msc",
+     "set_name": "Marvel Super Heroes Commander",
+     "collector_number": "220",
+     "rarity": "uncommon",
+     "type_line": "Artifact",
+     "image": "https://cards.scryfall.io/normal/front/c/c/ccacf88d-407d-465d-958a-1389b7d700e6.jpg?1783903211",
+     "cardmarket_id": 892448,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=892448&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/msc/220/talisman-of-indulgence?utm_source=api",
+     "prices": {
+      "cardmarket": {
+       "eur": 1.46,
+       "eur_foil": null
+      },
+      "tcgplayer": {
+       "usd": 0.68,
+       "usd_foil": null
+      }
+     }
+    },
+    {
+     "id": "d28542af-936f-44e5-a4e3-119f23c9f0d6",
+     "name": "Crumbling Necropolis",
+     "qty": 1,
+     "set": "msc",
+     "set_name": "Marvel Super Heroes Commander",
+     "collector_number": "237",
+     "rarity": "uncommon",
+     "type_line": "Land",
+     "image": "https://cards.scryfall.io/normal/front/d/2/d28542af-936f-44e5-a4e3-119f23c9f0d6.jpg?1783903203",
+     "cardmarket_id": 892458,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=892458&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/msc/237/crumbling-necropolis?utm_source=api",
+     "prices": {
+      "cardmarket": {
+       "eur": 0.18,
+       "eur_foil": null
+      },
+      "tcgplayer": {
+       "usd": null,
+       "usd_foil": 5.69
+      }
+     }
+    },
+    {
+     "id": "836b8f52-10d2-4716-9f7b-38fb23bc68de",
+     "name": "Path of Ancestry",
+     "qty": 1,
+     "set": "msc",
+     "set_name": "Marvel Super Heroes Commander",
+     "collector_number": "254",
+     "rarity": "common",
+     "type_line": "Land",
+     "image": "https://cards.scryfall.io/normal/front/8/3/836b8f52-10d2-4716-9f7b-38fb23bc68de.jpg?1783903197",
+     "cardmarket_id": 891709,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=891709&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/msc/254/path-of-ancestry?utm_source=api",
+     "prices": {
+      "cardmarket": {
+       "eur": 0.12,
+       "eur_foil": null
+      },
+      "tcgplayer": {
+       "usd": 0.3,
+       "usd_foil": null
+      }
+     }
+    },
+    {
+     "id": "c0d17d04-cf0b-4918-bfec-b34b0d98a602",
+     "name": "Secluded Courtyard",
+     "qty": 1,
+     "set": "msc",
+     "set_name": "Marvel Super Heroes Commander",
+     "collector_number": "265",
+     "rarity": "uncommon",
+     "type_line": "Land",
+     "image": "https://cards.scryfall.io/normal/front/c/0/c0d17d04-cf0b-4918-bfec-b34b0d98a602.jpg?1783903197",
+     "cardmarket_id": 891716,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=891716&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/msc/265/secluded-courtyard?utm_source=api",
+     "prices": {
+      "cardmarket": {
+       "eur": 0.2,
+       "eur_foil": null
+      },
+      "tcgplayer": {
+       "usd": 0.22,
+       "usd_foil": null
+      }
+     }
+    },
+    {
+     "id": "a81f924b-0527-4311-8120-9bfff71524f6",
+     "name": "Terramorphic Expanse",
+     "qty": 1,
+     "set": "msc",
+     "set_name": "Marvel Super Heroes Commander",
+     "collector_number": "273",
+     "rarity": "common",
+     "type_line": "Land",
+     "image": "https://cards.scryfall.io/normal/front/a/8/a81f924b-0527-4311-8120-9bfff71524f6.jpg?1783903191",
+     "cardmarket_id": 891887,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=891887&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/msc/273/terramorphic-expanse?utm_source=api",
+     "prices": {
+      "cardmarket": {
+       "eur": 0.13,
+       "eur_foil": null
+      },
+      "tcgplayer": {
+       "usd": 0.2,
+       "usd_foil": null
+      }
+     }
+    },
+    {
+     "id": "d3782952-3839-4a94-95bc-716611d3ece6",
+     "name": "Unclaimed Territory",
+     "qty": 1,
+     "set": "msc",
+     "set_name": "Marvel Super Heroes Commander",
+     "collector_number": "275",
+     "rarity": "uncommon",
+     "type_line": "Land",
+     "image": "https://cards.scryfall.io/normal/front/d/3/d3782952-3839-4a94-95bc-716611d3ece6.jpg?1783903190",
+     "cardmarket_id": 891719,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=891719&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/msc/275/unclaimed-territory?utm_source=api",
+     "prices": {
+      "cardmarket": {
+       "eur": 0.2,
+       "eur_foil": null
+      },
+      "tcgplayer": {
+       "usd": 0.27,
+       "usd_foil": null
+      }
+     }
+    },
+    {
+     "id": "5a74175b-2418-4226-8435-1490532e644f",
+     "name": "Island",
+     "qty": 4,
+     "set": "msh",
+     "set_name": "Marvel Super Heroes",
+     "collector_number": "289",
+     "rarity": "common",
+     "type_line": "Basic Land — Island",
+     "image": "https://cards.scryfall.io/normal/front/5/a/5a74175b-2418-4226-8435-1490532e644f.jpg?1783902875",
+     "cardmarket_id": 890597,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=890597&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/msh/289/island?utm_source=api",
+     "prices": {
+      "cardmarket": {
+       "eur": 0.08,
+       "eur_foil": 0.17
+      },
+      "tcgplayer": {
+       "usd": 0.17,
+       "usd_foil": 0.17
+      }
+     }
+    },
+    {
+     "id": "e94ccedb-1d27-4098-8823-d8d99b30387c",
+     "name": "Madame Hydra",
+     "qty": 1,
+     "set": "msh",
+     "set_name": "Marvel Super Heroes",
+     "collector_number": "221",
+     "rarity": "uncommon",
+     "type_line": "Legendary Creature — Human Villain",
+     "image": "https://cards.scryfall.io/normal/front/e/9/e94ccedb-1d27-4098-8823-d8d99b30387c.jpg?1783902899",
+     "cardmarket_id": 890583,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=890583&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/msh/221/madame-hydra?utm_source=api",
+     "prices": {
+      "cardmarket": {
+       "eur": 0.1,
+       "eur_foil": 0.14
+      },
+      "tcgplayer": {
+       "usd": 0.19,
+       "usd_foil": 0.26
+      }
+     }
+    },
+    {
+     "id": "1cad1bd2-7c56-4ce0-99a6-b2a49c1288dd",
+     "name": "Arcane Signet",
+     "qty": 1,
+     "set": "msc",
+     "set_name": "Marvel Super Heroes Commander",
+     "collector_number": "191",
+     "rarity": "uncommon",
+     "type_line": "Artifact",
+     "image": "https://cards.scryfall.io/normal/front/1/c/1cad1bd2-7c56-4ce0-99a6-b2a49c1288dd.jpg?1783903222",
+     "cardmarket_id": 891686,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=891686&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/msc/191/arcane-signet?utm_source=api",
+     "prices": {
+      "cardmarket": {
+       "eur": 0.39,
+       "eur_foil": null
+      },
+      "tcgplayer": {
+       "usd": 0.54,
+       "usd_foil": null
+      }
+     }
+    },
+    {
+     "id": "0548fb60-c843-4f8f-a029-6f10efc63a41",
+     "name": "Command Tower",
+     "qty": 1,
+     "set": "msc",
+     "set_name": "Marvel Super Heroes Commander",
+     "collector_number": "233",
+     "rarity": "common",
+     "type_line": "Land",
+     "image": "https://cards.scryfall.io/normal/front/0/5/0548fb60-c843-4f8f-a029-6f10efc63a41.jpg?1783903206",
+     "cardmarket_id": 891701,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=891701&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/msc/233/command-tower?utm_source=api",
+     "prices": {
+      "cardmarket": {
+       "eur": 0.2,
+       "eur_foil": null
+      },
+      "tcgplayer": {
+       "usd": 0.31,
+       "usd_foil": null
+      }
+     }
+    },
+    {
+     "id": "91fdb56b-54d5-4272-8319-505ff987fe9b",
+     "name": "Sol Ring",
+     "qty": 1,
+     "set": "msc",
+     "set_name": "Marvel Super Heroes Commander",
+     "collector_number": "211",
+     "rarity": "uncommon",
+     "type_line": "Artifact",
+     "image": "https://cards.scryfall.io/normal/front/9/1/91fdb56b-54d5-4272-8319-505ff987fe9b.jpg?1783903215",
+     "cardmarket_id": 891691,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=891691&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/msc/211/sol-ring?utm_source=api",
+     "prices": {
+      "cardmarket": {
+       "eur": 1.17,
+       "eur_foil": null
+      },
+      "tcgplayer": {
+       "usd": 1.46,
+       "usd_foil": null
+      }
+     }
+    },
+    {
+     "id": "eaf2251a-ffaf-4055-9474-7e3d08d89609",
+     "name": "Baron Strucker, HYDRA Overlord",
+     "qty": 1,
+     "set": "msh",
+     "set_name": "Marvel Super Heroes",
+     "collector_number": "88",
+     "rarity": "uncommon",
+     "type_line": "Legendary Creature — Human Villain",
+     "image": "https://cards.scryfall.io/normal/front/e/a/eaf2251a-ffaf-4055-9474-7e3d08d89609.jpg?1783902947",
+     "cardmarket_id": 891163,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=891163&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/msh/88/baron-strucker-hydra-overlord?utm_source=api",
+     "prices": {
+      "cardmarket": {
+       "eur": 0.11,
+       "eur_foil": 0.15
+      },
+      "tcgplayer": {
+       "usd": 0.2,
+       "usd_foil": 0.25
+      }
+     }
+    },
+    {
+     "id": "5e4223df-c9fc-410a-913a-17bbfd054b57",
+     "name": "Kang Dynasty",
+     "qty": 1,
+     "set": "msc",
+     "set_name": "Marvel Super Heroes Commander",
+     "collector_number": "35",
+     "rarity": "rare",
+     "type_line": "Enchantment — Saga",
+     "image": "https://cards.scryfall.io/normal/front/5/e/5e4223df-c9fc-410a-913a-17bbfd054b57.jpg?1783903292",
+     "cardmarket_id": 892392,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=892392&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/msc/35/kang-dynasty?utm_source=api",
+     "prices": {
+      "cardmarket": {
+       "eur": 0.02,
+       "eur_foil": null
+      },
+      "tcgplayer": {
+       "usd": 0.31,
+       "usd_foil": null
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "the-hosts-of-mordor",
+   "name": "The Hosts of Mordor",
+   "set": "ltc",
+   "commander": "Sauron, Lord of the Rings",
+   "cards": [
+    {
+     "id": "fc53dec0-79fe-4f6f-9d5b-cf298588e808",
+     "name": "Sauron, Lord of the Rings",
+     "qty": 1,
+     "set": "ltc",
+     "set_name": "Tales of Middle-earth Commander",
+     "collector_number": "4",
+     "rarity": "mythic",
+     "type_line": "Legendary Creature — Avatar Horror",
+     "image": "https://cards.scryfall.io/normal/front/f/c/fc53dec0-79fe-4f6f-9d5b-cf298588e808.jpg?1783916038",
+     "cardmarket_id": 716204,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=716204&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/ltc/4/sauron-lord-of-the-rings?utm_source=api",
+     "prices": {
+      "cardmarket": {
+       "eur": 0.72,
+       "eur_foil": 0.84
+      },
+      "tcgplayer": {
+       "usd": 0.45,
+       "usd_foil": 0.75
+      }
+     }
+    },
+    {
+     "id": "5a74175b-2418-4226-8435-1490532e644f",
+     "name": "Island",
+     "qty": 6,
+     "set": "msh",
+     "set_name": "Marvel Super Heroes",
+     "collector_number": "289",
+     "rarity": "common",
+     "type_line": "Basic Land — Island",
+     "image": "https://cards.scryfall.io/normal/front/5/a/5a74175b-2418-4226-8435-1490532e644f.jpg?1783902875",
+     "cardmarket_id": 890597,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=890597&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/msh/289/island?utm_source=api",
+     "prices": {
+      "cardmarket": {
+       "eur": 0.08,
+       "eur_foil": 0.17
+      },
+      "tcgplayer": {
+       "usd": 0.17,
+       "usd_foil": 0.17
+      }
+     }
+    },
+    {
+     "id": "74414c62-4b68-4e1b-9241-feff3231b9ee",
+     "name": "Swamp",
+     "qty": 6,
+     "set": "msh",
+     "set_name": "Marvel Super Heroes",
+     "collector_number": "291",
+     "rarity": "common",
+     "type_line": "Basic Land — Swamp",
+     "image": "https://cards.scryfall.io/normal/front/7/4/74414c62-4b68-4e1b-9241-feff3231b9ee.jpg?1783902875",
+     "cardmarket_id": 890601,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=890601&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/msh/291/swamp?utm_source=api",
+     "prices": {
+      "cardmarket": {
+       "eur": 0.1,
+       "eur_foil": 0.15
+      },
+      "tcgplayer": {
+       "usd": 0.14,
+       "usd_foil": 0.2
+      }
+     }
+    },
+    {
+     "id": "426b0211-3d5d-4e53-bcf6-21823c655ffd",
+     "name": "Mountain",
+     "qty": 7,
+     "set": "msc",
+     "set_name": "Marvel Super Heroes Commander",
+     "collector_number": "858",
+     "rarity": "common",
+     "type_line": "Basic Land — Mountain",
+     "image": "https://cards.scryfall.io/normal/front/4/2/426b0211-3d5d-4e53-bcf6-21823c655ffd.jpg?1783902988",
+     "cardmarket_id": 892370,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=892370&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/msc/858/mountain?utm_source=api",
+     "prices": {
+      "cardmarket": {
+       "eur": 0.4,
+       "eur_foil": null
+      },
+      "tcgplayer": {
+       "usd": 0.18,
+       "usd_foil": null
+      }
+     }
+    },
+    {
+     "id": "4e92354d-c203-41e1-822d-8263fadd9eb3",
+     "name": "Arcane Signet",
+     "qty": 1,
+     "set": "ltc",
+     "set_name": "Tales of Middle-earth Commander",
+     "collector_number": "273",
+     "rarity": "common",
+     "type_line": "Artifact",
+     "image": "https://cards.scryfall.io/normal/front/4/e/4e92354d-c203-41e1-822d-8263fadd9eb3.jpg?1783915904",
+     "cardmarket_id": 717140,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=717140&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/ltc/273/arcane-signet?utm_source=api",
+     "prices": {
+      "cardmarket": {
+       "eur": 0.42,
+       "eur_foil": null
+      },
+      "tcgplayer": {
+       "usd": 0.59,
+       "usd_foil": null
+      }
+     }
+    },
+    {
+     "id": "5306a95e-fb18-463d-81a9-3c3b8121fc94",
+     "name": "Command Tower",
+     "qty": 1,
+     "set": "ltc",
+     "set_name": "Tales of Middle-earth Commander",
+     "collector_number": "301",
+     "rarity": "common",
+     "type_line": "Land",
+     "image": "https://cards.scryfall.io/normal/front/5/3/5306a95e-fb18-463d-81a9-3c3b8121fc94.jpg?1783915885",
+     "cardmarket_id": 717395,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=717395&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/ltc/301/command-tower?utm_source=api",
+     "prices": {
+      "cardmarket": {
+       "eur": 0.3,
+       "eur_foil": null
+      },
+      "tcgplayer": {
+       "usd": 0.37,
+       "usd_foil": null
+      }
+     }
+    },
+    {
+     "id": "8418f1ed-e4b8-436b-8859-c4df51c29f60",
+     "name": "Revenge of Ravens",
+     "qty": 1,
+     "set": "ltc",
+     "set_name": "Tales of Middle-earth Commander",
+     "collector_number": "207",
+     "rarity": "uncommon",
+     "type_line": "Enchantment",
+     "image": "https://cards.scryfall.io/normal/front/8/4/8418f1ed-e4b8-436b-8859-c4df51c29f60.jpg?1783915939",
+     "cardmarket_id": 717431,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=717431&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/ltc/207/revenge-of-ravens?utm_source=api",
+     "prices": {
+      "cardmarket": {
+       "eur": 0.56,
+       "eur_foil": null
+      },
+      "tcgplayer": {
+       "usd": 0.41,
+       "usd_foil": null
+      }
+     }
+    },
+    {
+     "id": "7f81cdab-2a4e-4518-bfc3-7ccda8f2e806",
+     "name": "Thrill of Possibility",
+     "qty": 1,
+     "set": "ltc",
+     "set_name": "Tales of Middle-earth Commander",
+     "collector_number": "229",
+     "rarity": "common",
+     "type_line": "Instant",
+     "image": "https://cards.scryfall.io/normal/front/7/f/7f81cdab-2a4e-4518-bfc3-7ccda8f2e806.jpg?1783915927",
+     "cardmarket_id": 717135,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=717135&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/ltc/229/thrill-of-possibility?utm_source=api",
+     "prices": {
+      "cardmarket": {
+       "eur": 0.16,
+       "eur_foil": null
+      },
+      "tcgplayer": {
+       "usd": 0.27,
+       "usd_foil": null
+      }
+     }
+    },
+    {
+     "id": "59773a37-371f-44b8-9418-9d9a875b992c",
+     "name": "Anger",
+     "qty": 1,
+     "set": "ltc",
+     "set_name": "Tales of Middle-earth Commander",
+     "collector_number": "210",
+     "rarity": "uncommon",
+     "type_line": "Creature — Incarnation",
+     "image": "https://cards.scryfall.io/normal/front/5/9/59773a37-371f-44b8-9418-9d9a875b992c.jpg?1783915939",
+     "cardmarket_id": 717212,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=717212&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/ltc/210/anger?utm_source=api",
+     "prices": {
+      "cardmarket": {
+       "eur": 1.22,
+       "eur_foil": null
+      },
+      "tcgplayer": {
+       "usd": 1.1,
+       "usd_foil": null
+      }
+     }
+    },
+    {
+     "id": "7e0cc18d-c6b8-4db1-ac07-0f17ae6d6c95",
+     "name": "Arcane Denial",
+     "qty": 1,
+     "set": "ltc",
+     "set_name": "Tales of Middle-earth Commander",
+     "collector_number": "184",
+     "rarity": "common",
+     "type_line": "Instant",
+     "image": "https://cards.scryfall.io/normal/front/7/e/7e0cc18d-c6b8-4db1-ac07-0f17ae6d6c95.jpg?1783915955",
+     "cardmarket_id": 717144,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=717144&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/ltc/184/arcane-denial?utm_source=api",
+     "prices": {
+      "cardmarket": {
+       "eur": 2.12,
+       "eur_foil": null
+      },
+      "tcgplayer": {
+       "usd": 2.43,
+       "usd_foil": null
+      }
+     }
+    },
+    {
+     "id": "3e221859-c573-47ed-a811-9b3e02178bda",
+     "name": "Crumbling Necropolis",
+     "qty": 1,
+     "set": "ltc",
+     "set_name": "Tales of Middle-earth Commander",
+     "collector_number": "302",
+     "rarity": "uncommon",
+     "type_line": "Land",
+     "image": "https://cards.scryfall.io/normal/front/3/e/3e221859-c573-47ed-a811-9b3e02178bda.jpg?1783915885",
+     "cardmarket_id": 717340,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=717340&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/ltc/302/crumbling-necropolis?utm_source=api",
+     "prices": {
+      "cardmarket": {
+       "eur": 0.54,
+       "eur_foil": null
+      },
+      "tcgplayer": {
+       "usd": 0.42,
+       "usd_foil": null
+      }
+     }
+    },
+    {
+     "id": "801d2482-f35a-4155-9925-335d5f4adfd9",
+     "name": "Deep Analysis",
+     "qty": 1,
+     "set": "ltc",
+     "set_name": "Tales of Middle-earth Commander",
+     "collector_number": "188",
+     "rarity": "common",
+     "type_line": "Sorcery",
+     "image": "https://cards.scryfall.io/normal/front/8/0/801d2482-f35a-4155-9925-335d5f4adfd9.jpg?1783915950",
+     "cardmarket_id": 717195,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=717195&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/ltc/188/deep-analysis?utm_source=api",
+     "prices": {
+      "cardmarket": {
+       "eur": 0.24,
+       "eur_foil": null
+      },
+      "tcgplayer": {
+       "usd": 0.21,
+       "usd_foil": null
+      }
+     }
+    },
+    {
+     "id": "e24ec4c1-5a28-450d-8e37-62a154749ee6",
+     "name": "Evolving Wilds",
+     "qty": 1,
+     "set": "ltc",
+     "set_name": "Tales of Middle-earth Commander",
+     "collector_number": "306",
+     "rarity": "common",
+     "type_line": "Land",
+     "image": "https://cards.scryfall.io/normal/front/e/2/e24ec4c1-5a28-450d-8e37-62a154749ee6.jpg?1783915880",
+     "cardmarket_id": 716209,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=716209&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/ltc/306/evolving-wilds?utm_source=api",
+     "prices": {
+      "cardmarket": {
+       "eur": 0.04,
+       "eur_foil": null
+      },
+      "tcgplayer": {
+       "usd": 0.24,
+       "usd_foil": null
+      }
+     }
+    },
+    {
+     "id": "5b2db271-6109-407b-9ffd-91e3b858c426",
+     "name": "Extract from Darkness",
+     "qty": 1,
+     "set": "ltc",
+     "set_name": "Tales of Middle-earth Commander",
+     "collector_number": "266",
+     "rarity": "uncommon",
+     "type_line": "Sorcery",
+     "image": "https://cards.scryfall.io/normal/front/5/b/5b2db271-6109-407b-9ffd-91e3b858c426.jpg?1783915905",
+     "cardmarket_id": 717488,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=717488&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/ltc/266/extract-from-darkness?utm_source=api",
+     "prices": {
+      "cardmarket": {
+       "eur": 0.3,
+       "eur_foil": null
+      },
+      "tcgplayer": {
+       "usd": 0.41,
+       "usd_foil": null
+      }
+     }
+    },
+    {
+     "id": "74d189fc-48fe-40f5-ae56-34b4dfc068d0",
+     "name": "Fact or Fiction",
+     "qty": 1,
+     "set": "ltc",
+     "set_name": "Tales of Middle-earth Commander",
+     "collector_number": "190",
+     "rarity": "uncommon",
+     "type_line": "Instant",
+     "image": "https://cards.scryfall.io/normal/front/7/4/74d189fc-48fe-40f5-ae56-34b4dfc068d0.jpg?1783915950",
+     "cardmarket_id": 717216,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=717216&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/ltc/190/fact-or-fiction?utm_source=api",
+     "prices": {
+      "cardmarket": {
+       "eur": 0.18,
+       "eur_foil": null
+      },
+      "tcgplayer": {
+       "usd": 0.32,
+       "usd_foil": null
+      }
+     }
+    },
+    {
+     "id": "57102ba6-79ab-4487-a62a-926b30682421",
+     "name": "Faithless Looting",
+     "qty": 1,
+     "set": "ltc",
+     "set_name": "Tales of Middle-earth Commander",
+     "collector_number": "215",
+     "rarity": "common",
+     "type_line": "Sorcery",
+     "image": "https://cards.scryfall.io/normal/front/5/7/57102ba6-79ab-4487-a62a-926b30682421.jpg?1783915937",
+     "cardmarket_id": 717462,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=717462&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/ltc/215/faithless-looting?utm_source=api",
+     "prices": {
+      "cardmarket": {
+       "eur": 0.66,
+       "eur_foil": null
+      },
+      "tcgplayer": {
+       "usd": 0.4,
+       "usd_foil": null
+      }
+     }
+    },
+    {
+     "id": "8d9d6a9d-18a3-4cc8-8276-29fb826ed1fa",
+     "name": "Field of Ruin",
+     "qty": 1,
+     "set": "ltc",
+     "set_name": "Tales of Middle-earth Commander",
+     "collector_number": "308",
+     "rarity": "uncommon",
+     "type_line": "Land",
+     "image": "https://cards.scryfall.io/normal/front/8/d/8d9d6a9d-18a3-4cc8-8276-29fb826ed1fa.jpg?1783915879",
+     "cardmarket_id": 716210,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=716210&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/ltc/308/field-of-ruin?utm_source=api",
+     "prices": {
+      "cardmarket": {
+       "eur": 0.25,
+       "eur_foil": null
+      },
+      "tcgplayer": {
+       "usd": 0.3,
+       "usd_foil": null
+      }
+     }
+    },
+    {
+     "id": "486e5526-a24e-434e-a816-513dfd83580b",
+     "name": "Forbidden Alchemy",
+     "qty": 1,
+     "set": "ltc",
+     "set_name": "Tales of Middle-earth Commander",
+     "collector_number": "191",
+     "rarity": "common",
+     "type_line": "Instant",
+     "image": "https://cards.scryfall.io/normal/front/4/8/486e5526-a24e-434e-a816-513dfd83580b.jpg?1783915950",
+     "cardmarket_id": 717392,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=717392&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/ltc/191/forbidden-alchemy?utm_source=api",
+     "prices": {
+      "cardmarket": {
+       "eur": 0.06,
+       "eur_foil": null
+      },
+      "tcgplayer": {
+       "usd": 0.19,
+       "usd_foil": null
+      }
+     }
+    },
+    {
+     "id": "d1ade999-a59c-4594-a787-b68fbf90bbb2",
+     "name": "Guttersnipe",
+     "qty": 1,
+     "set": "ltc",
+     "set_name": "Tales of Middle-earth Commander",
+     "collector_number": "220",
+     "rarity": "uncommon",
+     "type_line": "Creature — Goblin Shaman",
+     "image": "https://cards.scryfall.io/normal/front/d/1/d1ade999-a59c-4594-a787-b68fbf90bbb2.jpg?1783915932",
+     "cardmarket_id": 717204,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=717204&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/ltc/220/guttersnipe?utm_source=api",
+     "prices": {
+      "cardmarket": {
+       "eur": 0.28,
+       "eur_foil": null
+      },
+      "tcgplayer": {
+       "usd": 0.38,
+       "usd_foil": null
+      }
+     }
+    },
+    {
+     "id": "20dcd98d-01c8-45be-97ed-993a73b01b9c",
+     "name": "Knollspine Dragon",
+     "qty": 1,
+     "set": "ltc",
+     "set_name": "Tales of Middle-earth Commander",
+     "collector_number": "224",
+     "rarity": "rare",
+     "type_line": "Creature — Dragon",
+     "image": "https://cards.scryfall.io/normal/front/2/0/20dcd98d-01c8-45be-97ed-993a73b01b9c.jpg?1783915930",
+     "cardmarket_id": 717150,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=717150&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/ltc/224/knollspine-dragon?utm_source=api",
+     "prices": {
+      "cardmarket": {
+       "eur": 0.41,
+       "eur_foil": null
+      },
+      "tcgplayer": {
+       "usd": 0.35,
+       "usd_foil": null
+      }
+     }
+    },
+    {
+     "id": "b22235ac-5028-4b84-8ec2-0ab46768dee2",
+     "name": "Living Death",
+     "qty": 1,
+     "set": "ltc",
+     "set_name": "Tales of Middle-earth Commander",
+     "collector_number": "203",
+     "rarity": "rare",
+     "type_line": "Sorcery",
+     "image": "https://cards.scryfall.io/normal/front/b/2/b22235ac-5028-4b84-8ec2-0ab46768dee2.jpg?1783915943",
+     "cardmarket_id": 717357,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=717357&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/ltc/203/living-death?utm_source=api",
+     "prices": {
+      "cardmarket": {
+       "eur": 4.02,
+       "eur_foil": null
+      },
+      "tcgplayer": {
+       "usd": 3.6,
+       "usd_foil": null
+      }
+     }
+    },
+    {
+     "id": "23dd6cb6-31ee-467e-9f67-39046197bcb6",
+     "name": "Mind Stone",
+     "qty": 1,
+     "set": "ltc",
+     "set_name": "Tales of Middle-earth Commander",
+     "collector_number": "282",
+     "rarity": "uncommon",
+     "type_line": "Artifact",
+     "image": "https://cards.scryfall.io/normal/front/2/3/23dd6cb6-31ee-467e-9f67-39046197bcb6.jpg?1783915897",
+     "cardmarket_id": 716207,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=716207&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/ltc/282/mind-stone?utm_source=api",
+     "prices": {
+      "cardmarket": {
+       "eur": 0.23,
+       "eur_foil": null
+      },
+      "tcgplayer": {
+       "usd": 0.35,
+       "usd_foil": null
+      }
+     }
+    },
+    {
+     "id": "86438671-fdb8-4a82-b1e8-ef51fa4078df",
+     "name": "Rogue's Passage",
+     "qty": 1,
+     "set": "ltc",
+     "set_name": "Tales of Middle-earth Commander",
+     "collector_number": "326",
+     "rarity": "uncommon",
+     "type_line": "Land",
+     "image": "https://cards.scryfall.io/normal/front/8/6/86438671-fdb8-4a82-b1e8-ef51fa4078df.jpg?1783915864",
+     "cardmarket_id": 717167,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=717167&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/ltc/326/rogues-passage?utm_source=api",
+     "prices": {
+      "cardmarket": {
+       "eur": 0.41,
+       "eur_foil": null
+      },
+      "tcgplayer": {
+       "usd": 0.41,
+       "usd_foil": null
+      }
+     }
+    },
+    {
+     "id": "5805f64c-dd88-4e94-8f0a-a01dae67e3ba",
+     "name": "Sol Ring",
+     "qty": 1,
+     "set": "ltc",
+     "set_name": "Tales of Middle-earth Commander",
+     "collector_number": "284",
+     "rarity": "uncommon",
+     "type_line": "Artifact",
+     "image": "https://cards.scryfall.io/normal/front/5/8/5805f64c-dd88-4e94-8f0a-a01dae67e3ba.jpg?1783915895",
+     "cardmarket_id": 716208,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=716208&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/ltc/284/sol-ring?utm_source=api",
+     "prices": {
+      "cardmarket": {
+       "eur": 1.68,
+       "eur_foil": null
+      },
+      "tcgplayer": {
+       "usd": 1.8,
+       "usd_foil": null
+      }
+     }
+    },
+    {
+     "id": "97d8dbc9-d9f3-4e8e-95d2-27917c152a29",
+     "name": "Basalt Monolith",
+     "qty": 1,
+     "set": "ltc",
+     "set_name": "Tales of Middle-earth Commander",
+     "collector_number": "274",
+     "rarity": "uncommon",
+     "type_line": "Artifact",
+     "image": "https://cards.scryfall.io/normal/front/9/7/97d8dbc9-d9f3-4e8e-95d2-27917c152a29.jpg?1783915906",
+     "cardmarket_id": 717159,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=717159&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/ltc/274/basalt-monolith?utm_source=api",
+     "prices": {
+      "cardmarket": {
+       "eur": 3.46,
+       "eur_foil": null
+      },
+      "tcgplayer": {
+       "usd": 3.88,
+       "usd_foil": null
+      }
+     }
+    },
+    {
+     "id": "cf9e842f-4840-49e3-b4f3-c2fad395d41a",
+     "name": "Blasphemous Act",
+     "qty": 1,
+     "set": "ltc",
+     "set_name": "Tales of Middle-earth Commander",
+     "collector_number": "211",
+     "rarity": "rare",
+     "type_line": "Sorcery",
+     "image": "https://cards.scryfall.io/normal/front/c/f/cf9e842f-4840-49e3-b4f3-c2fad395d41a.jpg?1783915940",
+     "cardmarket_id": 717411,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=717411&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/ltc/211/blasphemous-act?utm_source=api",
+     "prices": {
+      "cardmarket": {
+       "eur": 1.93,
+       "eur_foil": null
+      },
+      "tcgplayer": {
+       "usd": 1.12,
+       "usd_foil": null
+      }
+     }
+    },
+    {
+     "id": "6620b4a3-fa33-4bd7-9180-314919d8ea2a",
+     "name": "Commander's Sphere",
+     "qty": 1,
+     "set": "ltc",
+     "set_name": "Tales of Middle-earth Commander",
+     "collector_number": "276",
+     "rarity": "common",
+     "type_line": "Artifact",
+     "image": "https://cards.scryfall.io/normal/front/6/6/6620b4a3-fa33-4bd7-9180-314919d8ea2a.jpg?1783915899",
+     "cardmarket_id": 717464,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=717464&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/ltc/276/commanders-sphere?utm_source=api",
+     "prices": {
+      "cardmarket": {
+       "eur": 0.26,
+       "eur_foil": null
+      },
+      "tcgplayer": {
+       "usd": 0.34,
+       "usd_foil": null
+      }
+     }
+    },
+    {
+     "id": "156464e7-3bb1-465f-939c-a9d290dc3ebc",
+     "name": "Everflowing Chalice",
+     "qty": 1,
+     "set": "ltc",
+     "set_name": "Tales of Middle-earth Commander",
+     "collector_number": "278",
+     "rarity": "uncommon",
+     "type_line": "Artifact",
+     "image": "https://cards.scryfall.io/normal/front/1/5/156464e7-3bb1-465f-939c-a9d290dc3ebc.jpg?1783915898",
+     "cardmarket_id": 717383,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=717383&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/ltc/278/everflowing-chalice?utm_source=api",
+     "prices": {
+      "cardmarket": {
+       "eur": 0.29,
+       "eur_foil": null
+      },
+      "tcgplayer": {
+       "usd": 0.37,
+       "usd_foil": null
+      }
+     }
+    },
+    {
+     "id": "db61b57c-b870-41af-87b7-037ec52fe063",
+     "name": "Inferno Titan",
+     "qty": 1,
+     "set": "ltc",
+     "set_name": "Tales of Middle-earth Commander",
+     "collector_number": "223",
+     "rarity": "mythic",
+     "type_line": "Creature — Giant",
+     "image": "https://cards.scryfall.io/normal/front/d/b/db61b57c-b870-41af-87b7-037ec52fe063.jpg?1783915930",
+     "cardmarket_id": 717355,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=717355&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/ltc/223/inferno-titan?utm_source=api",
+     "prices": {
+      "cardmarket": {
+       "eur": 0.27,
+       "eur_foil": null
+      },
+      "tcgplayer": {
+       "usd": 0.27,
+       "usd_foil": null
+      }
+     }
+    },
+    {
+     "id": "b4f5fc18-a62c-4771-9062-e7bb42bae7ff",
+     "name": "Languish",
+     "qty": 1,
+     "set": "ltc",
+     "set_name": "Tales of Middle-earth Commander",
+     "collector_number": "202",
+     "rarity": "rare",
+     "type_line": "Sorcery",
+     "image": "https://cards.scryfall.io/normal/front/b/4/b4f5fc18-a62c-4771-9062-e7bb42bae7ff.jpg?1783915945",
+     "cardmarket_id": 717415,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=717415&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/ltc/202/languish?utm_source=api",
+     "prices": {
+      "cardmarket": {
+       "eur": 0.04,
+       "eur_foil": null
+      },
+      "tcgplayer": {
+       "usd": 0.37,
+       "usd_foil": null
+      }
+     }
+    },
+    {
+     "id": "84a12498-9c44-4178-a8fc-54d20014ba7a",
+     "name": "Terramorphic Expanse",
+     "qty": 1,
+     "set": "ltc",
+     "set_name": "Tales of Middle-earth Commander",
+     "collector_number": "337",
+     "rarity": "common",
+     "type_line": "Land",
+     "image": "https://cards.scryfall.io/normal/front/8/4/84a12498-9c44-4178-a8fc-54d20014ba7a.jpg?1783915866",
+     "cardmarket_id": 717382,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=717382&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/ltc/337/terramorphic-expanse?utm_source=api",
+     "prices": {
+      "cardmarket": {
+       "eur": 0.15,
+       "eur_foil": null
+      },
+      "tcgplayer": {
+       "usd": 0.29,
+       "usd_foil": null
+      }
+     }
+    },
+    {
+     "id": "44832720-67b3-48ca-9460-807a6f1931a5",
+     "name": "Underground River",
+     "qty": 1,
+     "set": "ltc",
+     "set_name": "Tales of Middle-earth Commander",
+     "collector_number": "342",
+     "rarity": "rare",
+     "type_line": "Land",
+     "image": "https://cards.scryfall.io/normal/front/4/4/44832720-67b3-48ca-9460-807a6f1931a5.jpg?1783915854",
+     "cardmarket_id": 717217,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=717217&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/ltc/342/underground-river?utm_source=api",
+     "prices": {
+      "cardmarket": {
+       "eur": 2.45,
+       "eur_foil": null
+      },
+      "tcgplayer": {
+       "usd": 1.58,
+       "usd_foil": null
+      }
+     }
+    },
+    {
+     "id": "329342a8-5708-4332-868a-7410d7461647",
+     "name": "Worn Powerstone",
+     "qty": 1,
+     "set": "ltc",
+     "set_name": "Tales of Middle-earth Commander",
+     "collector_number": "293",
+     "rarity": "uncommon",
+     "type_line": "Artifact",
+     "image": "https://cards.scryfall.io/normal/front/3/2/329342a8-5708-4332-868a-7410d7461647.jpg?1783915889",
+     "cardmarket_id": 717214,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=717214&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/ltc/293/worn-powerstone?utm_source=api",
+     "prices": {
+      "cardmarket": {
+       "eur": 0.42,
+       "eur_foil": null
+      },
+      "tcgplayer": {
+       "usd": 0.4,
+       "usd_foil": null
+      }
+     }
+    },
+    {
+     "id": "d79e2780-94ae-41bb-af48-c63abc726fb5",
+     "name": "Path of Ancestry",
+     "qty": 1,
+     "set": "ltc",
+     "set_name": "Tales of Middle-earth Commander",
+     "collector_number": "322",
+     "rarity": "common",
+     "type_line": "Land",
+     "image": "https://cards.scryfall.io/normal/front/d/7/d79e2780-94ae-41bb-af48-c63abc726fb5.jpg?1783915866",
+     "cardmarket_id": 717466,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=717466&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/ltc/322/path-of-ancestry?utm_source=api",
+     "prices": {
+      "cardmarket": {
+       "eur": 0.21,
+       "eur_foil": null
+      },
+      "tcgplayer": {
+       "usd": 0.31,
+       "usd_foil": null
+      }
+     }
+    },
+    {
+     "id": "27822718-27eb-484d-94b9-55fbe3fc03cc",
+     "name": "Treasure Nabber",
+     "qty": 1,
+     "set": "ltc",
+     "set_name": "Tales of Middle-earth Commander",
+     "collector_number": "230",
+     "rarity": "rare",
+     "type_line": "Creature — Goblin Rogue",
+     "image": "https://cards.scryfall.io/normal/front/2/7/27822718-27eb-484d-94b9-55fbe3fc03cc.jpg?1783915928",
+     "cardmarket_id": 717160,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=717160&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/ltc/230/treasure-nabber?utm_source=api",
+     "prices": {
+      "cardmarket": {
+       "eur": 2.11,
+       "eur_foil": null
+      },
+      "tcgplayer": {
+       "usd": 2.14,
+       "usd_foil": null
+      }
+     }
+    },
+    {
+     "id": "9764a8bc-94ff-448f-aed6-2eca21fc0418",
+     "name": "Sunken Hollow",
+     "qty": 1,
+     "set": "ltc",
+     "set_name": "Tales of Middle-earth Commander",
+     "collector_number": "335",
+     "rarity": "rare",
+     "type_line": "Land — Island Swamp",
+     "image": "https://cards.scryfall.io/normal/front/9/7/9764a8bc-94ff-448f-aed6-2eca21fc0418.jpg?1783915861",
+     "cardmarket_id": 717480,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=717480&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/ltc/335/sunken-hollow?utm_source=api",
+     "prices": {
+      "cardmarket": {
+       "eur": 0.44,
+       "eur_foil": null
+      },
+      "tcgplayer": {
+       "usd": 0.66,
+       "usd_foil": null
+      }
+     }
+    },
+    {
+     "id": "119ea61b-8575-4491-a422-2eadebe8b261",
+     "name": "Sulfurous Springs",
+     "qty": 1,
+     "set": "ltc",
+     "set_name": "Tales of Middle-earth Commander",
+     "collector_number": "334",
+     "rarity": "rare",
+     "type_line": "Land",
+     "image": "https://cards.scryfall.io/normal/front/1/1/119ea61b-8575-4491-a422-2eadebe8b261.jpg?1783915859",
+     "cardmarket_id": 717368,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=717368&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/ltc/334/sulfurous-springs?utm_source=api",
+     "prices": {
+      "cardmarket": {
+       "eur": 1.6,
+       "eur_foil": null
+      },
+      "tcgplayer": {
+       "usd": 1.78,
+       "usd_foil": null
+      }
+     }
+    },
+    {
+     "id": "eee48ed0-3965-4bcc-8eee-bcd8f1607808",
+     "name": "Reanimate",
+     "qty": 1,
+     "set": "ltc",
+     "set_name": "Tales of Middle-earth Commander",
+     "collector_number": "206",
+     "rarity": "rare",
+     "type_line": "Sorcery",
+     "image": "https://cards.scryfall.io/normal/front/e/e/eee48ed0-3965-4bcc-8eee-bcd8f1607808.jpg?1783915940",
+     "cardmarket_id": 717481,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=717481&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/ltc/206/reanimate?utm_source=api",
+     "prices": {
+      "cardmarket": {
+       "eur": 7.99,
+       "eur_foil": null
+      },
+      "tcgplayer": {
+       "usd": 7.53,
+       "usd_foil": null
+      }
+     }
+    },
+    {
+     "id": "98b913e1-c26d-4a7d-9671-50d483304ba3",
+     "name": "Siege-Gang Commander",
+     "qty": 1,
+     "set": "ltc",
+     "set_name": "Tales of Middle-earth Commander",
+     "collector_number": "228",
+     "rarity": "rare",
+     "type_line": "Creature — Goblin",
+     "image": "https://cards.scryfall.io/normal/front/9/8/98b913e1-c26d-4a7d-9671-50d483304ba3.jpg?1783915929",
+     "cardmarket_id": 717184,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=717184&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/ltc/228/siege-gang-commander?utm_source=api",
+     "prices": {
+      "cardmarket": {
+       "eur": 0.27,
+       "eur_foil": null
+      },
+      "tcgplayer": {
+       "usd": 0.28,
+       "usd_foil": null
+      }
+     }
+    },
+    {
+     "id": "4dd53069-bf38-4358-95b7-6fd738aaeeab",
+     "name": "Decree of Pain",
+     "qty": 1,
+     "set": "ltc",
+     "set_name": "Tales of Middle-earth Commander",
+     "collector_number": "199",
+     "rarity": "rare",
+     "type_line": "Sorcery",
+     "image": "https://cards.scryfall.io/normal/front/4/d/4dd53069-bf38-4358-95b7-6fd738aaeeab.jpg?1783915948",
+     "cardmarket_id": 717347,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=717347&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/ltc/199/decree-of-pain?utm_source=api",
+     "prices": {
+      "cardmarket": {
+       "eur": 0.31,
+       "eur_foil": null
+      },
+      "tcgplayer": {
+       "usd": 0.4,
+       "usd_foil": null
+      }
+     }
+    },
+    {
+     "id": "b8de7fc8-3a90-4693-9d4d-cdca5c5aa206",
+     "name": "Smoldering Marsh",
+     "qty": 1,
+     "set": "ltc",
+     "set_name": "Tales of Middle-earth Commander",
+     "collector_number": "332",
+     "rarity": "rare",
+     "type_line": "Land — Swamp Mountain",
+     "image": "https://cards.scryfall.io/normal/front/b/8/b8de7fc8-3a90-4693-9d4d-cdca5c5aa206.jpg?1783915864",
+     "cardmarket_id": 717408,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=717408&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/ltc/332/smoldering-marsh?utm_source=api",
+     "prices": {
+      "cardmarket": {
+       "eur": 0.7,
+       "eur_foil": null
+      },
+      "tcgplayer": {
+       "usd": 0.39,
+       "usd_foil": null
+      }
+     }
+    },
+    {
+     "id": "3128d8c7-2486-4b66-9c30-7a3c5e7d7fe5",
+     "name": "Choked Estuary",
+     "qty": 1,
+     "set": "ltc",
+     "set_name": "Tales of Middle-earth Commander",
+     "collector_number": "299",
+     "rarity": "rare",
+     "type_line": "Land",
+     "image": "https://cards.scryfall.io/normal/front/3/1/3128d8c7-2486-4b66-9c30-7a3c5e7d7fe5.jpg?1783915885",
+     "cardmarket_id": 717178,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=717178&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/ltc/299/choked-estuary?utm_source=api",
+     "prices": {
+      "cardmarket": {
+       "eur": 0.39,
+       "eur_foil": null
+      },
+      "tcgplayer": {
+       "usd": 0.39,
+       "usd_foil": null
+      }
+     }
+    },
+    {
+     "id": "172a7547-eee6-4279-8438-afdd2f9e72f4",
+     "name": "Foreboding Ruins",
+     "qty": 1,
+     "set": "ltc",
+     "set_name": "Tales of Middle-earth Commander",
+     "collector_number": "310",
+     "rarity": "rare",
+     "type_line": "Land",
+     "image": "https://cards.scryfall.io/normal/front/1/7/172a7547-eee6-4279-8438-afdd2f9e72f4.jpg?1783915876",
+     "cardmarket_id": 717185,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=717185&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/ltc/310/foreboding-ruins?utm_source=api",
+     "prices": {
+      "cardmarket": {
+       "eur": 0.32,
+       "eur_foil": null
+      },
+      "tcgplayer": {
+       "usd": 0.39,
+       "usd_foil": null
+      }
+     }
+    },
+    {
+     "id": "f18bfb4f-6af7-48f0-98c1-c69008039773",
+     "name": "Desolate Lighthouse",
+     "qty": 1,
+     "set": "ltc",
+     "set_name": "Tales of Middle-earth Commander",
+     "collector_number": "303",
+     "rarity": "rare",
+     "type_line": "Land",
+     "image": "https://cards.scryfall.io/normal/front/f/1/f18bfb4f-6af7-48f0-98c1-c69008039773.jpg?1783915883",
+     "cardmarket_id": 717218,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=717218&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/ltc/303/desolate-lighthouse?utm_source=api",
+     "prices": {
+      "cardmarket": {
+       "eur": 0.22,
+       "eur_foil": null
+      },
+      "tcgplayer": {
+       "usd": 0.29,
+       "usd_foil": null
+      }
+     }
+    },
+    {
+     "id": "88670dcc-715e-4570-8b0c-f4772a2c99e2",
+     "name": "Goblin Cratermaker",
+     "qty": 1,
+     "set": "ltc",
+     "set_name": "Tales of Middle-earth Commander",
+     "collector_number": "218",
+     "rarity": "uncommon",
+     "type_line": "Creature — Goblin Warrior",
+     "image": "https://cards.scryfall.io/normal/front/8/8/88670dcc-715e-4570-8b0c-f4772a2c99e2.jpg?1783915935",
+     "cardmarket_id": 717149,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=717149&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/ltc/218/goblin-cratermaker?utm_source=api",
+     "prices": {
+      "cardmarket": {
+       "eur": 0.26,
+       "eur_foil": null
+      },
+      "tcgplayer": {
+       "usd": 0.24,
+       "usd_foil": null
+      }
+     }
+    },
+    {
+     "id": "1ce5d548-379d-442d-a68d-efbd6525fb86",
+     "name": "Drowned Catacomb",
+     "qty": 1,
+     "set": "ltc",
+     "set_name": "Tales of Middle-earth Commander",
+     "collector_number": "305",
+     "rarity": "rare",
+     "type_line": "Land",
+     "image": "https://cards.scryfall.io/normal/front/1/c/1ce5d548-379d-442d-a68d-efbd6525fb86.jpg?1783915879",
+     "cardmarket_id": 717350,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=717350&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/ltc/305/drowned-catacomb?utm_source=api",
+     "prices": {
+      "cardmarket": {
+       "eur": 2.38,
+       "eur_foil": null
+      },
+      "tcgplayer": {
+       "usd": 2.27,
+       "usd_foil": null
+      }
+     }
+    },
+    {
+     "id": "d0581897-7bdb-465e-ab52-9e656b9a5607",
+     "name": "Dragonskull Summit",
+     "qty": 1,
+     "set": "ltc",
+     "set_name": "Tales of Middle-earth Commander",
+     "collector_number": "304",
+     "rarity": "rare",
+     "type_line": "Land",
+     "image": "https://cards.scryfall.io/normal/front/d/0/d0581897-7bdb-465e-ab52-9e656b9a5607.jpg?1783915883",
+     "cardmarket_id": 717410,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=717410&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/ltc/304/dragonskull-summit?utm_source=api",
+     "prices": {
+      "cardmarket": {
+       "eur": 1.14,
+       "eur_foil": null
+      },
+      "tcgplayer": {
+       "usd": 0.64,
+       "usd_foil": null
+      }
+     }
+    },
+    {
+     "id": "cb2091cb-4c20-4210-9917-6632c1d39dc1",
+     "name": "Goblin Dark-Dwellers",
+     "qty": 1,
+     "set": "ltc",
+     "set_name": "Tales of Middle-earth Commander",
+     "collector_number": "219",
+     "rarity": "rare",
+     "type_line": "Creature — Goblin",
+     "image": "https://cards.scryfall.io/normal/front/c/b/cb2091cb-4c20-4210-9917-6632c1d39dc1.jpg?1783915933",
+     "cardmarket_id": 717447,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=717447&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/ltc/219/goblin-dark-dwellers?utm_source=api",
+     "prices": {
+      "cardmarket": {
+       "eur": 0.22,
+       "eur_foil": null
+      },
+      "tcgplayer": {
+       "usd": 0.26,
+       "usd_foil": null
+      }
+     }
+    },
+    {
+     "id": "a02cac8f-6d0f-439d-bd0e-e76514c1a685",
+     "name": "Shiny Impetus",
+     "qty": 1,
+     "set": "ltc",
+     "set_name": "Tales of Middle-earth Commander",
+     "collector_number": "227",
+     "rarity": "uncommon",
+     "type_line": "Enchantment — Aura",
+     "image": "https://cards.scryfall.io/normal/front/a/0/a02cac8f-6d0f-439d-bd0e-e76514c1a685.jpg?1783915930",
+     "cardmarket_id": 717417,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=717417&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/ltc/227/shiny-impetus?utm_source=api",
+     "prices": {
+      "cardmarket": {
+       "eur": 0.11,
+       "eur_foil": null
+      },
+      "tcgplayer": {
+       "usd": 0.27,
+       "usd_foil": null
+      }
+     }
+    },
+    {
+     "id": "a034d73b-a511-4c02-946f-ea520f93a2a4",
+     "name": "Merciless Executioner",
+     "qty": 1,
+     "set": "ltc",
+     "set_name": "Tales of Middle-earth Commander",
+     "collector_number": "204",
+     "rarity": "uncommon",
+     "type_line": "Creature — Orc Warrior",
+     "image": "https://cards.scryfall.io/normal/front/a/0/a034d73b-a511-4c02-946f-ea520f93a2a4.jpg?1783915942",
+     "cardmarket_id": 717440,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=717440&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/ltc/204/merciless-executioner?utm_source=api",
+     "prices": {
+      "cardmarket": {
+       "eur": 0.51,
+       "eur_foil": null
+      },
+      "tcgplayer": {
+       "usd": 0.4,
+       "usd_foil": null
+      }
+     }
+    },
+    {
+     "id": "89b46f36-6115-4d86-82a3-9397a123091c",
+     "name": "Scourge of the Throne",
+     "qty": 1,
+     "set": "ltc",
+     "set_name": "Tales of Middle-earth Commander",
+     "collector_number": "225",
+     "rarity": "mythic",
+     "type_line": "Creature — Dragon",
+     "image": "https://cards.scryfall.io/normal/front/8/9/89b46f36-6115-4d86-82a3-9397a123091c.jpg?1783915930",
+     "cardmarket_id": 717353,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=717353&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/ltc/225/scourge-of-the-throne?utm_source=api",
+     "prices": {
+      "cardmarket": {
+       "eur": 0.73,
+       "eur_foil": null
+      },
+      "tcgplayer": {
+       "usd": 0.4,
+       "usd_foil": null
+      }
+     }
+    },
+    {
+     "id": "bf2fa3fd-f6d9-4c23-9025-9b8b72da32dc",
+     "name": "Boon of the Wish-Giver",
+     "qty": 1,
+     "set": "ltc",
+     "set_name": "Tales of Middle-earth Commander",
+     "collector_number": "185",
+     "rarity": "uncommon",
+     "type_line": "Sorcery",
+     "image": "https://cards.scryfall.io/normal/front/b/f/bf2fa3fd-f6d9-4c23-9025-9b8b72da32dc.jpg?1783915954",
+     "cardmarket_id": 717134,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=717134&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/ltc/185/boon-of-the-wish-giver?utm_source=api",
+     "prices": {
+      "cardmarket": {
+       "eur": 0.22,
+       "eur_foil": null
+      },
+      "tcgplayer": {
+       "usd": 0.26,
+       "usd_foil": null
+      }
+     }
+    },
+    {
+     "id": "183ae03f-ee62-4b5c-9f8f-16b21af8eaa0",
+     "name": "Hostage Taker",
+     "qty": 1,
+     "set": "ltc",
+     "set_name": "Tales of Middle-earth Commander",
+     "collector_number": "268",
+     "rarity": "rare",
+     "type_line": "Creature — Human Pirate",
+     "image": "https://cards.scryfall.io/normal/front/1/8/183ae03f-ee62-4b5c-9f8f-16b21af8eaa0.jpg?1783915905",
+     "cardmarket_id": 717482,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=717482&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/ltc/268/hostage-taker?utm_source=api",
+     "prices": {
+      "cardmarket": {
+       "eur": 0.23,
+       "eur_foil": null
+      },
+      "tcgplayer": {
+       "usd": 0.33,
+       "usd_foil": null
+      }
+     }
+    },
+    {
+     "id": "9ac747b1-db9a-463f-b222-cb46bb0a43f8",
+     "name": "Sulfur Falls",
+     "qty": 1,
+     "set": "ltc",
+     "set_name": "Tales of Middle-earth Commander",
+     "collector_number": "333",
+     "rarity": "rare",
+     "type_line": "Land",
+     "image": "https://cards.scryfall.io/normal/front/9/a/9ac747b1-db9a-463f-b222-cb46bb0a43f8.jpg?1783915861",
+     "cardmarket_id": 717452,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=717452&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/ltc/333/sulfur-falls?utm_source=api",
+     "prices": {
+      "cardmarket": {
+       "eur": 0.47,
+       "eur_foil": null
+      },
+      "tcgplayer": {
+       "usd": 0.4,
+       "usd_foil": null
+      }
+     }
+    },
+    {
+     "id": "c7654035-7d5a-4897-af0e-429edebbb55b",
+     "name": "Notion Thief",
+     "qty": 1,
+     "set": "ltc",
+     "set_name": "Tales of Middle-earth Commander",
+     "collector_number": "270",
+     "rarity": "rare",
+     "type_line": "Creature — Human Rogue",
+     "image": "https://cards.scryfall.io/normal/front/c/7/c7654035-7d5a-4897-af0e-429edebbb55b.jpg?1783915903",
+     "cardmarket_id": 717157,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=717157&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/ltc/270/notion-thief?utm_source=api",
+     "prices": {
+      "cardmarket": {
+       "eur": 1.81,
+       "eur_foil": null
+      },
+      "tcgplayer": {
+       "usd": 2.55,
+       "usd_foil": null
+      }
+     }
+    },
+    {
+     "id": "029e2a27-46f2-44fa-ac7c-462c69feab95",
+     "name": "Feed the Swarm",
+     "qty": 1,
+     "set": "ltc",
+     "set_name": "Tales of Middle-earth Commander",
+     "collector_number": "200",
+     "rarity": "common",
+     "type_line": "Sorcery",
+     "image": "https://cards.scryfall.io/normal/front/0/2/029e2a27-46f2-44fa-ac7c-462c69feab95.jpg?1783915946",
+     "cardmarket_id": 717371,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=717371&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/ltc/200/feed-the-swarm?utm_source=api",
+     "prices": {
+      "cardmarket": {
+       "eur": 0.31,
+       "eur_foil": null
+      },
+      "tcgplayer": {
+       "usd": 0.34,
+       "usd_foil": null
+      }
+     }
+    },
+    {
+     "id": "bddcc7a7-bebf-4b57-9e6c-4637bca88bd6",
+     "name": "Frostboil Snarl",
+     "qty": 1,
+     "set": "ltc",
+     "set_name": "Tales of Middle-earth Commander",
+     "collector_number": "312",
+     "rarity": "rare",
+     "type_line": "Land",
+     "image": "https://cards.scryfall.io/normal/front/b/d/bddcc7a7-bebf-4b57-9e6c-4637bca88bd6.jpg?1783915876",
+     "cardmarket_id": 717419,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=717419&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/ltc/312/frostboil-snarl?utm_source=api",
+     "prices": {
+      "cardmarket": {
+       "eur": 0.38,
+       "eur_foil": null
+      },
+      "tcgplayer": {
+       "usd": 0.31,
+       "usd_foil": null
+      }
+     }
+    },
+    {
+     "id": "1668af50-abd3-4b12-974a-b19fd010dc3e",
+     "name": "Consider",
+     "qty": 1,
+     "set": "ltc",
+     "set_name": "Tales of Middle-earth Commander",
+     "collector_number": "187",
+     "rarity": "common",
+     "type_line": "Instant",
+     "image": "https://cards.scryfall.io/normal/front/1/6/1668af50-abd3-4b12-974a-b19fd010dc3e.jpg?1783915952",
+     "cardmarket_id": 717155,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=717155&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/ltc/187/consider?utm_source=api",
+     "prices": {
+      "cardmarket": {
+       "eur": 0.73,
+       "eur_foil": null
+      },
+      "tcgplayer": {
+       "usd": 0.43,
+       "usd_foil": null
+      }
+     }
+    },
+    {
+     "id": "d9b7d7f8-503d-4660-9a18-6a8e2fcaa25f",
+     "name": "Voracious Fell Beast",
+     "qty": 1,
+     "set": "ltr",
+     "set_name": "The Lord of the Rings: Tales of Middle-earth",
+     "collector_number": "113",
+     "rarity": "uncommon",
+     "type_line": "Creature — Drake Beast",
+     "image": "https://cards.scryfall.io/normal/front/d/9/d9b7d7f8-503d-4660-9a18-6a8e2fcaa25f.jpg?1783916295",
+     "cardmarket_id": 715922,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=715922&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/ltr/113/voracious-fell-beast?utm_source=api",
+     "prices": {
+      "cardmarket": {
+       "eur": 0.06,
+       "eur_foil": 0.11
+      },
+      "tcgplayer": {
+       "usd": 0.18,
+       "usd_foil": 0.22
+      }
+     }
+    },
+    {
+     "id": "71f97505-c961-4890-acd0-32a63919ac2a",
+     "name": "Treason of Isengard",
+     "qty": 1,
+     "set": "ltr",
+     "set_name": "The Lord of the Rings: Tales of Middle-earth",
+     "collector_number": "74",
+     "rarity": "common",
+     "type_line": "Sorcery",
+     "image": "https://cards.scryfall.io/normal/front/7/1/71f97505-c961-4890-acd0-32a63919ac2a.jpg?1783916311",
+     "cardmarket_id": 715899,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=715899&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/ltr/74/treason-of-isengard?utm_source=api",
+     "prices": {
+      "cardmarket": {
+       "eur": 0.06,
+       "eur_foil": 0.17
+      },
+      "tcgplayer": {
+       "usd": 0.18,
+       "usd_foil": 0.33
+      }
+     }
+    },
+    {
+     "id": "6385e769-f805-499d-9f47-494533362152",
+     "name": "Grishnákh, Brash Instigator",
+     "qty": 1,
+     "set": "ltr",
+     "set_name": "The Lord of the Rings: Tales of Middle-earth",
+     "collector_number": "134",
+     "rarity": "uncommon",
+     "type_line": "Legendary Creature — Goblin Soldier",
+     "image": "https://cards.scryfall.io/normal/front/6/3/6385e769-f805-499d-9f47-494533362152.jpg?1783916282",
+     "cardmarket_id": 715929,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=715929&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/ltr/134/grishn%C3%A1kh-brash-instigator?utm_source=api",
+     "prices": {
+      "cardmarket": {
+       "eur": 0.06,
+       "eur_foil": 0.15
+      },
+      "tcgplayer": {
+       "usd": 0.21,
+       "usd_foil": 0.33
+      }
+     }
+    },
+    {
+     "id": "e4b83aa1-33ce-4b8d-ae5a-72f64eef5f09",
+     "name": "Bitter Downfall",
+     "qty": 1,
+     "set": "ltr",
+     "set_name": "The Lord of the Rings: Tales of Middle-earth",
+     "collector_number": "77",
+     "rarity": "uncommon",
+     "type_line": "Instant",
+     "image": "https://cards.scryfall.io/normal/front/e/4/e4b83aa1-33ce-4b8d-ae5a-72f64eef5f09.jpg?1783916307",
+     "cardmarket_id": 716141,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=716141&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/ltr/77/bitter-downfall?utm_source=api",
+     "prices": {
+      "cardmarket": {
+       "eur": 0.04,
+       "eur_foil": 0.11
+      },
+      "tcgplayer": {
+       "usd": 0.11,
+       "usd_foil": 0.18
+      }
+     }
+    },
+    {
+     "id": "a6539e26-b63b-4725-9407-caaf451de084",
+     "name": "Troll of Khazad-dûm",
+     "qty": 1,
+     "set": "ltr",
+     "set_name": "The Lord of the Rings: Tales of Middle-earth",
+     "collector_number": "111",
+     "rarity": "common",
+     "type_line": "Creature — Troll",
+     "image": "https://cards.scryfall.io/normal/front/a/6/a6539e26-b63b-4725-9407-caaf451de084.jpg?1783916292",
+     "cardmarket_id": 717000,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=717000&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/ltr/111/troll-of-khazad-d%C3%BBm?utm_source=api",
+     "prices": {
+      "cardmarket": {
+       "eur": 0.86,
+       "eur_foil": 2.06
+      },
+      "tcgplayer": {
+       "usd": 0.76,
+       "usd_foil": 1.43
+      }
+     }
+    },
+    {
+     "id": "76a88814-aa30-4297-b338-3d851bfe7256",
+     "name": "The Mouth of Sauron",
+     "qty": 1,
+     "set": "ltr",
+     "set_name": "The Lord of the Rings: Tales of Middle-earth",
+     "collector_number": "216",
+     "rarity": "uncommon",
+     "type_line": "Legendary Creature — Human Advisor",
+     "image": "https://cards.scryfall.io/normal/front/7/6/76a88814-aa30-4297-b338-3d851bfe7256.jpg?1783916249",
+     "cardmarket_id": 717060,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=717060&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/ltr/216/the-mouth-of-sauron?utm_source=api",
+     "prices": {
+      "cardmarket": {
+       "eur": 0.09,
+       "eur_foil": 0.15
+      },
+      "tcgplayer": {
+       "usd": 0.18,
+       "usd_foil": 0.27
+      }
+     }
+    },
+    {
+     "id": "8c321159-43e5-40fc-9f0c-4ecc4f6cfd20",
+     "name": "Fiery Inscription",
+     "qty": 1,
+     "set": "ltr",
+     "set_name": "The Lord of the Rings: Tales of Middle-earth",
+     "collector_number": "126",
+     "rarity": "uncommon",
+     "type_line": "Enchantment",
+     "image": "https://cards.scryfall.io/normal/front/8/c/8c321159-43e5-40fc-9f0c-4ecc4f6cfd20.jpg?1783916287",
+     "cardmarket_id": 716991,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=716991&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/ltr/126/fiery-inscription?utm_source=api",
+     "prices": {
+      "cardmarket": {
+       "eur": 0.25,
+       "eur_foil": 0.57
+      },
+      "tcgplayer": {
+       "usd": 0.37,
+       "usd_foil": 1.04
+      }
+     }
+    },
+    {
+     "id": "159727a9-0bc4-497d-8fb2-4a66923726d8",
+     "name": "Corsairs of Umbar",
+     "qty": 1,
+     "set": "ltc",
+     "set_name": "Tales of Middle-earth Commander",
+     "collector_number": "19",
+     "rarity": "rare",
+     "type_line": "Creature — Human Pirate",
+     "image": "https://cards.scryfall.io/normal/front/1/5/159727a9-0bc4-497d-8fb2-4a66923726d8.jpg?1783916032",
+     "cardmarket_id": 717428,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=717428&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/ltc/19/corsairs-of-umbar?utm_source=api",
+     "prices": {
+      "cardmarket": {
+       "eur": 0.39,
+       "eur_foil": null
+      },
+      "tcgplayer": {
+       "usd": 0.33,
+       "usd_foil": null
+      }
+     }
+    },
+    {
+     "id": "d72aa8fc-6808-4865-879e-417a300c40de",
+     "name": "Monstrosity of the Lake",
+     "qty": 1,
+     "set": "ltc",
+     "set_name": "Tales of Middle-earth Commander",
+     "collector_number": "22",
+     "rarity": "rare",
+     "type_line": "Legendary Creature — Kraken",
+     "image": "https://cards.scryfall.io/normal/front/d/7/d72aa8fc-6808-4865-879e-417a300c40de.jpg?1783916033",
+     "cardmarket_id": 717380,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=717380&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/ltc/22/monstrosity-of-the-lake?utm_source=api",
+     "prices": {
+      "cardmarket": {
+       "eur": 0.47,
+       "eur_foil": null
+      },
+      "tcgplayer": {
+       "usd": 0.37,
+       "usd_foil": null
+      }
+     }
+    },
+    {
+     "id": "83944c19-6f9b-4043-9eeb-1a4ca452f698",
+     "name": "Shelob, Dread Weaver",
+     "qty": 1,
+     "set": "ltc",
+     "set_name": "Tales of Middle-earth Commander",
+     "collector_number": "29",
+     "rarity": "rare",
+     "type_line": "Legendary Creature — Spider Demon",
+     "image": "https://cards.scryfall.io/normal/front/8/3/83944c19-6f9b-4043-9eeb-1a4ca452f698.jpg?1783916030",
+     "cardmarket_id": 717493,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=717493&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/ltc/29/shelob-dread-weaver?utm_source=api",
+     "prices": {
+      "cardmarket": {
+       "eur": 1.15,
+       "eur_foil": null
+      },
+      "tcgplayer": {
+       "usd": 0.37,
+       "usd_foil": null
+      }
+     }
+    },
+    {
+     "id": "c67e509e-a219-4f7f-b7eb-8c446cc0620a",
+     "name": "Cavern-Hoard Dragon",
+     "qty": 1,
+     "set": "ltc",
+     "set_name": "Tales of Middle-earth Commander",
+     "collector_number": "31",
+     "rarity": "rare",
+     "type_line": "Creature — Dragon",
+     "image": "https://cards.scryfall.io/normal/front/c/6/c67e509e-a219-4f7f-b7eb-8c446cc0620a.jpg?1783916028",
+     "cardmarket_id": 717439,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=717439&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/ltc/31/cavern-hoard-dragon?utm_source=api",
+     "prices": {
+      "cardmarket": {
+       "eur": 16.61,
+       "eur_foil": null
+      },
+      "tcgplayer": {
+       "usd": 14.21,
+       "usd_foil": null
+      }
+     }
+    },
+    {
+     "id": "1e9f9869-0f43-4eac-892f-26cd8a614330",
+     "name": "Orcish Siegemaster",
+     "qty": 1,
+     "set": "ltc",
+     "set_name": "Tales of Middle-earth Commander",
+     "collector_number": "33",
+     "rarity": "rare",
+     "type_line": "Creature — Orc Soldier",
+     "image": "https://cards.scryfall.io/normal/front/1/e/1e9f9869-0f43-4eac-892f-26cd8a614330.jpg?1783916028",
+     "cardmarket_id": 717423,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=717423&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/ltc/33/orcish-siegemaster?utm_source=api",
+     "prices": {
+      "cardmarket": {
+       "eur": 0.65,
+       "eur_foil": null
+      },
+      "tcgplayer": {
+       "usd": 0.38,
+       "usd_foil": null
+      }
+     }
+    },
+    {
+     "id": "dc13dbf0-c0ff-4c76-96c6-d3ee88ab2fce",
+     "name": "Rampaging War Mammoth",
+     "qty": 1,
+     "set": "ltc",
+     "set_name": "Tales of Middle-earth Commander",
+     "collector_number": "34",
+     "rarity": "rare",
+     "type_line": "Creature — Elephant",
+     "image": "https://cards.scryfall.io/normal/front/d/c/dc13dbf0-c0ff-4c76-96c6-d3ee88ab2fce.jpg?1783916027",
+     "cardmarket_id": 717148,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=717148&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/ltc/34/rampaging-war-mammoth?utm_source=api",
+     "prices": {
+      "cardmarket": {
+       "eur": 0.31,
+       "eur_foil": null
+      },
+      "tcgplayer": {
+       "usd": 0.3,
+       "usd_foil": null
+      }
+     }
+    },
+    {
+     "id": "2a3fcfdc-f2cf-42d8-8bb4-7308bc12746e",
+     "name": "The Balrog of Moria",
+     "qty": 1,
+     "set": "ltc",
+     "set_name": "Tales of Middle-earth Commander",
+     "collector_number": "46",
+     "rarity": "rare",
+     "type_line": "Legendary Creature — Avatar Demon",
+     "image": "https://cards.scryfall.io/normal/front/2/a/2a3fcfdc-f2cf-42d8-8bb4-7308bc12746e.jpg?1783916023",
+     "cardmarket_id": 717376,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=717376&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/ltc/46/the-balrog-of-moria?utm_source=api",
+     "prices": {
+      "cardmarket": {
+       "eur": 1.46,
+       "eur_foil": null
+      },
+      "tcgplayer": {
+       "usd": 0.44,
+       "usd_foil": null
+      }
+     }
+    },
+    {
+     "id": "00f40514-d37d-423f-aa0c-1875300f43a8",
+     "name": "Gríma, Saruman's Footman",
+     "qty": 1,
+     "set": "ltc",
+     "set_name": "Tales of Middle-earth Commander",
+     "collector_number": "57",
+     "rarity": "rare",
+     "type_line": "Legendary Creature — Human Advisor",
+     "image": "https://cards.scryfall.io/normal/front/0/0/00f40514-d37d-423f-aa0c-1875300f43a8.jpg?1783916020",
+     "cardmarket_id": 717215,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=717215&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/ltc/57/gr%C3%ADma-sarumans-footman?utm_source=api",
+     "prices": {
+      "cardmarket": {
+       "eur": 3.64,
+       "eur_foil": null
+      },
+      "tcgplayer": {
+       "usd": 1.26,
+       "usd_foil": null
+      }
+     }
+    },
+    {
+     "id": "41e3d118-8f97-4c68-acff-2f90a055af5b",
+     "name": "Lord of the Nazgûl",
+     "qty": 1,
+     "set": "ltc",
+     "set_name": "Tales of Middle-earth Commander",
+     "collector_number": "60",
+     "rarity": "rare",
+     "type_line": "Legendary Creature — Wraith Noble",
+     "image": "https://cards.scryfall.io/normal/front/4/1/41e3d118-8f97-4c68-acff-2f90a055af5b.jpg?1783916019",
+     "cardmarket_id": 717190,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=717190&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/ltc/60/lord-of-the-nazg%C3%BBl?utm_source=api",
+     "prices": {
+      "cardmarket": {
+       "eur": 3.67,
+       "eur_foil": null
+      },
+      "tcgplayer": {
+       "usd": 2.72,
+       "usd_foil": null
+      }
+     }
+    },
+    {
+     "id": "6937954b-353a-47ac-a0c0-f731fe3881a6",
+     "name": "Lidless Gaze",
+     "qty": 1,
+     "set": "ltc",
+     "set_name": "Tales of Middle-earth Commander",
+     "collector_number": "59",
+     "rarity": "rare",
+     "type_line": "Sorcery",
+     "image": "https://cards.scryfall.io/normal/front/6/9/6937954b-353a-47ac-a0c0-f731fe3881a6.jpg?1783916018",
+     "cardmarket_id": 717180,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=717180&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/ltc/59/lidless-gaze?utm_source=api",
+     "prices": {
+      "cardmarket": {
+       "eur": 0.17,
+       "eur_foil": null
+      },
+      "tcgplayer": {
+       "usd": 0.26,
+       "usd_foil": null
+      }
+     }
+    },
+    {
+     "id": "f7f7413b-0a65-4338-90eb-4b4c5462c21c",
+     "name": "In the Darkness Bind Them",
+     "qty": 1,
+     "set": "ltc",
+     "set_name": "Tales of Middle-earth Commander",
+     "collector_number": "58",
+     "rarity": "rare",
+     "type_line": "Enchantment — Saga",
+     "image": "https://cards.scryfall.io/normal/front/f/7/f7f7413b-0a65-4338-90eb-4b4c5462c21c.jpg?1783916019",
+     "cardmarket_id": 717385,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=717385&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/ltc/58/in-the-darkness-bind-them?utm_source=api",
+     "prices": {
+      "cardmarket": {
+       "eur": 2.53,
+       "eur_foil": null
+      },
+      "tcgplayer": {
+       "usd": 0.87,
+       "usd_foil": null
+      }
+     }
+    },
+    {
+     "id": "6206d9f1-6a57-46a2-942f-6f20e33e5d6a",
+     "name": "Subjugate the Hobbits",
+     "qty": 1,
+     "set": "ltc",
+     "set_name": "Tales of Middle-earth Commander",
+     "collector_number": "24",
+     "rarity": "rare",
+     "type_line": "Sorcery",
+     "image": "https://cards.scryfall.io/normal/front/6/2/6206d9f1-6a57-46a2-942f-6f20e33e5d6a.jpg?1783916032",
+     "cardmarket_id": 717485,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=717485&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/ltc/24/subjugate-the-hobbits?utm_source=api",
+     "prices": {
+      "cardmarket": {
+       "eur": 0.21,
+       "eur_foil": null
+      },
+      "tcgplayer": {
+       "usd": 0.3,
+       "usd_foil": null
+      }
+     }
+    },
+    {
+     "id": "ea926187-ac8e-4197-8fd4-ac6b8d818d83",
+     "name": "Moria Scavenger",
+     "qty": 1,
+     "set": "ltc",
+     "set_name": "Tales of Middle-earth Commander",
+     "collector_number": "63",
+     "rarity": "rare",
+     "type_line": "Creature — Orc Rogue",
+     "image": "https://cards.scryfall.io/normal/front/e/a/ea926187-ac8e-4197-8fd4-ac6b8d818d83.jpg?1783916017",
+     "cardmarket_id": 717172,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=717172&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/ltc/63/moria-scavenger?utm_source=api",
+     "prices": {
+      "cardmarket": {
+       "eur": 0.46,
+       "eur_foil": null
+      },
+      "tcgplayer": {
+       "usd": 0.34,
+       "usd_foil": null
+      }
+     }
+    },
+    {
+     "id": "cbb1bc1f-b1d6-4639-b892-9b1ff6ed65fb",
+     "name": "Summons of Saruman",
+     "qty": 1,
+     "set": "ltc",
+     "set_name": "Tales of Middle-earth Commander",
+     "collector_number": "70",
+     "rarity": "rare",
+     "type_line": "Sorcery",
+     "image": "https://cards.scryfall.io/normal/front/c/b/cbb1bc1f-b1d6-4639-b892-9b1ff6ed65fb.jpg?1783916015",
+     "cardmarket_id": 717450,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=717450&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/ltc/70/summons-of-saruman?utm_source=api",
+     "prices": {
+      "cardmarket": {
+       "eur": 0.41,
+       "eur_foil": null
+      },
+      "tcgplayer": {
+       "usd": 0.27,
+       "usd_foil": null
+      }
+     }
+    },
+    {
+     "id": "328b93f0-5078-4334-9c95-60ecdd17a388",
+     "name": "Too Greedily, Too Deep",
+     "qty": 1,
+     "set": "ltc",
+     "set_name": "Tales of Middle-earth Commander",
+     "collector_number": "72",
+     "rarity": "rare",
+     "type_line": "Sorcery",
+     "image": "https://cards.scryfall.io/normal/front/3/2/328b93f0-5078-4334-9c95-60ecdd17a388.jpg?1783916013",
+     "cardmarket_id": 717416,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=717416&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/ltc/72/too-greedily-too-deep?utm_source=api",
+     "prices": {
+      "cardmarket": {
+       "eur": 0.35,
+       "eur_foil": null
+      },
+      "tcgplayer": {
+       "usd": 0.35,
+       "usd_foil": null
+      }
+     }
+    },
+    {
+     "id": "f9cf5f78-0316-4c35-a40e-9bfba2e46ad8",
+     "name": "Wake the Dragon",
+     "qty": 1,
+     "set": "ltc",
+     "set_name": "Tales of Middle-earth Commander",
+     "collector_number": "74",
+     "rarity": "rare",
+     "type_line": "Sorcery",
+     "image": "https://cards.scryfall.io/normal/front/f/9/f9cf5f78-0316-4c35-a40e-9bfba2e46ad8.jpg?1783916013",
+     "cardmarket_id": 717164,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=717164&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/ltc/74/wake-the-dragon?utm_source=api",
+     "prices": {
+      "cardmarket": {
+       "eur": 0.47,
+       "eur_foil": null
+      },
+      "tcgplayer": {
+       "usd": 0.29,
+       "usd_foil": null
+      }
+     }
+    },
+    {
+     "id": "175b3d28-5c74-4972-9b5c-5e39762c78f4",
+     "name": "Relic of Sauron",
+     "qty": 1,
+     "set": "ltc",
+     "set_name": "Tales of Middle-earth Commander",
+     "collector_number": "79",
+     "rarity": "rare",
+     "type_line": "Artifact",
+     "image": "https://cards.scryfall.io/normal/front/1/7/175b3d28-5c74-4972-9b5c-5e39762c78f4.jpg?1783916010",
+     "cardmarket_id": 717459,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=717459&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/ltc/79/relic-of-sauron?utm_source=api",
+     "prices": {
+      "cardmarket": {
+       "eur": 9.92,
+       "eur_foil": null
+      },
+      "tcgplayer": {
+       "usd": 9.0,
+       "usd_foil": null
+      }
+     }
+    },
+    {
+     "id": "46418186-c215-47c4-9d0a-d15a1d8ca613",
+     "name": "The Black Gate",
+     "qty": 1,
+     "set": "ltc",
+     "set_name": "Tales of Middle-earth Commander",
+     "collector_number": "80",
+     "rarity": "rare",
+     "type_line": "Legendary Land — Gate",
+     "image": "https://cards.scryfall.io/normal/front/4/6/46418186-c215-47c4-9d0a-d15a1d8ca613.jpg?1783916010",
+     "cardmarket_id": 717346,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=717346&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/ltc/80/the-black-gate?utm_source=api",
+     "prices": {
+      "cardmarket": {
+       "eur": 9.86,
+       "eur_foil": null
+      },
+      "tcgplayer": {
+       "usd": 9.19,
+       "usd_foil": null
+      }
+     }
+    },
+    {
+     "id": "6487ccbf-f6cd-45a6-8514-2c458b655ef2",
+     "name": "Saruman, the White Hand",
+     "qty": 1,
+     "set": "ltc",
+     "set_name": "Tales of Middle-earth Commander",
+     "collector_number": "8",
+     "rarity": "mythic",
+     "type_line": "Legendary Creature — Avatar Wizard",
+     "image": "https://cards.scryfall.io/normal/front/6/4/6487ccbf-f6cd-45a6-8514-2c458b655ef2.jpg?1783916037",
+     "cardmarket_id": 717162,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=717162&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/ltc/8/saruman-the-white-hand?utm_source=api",
+     "prices": {
+      "cardmarket": {
+       "eur": 0.7,
+       "eur_foil": 0.78
+      },
+      "tcgplayer": {
+       "usd": 0.64,
+       "usd_foil": 0.55
+      }
+     }
+    }
+   ]
+  }
+ ]
+}
