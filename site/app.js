@@ -7,6 +7,7 @@ const state = {
   cards: null,      // data/cards.json
   history: null,    // data/history.json
   listings: null,   // data/listings.json (optional)
+  catalog: null,    // catalog.json - all known precons grouped by set
   sort: {},         // per-deck sort state: {key, dir}
   filter: {},       // per-deck text filter
 };
@@ -32,11 +33,17 @@ async function boot() {
   }
   try { state.history = await loadJSON("../data/history.json"); } catch { state.history = {}; }
   try { state.listings = await loadJSON("../data/listings.json"); } catch { state.listings = null; }
+  try { state.catalog = await loadJSON("catalog.json"); } catch { state.catalog = null; }
+  if (!state.catalog) {
+    // No catalog file: fall back to one pseudo-set holding whatever has data.
+    state.catalog = { sets: [{ code: "", icon: null, name: "Tracked decks", decks: state.cards.decks }] };
+  }
 
   const when = state.cards.generated_at ? new Date(state.cards.generated_at) : null;
   if (when) $updated.textContent = "prices from " + when.toLocaleString();
-  $nav.innerHTML = state.cards.decks
-    .map(d => `<a href="#/deck/${d.id}" data-deck="${d.id}">${esc(d.name)}</a>`)
+  $nav.innerHTML = state.catalog.sets
+    .filter(s => s.decks.some(d => d.id && findDeck(d.id)))
+    .map(s => `<a href="#/set/${s.code}" data-set="${s.code}">${esc(shortSetName(s))}</a>`)
     .join("");
 
   window.addEventListener("hashchange", render);
@@ -89,6 +96,14 @@ function findCard(id) {
   }
   return null;
 }
+function findDeck(id) {
+  return state.cards.decks.find(d => d.id === id) || null;
+}
+function shortSetName(set) {
+  return { msc: "Marvel", ltc: "LOTR", m3c: "MH3" }[set.code] || set.name;
+}
+const SET_ICON = code =>
+  code ? `https://svgs.scryfall.io/sets/${code}.svg` : null;
 function deckTotal(deck) {
   let t = 0, priced = 0;
   for (const c of deck.cards) {
@@ -103,12 +118,18 @@ function deckTotal(deck) {
 function render() {
   const hash = location.hash || "#/";
   const [, route, arg] = hash.split("/");
-  $nav.querySelectorAll("a").forEach(a =>
-    a.classList.toggle("active", route === "deck" && a.dataset.deck === arg));
+  const deckSet = route === "deck" && arg
+    ? state.catalog.sets.find(s => s.decks.some(d => d.id === decodeURIComponent(arg)))
+    : null;
+  $nav.querySelectorAll("a").forEach(a => a.classList.toggle("active",
+    (route === "set" && a.dataset.set === arg) || (deckSet && a.dataset.set === deckSet.code)));
   window.scrollTo(0, 0);
   if (route === "deck" && arg) return renderDeck(decodeURIComponent(arg));
   if (route === "card" && arg) return renderCard(decodeURIComponent(arg));
   renderOverview();
+  if (route === "set" && arg) {
+    document.getElementById(`set-${arg}`)?.scrollIntoView({ block: "start" });
+  }
 }
 
 /* ---------------- views ---------------- */
@@ -135,36 +156,65 @@ python scrape_cardmarket.py --limit 10</pre></li>
     </div>`;
 }
 
+function deckTile(deck) {
+  const { total, priced } = deckTotal(deck);
+  const hist = deckHistory(deck.id);
+  const d1 = pctChange(hist, "eur", 1);
+  const d7 = pctChange(hist, "eur", 7);
+  return `
+    <a class="deck-tile" href="#/deck/${deck.id}">
+      <h3>${esc(deck.name)}</h3>
+      <div class="cmd">${esc(deck.commander || "")} · ${deck.cards.length} cards (${priced} priced)</div>
+      <div class="deck-meta">
+        <span class="value">€${total.toFixed(2)} <small>Cardmarket trend</small></span>
+      </div>
+      <div class="deck-meta">
+        <span>1d ${deltaHtml(d1)}</span>
+        <span>7d ${deltaHtml(d7)}</span>
+      </div>
+      <div class="spark">${sparkline(hist.map(p => p.eur), 300, 46)}</div>
+    </a>`;
+}
+
+function deckTileOff(entry) {
+  return `
+    <div class="deck-tile off">
+      <h3>${esc(entry.name)}</h3>
+      <div class="cmd">${esc(entry.commander || "")}</div>
+      <div class="soon">Not tracked yet</div>
+    </div>`;
+}
+
 function renderOverview() {
-  const tiles = state.cards.decks.map(deck => {
-    const { total, priced } = deckTotal(deck);
-    const hist = deckHistory(deck.id);
-    const d1 = pctChange(hist, "eur", 1);
-    const d7 = pctChange(hist, "eur", 7);
-    const distinct = deck.cards.length;
+  const sections = state.catalog.sets.map(set => {
+    const tiles = set.decks.map(entry => {
+      const deck = entry.id ? findDeck(entry.id) : null;
+      return deck ? deckTile(deck) : deckTileOff(entry);
+    }).join("");
+    const tracked = set.decks.filter(e => e.id && findDeck(e.id)).length;
+    const icon = SET_ICON(set.icon);
     return `
-      <a class="deck-tile" href="#/deck/${deck.id}">
-        <h3>${esc(deck.name)}</h3>
-        <div class="cmd">${esc(deck.commander || "")} · ${distinct} cards (${priced} priced)</div>
-        <div class="deck-meta">
-          <span class="value">€${total.toFixed(2)} <small>Cardmarket trend</small></span>
+      <section class="set-section" id="set-${esc(set.code)}">
+        <div class="set-head">
+          ${icon ? `<img class="set-icon" src="${icon}" alt="" onerror="this.remove()">` : ""}
+          <div>
+            <h2>${esc(set.name)}</h2>
+            <div class="set-sub">${esc(set.released || "")}${set.released ? " · " : ""}${tracked}/${set.decks.length} decks tracked</div>
+          </div>
         </div>
-        <div class="deck-meta">
-          <span>1d ${deltaHtml(d1)}</span>
-          <span>7d ${deltaHtml(d7)}</span>
-        </div>
-        <div class="spark">${sparkline(hist.map(p => p.eur), 300, 46)}</div>
-      </a>`;
+        <div class="deck-grid">${tiles}</div>
+      </section>`;
   }).join("");
 
   const snapshots = Object.values(state.history?.decks || {})[0]?.length || 0;
   $app.innerHTML = `
     <h1>Precon price tracker</h1>
     <p class="sub">Cardmarket EUR trend prices for every card in the tracked
-      preconstructed decks. ${snapshots < 2
-        ? "Charts appear after a few daily runs of <code>fetch_prices.py</code>."
+      preconstructed Commander decks, grouped by set. Greyed decks aren't
+      tracked yet. ${snapshots < 2
+        ? "History charts grow with each daily price snapshot."
         : `${snapshots} daily snapshots collected.`}</p>
-    <div class="deck-grid">${tiles}</div>`;
+    ${sections}`;
 }
 
 function renderDeck(deckId) {

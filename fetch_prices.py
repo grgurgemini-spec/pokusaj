@@ -317,6 +317,7 @@ def update_history(history: dict, decks_out: list[dict], today: str):
                      "usd": tp["usd"]}
             entry["points"] = [p for p in entry["points"] if p["d"] != today] + [point]
             entry["points"].sort(key=lambda p: p["d"])
+            entry["points"] = entry["points"][-400:]  # keep file size bounded
         dpoints = hdecks.setdefault(deck["id"], [])
         dpoint = {"d": today, "eur": round(deck_total, 2)}
         dpoints[:] = sorted([p for p in dpoints if p["d"] != today] + [dpoint],

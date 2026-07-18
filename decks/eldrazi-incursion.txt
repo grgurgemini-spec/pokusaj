@@ -1,0 +1,5 @@
+# name: Eldrazi Incursion
+# set: m3c
+# commander: Ulalek, Fused Atrocity
+# source: moxfield:guLGf5HBmUyrqbttAnng-A
+# source: moxfield:nF8HnSz-W0qWwyN9NWIYvw

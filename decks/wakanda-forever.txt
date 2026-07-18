@@ -1,0 +1,5 @@
+# name: Wakanda Forever
+# set: msc
+# commander: T'Challa, the Black Panther
+# source: moxfield:-73tFnDWzkaLqk6HWSxYsA
+# source: moxfield:S7rWXjlXB0SJ4g7kEPQrsA
