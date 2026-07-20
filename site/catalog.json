@@ -1,141 +1,1092 @@
 {
-  "sets": [
+ "sets": [
+  {
+   "code": "cmd",
+   "icon": "cmd",
+   "abbr": "C11",
+   "name": "Commander (2011)",
+   "released": "June 2011",
+   "date": "2011-06-17",
+   "decks": [
     {
-      "code": "ltc",
-      "icon": "ltc",
-      "name": "The Lord of the Rings: Tales of Middle-earth Commander",
-      "released": "June 2023",
-      "decks": [
-        {
-          "id": "riders-of-rohan",
-          "name": "Riders of Rohan",
-          "commander": "Éowyn, Shieldmaiden"
-        },
-        {
-          "id": "food-and-fellowship",
-          "name": "Food and Fellowship",
-          "commander": "Frodo, Adventurous Hobbit & Sam, Loyal Attendant"
-        },
-        {
-          "id": "elven-council",
-          "name": "Elven Council",
-          "commander": "Galadriel, Elven-Queen"
-        },
-        {
-          "id": "the-hosts-of-mordor",
-          "name": "The Hosts of Mordor",
-          "commander": "Sauron, Lord of the Rings"
-        }
-      ],
-      "date": "2023-06-23"
+     "name": "Heavenly Inferno",
+     "commander": "Kaalia of the Vast"
     },
     {
-      "code": "m3c",
-      "icon": "m3c",
-      "name": "Modern Horizons 3 Commander",
-      "released": "June 2024",
-      "decks": [
-        {
-          "id": "creative-energy",
-          "name": "Creative Energy",
-          "commander": "Satya, Aetherflux Genius"
-        },
-        {
-          "id": "eldrazi-incursion",
-          "name": "Eldrazi Incursion",
-          "commander": "Ulalek, Fused Atrocity"
-        },
-        {
-          "id": "tricky-terrain",
-          "name": "Tricky Terrain",
-          "commander": "Omo, Queen of Vesuva"
-        },
-        {
-          "id": "graveyard-overdrive",
-          "name": "Graveyard Overdrive",
-          "commander": "Disa the Restless"
-        }
-      ],
-      "date": "2024-06-14"
+     "name": "Mirror Mastery",
+     "commander": "Riku of Two Reflections"
     },
     {
-      "code": "blc",
-      "icon": "blc",
-      "name": "Bloomburrow Commander",
-      "released": "August 2024",
-      "decks": [
-        {
-          "name": "Squirreled Away",
-          "commander": "Hazel of the Rootbloom"
-        },
-        {
-          "name": "Animated Army",
-          "commander": "Bello, Bard of the Brambles"
-        },
-        {
-          "name": "Family Matters",
-          "commander": "Zinnia, Valley's Voice"
-        },
-        {
-          "name": "Peace Offering",
-          "commander": "Ms. Bumbleflower"
-        }
-      ],
-      "date": "2024-08-02"
+     "name": "Counterpunch",
+     "commander": "Ghave, Guru of Spores"
     },
     {
-      "code": "fic",
-      "icon": "fic",
-      "name": "Final Fantasy Commander",
-      "released": "June 2025",
-      "decks": [
-        {
-          "name": "Counter Blitz",
-          "commander": "Tidus, Blitzball Star"
-        },
-        {
-          "name": "Cid's Brigade",
-          "commander": "Cid, Timeless Artificer"
-        },
-        {
-          "name": "Limit Break",
-          "commander": "Cloud, Ex-SOLDIER"
-        },
-        {
-          "name": "Scions & Spellcraft",
-          "commander": "Terra, Herald of Hope"
-        }
-      ],
-      "date": "2025-06-13"
+     "name": "Political Puppets",
+     "commander": "Zedruu the Greathearted"
     },
     {
-      "code": "msc",
-      "icon": "msc",
-      "name": "Marvel Super Heroes Commander",
-      "released": "June 2026",
-      "decks": [
-        {
-          "id": "avengers-assemble",
-          "name": "Avengers Assemble",
-          "commander": "Captain America, Team Leader"
-        },
-        {
-          "id": "wakanda-forever",
-          "name": "Wakanda Forever",
-          "commander": "T'Challa, the Black Panther"
-        },
-        {
-          "id": "the-fantastic-four",
-          "name": "The Fantastic Four",
-          "commander": "Mister Fantastic, Invisible Woman, Human Torch & The Thing"
-        },
-        {
-          "id": "doom-prevails",
-          "name": "Doom Prevails",
-          "commander": "Doctor Doom, King of Latveria"
-        }
-      ],
-      "date": "2026-06-26"
+     "name": "Devour for Power",
+     "commander": "The Mimeoplasm"
     }
-  ]
+   ]
+  },
+  {
+   "code": "c13",
+   "icon": "c13",
+   "abbr": "C13",
+   "name": "Commander 2013",
+   "released": "November 2013",
+   "date": "2013-11-01",
+   "decks": [
+    {
+     "name": "Evasive Maneuvers",
+     "commander": "Derevi, Empyrial Tactician"
+    },
+    {
+     "name": "Eternal Bargain",
+     "commander": "Oloro, Ageless Ascetic"
+    },
+    {
+     "name": "Mind Seize",
+     "commander": "Jeleva, Nephalia's Scourge"
+    },
+    {
+     "name": "Power Hungry",
+     "commander": "Prossh, Skyraider of Kher"
+    },
+    {
+     "name": "Nature of the Beast",
+     "commander": "Marath, Will of the Wild"
+    }
+   ]
+  },
+  {
+   "code": "c14",
+   "icon": "c14",
+   "abbr": "C14",
+   "name": "Commander 2014",
+   "released": "November 2014",
+   "date": "2014-11-07",
+   "decks": [
+    {
+     "name": "Forged in Stone",
+     "commander": "Nahiri, the Lithomancer"
+    },
+    {
+     "name": "Peer Through Time",
+     "commander": "Teferi, Temporal Archmage"
+    },
+    {
+     "name": "Sworn to Darkness",
+     "commander": "Ob Nixilis of the Black Oath"
+    },
+    {
+     "name": "Built from Scratch",
+     "commander": "Daretti, Scrap Savant"
+    },
+    {
+     "name": "Guided by Nature",
+     "commander": "Freyalise, Llanowar's Fury"
+    }
+   ]
+  },
+  {
+   "code": "c15",
+   "icon": "c15",
+   "abbr": "C15",
+   "name": "Commander 2015",
+   "released": "November 2015",
+   "date": "2015-11-13",
+   "decks": [
+    {
+     "name": "Call the Spirits",
+     "commander": "Daxos the Returned"
+    },
+    {
+     "name": "Seize Control",
+     "commander": "Mizzix of the Izmagnus"
+    },
+    {
+     "name": "Plunder the Graves",
+     "commander": "Meren of Clan Nel Toth"
+    },
+    {
+     "name": "Wade into Battle",
+     "commander": "Kalemne, Disciple of Iroas"
+    },
+    {
+     "name": "Swell the Host",
+     "commander": "Ezuri, Claw of Progress"
+    }
+   ]
+  },
+  {
+   "code": "c16",
+   "icon": "c16",
+   "abbr": "C16",
+   "name": "Commander 2016",
+   "released": "November 2016",
+   "date": "2016-11-11",
+   "decks": [
+    {
+     "name": "Entropic Uprising",
+     "commander": "Yidris, Maelstrom Wielder"
+    },
+    {
+     "name": "Open Hostility",
+     "commander": "Saskia the Unyielding"
+    },
+    {
+     "name": "Stalwart Unity",
+     "commander": "Kynaios and Tiro of Meletis"
+    },
+    {
+     "name": "Breed Lethality",
+     "commander": "Atraxa, Praetors' Voice"
+    },
+    {
+     "name": "Invent Superiority",
+     "commander": "Breya, Etherium Shaper"
+    }
+   ]
+  },
+  {
+   "code": "c17",
+   "icon": "c17",
+   "abbr": "C17",
+   "name": "Commander 2017",
+   "released": "August 2017",
+   "date": "2017-08-25",
+   "decks": [
+    {
+     "name": "Arcane Wizardry",
+     "commander": "Inalla, Archmage Ritualist"
+    },
+    {
+     "name": "Draconic Domination",
+     "commander": "The Ur-Dragon"
+    },
+    {
+     "name": "Feline Ferocity",
+     "commander": "Arahbo, Roar of the World"
+    },
+    {
+     "name": "Vampiric Bloodlust",
+     "commander": "Edgar Markov"
+    }
+   ]
+  },
+  {
+   "code": "c18",
+   "icon": "c18",
+   "abbr": "C18",
+   "name": "Commander 2018",
+   "released": "August 2018",
+   "date": "2018-08-10",
+   "decks": [
+    {
+     "name": "Exquisite Invention",
+     "commander": "Saheeli, the Gifted"
+    },
+    {
+     "name": "Subjective Reality",
+     "commander": "Aminatou, the Fateshifter"
+    },
+    {
+     "name": "Nature's Vengeance",
+     "commander": "Lord Windgrace"
+    },
+    {
+     "name": "Adaptive Enchantment",
+     "commander": "Estrid, the Masked"
+    }
+   ]
+  },
+  {
+   "code": "c19",
+   "icon": "c19",
+   "abbr": "C19",
+   "name": "Commander 2019",
+   "released": "August 2019",
+   "date": "2019-08-23",
+   "decks": [
+    {
+     "name": "Faceless Menace",
+     "commander": "Kadena, Slinking Sorcerer"
+    },
+    {
+     "name": "Mystic Intellect",
+     "commander": "Sevinne, the Chronoclasm"
+    },
+    {
+     "name": "Primal Genesis",
+     "commander": "Ghired, Conclave Exile"
+    },
+    {
+     "name": "Merciless Rage",
+     "commander": "Anje Falkenrath"
+    }
+   ]
+  },
+  {
+   "code": "c20",
+   "icon": "c20",
+   "abbr": "C20",
+   "name": "Commander 2020 (Ikoria)",
+   "released": "April 2020",
+   "date": "2020-04-17",
+   "decks": [
+    {
+     "name": "Ruthless Regiment",
+     "commander": "Jirina Kudro"
+    },
+    {
+     "name": "Arcane Maelstrom",
+     "commander": "Kalamax, the Stormsire"
+    },
+    {
+     "name": "Symbiotic Swarm",
+     "commander": "Kathril, Aspect Warper"
+    },
+    {
+     "name": "Timeless Wisdom",
+     "commander": "Gavi, Nest Warden"
+    },
+    {
+     "name": "Enhanced Evolution",
+     "commander": "Otrimi, the Ever-Playful"
+    }
+   ]
+  },
+  {
+   "code": "znc",
+   "icon": "znc",
+   "abbr": "ZNR",
+   "name": "Zendikar Rising Commander",
+   "released": "September 2020",
+   "date": "2020-09-25",
+   "decks": [
+    {
+     "name": "Land's Wrath",
+     "commander": "Obuun, Mul Daya Ancestor"
+    },
+    {
+     "name": "Sneak Attack",
+     "commander": "Anowon, the Ruin Thief"
+    }
+   ]
+  },
+  {
+   "code": "cmr",
+   "icon": "cmr",
+   "abbr": "CMR",
+   "name": "Commander Legends Decks",
+   "released": "November 2020",
+   "date": "2020-11-20",
+   "decks": [
+    {
+     "name": "Reap the Tides",
+     "commander": "Aesi, Tyrant of Gyre Strait"
+    },
+    {
+     "name": "Arm for Battle",
+     "commander": "Wyleth, Soul of Steel"
+    }
+   ]
+  },
+  {
+   "code": "khc",
+   "icon": "khc",
+   "abbr": "KHM",
+   "name": "Kaldheim Commander",
+   "released": "February 2021",
+   "date": "2021-02-05",
+   "decks": [
+    {
+     "name": "Elven Empire",
+     "commander": "Lathril, Blade of the Elves"
+    },
+    {
+     "name": "Phantom Premonition",
+     "commander": "Ranar the Ever-Watchful"
+    }
+   ]
+  },
+  {
+   "code": "c21",
+   "icon": "c21",
+   "abbr": "C21",
+   "name": "Commander 2021 (Strixhaven)",
+   "released": "April 2021",
+   "date": "2021-04-23",
+   "decks": [
+    {
+     "name": "Silverquill Statement",
+     "commander": "Breena, the Demagogue"
+    },
+    {
+     "name": "Prismari Performance",
+     "commander": "Zaffai, Thunder Conductor"
+    },
+    {
+     "name": "Witherbloom Witchcraft",
+     "commander": "Willowdusk, Essence Seer"
+    },
+    {
+     "name": "Lorehold Legacies",
+     "commander": "Osgir, the Reconstructor"
+    },
+    {
+     "name": "Quantum Quandrix",
+     "commander": "Adrix and Nev, Twincasters"
+    }
+   ]
+  },
+  {
+   "code": "afc",
+   "icon": "afc",
+   "abbr": "AFR",
+   "name": "Forgotten Realms Commander",
+   "released": "July 2021",
+   "date": "2021-07-23",
+   "decks": [
+    {
+     "name": "Planar Portal",
+     "commander": "Prosper, Tome-Bound"
+    },
+    {
+     "name": "Dungeons of Death",
+     "commander": "Sefris of the Hidden Ways"
+    },
+    {
+     "name": "Draconic Rage",
+     "commander": "Vrondiss, Rage of Ancients"
+    },
+    {
+     "name": "Aura of Courage",
+     "commander": "Galea, Kindler of Hope"
+    }
+   ]
+  },
+  {
+   "code": "mic",
+   "icon": "mic",
+   "abbr": "MID",
+   "name": "Midnight Hunt Commander",
+   "released": "September 2021",
+   "date": "2021-09-24",
+   "decks": [
+    {
+     "name": "Undead Unleashed",
+     "commander": "Wilhelt, the Rotcleaver"
+    },
+    {
+     "name": "Coven Counters",
+     "commander": "Leinore, Autumn Sovereign"
+    }
+   ]
+  },
+  {
+   "code": "voc",
+   "icon": "voc",
+   "abbr": "VOW",
+   "name": "Crimson Vow Commander",
+   "released": "November 2021",
+   "date": "2021-11-19",
+   "decks": [
+    {
+     "name": "Spirit Squadron",
+     "commander": "Millicent, Restless Revenant"
+    },
+    {
+     "name": "Vampiric Bloodline",
+     "commander": "Strefan, Maurer Progenitor"
+    }
+   ]
+  },
+  {
+   "code": "nec",
+   "icon": "nec",
+   "abbr": "NEO",
+   "name": "Neon Dynasty Commander",
+   "released": "February 2022",
+   "date": "2022-02-18",
+   "decks": [
+    {
+     "name": "Upgrades Unleashed",
+     "commander": "Chishiro, the Shattered Blade"
+    },
+    {
+     "name": "Buckle Up",
+     "commander": "Kotori, Pilot Prodigy"
+    }
+   ]
+  },
+  {
+   "code": "ncc",
+   "icon": "ncc",
+   "abbr": "SNC",
+   "name": "New Capenna Commander",
+   "released": "April 2022",
+   "date": "2022-04-29",
+   "decks": [
+    {
+     "name": "Obscura Operation",
+     "commander": "Kamiz, Obscura Oculus"
+    },
+    {
+     "name": "Maestros Massacre",
+     "commander": "Anhelo, the Painter"
+    },
+    {
+     "name": "Riveteers Rampage",
+     "commander": "Henzie \"Toolbox\" Torre"
+    },
+    {
+     "name": "Cabaretti Cacophony",
+     "commander": "Kitt Kanto, Mayhem Diva"
+    },
+    {
+     "name": "Bedecked Brokers",
+     "commander": "Perrie, the Pulverizer"
+    }
+   ]
+  },
+  {
+   "code": "clb",
+   "icon": "clb",
+   "abbr": "CLB",
+   "name": "Battle for Baldur's Gate Commander",
+   "released": "June 2022",
+   "date": "2022-06-10",
+   "decks": [
+    {
+     "name": "Party Time",
+     "commander": "Nalia de'Arnise"
+    },
+    {
+     "name": "Mind Flayarrrs",
+     "commander": "Captain N'ghathrod"
+    },
+    {
+     "name": "Draconic Dissent",
+     "commander": "Firkraag, Cunning Instigator"
+    },
+    {
+     "name": "Exit from Exile",
+     "commander": "Faldorn, Dread Wolf Herald"
+    }
+   ]
+  },
+  {
+   "code": "dmc",
+   "icon": "dmc",
+   "abbr": "DMU",
+   "name": "Dominaria United Commander",
+   "released": "September 2022",
+   "date": "2022-09-09",
+   "decks": [
+    {
+     "name": "Painbow",
+     "commander": "Jared Carthalion"
+    },
+    {
+     "name": "Legends' Legacy",
+     "commander": "Dihada, Binder of Wills"
+    }
+   ]
+  },
+  {
+   "code": "40k",
+   "icon": "40k",
+   "abbr": "40K",
+   "name": "Warhammer 40,000 Commander",
+   "released": "October 2022",
+   "date": "2022-10-07",
+   "decks": [
+    {
+     "name": "Forces of the Imperium",
+     "commander": "Inquisitor Greyfax"
+    },
+    {
+     "name": "Necron Dynasties",
+     "commander": "Szarekh, the Silent King"
+    },
+    {
+     "name": "Tyranid Swarm",
+     "commander": "The Swarmlord"
+    },
+    {
+     "name": "The Ruinous Powers",
+     "commander": "Abaddon the Despoiler"
+    }
+   ]
+  },
+  {
+   "code": "brc",
+   "icon": "brc",
+   "abbr": "BRO",
+   "name": "The Brothers' War Commander",
+   "released": "November 2022",
+   "date": "2022-11-18",
+   "decks": [
+    {
+     "name": "Urza's Iron Alliance",
+     "commander": "Urza, Chief Artificer"
+    },
+    {
+     "name": "Mishra's Burnished Banner",
+     "commander": "Mishra, Eminent One"
+    }
+   ]
+  },
+  {
+   "code": "scd",
+   "icon": "scd",
+   "abbr": "SCD",
+   "name": "Starter Commander Decks",
+   "released": "December 2022",
+   "date": "2022-12-02",
+   "decks": [
+    {
+     "name": "First Flight",
+     "commander": "Isperia, Supreme Judge"
+    },
+    {
+     "name": "Grave Danger",
+     "commander": "Gisa and Geralf"
+    },
+    {
+     "name": "Chaos Incarnate",
+     "commander": "Kardur, Doomscourge"
+    },
+    {
+     "name": "Token Triumph",
+     "commander": ""
+    },
+    {
+     "name": "Draconic Destruction",
+     "commander": "Atarka, World Render"
+    }
+   ]
+  },
+  {
+   "code": "onc",
+   "icon": "onc",
+   "abbr": "ONE",
+   "name": "Phyrexia: All Will Be One Commander",
+   "released": "February 2023",
+   "date": "2023-02-10",
+   "decks": [
+    {
+     "name": "Rebellion Rising",
+     "commander": "Neyali, Suns' Vanguard"
+    },
+    {
+     "name": "Corrupting Influence",
+     "commander": "Ixhel, Scion of Atraxa"
+    }
+   ]
+  },
+  {
+   "code": "moc",
+   "icon": "moc",
+   "abbr": "MOM",
+   "name": "March of the Machine Commander",
+   "released": "April 2023",
+   "date": "2023-04-21",
+   "decks": [
+    {
+     "name": "Growing Threat",
+     "commander": "Brimaz, Blight of Oreskos"
+    },
+    {
+     "name": "Divine Convocation",
+     "commander": "Kasla, the Broken Halo"
+    },
+    {
+     "name": "Call for Backup",
+     "commander": "Bright-Palm, Soul Awakener"
+    },
+    {
+     "name": "Cavalry Charge",
+     "commander": "Sidar Jabari of Zhalfir"
+    },
+    {
+     "name": "Tinker Time",
+     "commander": "Gimbal, Gremlin Prodigy"
+    }
+   ]
+  },
+  {
+   "code": "ltc",
+   "icon": "ltc",
+   "abbr": "LOTR",
+   "name": "The Lord of the Rings: Tales of Middle-earth Commander",
+   "released": "June 2023",
+   "date": "2023-06-23",
+   "decks": [
+    {
+     "id": "riders-of-rohan",
+     "name": "Riders of Rohan",
+     "commander": "Éowyn, Shieldmaiden"
+    },
+    {
+     "id": "food-and-fellowship",
+     "name": "Food and Fellowship",
+     "commander": "Frodo, Adventurous Hobbit & Sam, Loyal Attendant"
+    },
+    {
+     "id": "elven-council",
+     "name": "Elven Council",
+     "commander": "Galadriel, Elven-Queen"
+    },
+    {
+     "id": "the-hosts-of-mordor",
+     "name": "The Hosts of Mordor",
+     "commander": "Sauron, Lord of the Rings"
+    }
+   ]
+  },
+  {
+   "code": "cmm",
+   "icon": "cmm",
+   "abbr": "CMM",
+   "name": "Commander Masters Decks",
+   "released": "August 2023",
+   "date": "2023-08-04",
+   "decks": [
+    {
+     "name": "Eldrazi Unbound",
+     "commander": "Zhulodok, Void Gorger"
+    },
+    {
+     "name": "Enduring Enchantments",
+     "commander": "Anikthea, Hand of Erebos"
+    },
+    {
+     "name": "Planeswalker Party",
+     "commander": "Commodore Guff"
+    },
+    {
+     "name": "Sliver Swarm",
+     "commander": "Sliver Gravemother"
+    }
+   ]
+  },
+  {
+   "code": "woc",
+   "icon": "woc",
+   "abbr": "WOE",
+   "name": "Wilds of Eldraine Commander",
+   "released": "September 2023",
+   "date": "2023-09-08",
+   "decks": [
+    {
+     "name": "Fae Dominion",
+     "commander": "Tegwyll, Duke of Splendor"
+    },
+    {
+     "name": "Virtue and Valor",
+     "commander": "Ellivere of the Wild Court"
+    }
+   ]
+  },
+  {
+   "code": "who",
+   "icon": "who",
+   "abbr": "WHO",
+   "name": "Doctor Who Commander",
+   "released": "October 2023",
+   "date": "2023-10-13",
+   "decks": [
+    {
+     "name": "Blast from the Past",
+     "commander": "The Fourth Doctor & Sarah Jane Smith"
+    },
+    {
+     "name": "Timey-Wimey",
+     "commander": "The Tenth Doctor & Rose Tyler"
+    },
+    {
+     "name": "Paradox Power",
+     "commander": "The Thirteenth Doctor & Yasmin Khan"
+    },
+    {
+     "name": "Masters of Evil",
+     "commander": "Davros, Dalek Creator"
+    }
+   ]
+  },
+  {
+   "code": "lcc",
+   "icon": "lcc",
+   "abbr": "LCI",
+   "name": "The Lost Caverns of Ixalan Commander",
+   "released": "November 2023",
+   "date": "2023-11-17",
+   "decks": [
+    {
+     "name": "Ahoy Mateys",
+     "commander": "Admiral Brass, Unsinkable"
+    },
+    {
+     "name": "Blood Rites",
+     "commander": "Clavileño, First of the Blessed"
+    },
+    {
+     "name": "Explorers of the Deep",
+     "commander": "Hakbal of the Surging Soul"
+    },
+    {
+     "name": "Veloci-Ramp-Tor",
+     "commander": "Pantlaza, Sun-Favored"
+    }
+   ]
+  },
+  {
+   "code": "mkc",
+   "icon": "mkc",
+   "abbr": "MKM",
+   "name": "Murders at Karlov Manor Commander",
+   "released": "February 2024",
+   "date": "2024-02-09",
+   "decks": [
+    {
+     "name": "Deep Clue Sea",
+     "commander": "Morska, Undersea Sleuth"
+    },
+    {
+     "name": "Revenant Recon",
+     "commander": "Mirko, Obsessive Theorist"
+    },
+    {
+     "name": "Deadly Disguise",
+     "commander": "Kaust, Eyes of the Glade"
+    },
+    {
+     "name": "Blame Game",
+     "commander": "Nelly Borca, Impulsive Accuser"
+    }
+   ]
+  },
+  {
+   "code": "pip",
+   "icon": "pip",
+   "abbr": "Fallout",
+   "name": "Fallout Commander",
+   "released": "March 2024",
+   "date": "2024-03-08",
+   "decks": [
+    {
+     "name": "Scrappy Survivors",
+     "commander": "Dogmeat, Ever Loyal"
+    },
+    {
+     "name": "Mutant Menace",
+     "commander": "The Wise Mothman"
+    },
+    {
+     "name": "Science!",
+     "commander": "Dr. Madison Li"
+    },
+    {
+     "name": "Hail, Caesar",
+     "commander": "Caesar, Legion's Emperor"
+    }
+   ]
+  },
+  {
+   "code": "otc",
+   "icon": "otc",
+   "abbr": "OTJ",
+   "name": "Outlaws of Thunder Junction Commander",
+   "released": "April 2024",
+   "date": "2024-04-19",
+   "decks": [
+    {
+     "name": "Desert Bloom",
+     "commander": "Yuma, Proud Protector"
+    },
+    {
+     "name": "Grand Larceny",
+     "commander": "Gonti, Canny Acquisitor"
+    },
+    {
+     "name": "Most Wanted",
+     "commander": "Olivia, Opulent Outlaw"
+    },
+    {
+     "name": "Quick Draw",
+     "commander": "Stella Lee, Wild Card"
+    }
+   ]
+  },
+  {
+   "code": "m3c",
+   "icon": "m3c",
+   "abbr": "MH3",
+   "name": "Modern Horizons 3 Commander",
+   "released": "June 2024",
+   "date": "2024-06-14",
+   "decks": [
+    {
+     "id": "creative-energy",
+     "name": "Creative Energy",
+     "commander": "Satya, Aetherflux Genius"
+    },
+    {
+     "id": "eldrazi-incursion",
+     "name": "Eldrazi Incursion",
+     "commander": "Ulalek, Fused Atrocity"
+    },
+    {
+     "id": "tricky-terrain",
+     "name": "Tricky Terrain",
+     "commander": "Omo, Queen of Vesuva"
+    },
+    {
+     "id": "graveyard-overdrive",
+     "name": "Graveyard Overdrive",
+     "commander": "Disa the Restless"
+    }
+   ]
+  },
+  {
+   "code": "blc",
+   "icon": "blc",
+   "abbr": "BLB",
+   "name": "Bloomburrow Commander",
+   "released": "August 2024",
+   "date": "2024-08-02",
+   "decks": [
+    {
+     "name": "Squirreled Away",
+     "commander": "Hazel of the Rootbloom"
+    },
+    {
+     "name": "Animated Army",
+     "commander": "Bello, Bard of the Brambles"
+    },
+    {
+     "name": "Family Matters",
+     "commander": "Zinnia, Valley's Voice"
+    },
+    {
+     "name": "Peace Offering",
+     "commander": "Ms. Bumbleflower"
+    }
+   ]
+  },
+  {
+   "code": "dsc",
+   "icon": "dsc",
+   "abbr": "DSK",
+   "name": "Duskmourn Commander",
+   "released": "September 2024",
+   "date": "2024-09-27",
+   "decks": [
+    {
+     "name": "Miracle Worker",
+     "commander": "Aminatou, Veil Piercer"
+    },
+    {
+     "name": "Endless Punishment",
+     "commander": "Valgavoth, Harrower of Souls"
+    },
+    {
+     "name": "Death Toll",
+     "commander": "Winter, Cynical Opportunist"
+    },
+    {
+     "name": "Jump Scare!",
+     "commander": "Zimone, All-Questioning"
+    }
+   ]
+  },
+  {
+   "code": "drc",
+   "icon": "drc",
+   "abbr": "DFT",
+   "name": "Aetherdrift Commander",
+   "released": "February 2025",
+   "date": "2025-02-14",
+   "decks": [
+    {
+     "name": "Eternal Might",
+     "commander": "Temmet, Naktamun's Will"
+    },
+    {
+     "name": "Living Energy",
+     "commander": "Saheeli, Radiant Creator"
+    }
+   ]
+  },
+  {
+   "code": "tdc",
+   "icon": "tdc",
+   "abbr": "TDM",
+   "name": "Tarkir: Dragonstorm Commander",
+   "released": "April 2025",
+   "date": "2025-04-11",
+   "decks": [
+    {
+     "name": "Abzan Armor",
+     "commander": "Felothar the Steadfast"
+    },
+    {
+     "name": "Jeskai Striker",
+     "commander": "Shiko, Paragon of the Way"
+    },
+    {
+     "name": "Sultai Arisen",
+     "commander": "Kotis, the Fangkeeper"
+    },
+    {
+     "name": "Mardu Might",
+     "commander": "Zurgo, Thunder's Decree"
+    },
+    {
+     "name": "Temur Roar",
+     "commander": "Ureni of the Unwritten"
+    }
+   ]
+  },
+  {
+   "code": "fic",
+   "icon": "fic",
+   "abbr": "FF",
+   "name": "Final Fantasy Commander",
+   "released": "June 2025",
+   "date": "2025-06-13",
+   "decks": [
+    {
+     "name": "Counter Blitz",
+     "commander": "Tidus, Blitzball Star"
+    },
+    {
+     "name": "Cid's Brigade",
+     "commander": "Cid, Timeless Artificer"
+    },
+    {
+     "name": "Limit Break",
+     "commander": "Cloud, Ex-SOLDIER"
+    },
+    {
+     "name": "Scions & Spellcraft",
+     "commander": "Terra, Herald of Hope"
+    }
+   ]
+  },
+  {
+   "code": "eoc",
+   "icon": "eoc",
+   "abbr": "EOE",
+   "name": "Edge of Eternities Commander",
+   "released": "August 2025",
+   "date": "2025-08-01",
+   "decks": [
+    {
+     "name": "Counter Intelligence",
+     "commander": "Inspirit, Flagship Vessel"
+    },
+    {
+     "name": "World Shaper",
+     "commander": ""
+    }
+   ]
+  },
+  {
+   "code": "ecl",
+   "icon": "ecl",
+   "abbr": "LWE",
+   "name": "Lorwyn Eclipsed Commander",
+   "released": "January 2026",
+   "date": "2026-01-23",
+   "decks": [
+    {
+     "name": "Dance of the Elements",
+     "commander": "Ashling"
+    },
+    {
+     "name": "Blight Curse",
+     "commander": "Auntie Ool"
+    }
+   ]
+  },
+  {
+   "code": "tmn",
+   "icon": "tmn",
+   "abbr": "TMNT",
+   "name": "Teenage Mutant Ninja Turtles Commander",
+   "released": "March 2026",
+   "date": "2026-03-06",
+   "decks": [
+    {
+     "name": "Turtle Power!",
+     "commander": "Leonardo, the Balance"
+    }
+   ]
+  },
+  {
+   "code": "sos",
+   "icon": "sos",
+   "abbr": "STX2",
+   "name": "Secrets of Strixhaven Commander",
+   "released": "2026",
+   "date": "2026-05-01",
+   "decks": [
+    {
+     "name": "Silverquill Influence",
+     "commander": ""
+    },
+    {
+     "name": "Prismari Artistry",
+     "commander": ""
+    },
+    {
+     "name": "Witherbloom Pestilence",
+     "commander": ""
+    },
+    {
+     "name": "Lorehold Spirit",
+     "commander": ""
+    },
+    {
+     "name": "Quandrix Unlimited",
+     "commander": ""
+    }
+   ]
+  },
+  {
+   "code": "msc",
+   "icon": "msc",
+   "abbr": "Marvel",
+   "name": "Marvel Super Heroes Commander",
+   "released": "June 2026",
+   "date": "2026-06-26",
+   "decks": [
+    {
+     "id": "avengers-assemble",
+     "name": "Avengers Assemble",
+     "commander": "Captain America, Team Leader"
+    },
+    {
+     "id": "wakanda-forever",
+     "name": "Wakanda Forever",
+     "commander": "T'Challa, the Black Panther"
+    },
+    {
+     "id": "the-fantastic-four",
+     "name": "The Fantastic Four",
+     "commander": "Mister Fantastic, Invisible Woman, Human Torch & The Thing"
+    },
+    {
+     "id": "doom-prevails",
+     "name": "Doom Prevails",
+     "commander": "Doctor Doom, King of Latveria"
+    }
+   ]
+  }
+ ]
 }
