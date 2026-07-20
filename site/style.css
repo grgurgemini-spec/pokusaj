@@ -47,8 +47,12 @@ code { background: var(--surface-2); padding: 1px 5px; border-radius: 4px; font-
 .brand { font-weight: 700; font-size: 18px; color: var(--ink); }
 .brand span { color: var(--accent); }
 .brand:hover { text-decoration: none; }
-#nav { display: flex; gap: 14px; flex-wrap: wrap; }
-#nav a { color: var(--ink-2); padding: 3px 10px; border-radius: 6px; }
+#nav {
+  display: flex; gap: 6px; flex-wrap: nowrap; overflow-x: auto; min-width: 0;
+  scrollbar-width: thin; padding-bottom: 2px;
+}
+#nav a { color: var(--ink-2); padding: 3px 10px; border-radius: 6px; white-space: nowrap; flex: none; font-size: 13.5px; }
+#nav a.dim { color: var(--muted); }
 #nav a.active, #nav a:hover { color: var(--ink); background: var(--surface-2); text-decoration: none; }
 .updated { margin-left: auto; color: var(--muted); font-size: 12.5px; }
 .update-btn {
@@ -170,12 +174,19 @@ h2 { font-size: 17px; margin: 26px 0 10px; }
 
 /* ---- card table ---- */
 .toolbar { display: flex; gap: 12px; align-items: center; margin: 14px 0; flex-wrap: wrap; }
-.toolbar input {
+.toolbar input[type="search"] {
   background: var(--surface); border: 1px solid var(--border); color: var(--ink);
   padding: 7px 12px; border-radius: 8px; width: 260px; font-size: 14px;
 }
-.toolbar input:focus { outline: 1px solid var(--accent); }
+.toolbar input[type="search"]:focus { outline: 1px solid var(--accent); }
+.toolbar .check input { accent-color: var(--accent); }
 .toolbar .count { color: var(--muted); font-size: 13px; }
+.toolbar select {
+  background: var(--surface); border: 1px solid var(--border); color: var(--ink);
+  padding: 7px 10px; border-radius: 8px; font-size: 14px; font-family: inherit;
+}
+.toolbar .check { color: var(--ink-2); font-size: 13.5px; display: inline-flex; gap: 6px; align-items: center; cursor: pointer; }
+.hit-list { font-size: 11.5px; color: var(--accent); margin-top: 2px; }
 
 .table-wrap { overflow-x: auto; border: 1px solid var(--border); border-radius: 12px; background: var(--surface); }
 table { border-collapse: collapse; width: 100%; min-width: 760px; }
@@ -280,7 +291,7 @@ td .ext:hover { color: var(--accent); }
   th, td { padding: 8px 8px; }
   td.cardcell { min-width: 150px; }
   .deck-grid { grid-template-columns: 1fr; }
-  .toolbar input { width: 100%; }
+  .toolbar input[type="search"] { width: 100%; }
   .stat-row { grid-template-columns: repeat(auto-fill, minmax(128px, 1fr)); }
   .chart-box { padding: 12px 10px 6px; }
   .update-btn { margin-left: auto; padding: 5px 9px; font-size: 12.5px; }

@@ -42,8 +42,8 @@ async function boot() {
   const when = state.cards.generated_at ? new Date(state.cards.generated_at) : null;
   if (when) $updated.textContent = "prices from " + when.toLocaleString();
   $nav.innerHTML = `<a href="#/" data-home="1">📚 Katalog</a>` + state.catalog.sets
-    .filter(s => s.decks.some(d => d.id && findDeck(d.id)))
-    .map(s => `<a href="#/set/${s.code}" data-set="${s.code}">${esc(shortSetName(s))}</a>`)
+    .map(s => `<a href="#/set/${s.code}" data-set="${s.code}"
+      class="${setTracked(s) ? "" : "dim"}">${esc(shortSetName(s))}</a>`)
     .join("");
 
   wireUpdateButton();
@@ -101,8 +101,7 @@ function findDeck(id) {
   return state.cards.decks.find(d => d.id === id) || null;
 }
 function shortSetName(set) {
-  return { msc: "Marvel", ltc: "LOTR", m3c: "MH3",
-           blc: "Bloomburrow", fic: "Final Fantasy" }[set.code] || set.name;
+  return set.abbr || set.name;
 }
 const SET_ICON = code =>
   code ? `https://svgs.scryfall.io/sets/${code}.svg` : null;
@@ -192,28 +191,77 @@ function setTracked(set) {
 }
 
 function renderCatalog() {
-  // catalog.json is kept in chronological release order.
-  const tiles = state.catalog.sets.map(set => {
+  const ui = state.catalogUI ||= { q: "", dir: 1, trackedOnly: false };
+  const q = ui.q.trim().toLowerCase();
+
+  let sets = state.catalog.sets.slice();          // chronological in the file
+  if (ui.dir === -1) sets.reverse();
+  if (ui.trackedOnly) sets = sets.filter(s => setTracked(s) > 0);
+  if (q) {
+    sets = sets.filter(s =>
+      s.name.toLowerCase().includes(q) ||
+      (s.abbr || "").toLowerCase().includes(q) ||
+      s.decks.some(d => d.name.toLowerCase().includes(q) ||
+                        (d.commander || "").toLowerCase().includes(q)));
+  }
+
+  const tiles = sets.map(set => {
     const tracked = setTracked(set);
     const icon = SET_ICON(set.icon);
     const year = (set.date || "").slice(0, 4);
+    // When searching, show which decks inside the set matched.
+    const hits = q ? set.decks.filter(d =>
+      d.name.toLowerCase().includes(q) ||
+      (d.commander || "").toLowerCase().includes(q)).slice(0, 3) : [];
     return `
       <a class="set-tile ${tracked ? "" : "off"}" href="#/set/${esc(set.code)}">
         ${icon ? `<img class="set-logo" src="${icon}" alt="" loading="lazy"
-           onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'set-logo-fallback',textContent:'${esc(set.code.toUpperCase())}'}))">` : ""}
+           onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'set-logo-fallback',textContent:'${esc(set.abbr || set.code.toUpperCase())}'}))">` : ""}
         <h3>${esc(set.name)}</h3>
         <div class="set-sub">${esc(set.released || year)} ·
           ${tracked ? `${tracked}/${set.decks.length} decks tracked` : "not tracked yet"}</div>
+        ${hits.length ? `<div class="hit-list">${hits.map(h => esc(h.name)).join(" · ")}</div>` : ""}
       </a>`;
   }).join("");
 
+  const totalDecks = state.catalog.sets.reduce((n, s) => n + s.decks.length, 0);
   const snapshots = Object.values(state.history?.decks || {})[0]?.length || 0;
   $app.innerHTML = `
     <h1>Katalog</h1>
-    <p class="sub">Commander precon sets in chronological order — pick a set to
-      see its decks and Cardmarket prices. Greyed sets aren't tracked yet.
-      ${snapshots >= 2 ? `${snapshots} daily price snapshots collected so far.` : ""}</p>
-    <div class="set-grid">${tiles}</div>`;
+    <p class="sub">${state.catalog.sets.length} Commander precon sets ·
+      ${totalDecks} decks (2011 → today). Pick a set to see its decks and
+      Cardmarket prices; greyed sets aren't tracked yet.
+      ${snapshots >= 2 ? `${snapshots} daily price snapshots collected.` : ""}</p>
+    <div class="toolbar">
+      <input id="cat-q" type="search" placeholder="Traži set, deck ili commandera…"
+        value="${esc(ui.q)}">
+      <select id="cat-sort">
+        <option value="1" ${ui.dir === 1 ? "selected" : ""}>Najstariji prvo</option>
+        <option value="-1" ${ui.dir === -1 ? "selected" : ""}>Najnoviji prvo</option>
+      </select>
+      <label class="check"><input id="cat-tracked" type="checkbox"
+        ${ui.trackedOnly ? "checked" : ""}> samo praćeni</label>
+      <span class="count">${sets.length} / ${state.catalog.sets.length} sets</span>
+    </div>
+    <div class="set-grid">${tiles.length ? tiles : ""}</div>
+    ${tiles.length ? "" : `<p class="sub">Nema rezultata za "${esc(ui.q)}".</p>`}`;
+
+  const qEl = document.getElementById("cat-q");
+  qEl.addEventListener("input", e => {
+    ui.q = e.target.value;
+    renderCatalog();
+    const el = document.getElementById("cat-q");
+    el.focus();
+    el.setSelectionRange(el.value.length, el.value.length);
+  });
+  document.getElementById("cat-sort").addEventListener("change", e => {
+    ui.dir = Number(e.target.value);
+    renderCatalog();
+  });
+  document.getElementById("cat-tracked").addEventListener("change", e => {
+    ui.trackedOnly = e.target.checked;
+    renderCatalog();
+  });
 }
 
 function renderSet(code) {
