@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#1a1a19">
+<title>Precon Price Tracker</title>
+<link rel="stylesheet" href="style.css">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📈</text></svg>">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="#/">📈 Precon<span>Tracker</span></a>
+  <nav id="nav"></nav>
+  <span class="updated" id="updated"></span>
+  <button id="update-btn" class="update-btn"
+    title="Povuci svježe Cardmarket cijene (pokreće GitHub workflow)">⟳ Update</button>
+</header>
+<div id="update-panel" class="update-panel" hidden>
+  <strong>Ručni update cijena</strong>
+  <p>Gumb pokreće GitHub workflow koji povlači svježe Cardmarket cijene i
+     sprema ih u povijest. Za to treba GitHub token (sprema se samo u ovaj
+     preglednik):</p>
+  <ol>
+    <li><a href="https://github.com/settings/personal-access-tokens/new" target="_blank"
+        rel="noopener">Kreiraj fine-grained token ↗</a> — Repository: <code>pokusaj</code>,
+        Permissions → <em>Actions: Read and write</em></li>
+    <li>Zalijepi ga ovdje:</li>
+  </ol>
+  <div class="token-row">
+    <input id="token-input" type="password" placeholder="github_pat_…" autocomplete="off">
+    <button id="token-save">Spremi i pokreni</button>
+  </div>
+  <p class="alt">Ili bez tokena: pokreni ručno na
+    <a href="https://github.com/grgurgemini-spec/pokusaj/actions/workflows/update-and-deploy.yml"
+       target="_blank" rel="noopener">GitHub Actions ↗</a> (gumb "Run workflow").</p>
+</div>
+<main id="app">
+  <div class="loading">Loading data…</div>
+</main>
+<footer class="foot">
+  Prices: Cardmarket EUR trend &amp; TCGplayer USD via
+  <a href="https://scryfall.com" target="_blank" rel="noopener">Scryfall</a>,
+  refreshed each time you run <code>python fetch_prices.py</code>.
+  Listings are optional scraped snapshots — see the README.
+  Not affiliated with Cardmarket, MTGStocks or Wizards of the Coast.
+</footer>
+<script src="app.js"></script>
+</body>
+</html>
