@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-07-28T13:07:00+00:00",
+ "generated_at": "2026-07-28T21:56:12+00:00",
  "sources": {
   "cardmarket": "EUR trend prices via Scryfall (updated daily by Scryfall)",
   "tcgplayer": "USD prices via Scryfall"
@@ -31,7 +31,7 @@
       },
       "tcgplayer": {
        "usd": 3.8,
-       "usd_foil": 1.15
+       "usd_foil": 1.13
       }
      }
     },
@@ -78,7 +78,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 3.88,
+       "usd": 3.8,
        "usd_foil": null
       }
      }
@@ -126,7 +126,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.36,
+       "usd": 0.34,
        "usd_foil": null
       }
      }
@@ -150,7 +150,7 @@
        "eur_foil": 0.33
       },
       "tcgplayer": {
-       "usd": 0.3,
+       "usd": 0.34,
        "usd_foil": 1.17
       }
      }
@@ -174,8 +174,8 @@
        "eur_foil": 0.1
       },
       "tcgplayer": {
-       "usd": 0.22,
-       "usd_foil": 0.31
+       "usd": 0.21,
+       "usd_foil": 0.3
       }
      }
     },
@@ -222,8 +222,8 @@
        "eur_foil": 0.15
       },
       "tcgplayer": {
-       "usd": 0.15,
-       "usd_foil": 0.26
+       "usd": 0.16,
+       "usd_foil": 0.24
       }
      }
     },
@@ -246,7 +246,7 @@
        "eur_foil": 0.35
       },
       "tcgplayer": {
-       "usd": 0.23,
+       "usd": 0.22,
        "usd_foil": 0.43
       }
      }
@@ -270,8 +270,8 @@
        "eur_foil": 1.74
       },
       "tcgplayer": {
-       "usd": 0.26,
-       "usd_foil": 1.82
+       "usd": 0.25,
+       "usd_foil": 1.72
       }
      }
     },
@@ -295,7 +295,7 @@
       },
       "tcgplayer": {
        "usd": 0.15,
-       "usd_foil": 0.25
+       "usd_foil": 0.26
       }
      }
     },
@@ -318,7 +318,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.46,
+       "usd": 0.45,
        "usd_foil": null
       }
      }
@@ -342,7 +342,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.64,
+       "usd": 0.66,
        "usd_foil": null
       }
      }
@@ -366,7 +366,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 1.38,
+       "usd": 1.36,
        "usd_foil": null
       }
      }
@@ -390,7 +390,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 10.43,
+       "usd": 10.1,
        "usd_foil": null
       }
      }
@@ -414,7 +414,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.47,
+       "usd": 0.37,
        "usd_foil": 5.0
       }
      }
@@ -438,7 +438,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 3.78,
+       "usd": 3.79,
        "usd_foil": null
       }
      }
@@ -462,7 +462,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.25,
+       "usd": 0.24,
        "usd_foil": null
       }
      }
@@ -486,7 +486,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.5,
+       "usd": 0.47,
        "usd_foil": null
       }
      }
@@ -510,7 +510,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 1.49,
+       "usd": 1.47,
        "usd_foil": null
       }
      }
@@ -558,7 +558,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.39,
+       "usd": 0.28,
        "usd_foil": null
       }
      }
@@ -582,7 +582,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.33,
+       "usd": 0.31,
        "usd_foil": null
       }
      }
@@ -606,7 +606,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 6.14,
+       "usd": 6.04,
        "usd_foil": null
       }
      }
@@ -630,7 +630,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.53,
+       "usd": 0.5,
        "usd_foil": null
       }
      }
@@ -654,7 +654,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.38,
+       "usd": 0.35,
        "usd_foil": null
       }
      }
@@ -678,7 +678,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 1.38,
+       "usd": 1.35,
        "usd_foil": null
       }
      }
@@ -702,7 +702,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.29,
+       "usd": 0.28,
        "usd_foil": null
       }
      }
@@ -726,7 +726,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.22,
+       "usd": 0.23,
        "usd_foil": null
       }
      }
@@ -750,7 +750,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.32,
+       "usd": 0.29,
        "usd_foil": null
       }
      }
@@ -798,7 +798,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 3.37,
+       "usd": 3.22,
        "usd_foil": null
       }
      }
@@ -822,7 +822,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.62,
+       "usd": 0.65,
        "usd_foil": null
       }
      }
@@ -846,7 +846,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 1.97,
+       "usd": 1.87,
        "usd_foil": null
       }
      }
@@ -894,7 +894,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.35,
+       "usd": 0.31,
        "usd_foil": null
       }
      }
@@ -942,7 +942,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.27,
+       "usd": 0.24,
        "usd_foil": null
       }
      }
@@ -1014,7 +1014,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 4.45,
+       "usd": 4.17,
        "usd_foil": null
       }
      }
@@ -1038,7 +1038,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.32,
+       "usd": 0.31,
        "usd_foil": null
       }
      }
@@ -1062,7 +1062,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.96,
+       "usd": 0.93,
        "usd_foil": null
       }
      }
@@ -1086,7 +1086,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.41,
+       "usd": 0.36,
        "usd_foil": null
       }
      }
@@ -1110,7 +1110,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.78,
+       "usd": 0.8,
        "usd_foil": null
       }
      }
@@ -1134,7 +1134,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 1.32,
+       "usd": 1.3,
        "usd_foil": null
       }
      }
@@ -1158,7 +1158,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.33,
+       "usd": 0.31,
        "usd_foil": null
       }
      }
@@ -1206,7 +1206,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 1.1,
+       "usd": 1.05,
        "usd_foil": null
       }
      }
@@ -1230,7 +1230,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.3,
+       "usd": 0.24,
        "usd_foil": null
       }
      }
@@ -1254,7 +1254,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 2.08,
+       "usd": 2.04,
        "usd_foil": null
       }
      }
@@ -1278,7 +1278,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.21,
+       "usd": 0.2,
        "usd_foil": null
       }
      }
@@ -1302,7 +1302,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 1.85,
+       "usd": 1.86,
        "usd_foil": null
       }
      }
@@ -1326,7 +1326,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.25,
+       "usd": 0.26,
        "usd_foil": null
       }
      }
@@ -1350,7 +1350,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.38,
+       "usd": 0.37,
        "usd_foil": null
       }
      }
@@ -1374,7 +1374,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.46,
+       "usd": 0.4,
        "usd_foil": null
       }
      }
@@ -1446,7 +1446,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.28,
+       "usd": 0.29,
        "usd_foil": null
       }
      }
@@ -1470,7 +1470,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.4,
+       "usd": 0.25,
        "usd_foil": null
       }
      }
@@ -1494,7 +1494,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 1.3,
+       "usd": 1.27,
        "usd_foil": null
       }
      }
@@ -1518,7 +1518,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 2.32,
+       "usd": 2.27,
        "usd_foil": null
       }
      }
@@ -1590,7 +1590,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.26,
+       "usd": 0.23,
        "usd_foil": null
       }
      }
@@ -1614,7 +1614,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.3,
+       "usd": 0.29,
        "usd_foil": null
       }
      }
@@ -1662,7 +1662,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.32,
+       "usd": 0.31,
        "usd_foil": null
       }
      }
@@ -1686,7 +1686,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.26,
+       "usd": 0.28,
        "usd_foil": null
       }
      }
@@ -1710,7 +1710,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.42,
+       "usd": 0.4,
        "usd_foil": null
       }
      }
@@ -1734,7 +1734,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.28,
+       "usd": 0.26,
        "usd_foil": null
       }
      }
@@ -1782,7 +1782,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.26,
+       "usd": 0.25,
        "usd_foil": null
       }
      }
@@ -1806,7 +1806,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.33,
+       "usd": 0.31,
        "usd_foil": null
       }
      }
@@ -1830,7 +1830,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.25,
+       "usd": 0.23,
        "usd_foil": null
       }
      }
@@ -1854,7 +1854,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.32,
+       "usd": 0.3,
        "usd_foil": null
       }
      }
@@ -1902,7 +1902,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.28,
+       "usd": 0.27,
        "usd_foil": null
       }
      }
@@ -1926,7 +1926,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.23,
+       "usd": 0.24,
        "usd_foil": null
       }
      }
@@ -1950,7 +1950,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.25,
+       "usd": 0.24,
        "usd_foil": null
       }
      }
@@ -1974,7 +1974,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.2,
+       "usd": 0.19,
        "usd_foil": null
       }
      }
@@ -1998,7 +1998,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.25,
+       "usd": 0.24,
        "usd_foil": null
       }
      }
@@ -2022,7 +2022,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.27,
+       "usd": 0.28,
        "usd_foil": null
       }
      }
@@ -2070,7 +2070,7 @@
        "eur_foil": 0.16
       },
       "tcgplayer": {
-       "usd": 0.17,
+       "usd": 0.18,
        "usd_foil": 0.16
       }
      }
@@ -2942,7 +2942,7 @@
        "eur_foil": 1.35
       },
       "tcgplayer": {
-       "usd": 0.66,
+       "usd": 0.65,
        "usd_foil": null
       }
      }
@@ -2966,7 +2966,7 @@
        "eur_foil": 4.61
       },
       "tcgplayer": {
-       "usd": 1.78,
+       "usd": 1.77,
        "usd_foil": null
       }
      }
@@ -3230,7 +3230,7 @@
        "eur_foil": 1.84
       },
       "tcgplayer": {
-       "usd": 0.91,
+       "usd": 0.92,
        "usd_foil": null
       }
      }
@@ -3422,7 +3422,7 @@
        "eur_foil": 1.77
       },
       "tcgplayer": {
-       "usd": 0.38,
+       "usd": 0.37,
        "usd_foil": null
       }
      }
@@ -4046,7 +4046,7 @@
        "eur_foil": 0.16
       },
       "tcgplayer": {
-       "usd": 0.17,
+       "usd": 0.18,
        "usd_foil": 0.16
       }
      }
@@ -4174,7 +4174,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 17.94,
+       "usd": 17.73,
        "usd_foil": null
       }
      }
@@ -4198,7 +4198,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.29,
+       "usd": 0.28,
        "usd_foil": null
       }
      }
@@ -4222,7 +4222,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.31,
+       "usd": 0.29,
        "usd_foil": null
       }
      }
@@ -4294,7 +4294,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.33,
+       "usd": 0.31,
        "usd_foil": null
       }
      }
@@ -4342,7 +4342,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.58,
+       "usd": 0.46,
        "usd_foil": null
       }
      }
@@ -4367,7 +4367,7 @@
       },
       "tcgplayer": {
        "usd": null,
-       "usd_foil": 2.77
+       "usd_foil": 2.75
       }
      }
     },
@@ -4390,7 +4390,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.29,
+       "usd": 0.27,
        "usd_foil": null
       }
      }
@@ -4414,7 +4414,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.34,
+       "usd": 0.33,
        "usd_foil": null
       }
      }
@@ -4438,8 +4438,8 @@
        "eur_foil": 0.77
       },
       "tcgplayer": {
-       "usd": 4.78,
-       "usd_foil": 2.47
+       "usd": 5.54,
+       "usd_foil": 2.39
       }
      }
     },
@@ -4486,7 +4486,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.31,
+       "usd": 0.27,
        "usd_foil": null
       }
      }
@@ -4510,7 +4510,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.37,
+       "usd": 0.33,
        "usd_foil": null
       }
      }
@@ -4535,7 +4535,7 @@
       },
       "tcgplayer": {
        "usd": null,
-       "usd_foil": 3.25
+       "usd_foil": 3.27
       }
      }
     },
@@ -4558,7 +4558,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 5.12,
+       "usd": 5.11,
        "usd_foil": null
       }
      }
@@ -4582,7 +4582,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.75,
+       "usd": 0.72,
        "usd_foil": null
       }
      }
@@ -4630,7 +4630,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.29,
+       "usd": 0.31,
        "usd_foil": null
       }
      }
@@ -4654,7 +4654,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.61,
+       "usd": 0.6,
        "usd_foil": null
       }
      }
@@ -4678,7 +4678,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.28,
+       "usd": 0.26,
        "usd_foil": null
       }
      }
@@ -4702,7 +4702,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.47,
+       "usd": 0.45,
        "usd_foil": null
       }
      }
@@ -4750,7 +4750,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.3,
+       "usd": 0.31,
        "usd_foil": null
       }
      }
@@ -4774,7 +4774,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.31,
+       "usd": 0.3,
        "usd_foil": null
       }
      }
@@ -4798,7 +4798,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.81,
+       "usd": 0.75,
        "usd_foil": null
       }
      }
@@ -4846,7 +4846,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.4,
+       "usd": 0.35,
        "usd_foil": null
       }
      }
@@ -4871,7 +4871,7 @@
       },
       "tcgplayer": {
        "usd": null,
-       "usd_foil": 12.56
+       "usd_foil": 12.61
       }
      }
     },
@@ -4894,7 +4894,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 3.45,
+       "usd": 3.46,
        "usd_foil": null
       }
      }
@@ -4942,7 +4942,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 3.72,
+       "usd": 3.77,
        "usd_foil": null
       }
      }
@@ -4967,7 +4967,7 @@
       },
       "tcgplayer": {
        "usd": null,
-       "usd_foil": 2.03
+       "usd_foil": 2.02
       }
      }
     },
@@ -4990,7 +4990,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.33,
+       "usd": 0.32,
        "usd_foil": null
       }
      }
@@ -5038,7 +5038,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.52,
+       "usd": 0.53,
        "usd_foil": null
       }
      }
@@ -5062,7 +5062,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.33,
+       "usd": 0.31,
        "usd_foil": null
       }
      }
@@ -5086,7 +5086,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 4.21,
+       "usd": 4.39,
        "usd_foil": null
       }
      }
@@ -5158,7 +5158,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.32,
+       "usd": 0.29,
        "usd_foil": null
       }
      }
@@ -5182,7 +5182,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.35,
+       "usd": 0.34,
        "usd_foil": null
       }
      }
@@ -5230,7 +5230,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.3,
+       "usd": 0.24,
        "usd_foil": null
       }
      }
@@ -5254,7 +5254,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.24,
+       "usd": 0.25,
        "usd_foil": null
       }
      }
@@ -5302,7 +5302,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.26,
+       "usd": 0.23,
        "usd_foil": null
       }
      }
@@ -5326,7 +5326,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 8.72,
+       "usd": 8.38,
        "usd_foil": null
       }
      }
@@ -5350,7 +5350,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.32,
+       "usd": 0.31,
        "usd_foil": null
       }
      }
@@ -5374,7 +5374,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.41,
+       "usd": 0.36,
        "usd_foil": null
       }
      }
@@ -5422,7 +5422,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.4,
+       "usd": 0.25,
        "usd_foil": null
       }
      }
@@ -5446,7 +5446,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.31,
+       "usd": 0.32,
        "usd_foil": null
       }
      }
@@ -5494,7 +5494,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.58,
+       "usd": 0.53,
        "usd_foil": null
       }
      }
@@ -5518,8 +5518,8 @@
        "eur_foil": 0.19
       },
       "tcgplayer": {
-       "usd": 0.23,
-       "usd_foil": 0.33
+       "usd": 0.2,
+       "usd_foil": 0.34
       }
      }
     },
@@ -5543,7 +5543,7 @@
       },
       "tcgplayer": {
        "usd": 0.18,
-       "usd_foil": 0.36
+       "usd_foil": 0.34
       }
      }
     },
@@ -5566,8 +5566,8 @@
        "eur_foil": 0.14
       },
       "tcgplayer": {
-       "usd": 0.21,
-       "usd_foil": 0.31
+       "usd": 0.2,
+       "usd_foil": 0.3
       }
      }
     },
@@ -5590,7 +5590,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.21,
+       "usd": 0.2,
        "usd_foil": null
       }
      }
@@ -5638,7 +5638,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 2.31,
+       "usd": 2.25,
        "usd_foil": null
       }
      }
@@ -5662,7 +5662,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.24,
+       "usd": 0.23,
        "usd_foil": null
       }
      }
@@ -5711,7 +5711,7 @@
       },
       "tcgplayer": {
        "usd": null,
-       "usd_foil": 0.4
+       "usd_foil": 0.39
       }
      }
     },
@@ -5759,7 +5759,7 @@
       },
       "tcgplayer": {
        "usd": null,
-       "usd_foil": 0.44
+       "usd_foil": 0.41
       }
      }
     },
@@ -5782,7 +5782,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.99,
+       "usd": 0.95,
        "usd_foil": null
       }
      }
@@ -5830,7 +5830,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.22,
+       "usd": 0.21,
        "usd_foil": null
       }
      }
@@ -5878,7 +5878,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 1.96,
+       "usd": 1.93,
        "usd_foil": null
       }
      }
@@ -5902,7 +5902,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.85,
+       "usd": 0.84,
        "usd_foil": null
       }
      }
@@ -5926,7 +5926,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.91,
+       "usd": 0.79,
        "usd_foil": null
       }
      }
@@ -5974,7 +5974,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.35,
+       "usd": 0.31,
        "usd_foil": null
       }
      }
@@ -5998,7 +5998,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.25,
+       "usd": 0.24,
        "usd_foil": null
       }
      }
@@ -6046,7 +6046,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.25,
+       "usd": 0.23,
        "usd_foil": null
       }
      }
@@ -6070,7 +6070,7 @@
        "eur_foil": 0.16
       },
       "tcgplayer": {
-       "usd": 0.17,
+       "usd": 0.18,
        "usd_foil": 0.16
       }
      }
@@ -6095,7 +6095,7 @@
       },
       "tcgplayer": {
        "usd": 0.2,
-       "usd_foil": 0.28
+       "usd_foil": 0.29
       }
      }
     },
@@ -6118,7 +6118,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.5,
+       "usd": 0.47,
        "usd_foil": null
       }
      }
@@ -6166,7 +6166,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 1.32,
+       "usd": 1.3,
        "usd_foil": null
       }
      }
@@ -6191,7 +6191,7 @@
       },
       "tcgplayer": {
        "usd": 0.2,
-       "usd_foil": 0.24
+       "usd_foil": 0.22
       }
      }
     },
@@ -6214,7 +6214,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.31,
+       "usd": 0.3,
        "usd_foil": null
       }
      }
@@ -6270,7 +6270,7 @@
        "eur_foil": 0.16
       },
       "tcgplayer": {
-       "usd": 0.17,
+       "usd": 0.18,
        "usd_foil": 0.16
       }
      }
@@ -6342,7 +6342,7 @@
        "eur_foil": 0.15
       },
       "tcgplayer": {
-       "usd": 0.2,
+       "usd": 0.22,
        "usd_foil": 0.16
       }
      }
@@ -6390,7 +6390,7 @@
        "eur_foil": 1.35
       },
       "tcgplayer": {
-       "usd": 0.66,
+       "usd": 0.65,
        "usd_foil": null
       }
      }
@@ -6654,7 +6654,7 @@
        "eur_foil": 4.61
       },
       "tcgplayer": {
-       "usd": 1.78,
+       "usd": 1.77,
        "usd_foil": null
       }
      }
@@ -7614,7 +7614,7 @@
        "eur_foil": 2.9
       },
       "tcgplayer": {
-       "usd": 2.59,
+       "usd": 2.49,
        "usd_foil": null
       }
      }
@@ -8678,7 +8678,7 @@
        "eur_foil": 0.16
       },
       "tcgplayer": {
-       "usd": 0.17,
+       "usd": 0.18,
        "usd_foil": 0.16
       }
      }
@@ -8702,7 +8702,7 @@
        "eur_foil": 0.15
       },
       "tcgplayer": {
-       "usd": 0.2,
+       "usd": 0.22,
        "usd_foil": 0.16
       }
      }
@@ -8726,7 +8726,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.64,
+       "usd": 0.68,
        "usd_foil": null
       }
      }
@@ -8966,7 +8966,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.77,
+       "usd": 0.78,
        "usd_foil": null
       }
      }
@@ -9062,7 +9062,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 4.96,
+       "usd": 4.97,
        "usd_foil": null
       }
      }
@@ -9206,7 +9206,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 3.58,
+       "usd": 3.54,
        "usd_foil": null
       }
      }
@@ -9302,7 +9302,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 3.76,
+       "usd": 3.7,
        "usd_foil": null
       }
      }
@@ -10046,7 +10046,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 10.63,
+       "usd": 10.58,
        "usd_foil": null
       }
      }
@@ -10582,7 +10582,7 @@
        "eur_foil": 0.15
       },
       "tcgplayer": {
-       "usd": 0.2,
+       "usd": 0.22,
        "usd_foil": 0.16
       }
      }
@@ -10606,7 +10606,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.64,
+       "usd": 0.68,
        "usd_foil": null
       }
      }
@@ -10750,7 +10750,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 13.21,
+       "usd": 13.24,
        "usd_foil": null
       }
      }
@@ -10774,7 +10774,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 1.39,
+       "usd": 1.43,
        "usd_foil": null
       }
      }
@@ -10870,7 +10870,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.88,
+       "usd": 0.89,
        "usd_foil": null
       }
      }
@@ -11014,7 +11014,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 2.03,
+       "usd": 2.08,
        "usd_foil": null
       }
      }
@@ -11134,7 +11134,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 1.78,
+       "usd": 1.8,
        "usd_foil": null
       }
      }
@@ -11278,7 +11278,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.34,
+       "usd": 0.33,
        "usd_foil": null
       }
      }
@@ -11374,7 +11374,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 5.87,
+       "usd": 5.85,
        "usd_foil": null
       }
      }
@@ -11470,7 +11470,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.3,
+       "usd": 0.31,
        "usd_foil": null
       }
      }
@@ -11590,7 +11590,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.58,
+       "usd": 0.59,
        "usd_foil": null
       }
      }
@@ -12606,7 +12606,7 @@
        "eur_foil": 0.15
       },
       "tcgplayer": {
-       "usd": 0.2,
+       "usd": 0.22,
        "usd_foil": 0.16
       }
      }
@@ -12702,7 +12702,7 @@
        "eur_foil": 1.35
       },
       "tcgplayer": {
-       "usd": 0.66,
+       "usd": 0.65,
        "usd_foil": null
       }
      }
@@ -13086,7 +13086,7 @@
        "eur_foil": 8.81
       },
       "tcgplayer": {
-       "usd": 4.28,
+       "usd": 4.27,
        "usd_foil": null
       }
      }
@@ -13206,7 +13206,7 @@
        "eur_foil": 4.61
       },
       "tcgplayer": {
-       "usd": 1.78,
+       "usd": 1.77,
        "usd_foil": null
       }
      }
@@ -13902,7 +13902,7 @@
        "eur_foil": 3.06
       },
       "tcgplayer": {
-       "usd": 2.64,
+       "usd": 2.76,
        "usd_foil": null
       }
      }
@@ -15326,7 +15326,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 4.33,
+       "usd": 4.2,
        "usd_foil": null
       }
      }
@@ -15470,7 +15470,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 2.03,
+       "usd": 2.08,
        "usd_foil": null
       }
      }
@@ -15542,7 +15542,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 1.78,
+       "usd": 1.8,
        "usd_foil": null
       }
      }
@@ -15614,7 +15614,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 4.97,
+       "usd": 4.96,
        "usd_foil": null
       }
      }
@@ -15638,7 +15638,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.35,
+       "usd": 0.37,
        "usd_foil": null
       }
      }
@@ -15662,7 +15662,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.64,
+       "usd": 0.68,
        "usd_foil": null
       }
      }
@@ -15734,7 +15734,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 6.22,
+       "usd": 6.25,
        "usd_foil": null
       }
      }
@@ -15902,7 +15902,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.34,
+       "usd": 0.33,
        "usd_foil": null
       }
      }
@@ -16118,7 +16118,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.4,
+       "usd": 0.39,
        "usd_foil": null
       }
      }
@@ -16310,7 +16310,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.35,
+       "usd": 0.36,
        "usd_foil": null
       }
      }
@@ -16478,7 +16478,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.37,
+       "usd": 0.36,
        "usd_foil": null
       }
      }
@@ -16646,7 +16646,7 @@
        "eur_foil": 0.16
       },
       "tcgplayer": {
-       "usd": 0.17,
+       "usd": 0.18,
        "usd_foil": 0.16
       }
      }
@@ -16774,7 +16774,7 @@
        "eur_foil": 0.16
       },
       "tcgplayer": {
-       "usd": 0.17,
+       "usd": 0.18,
        "usd_foil": 0.16
       }
      }
@@ -16846,7 +16846,7 @@
        "eur_foil": 0.15
       },
       "tcgplayer": {
-       "usd": 0.2,
+       "usd": 0.22,
        "usd_foil": 0.16
       }
      }
@@ -16870,7 +16870,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.5,
+       "usd": 0.47,
        "usd_foil": null
       }
      }
@@ -16918,7 +16918,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 1.08,
+       "usd": 1.04,
        "usd_foil": null
       }
      }
@@ -16942,7 +16942,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.93,
+       "usd": 0.84,
        "usd_foil": null
       }
      }
@@ -17038,7 +17038,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.32,
+       "usd": 0.33,
        "usd_foil": null
       }
      }
@@ -17062,7 +17062,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 3.94,
+       "usd": 3.92,
        "usd_foil": null
       }
      }
@@ -17086,7 +17086,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 1.04,
+       "usd": 1.02,
        "usd_foil": null
       }
      }
@@ -17110,7 +17110,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 1.32,
+       "usd": 1.3,
        "usd_foil": null
       }
      }
@@ -17134,7 +17134,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.3,
+       "usd": 0.24,
        "usd_foil": null
       }
      }
@@ -17182,7 +17182,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.35,
+       "usd": 0.31,
        "usd_foil": null
       }
      }
@@ -17207,7 +17207,7 @@
       },
       "tcgplayer": {
        "usd": null,
-       "usd_foil": 0.37
+       "usd_foil": 0.38
       }
      }
     },
@@ -17230,7 +17230,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.27,
+       "usd": 0.24,
        "usd_foil": null
       }
      }
@@ -17326,7 +17326,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.26,
+       "usd": 0.23,
        "usd_foil": null
       }
      }
@@ -17374,7 +17374,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 1.13,
+       "usd": 1.16,
        "usd_foil": null
       }
      }
@@ -17398,7 +17398,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 2.07,
+       "usd": 2.0,
        "usd_foil": null
       }
      }
@@ -17446,7 +17446,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.21,
+       "usd": 0.2,
        "usd_foil": null
       }
      }
@@ -17470,7 +17470,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.32,
+       "usd": 0.27,
        "usd_foil": null
       }
      }
@@ -17494,7 +17494,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.32,
+       "usd": 0.39,
        "usd_foil": null
       }
      }
@@ -17542,7 +17542,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 4.18,
+       "usd": 4.05,
        "usd_foil": null
       }
      }
@@ -17591,7 +17591,7 @@
       },
       "tcgplayer": {
        "usd": null,
-       "usd_foil": 1.86
+       "usd_foil": 1.81
       }
      }
     },
@@ -17638,7 +17638,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.22,
+       "usd": 0.23,
        "usd_foil": null
       }
      }
@@ -17662,7 +17662,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.3,
+       "usd": 0.29,
        "usd_foil": null
       }
      }
@@ -17686,7 +17686,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.4,
+       "usd": 0.25,
        "usd_foil": null
       }
      }
@@ -17710,7 +17710,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 3.74,
+       "usd": 3.72,
        "usd_foil": null
       }
      }
@@ -17735,7 +17735,7 @@
       },
       "tcgplayer": {
        "usd": null,
-       "usd_foil": 0.43
+       "usd_foil": 0.42
       }
      }
     },
@@ -17806,7 +17806,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.25,
+       "usd": 0.24,
        "usd_foil": null
       }
      }
@@ -17854,7 +17854,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.25,
+       "usd": 0.26,
        "usd_foil": null
       }
      }
@@ -17878,7 +17878,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 4.63,
+       "usd": 4.83,
        "usd_foil": null
       }
      }
@@ -17902,7 +17902,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.45,
+       "usd": 0.46,
        "usd_foil": null
       }
      }
@@ -17926,7 +17926,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 3.99,
+       "usd": 3.79,
        "usd_foil": null
       }
      }
@@ -17998,7 +17998,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.6,
+       "usd": 0.58,
        "usd_foil": null
       }
      }
@@ -18070,7 +18070,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.41,
+       "usd": 0.36,
        "usd_foil": null
       }
      }
@@ -18094,8 +18094,8 @@
        "eur_foil": 0.28
       },
       "tcgplayer": {
-       "usd": 0.31,
-       "usd_foil": 0.4
+       "usd": 0.3,
+       "usd_foil": 0.42
       }
      }
     },
@@ -18118,8 +18118,8 @@
        "eur_foil": 0.2
       },
       "tcgplayer": {
-       "usd": 0.27,
-       "usd_foil": 0.35
+       "usd": 0.26,
+       "usd_foil": 0.36
       }
      }
     },
@@ -18166,7 +18166,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 1.13,
+       "usd": 1.07,
        "usd_foil": null
       }
      }
@@ -18190,7 +18190,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 11.91,
+       "usd": 11.83,
        "usd_foil": null
       }
      }
@@ -18214,7 +18214,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 1.49,
+       "usd": 1.46,
        "usd_foil": null
       }
      }
@@ -18238,7 +18238,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.39,
+       "usd": 0.38,
        "usd_foil": null
       }
      }
@@ -18334,7 +18334,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 1.22,
+       "usd": 1.24,
        "usd_foil": null
       }
      }
@@ -18383,7 +18383,7 @@
       },
       "tcgplayer": {
        "usd": null,
-       "usd_foil": 3.51
+       "usd_foil": 3.4
       }
      }
     },
@@ -18454,7 +18454,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.42,
+       "usd": 0.43,
        "usd_foil": null
       }
      }
@@ -18478,7 +18478,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.44,
+       "usd": 0.46,
        "usd_foil": null
       }
      }
@@ -18526,7 +18526,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.29,
+       "usd": 0.3,
        "usd_foil": null
       }
      }
@@ -18550,7 +18550,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.38,
+       "usd": 0.35,
        "usd_foil": null
       }
      }
@@ -18622,7 +18622,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.23,
+       "usd": 0.22,
        "usd_foil": null
       }
      }
@@ -18670,7 +18670,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.74,
+       "usd": 0.68,
        "usd_foil": null
       }
      }
@@ -18694,7 +18694,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.28,
+       "usd": 0.27,
        "usd_foil": null
       }
      }
@@ -18718,7 +18718,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.19,
+       "usd": 0.18,
        "usd_foil": null
       }
      }
@@ -18742,7 +18742,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 6.06,
+       "usd": 6.14,
        "usd_foil": null
       }
      }
@@ -18767,7 +18767,7 @@
       },
       "tcgplayer": {
        "usd": 0.8,
-       "usd_foil": 0.35
+       "usd_foil": 0.33
       }
      }
     },
@@ -18815,7 +18815,7 @@
       },
       "tcgplayer": {
        "usd": 1.0,
-       "usd_foil": 0.41
+       "usd_foil": 0.39
       }
      }
     }
@@ -18870,7 +18870,7 @@
        "eur_foil": 0.16
       },
       "tcgplayer": {
-       "usd": 0.17,
+       "usd": 0.18,
        "usd_foil": 0.16
       }
      }
@@ -18942,7 +18942,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.64,
+       "usd": 0.68,
        "usd_foil": null
       }
      }
@@ -19638,7 +19638,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.34,
+       "usd": 0.33,
        "usd_foil": null
       }
      }
@@ -19926,7 +19926,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 2.3,
+       "usd": 2.27,
        "usd_foil": null
       }
      }
@@ -19950,7 +19950,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.78,
+       "usd": 0.79,
        "usd_foil": null
       }
      }
@@ -20894,7 +20894,7 @@
        "eur_foil": 0.16
       },
       "tcgplayer": {
-       "usd": 0.17,
+       "usd": 0.18,
        "usd_foil": 0.16
       }
      }
@@ -20918,7 +20918,7 @@
        "eur_foil": 0.15
       },
       "tcgplayer": {
-       "usd": 0.2,
+       "usd": 0.22,
        "usd_foil": 0.16
       }
      }
@@ -20990,7 +20990,7 @@
        "eur_foil": 1.35
       },
       "tcgplayer": {
-       "usd": 0.66,
+       "usd": 0.65,
        "usd_foil": null
       }
      }
@@ -21086,7 +21086,7 @@
        "eur_foil": 8.48
       },
       "tcgplayer": {
-       "usd": 2.47,
+       "usd": 2.49,
        "usd_foil": null
       }
      }
@@ -21134,7 +21134,7 @@
        "eur_foil": 6.92
       },
       "tcgplayer": {
-       "usd": 1.13,
+       "usd": 1.11,
        "usd_foil": null
       }
      }
@@ -21230,7 +21230,7 @@
        "eur_foil": 4.61
       },
       "tcgplayer": {
-       "usd": 1.78,
+       "usd": 1.77,
        "usd_foil": null
       }
      }
@@ -23182,7 +23182,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.26,
+       "usd": 0.27,
        "usd_foil": null
       }
      }
@@ -23230,7 +23230,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.23,
+       "usd": 0.22,
        "usd_foil": null
       }
      }
@@ -23254,7 +23254,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.27,
+       "usd": 0.25,
        "usd_foil": null
       }
      }
@@ -23302,7 +23302,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.35,
+       "usd": 0.31,
        "usd_foil": null
       }
      }
@@ -23326,7 +23326,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.4,
+       "usd": 0.35,
        "usd_foil": null
       }
      }
@@ -23374,7 +23374,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.32,
+       "usd": 0.31,
        "usd_foil": null
       }
      }
@@ -23446,7 +23446,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.32,
+       "usd": 0.39,
        "usd_foil": null
       }
      }
@@ -23470,7 +23470,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.82,
+       "usd": 0.8,
        "usd_foil": null
       }
      }
@@ -23494,7 +23494,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 2.49,
+       "usd": 2.34,
        "usd_foil": null
       }
      }
@@ -23542,7 +23542,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.36,
+       "usd": 0.33,
        "usd_foil": null
       }
      }
@@ -23566,7 +23566,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.25,
+       "usd": 0.26,
        "usd_foil": null
       }
      }
@@ -23614,7 +23614,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.24,
+       "usd": 0.23,
        "usd_foil": null
       }
      }
@@ -23686,7 +23686,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 1.78,
+       "usd": 1.88,
        "usd_foil": null
       }
      }
@@ -23710,7 +23710,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.2,
+       "usd": 0.19,
        "usd_foil": null
       }
      }
@@ -23782,7 +23782,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 1.22,
+       "usd": 1.18,
        "usd_foil": null
       }
      }
@@ -23806,7 +23806,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.24,
+       "usd": 0.22,
        "usd_foil": null
       }
      }
@@ -23830,7 +23830,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.88,
+       "usd": 0.92,
        "usd_foil": null
       }
      }
@@ -23854,7 +23854,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.33,
+       "usd": 0.31,
        "usd_foil": null
       }
      }
@@ -23878,7 +23878,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.69,
+       "usd": 0.68,
        "usd_foil": null
       }
      }
@@ -23902,7 +23902,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 3.16,
+       "usd": 3.07,
        "usd_foil": null
       }
      }
@@ -23926,7 +23926,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.3,
+       "usd": 0.29,
        "usd_foil": null
       }
      }
@@ -23950,7 +23950,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.38,
+       "usd": 0.37,
        "usd_foil": null
       }
      }
@@ -23974,7 +23974,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.26,
+       "usd": 0.25,
        "usd_foil": null
       }
      }
@@ -24022,7 +24022,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.61,
+       "usd": 0.55,
        "usd_foil": null
       }
      }
@@ -24046,7 +24046,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 5.33,
+       "usd": 5.28,
        "usd_foil": null
       }
      }
@@ -24070,7 +24070,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 8.1,
+       "usd": 8.11,
        "usd_foil": null
       }
      }
@@ -24118,7 +24118,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 5.91,
+       "usd": 5.78,
        "usd_foil": null
       }
      }
@@ -24142,7 +24142,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 6.76,
+       "usd": 6.55,
        "usd_foil": null
       }
      }
@@ -24190,7 +24190,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.18,
+       "usd": 0.19,
        "usd_foil": null
       }
      }
@@ -24214,7 +24214,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.53,
+       "usd": 0.52,
        "usd_foil": null
       }
      }
@@ -24238,7 +24238,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.42,
+       "usd": 0.41,
        "usd_foil": null
       }
      }
@@ -24262,7 +24262,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.32,
+       "usd": 0.3,
        "usd_foil": null
       }
      }
@@ -24310,7 +24310,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.35,
+       "usd": 0.33,
        "usd_foil": null
       }
      }
@@ -24334,7 +24334,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.23,
+       "usd": 0.22,
        "usd_foil": null
       }
      }
@@ -24358,7 +24358,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 1.63,
+       "usd": 1.56,
        "usd_foil": null
       }
      }
@@ -24382,7 +24382,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.25,
+       "usd": 0.26,
        "usd_foil": null
       }
      }
@@ -24406,7 +24406,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 3.33,
+       "usd": 3.25,
        "usd_foil": null
       }
      }
@@ -24454,7 +24454,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 2.03,
+       "usd": 1.96,
        "usd_foil": null
       }
      }
@@ -24478,7 +24478,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 2.13,
+       "usd": 2.02,
        "usd_foil": null
       }
      }
@@ -24574,7 +24574,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.18,
+       "usd": 0.19,
        "usd_foil": null
       }
      }
@@ -24598,7 +24598,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.35,
+       "usd": 0.36,
        "usd_foil": null
       }
      }
@@ -24622,7 +24622,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.32,
+       "usd": 0.31,
        "usd_foil": null
       }
      }
@@ -24646,7 +24646,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.27,
+       "usd": 0.28,
        "usd_foil": null
       }
      }
@@ -24670,7 +24670,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.62,
+       "usd": 0.59,
        "usd_foil": null
       }
      }
@@ -24694,7 +24694,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.24,
+       "usd": 0.23,
        "usd_foil": null
       }
      }
@@ -24718,7 +24718,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.5,
+       "usd": 0.47,
        "usd_foil": null
       }
      }
@@ -24742,7 +24742,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.24,
+       "usd": 0.25,
        "usd_foil": null
       }
      }
@@ -24766,7 +24766,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.26,
+       "usd": 0.25,
        "usd_foil": null
       }
      }
@@ -24838,7 +24838,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.28,
+       "usd": 0.27,
        "usd_foil": null
       }
      }
@@ -24886,7 +24886,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 1.21,
+       "usd": 1.22,
        "usd_foil": null
       }
      }
@@ -24910,7 +24910,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 1.25,
+       "usd": 1.23,
        "usd_foil": null
       }
      }
@@ -24934,7 +24934,7 @@
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 1.32,
+       "usd": 1.3,
        "usd_foil": null
       }
      }
@@ -24982,7 +24982,7 @@
        "eur_foil": 0.15
       },
       "tcgplayer": {
-       "usd": 0.2,
+       "usd": 0.22,
        "usd_foil": 0.16
       }
      }
