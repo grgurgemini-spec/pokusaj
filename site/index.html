@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#1a1a19">
+<meta name="theme-color" content="#1a1713">
 <title>Precon Price Tracker</title>
 <link rel="stylesheet" href="style.css">
 <link rel="manifest" href="manifest.webmanifest">
@@ -11,8 +11,11 @@
 </head>
 <body>
 <header class="topbar">
-  <a class="brand" href="#/">📈 Precon<span>Tracker</span></a>
+  <a class="brand" href="#/">Precon<span>Tracker</span></a>
   <nav id="nav"></nav>
+  <div class="price-toggle" id="price-toggle" role="group" title="Cardmarket cijena: prosjek (trend) ili najjeftinija ponuda (from)">
+    <button data-mode="eur" class="on">Average</button><button data-mode="eur_low">From</button>
+  </div>
   <span class="updated" id="updated"></span>
   <button id="update-btn" class="update-btn"
     title="Povuci svježe Cardmarket cijene (pokreće GitHub workflow)">⟳ Update</button>
@@ -40,11 +43,10 @@
   <div class="loading">Loading data…</div>
 </main>
 <footer class="foot">
-  Prices: Cardmarket EUR trend &amp; TCGplayer USD via
-  <a href="https://scryfall.com" target="_blank" rel="noopener">Scryfall</a>,
-  refreshed each time you run <code>python fetch_prices.py</code>.
-  Listings are optional scraped snapshots — see the README.
-  Not affiliated with Cardmarket, MTGStocks or Wizards of the Coast.
+  Cijene: Cardmarket EUR (<em>trend</em> = Average, <em>from</em> = najjeftinija ponuda) i
+  TCGplayer USD preko <a href="https://scryfall.com" target="_blank" rel="noopener">Scryfalla</a>;
+  povijest od 2017. iz MTGStocksa. Prikazano je što se dogodilo — ništa ovdje nije prognoza.
+  Nije povezano s Cardmarketom, MTGStocksom ni Wizards of the Coast.
 </footer>
 <script src="app.js"></script>
 </body>

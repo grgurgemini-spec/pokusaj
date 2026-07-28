@@ -10,23 +10,28 @@
    "decks": [
     {
      "name": "Heavenly Inferno",
-     "commander": "Kaalia of the Vast"
+     "commander": "Kaalia of the Vast",
+     "id": "heavenly-inferno"
     },
     {
      "name": "Mirror Mastery",
-     "commander": "Riku of Two Reflections"
+     "commander": "Riku of Two Reflections",
+     "id": "mirror-mastery"
     },
     {
      "name": "Counterpunch",
-     "commander": "Ghave, Guru of Spores"
+     "commander": "Ghave, Guru of Spores",
+     "id": "counterpunch"
     },
     {
      "name": "Political Puppets",
-     "commander": "Zedruu the Greathearted"
+     "commander": "Zedruu the Greathearted",
+     "id": "political-puppets"
     },
     {
      "name": "Devour for Power",
-     "commander": "The Mimeoplasm"
+     "commander": "The Mimeoplasm",
+     "id": "devour-for-power"
     }
    ]
   },
@@ -40,23 +45,28 @@
    "decks": [
     {
      "name": "Evasive Maneuvers",
-     "commander": "Derevi, Empyrial Tactician"
+     "commander": "Derevi, Empyrial Tactician",
+     "id": "evasive-maneuvers"
     },
     {
      "name": "Eternal Bargain",
-     "commander": "Oloro, Ageless Ascetic"
+     "commander": "Oloro, Ageless Ascetic",
+     "id": "eternal-bargain"
     },
     {
      "name": "Mind Seize",
-     "commander": "Jeleva, Nephalia's Scourge"
+     "commander": "Jeleva, Nephalia's Scourge",
+     "id": "mind-seize"
     },
     {
      "name": "Power Hungry",
-     "commander": "Prossh, Skyraider of Kher"
+     "commander": "Prossh, Skyraider of Kher",
+     "id": "power-hungry"
     },
     {
      "name": "Nature of the Beast",
-     "commander": "Marath, Will of the Wild"
+     "commander": "Marath, Will of the Wild",
+     "id": "nature-of-the-beast"
     }
    ]
   },
@@ -70,23 +80,28 @@
    "decks": [
     {
      "name": "Forged in Stone",
-     "commander": "Nahiri, the Lithomancer"
+     "commander": "Nahiri, the Lithomancer",
+     "id": "forged-in-stone"
     },
     {
      "name": "Peer Through Time",
-     "commander": "Teferi, Temporal Archmage"
+     "commander": "Teferi, Temporal Archmage",
+     "id": "peer-through-time"
     },
     {
      "name": "Sworn to Darkness",
-     "commander": "Ob Nixilis of the Black Oath"
+     "commander": "Ob Nixilis of the Black Oath",
+     "id": "sworn-to-darkness"
     },
     {
      "name": "Built from Scratch",
-     "commander": "Daretti, Scrap Savant"
+     "commander": "Daretti, Scrap Savant",
+     "id": "built-from-scratch"
     },
     {
      "name": "Guided by Nature",
-     "commander": "Freyalise, Llanowar's Fury"
+     "commander": "Freyalise, Llanowar's Fury",
+     "id": "guided-by-nature"
     }
    ]
   },
@@ -100,23 +115,28 @@
    "decks": [
     {
      "name": "Call the Spirits",
-     "commander": "Daxos the Returned"
+     "commander": "Daxos the Returned",
+     "id": "call-the-spirits"
     },
     {
      "name": "Seize Control",
-     "commander": "Mizzix of the Izmagnus"
+     "commander": "Mizzix of the Izmagnus",
+     "id": "seize-control"
     },
     {
      "name": "Plunder the Graves",
-     "commander": "Meren of Clan Nel Toth"
+     "commander": "Meren of Clan Nel Toth",
+     "id": "plunder-the-graves"
     },
     {
      "name": "Wade into Battle",
-     "commander": "Kalemne, Disciple of Iroas"
+     "commander": "Kalemne, Disciple of Iroas",
+     "id": "wade-into-battle"
     },
     {
      "name": "Swell the Host",
-     "commander": "Ezuri, Claw of Progress"
+     "commander": "Ezuri, Claw of Progress",
+     "id": "swell-the-host"
     }
    ]
   },
@@ -130,23 +150,28 @@
    "decks": [
     {
      "name": "Entropic Uprising",
-     "commander": "Yidris, Maelstrom Wielder"
+     "commander": "Yidris, Maelstrom Wielder",
+     "id": "entropic-uprising"
     },
     {
      "name": "Open Hostility",
-     "commander": "Saskia the Unyielding"
+     "commander": "Saskia the Unyielding",
+     "id": "open-hostility"
     },
     {
      "name": "Stalwart Unity",
-     "commander": "Kynaios and Tiro of Meletis"
+     "commander": "Kynaios and Tiro of Meletis",
+     "id": "stalwart-unity"
     },
     {
      "name": "Breed Lethality",
-     "commander": "Atraxa, Praetors' Voice"
+     "commander": "Atraxa, Praetors' Voice",
+     "id": "breed-lethality"
     },
     {
      "name": "Invent Superiority",
-     "commander": "Breya, Etherium Shaper"
+     "commander": "Breya, Etherium Shaper",
+     "id": "invent-superiority"
     }
    ]
   },
@@ -160,19 +185,23 @@
    "decks": [
     {
      "name": "Arcane Wizardry",
-     "commander": "Inalla, Archmage Ritualist"
+     "commander": "Inalla, Archmage Ritualist",
+     "id": "arcane-wizardry"
     },
     {
      "name": "Draconic Domination",
-     "commander": "The Ur-Dragon"
+     "commander": "The Ur-Dragon",
+     "id": "draconic-domination"
     },
     {
      "name": "Feline Ferocity",
-     "commander": "Arahbo, Roar of the World"
+     "commander": "Arahbo, Roar of the World",
+     "id": "feline-ferocity"
     },
     {
      "name": "Vampiric Bloodlust",
-     "commander": "Edgar Markov"
+     "commander": "Edgar Markov",
+     "id": "vampiric-bloodlust"
     }
    ]
   },
@@ -186,19 +215,23 @@
    "decks": [
     {
      "name": "Exquisite Invention",
-     "commander": "Saheeli, the Gifted"
+     "commander": "Saheeli, the Gifted",
+     "id": "exquisite-invention"
     },
     {
      "name": "Subjective Reality",
-     "commander": "Aminatou, the Fateshifter"
+     "commander": "Aminatou, the Fateshifter",
+     "id": "subjective-reality"
     },
     {
      "name": "Nature's Vengeance",
-     "commander": "Lord Windgrace"
+     "commander": "Lord Windgrace",
+     "id": "nature-s-vengeance"
     },
     {
      "name": "Adaptive Enchantment",
-     "commander": "Estrid, the Masked"
+     "commander": "Estrid, the Masked",
+     "id": "adaptive-enchantment"
     }
    ]
   },
@@ -212,19 +245,23 @@
    "decks": [
     {
      "name": "Faceless Menace",
-     "commander": "Kadena, Slinking Sorcerer"
+     "commander": "Kadena, Slinking Sorcerer",
+     "id": "faceless-menace"
     },
     {
      "name": "Mystic Intellect",
-     "commander": "Sevinne, the Chronoclasm"
+     "commander": "Sevinne, the Chronoclasm",
+     "id": "mystic-intellect"
     },
     {
      "name": "Primal Genesis",
-     "commander": "Ghired, Conclave Exile"
+     "commander": "Ghired, Conclave Exile",
+     "id": "primal-genesis"
     },
     {
      "name": "Merciless Rage",
-     "commander": "Anje Falkenrath"
+     "commander": "Anje Falkenrath",
+     "id": "merciless-rage"
     }
    ]
   },
@@ -238,23 +275,28 @@
    "decks": [
     {
      "name": "Ruthless Regiment",
-     "commander": "Jirina Kudro"
+     "commander": "Jirina Kudro",
+     "id": "ruthless-regiment"
     },
     {
      "name": "Arcane Maelstrom",
-     "commander": "Kalamax, the Stormsire"
+     "commander": "Kalamax, the Stormsire",
+     "id": "arcane-maelstrom"
     },
     {
      "name": "Symbiotic Swarm",
-     "commander": "Kathril, Aspect Warper"
+     "commander": "Kathril, Aspect Warper",
+     "id": "symbiotic-swarm"
     },
     {
      "name": "Timeless Wisdom",
-     "commander": "Gavi, Nest Warden"
+     "commander": "Gavi, Nest Warden",
+     "id": "timeless-wisdom"
     },
     {
      "name": "Enhanced Evolution",
-     "commander": "Otrimi, the Ever-Playful"
+     "commander": "Otrimi, the Ever-Playful",
+     "id": "enhanced-evolution"
     }
    ]
   },
@@ -268,11 +310,13 @@
    "decks": [
     {
      "name": "Land's Wrath",
-     "commander": "Obuun, Mul Daya Ancestor"
+     "commander": "Obuun, Mul Daya Ancestor",
+     "id": "land-s-wrath"
     },
     {
      "name": "Sneak Attack",
-     "commander": "Anowon, the Ruin Thief"
+     "commander": "Anowon, the Ruin Thief",
+     "id": "sneak-attack"
     }
    ]
   },
@@ -286,11 +330,13 @@
    "decks": [
     {
      "name": "Reap the Tides",
-     "commander": "Aesi, Tyrant of Gyre Strait"
+     "commander": "Aesi, Tyrant of Gyre Strait",
+     "id": "reap-the-tides"
     },
     {
      "name": "Arm for Battle",
-     "commander": "Wyleth, Soul of Steel"
+     "commander": "Wyleth, Soul of Steel",
+     "id": "arm-for-battle"
     }
    ]
   },
@@ -304,11 +350,13 @@
    "decks": [
     {
      "name": "Elven Empire",
-     "commander": "Lathril, Blade of the Elves"
+     "commander": "Lathril, Blade of the Elves",
+     "id": "elven-empire"
     },
     {
      "name": "Phantom Premonition",
-     "commander": "Ranar the Ever-Watchful"
+     "commander": "Ranar the Ever-Watchful",
+     "id": "phantom-premonition"
     }
    ]
   },
@@ -322,23 +370,28 @@
    "decks": [
     {
      "name": "Silverquill Statement",
-     "commander": "Breena, the Demagogue"
+     "commander": "Breena, the Demagogue",
+     "id": "silverquill-statement"
     },
     {
      "name": "Prismari Performance",
-     "commander": "Zaffai, Thunder Conductor"
+     "commander": "Zaffai, Thunder Conductor",
+     "id": "prismari-performance"
     },
     {
      "name": "Witherbloom Witchcraft",
-     "commander": "Willowdusk, Essence Seer"
+     "commander": "Willowdusk, Essence Seer",
+     "id": "witherbloom-witchcraft"
     },
     {
      "name": "Lorehold Legacies",
-     "commander": "Osgir, the Reconstructor"
+     "commander": "Osgir, the Reconstructor",
+     "id": "lorehold-legacies"
     },
     {
      "name": "Quantum Quandrix",
-     "commander": "Adrix and Nev, Twincasters"
+     "commander": "Adrix and Nev, Twincasters",
+     "id": "quantum-quandrix"
     }
    ]
   },
@@ -352,19 +405,23 @@
    "decks": [
     {
      "name": "Planar Portal",
-     "commander": "Prosper, Tome-Bound"
+     "commander": "Prosper, Tome-Bound",
+     "id": "planar-portal"
     },
     {
      "name": "Dungeons of Death",
-     "commander": "Sefris of the Hidden Ways"
+     "commander": "Sefris of the Hidden Ways",
+     "id": "dungeons-of-death"
     },
     {
      "name": "Draconic Rage",
-     "commander": "Vrondiss, Rage of Ancients"
+     "commander": "Vrondiss, Rage of Ancients",
+     "id": "draconic-rage"
     },
     {
      "name": "Aura of Courage",
-     "commander": "Galea, Kindler of Hope"
+     "commander": "Galea, Kindler of Hope",
+     "id": "aura-of-courage"
     }
    ]
   },
@@ -378,11 +435,13 @@
    "decks": [
     {
      "name": "Undead Unleashed",
-     "commander": "Wilhelt, the Rotcleaver"
+     "commander": "Wilhelt, the Rotcleaver",
+     "id": "undead-unleashed"
     },
     {
      "name": "Coven Counters",
-     "commander": "Leinore, Autumn Sovereign"
+     "commander": "Leinore, Autumn Sovereign",
+     "id": "coven-counters"
     }
    ]
   },
@@ -396,11 +455,13 @@
    "decks": [
     {
      "name": "Spirit Squadron",
-     "commander": "Millicent, Restless Revenant"
+     "commander": "Millicent, Restless Revenant",
+     "id": "spirit-squadron"
     },
     {
      "name": "Vampiric Bloodline",
-     "commander": "Strefan, Maurer Progenitor"
+     "commander": "Strefan, Maurer Progenitor",
+     "id": "vampiric-bloodline"
     }
    ]
   },
@@ -414,11 +475,13 @@
    "decks": [
     {
      "name": "Upgrades Unleashed",
-     "commander": "Chishiro, the Shattered Blade"
+     "commander": "Chishiro, the Shattered Blade",
+     "id": "upgrades-unleashed"
     },
     {
      "name": "Buckle Up",
-     "commander": "Kotori, Pilot Prodigy"
+     "commander": "Kotori, Pilot Prodigy",
+     "id": "buckle-up"
     }
    ]
   },
@@ -432,23 +495,28 @@
    "decks": [
     {
      "name": "Obscura Operation",
-     "commander": "Kamiz, Obscura Oculus"
+     "commander": "Kamiz, Obscura Oculus",
+     "id": "obscura-operation"
     },
     {
      "name": "Maestros Massacre",
-     "commander": "Anhelo, the Painter"
+     "commander": "Anhelo, the Painter",
+     "id": "maestros-massacre"
     },
     {
      "name": "Riveteers Rampage",
-     "commander": "Henzie \"Toolbox\" Torre"
+     "commander": "Henzie \"Toolbox\" Torre",
+     "id": "riveteers-rampage"
     },
     {
      "name": "Cabaretti Cacophony",
-     "commander": "Kitt Kanto, Mayhem Diva"
+     "commander": "Kitt Kanto, Mayhem Diva",
+     "id": "cabaretti-cacophony"
     },
     {
      "name": "Bedecked Brokers",
-     "commander": "Perrie, the Pulverizer"
+     "commander": "Perrie, the Pulverizer",
+     "id": "bedecked-brokers"
     }
    ]
   },
@@ -462,19 +530,23 @@
    "decks": [
     {
      "name": "Party Time",
-     "commander": "Nalia de'Arnise"
+     "commander": "Nalia de'Arnise",
+     "id": "party-time"
     },
     {
      "name": "Mind Flayarrrs",
-     "commander": "Captain N'ghathrod"
+     "commander": "Captain N'ghathrod",
+     "id": "mind-flayarrrs"
     },
     {
      "name": "Draconic Dissent",
-     "commander": "Firkraag, Cunning Instigator"
+     "commander": "Firkraag, Cunning Instigator",
+     "id": "draconic-dissent"
     },
     {
      "name": "Exit from Exile",
-     "commander": "Faldorn, Dread Wolf Herald"
+     "commander": "Faldorn, Dread Wolf Herald",
+     "id": "exit-from-exile"
     }
    ]
   },
@@ -488,11 +560,13 @@
    "decks": [
     {
      "name": "Painbow",
-     "commander": "Jared Carthalion"
+     "commander": "Jared Carthalion",
+     "id": "painbow"
     },
     {
      "name": "Legends' Legacy",
-     "commander": "Dihada, Binder of Wills"
+     "commander": "Dihada, Binder of Wills",
+     "id": "legends-legacy"
     }
    ]
   },
@@ -506,19 +580,23 @@
    "decks": [
     {
      "name": "Forces of the Imperium",
-     "commander": "Inquisitor Greyfax"
+     "commander": "Inquisitor Greyfax",
+     "id": "forces-of-the-imperium"
     },
     {
      "name": "Necron Dynasties",
-     "commander": "Szarekh, the Silent King"
+     "commander": "Szarekh, the Silent King",
+     "id": "necron-dynasties"
     },
     {
      "name": "Tyranid Swarm",
-     "commander": "The Swarmlord"
+     "commander": "The Swarmlord",
+     "id": "tyranid-swarm"
     },
     {
      "name": "The Ruinous Powers",
-     "commander": "Abaddon the Despoiler"
+     "commander": "Abaddon the Despoiler",
+     "id": "the-ruinous-powers"
     }
    ]
   },
@@ -532,11 +610,13 @@
    "decks": [
     {
      "name": "Urza's Iron Alliance",
-     "commander": "Urza, Chief Artificer"
+     "commander": "Urza, Chief Artificer",
+     "id": "urza-s-iron-alliance"
     },
     {
      "name": "Mishra's Burnished Banner",
-     "commander": "Mishra, Eminent One"
+     "commander": "Mishra, Eminent One",
+     "id": "mishra-s-burnished-banner"
     }
    ]
   },
@@ -550,23 +630,28 @@
    "decks": [
     {
      "name": "First Flight",
-     "commander": "Isperia, Supreme Judge"
+     "commander": "Isperia, Supreme Judge",
+     "id": "first-flight"
     },
     {
      "name": "Grave Danger",
-     "commander": "Gisa and Geralf"
+     "commander": "Gisa and Geralf",
+     "id": "grave-danger"
     },
     {
      "name": "Chaos Incarnate",
-     "commander": "Kardur, Doomscourge"
+     "commander": "Kardur, Doomscourge",
+     "id": "chaos-incarnate"
     },
     {
      "name": "Token Triumph",
-     "commander": ""
+     "commander": "",
+     "id": "token-triumph"
     },
     {
      "name": "Draconic Destruction",
-     "commander": "Atarka, World Render"
+     "commander": "Atarka, World Render",
+     "id": "draconic-destruction"
     }
    ]
   },
@@ -580,11 +665,13 @@
    "decks": [
     {
      "name": "Rebellion Rising",
-     "commander": "Neyali, Suns' Vanguard"
+     "commander": "Neyali, Suns' Vanguard",
+     "id": "rebellion-rising"
     },
     {
      "name": "Corrupting Influence",
-     "commander": "Ixhel, Scion of Atraxa"
+     "commander": "Ixhel, Scion of Atraxa",
+     "id": "corrupting-influence"
     }
    ]
   },
@@ -598,23 +685,28 @@
    "decks": [
     {
      "name": "Growing Threat",
-     "commander": "Brimaz, Blight of Oreskos"
+     "commander": "Brimaz, Blight of Oreskos",
+     "id": "growing-threat"
     },
     {
      "name": "Divine Convocation",
-     "commander": "Kasla, the Broken Halo"
+     "commander": "Kasla, the Broken Halo",
+     "id": "divine-convocation"
     },
     {
      "name": "Call for Backup",
-     "commander": "Bright-Palm, Soul Awakener"
+     "commander": "Bright-Palm, Soul Awakener",
+     "id": "call-for-backup"
     },
     {
      "name": "Cavalry Charge",
-     "commander": "Sidar Jabari of Zhalfir"
+     "commander": "Sidar Jabari of Zhalfir",
+     "id": "cavalry-charge"
     },
     {
      "name": "Tinker Time",
-     "commander": "Gimbal, Gremlin Prodigy"
+     "commander": "Gimbal, Gremlin Prodigy",
+     "id": "tinker-time"
     }
    ]
   },
@@ -658,19 +750,23 @@
    "decks": [
     {
      "name": "Eldrazi Unbound",
-     "commander": "Zhulodok, Void Gorger"
+     "commander": "Zhulodok, Void Gorger",
+     "id": "eldrazi-unbound"
     },
     {
      "name": "Enduring Enchantments",
-     "commander": "Anikthea, Hand of Erebos"
+     "commander": "Anikthea, Hand of Erebos",
+     "id": "enduring-enchantments"
     },
     {
      "name": "Planeswalker Party",
-     "commander": "Commodore Guff"
+     "commander": "Commodore Guff",
+     "id": "planeswalker-party"
     },
     {
      "name": "Sliver Swarm",
-     "commander": "Sliver Gravemother"
+     "commander": "Sliver Gravemother",
+     "id": "sliver-swarm"
     }
    ]
   },
@@ -684,11 +780,13 @@
    "decks": [
     {
      "name": "Fae Dominion",
-     "commander": "Tegwyll, Duke of Splendor"
+     "commander": "Tegwyll, Duke of Splendor",
+     "id": "fae-dominion"
     },
     {
      "name": "Virtue and Valor",
-     "commander": "Ellivere of the Wild Court"
+     "commander": "Ellivere of the Wild Court",
+     "id": "virtue-and-valor"
     }
    ]
   },
@@ -702,19 +800,23 @@
    "decks": [
     {
      "name": "Blast from the Past",
-     "commander": "The Fourth Doctor & Sarah Jane Smith"
+     "commander": "The Fourth Doctor & Sarah Jane Smith",
+     "id": "blast-from-the-past"
     },
     {
      "name": "Timey-Wimey",
-     "commander": "The Tenth Doctor & Rose Tyler"
+     "commander": "The Tenth Doctor & Rose Tyler",
+     "id": "timey-wimey"
     },
     {
      "name": "Paradox Power",
-     "commander": "The Thirteenth Doctor & Yasmin Khan"
+     "commander": "The Thirteenth Doctor & Yasmin Khan",
+     "id": "paradox-power"
     },
     {
      "name": "Masters of Evil",
-     "commander": "Davros, Dalek Creator"
+     "commander": "Davros, Dalek Creator",
+     "id": "masters-of-evil"
     }
    ]
   },
@@ -728,19 +830,23 @@
    "decks": [
     {
      "name": "Ahoy Mateys",
-     "commander": "Admiral Brass, Unsinkable"
+     "commander": "Admiral Brass, Unsinkable",
+     "id": "ahoy-mateys"
     },
     {
      "name": "Blood Rites",
-     "commander": "Clavileño, First of the Blessed"
+     "commander": "Clavileño, First of the Blessed",
+     "id": "blood-rites"
     },
     {
      "name": "Explorers of the Deep",
-     "commander": "Hakbal of the Surging Soul"
+     "commander": "Hakbal of the Surging Soul",
+     "id": "explorers-of-the-deep"
     },
     {
      "name": "Veloci-Ramp-Tor",
-     "commander": "Pantlaza, Sun-Favored"
+     "commander": "Pantlaza, Sun-Favored",
+     "id": "veloci-ramp-tor"
     }
    ]
   },
@@ -754,19 +860,23 @@
    "decks": [
     {
      "name": "Deep Clue Sea",
-     "commander": "Morska, Undersea Sleuth"
+     "commander": "Morska, Undersea Sleuth",
+     "id": "deep-clue-sea"
     },
     {
      "name": "Revenant Recon",
-     "commander": "Mirko, Obsessive Theorist"
+     "commander": "Mirko, Obsessive Theorist",
+     "id": "revenant-recon"
     },
     {
      "name": "Deadly Disguise",
-     "commander": "Kaust, Eyes of the Glade"
+     "commander": "Kaust, Eyes of the Glade",
+     "id": "deadly-disguise"
     },
     {
      "name": "Blame Game",
-     "commander": "Nelly Borca, Impulsive Accuser"
+     "commander": "Nelly Borca, Impulsive Accuser",
+     "id": "blame-game"
     }
    ]
   },
@@ -780,19 +890,23 @@
    "decks": [
     {
      "name": "Scrappy Survivors",
-     "commander": "Dogmeat, Ever Loyal"
+     "commander": "Dogmeat, Ever Loyal",
+     "id": "scrappy-survivors"
     },
     {
      "name": "Mutant Menace",
-     "commander": "The Wise Mothman"
+     "commander": "The Wise Mothman",
+     "id": "mutant-menace"
     },
     {
      "name": "Science!",
-     "commander": "Dr. Madison Li"
+     "commander": "Dr. Madison Li",
+     "id": "science"
     },
     {
      "name": "Hail, Caesar",
-     "commander": "Caesar, Legion's Emperor"
+     "commander": "Caesar, Legion's Emperor",
+     "id": "hail-caesar"
     }
    ]
   },
@@ -806,19 +920,23 @@
    "decks": [
     {
      "name": "Desert Bloom",
-     "commander": "Yuma, Proud Protector"
+     "commander": "Yuma, Proud Protector",
+     "id": "desert-bloom"
     },
     {
      "name": "Grand Larceny",
-     "commander": "Gonti, Canny Acquisitor"
+     "commander": "Gonti, Canny Acquisitor",
+     "id": "grand-larceny"
     },
     {
      "name": "Most Wanted",
-     "commander": "Olivia, Opulent Outlaw"
+     "commander": "Olivia, Opulent Outlaw",
+     "id": "most-wanted"
     },
     {
      "name": "Quick Draw",
-     "commander": "Stella Lee, Wild Card"
+     "commander": "Stella Lee, Wild Card",
+     "id": "quick-draw"
     }
    ]
   },
@@ -862,19 +980,23 @@
    "decks": [
     {
      "name": "Squirreled Away",
-     "commander": "Hazel of the Rootbloom"
+     "commander": "Hazel of the Rootbloom",
+     "id": "squirreled-away"
     },
     {
      "name": "Animated Army",
-     "commander": "Bello, Bard of the Brambles"
+     "commander": "Bello, Bard of the Brambles",
+     "id": "animated-army"
     },
     {
      "name": "Family Matters",
-     "commander": "Zinnia, Valley's Voice"
+     "commander": "Zinnia, Valley's Voice",
+     "id": "family-matters"
     },
     {
      "name": "Peace Offering",
-     "commander": "Ms. Bumbleflower"
+     "commander": "Ms. Bumbleflower",
+     "id": "peace-offering"
     }
    ]
   },
@@ -888,19 +1010,23 @@
    "decks": [
     {
      "name": "Miracle Worker",
-     "commander": "Aminatou, Veil Piercer"
+     "commander": "Aminatou, Veil Piercer",
+     "id": "miracle-worker"
     },
     {
      "name": "Endless Punishment",
-     "commander": "Valgavoth, Harrower of Souls"
+     "commander": "Valgavoth, Harrower of Souls",
+     "id": "endless-punishment"
     },
     {
      "name": "Death Toll",
-     "commander": "Winter, Cynical Opportunist"
+     "commander": "Winter, Cynical Opportunist",
+     "id": "death-toll"
     },
     {
      "name": "Jump Scare!",
-     "commander": "Zimone, All-Questioning"
+     "commander": "Zimone, All-Questioning",
+     "id": "jump-scare"
     }
    ]
   },
@@ -914,11 +1040,13 @@
    "decks": [
     {
      "name": "Eternal Might",
-     "commander": "Temmet, Naktamun's Will"
+     "commander": "Temmet, Naktamun's Will",
+     "id": "eternal-might"
     },
     {
      "name": "Living Energy",
-     "commander": "Saheeli, Radiant Creator"
+     "commander": "Saheeli, Radiant Creator",
+     "id": "living-energy"
     }
    ]
   },
@@ -932,15 +1060,18 @@
    "decks": [
     {
      "name": "Abzan Armor",
-     "commander": "Felothar the Steadfast"
+     "commander": "Felothar the Steadfast",
+     "id": "abzan-armor"
     },
     {
      "name": "Jeskai Striker",
-     "commander": "Shiko, Paragon of the Way"
+     "commander": "Shiko, Paragon of the Way",
+     "id": "jeskai-striker"
     },
     {
      "name": "Sultai Arisen",
-     "commander": "Kotis, the Fangkeeper"
+     "commander": "Kotis, the Fangkeeper",
+     "id": "sultai-arisen"
     },
     {
      "name": "Mardu Might",
@@ -948,7 +1079,8 @@
     },
     {
      "name": "Temur Roar",
-     "commander": "Ureni of the Unwritten"
+     "commander": "Ureni of the Unwritten",
+     "id": "temur-roar"
     }
    ]
   },
@@ -962,19 +1094,23 @@
    "decks": [
     {
      "name": "Counter Blitz",
-     "commander": "Tidus, Blitzball Star"
-    },
-    {
-     "name": "Cid's Brigade",
-     "commander": "Cid, Timeless Artificer"
+     "commander": "Tidus, Yuna's Guardian",
+     "id": "counter-blitz"
     },
     {
      "name": "Limit Break",
-     "commander": "Cloud, Ex-SOLDIER"
+     "commander": "Cloud, Ex-SOLDIER",
+     "id": "limit-break"
+    },
+    {
+     "name": "Revival Trance",
+     "commander": "Terra, Herald of Hope",
+     "id": "revival-trance"
     },
     {
      "name": "Scions & Spellcraft",
-     "commander": "Terra, Herald of Hope"
+     "commander": "Y'shtola, Night's Blessed",
+     "id": "scions-spellcraft"
     }
    ]
   },
@@ -988,11 +1124,13 @@
    "decks": [
     {
      "name": "Counter Intelligence",
-     "commander": "Inspirit, Flagship Vessel"
+     "commander": "Inspirit, Flagship Vessel",
+     "id": "counter-intelligence"
     },
     {
      "name": "World Shaper",
-     "commander": ""
+     "commander": "",
+     "id": "world-shaper"
     }
    ]
   },
@@ -1006,11 +1144,13 @@
    "decks": [
     {
      "name": "Dance of the Elements",
-     "commander": "Ashling"
+     "commander": "Ashling",
+     "id": "dance-of-the-elements"
     },
     {
      "name": "Blight Curse",
-     "commander": "Auntie Ool"
+     "commander": "Auntie Ool",
+     "id": "blight-curse"
     }
    ]
   },
@@ -1024,7 +1164,8 @@
    "decks": [
     {
      "name": "Turtle Power!",
-     "commander": "Leonardo, the Balance"
+     "commander": "Leonardo, the Balance",
+     "id": "turtle-power"
     }
    ]
   },
@@ -1038,23 +1179,28 @@
    "decks": [
     {
      "name": "Silverquill Influence",
-     "commander": ""
+     "commander": "",
+     "id": "silverquill-influence"
     },
     {
      "name": "Prismari Artistry",
-     "commander": ""
+     "commander": "",
+     "id": "prismari-artistry"
     },
     {
      "name": "Witherbloom Pestilence",
-     "commander": ""
+     "commander": "",
+     "id": "witherbloom-pestilence"
     },
     {
      "name": "Lorehold Spirit",
-     "commander": ""
+     "commander": "",
+     "id": "lorehold-spirit"
     },
     {
      "name": "Quandrix Unlimited",
-     "commander": ""
+     "commander": "",
+     "id": "quandrix-unlimited"
     }
    ]
   },
