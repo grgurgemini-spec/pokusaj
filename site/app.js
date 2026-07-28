@@ -373,7 +373,7 @@ function renderCatalog() {
            onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'set-logo-fallback',textContent:'${esc(set.abbr || set.code.toUpperCase())}'}))">` : ""}
         <span class="tile-name">${esc(set.name)}</span>
         <div class="set-sub">${esc(set.released || year)} ·
-          ${tracked ? `${tracked}/${set.decks.length} deckova praćeno` : "not tracked yet"}</div>
+          ${tracked ? `${tracked}/${set.decks.length} deckova praćeno` : "ne prati se"}</div>
         ${hits.length ? `<div class="hit-list">${hits.map(h => esc(h.name)).join(" · ")}</div>` : ""}
       </a>`;
   }).join("");
@@ -398,7 +398,7 @@ function renderCatalog() {
       </select>
       <label class="check"><input id="cat-tracked" type="checkbox"
         ${ui.trackedOnly ? "checked" : ""}> samo praćeni</label>
-      <span class="count">${sets.length} / ${state.catalog.sets.length} sets</span>
+      <span class="count">${sets.length} / ${state.catalog.sets.length} setova</span>
     </div>
     <div class="set-grid">${tiles.length ? tiles : ""}</div>
     ${tiles.length ? "" : `<p class="sub">Nema rezultata za "${esc(ui.q)}".</p>`}`;

@@ -88,6 +88,9 @@ code {
   display: flex; border: 1px solid var(--line); border-radius: var(--r);
   overflow: hidden; flex: none;
 }
+/* 🍌 `display:flex` pregazi UA-ovo [hidden]{display:none} — bez ovog retka se toggle
+   koji se sam sakriva (nema eur_low u podacima) svejedno prikaže i isprazni cijene. */
+.price-toggle[hidden] { display: none; }
 .price-toggle button {
   background: transparent; color: var(--muted); border: none; padding: 4px 10px;
   font-family: var(--mono); font-size: var(--t-xs); letter-spacing: .05em;
