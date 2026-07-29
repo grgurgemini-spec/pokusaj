@@ -129,7 +129,13 @@ function deltaHtml(pct, { arrow = true } = {}) {
   return `<span class="delta ${cls}">${sym}${pct > 0 ? "+" : ""}${pct.toFixed(1)}%</span>`;
 }
 
-/** % change between the last point and the closest point >= `days` back. */
+/** % promjena između zadnje točke i najbliže točke starije od `days` dana.
+    Vraća null kad te točke NEMA — bez podmetanja kraćeg perioda.
+
+    🍌 Prije je ovdje bio fallback na najstariju dostupnu točku. Kako povijest za
+    većinu karata seže samo nekoliko dana, stupac označen „7d" prikazivao je
+    šestodnevnu (ili kraću) promjenu, i to različit period od retka do retka pod
+    istom oznakom. Radije prazno nego brojka koja ne znači ono što piše. */
 function pctChange(points, key, days) {
   if (!points || points.length < 2) return null;
   const last = points[points.length - 1];
@@ -141,7 +147,6 @@ function pctChange(points, key, days) {
     if (p[key] == null) continue;
     if (new Date(p.d) <= target) base = p;
   }
-  if (!base) base = points.find(p => p[key] != null && p !== last) || null;
   if (!base || base[key] === 0 || base === last) return null;
   return ((last[key] - base[key]) / base[key]) * 100;
 }
@@ -268,7 +273,7 @@ function deckTile(deck) {
         <span>1d ${deltaHtml(d1)}</span>
         <span>7d ${deltaHtml(d7)}</span>
       </div>
-      <div class="spark">${sparkline(hist.map(p => p[priceKey()]), 300, 46)}</div>
+      <div class="spark">${sparkline(hist, priceKey(), 300, 46)}</div>
     </a>`;
 }
 
@@ -597,6 +602,11 @@ function renderDeck(deckId) {
   });
 
   const { total } = deckTotal(deck);
+  // Prazan 7d stupac bez objasnjenja izgleda kao kvar. Pokrivenost se priznaje
+  // (DESIGN.md, nacelo 5) — i nota nestane sama kad povijest naraste za svaku kartu.
+  // Fraza „X od Y karata ima" je ista kao u dnevnom pregledu i izbjegava hrvatsku
+  // slozenu mnozinu (1 karta / 2 karte / 5 karata) — „od" uvijek trazi genitiv.
+  const d7n = rows.filter(r => r.d7 != null).length;
   const th = (key, label, num, cls = "") => {
     const arrow = sort.key === key ? `<span class="arrow">${sort.dir > 0 ? "▲" : "▼"}</span>` : "";
     return `<th class="${num ? "num" : ""} ${cls}" data-sort="${key}">${label} ${arrow}</th>`;
@@ -617,6 +627,8 @@ function renderDeck(deckId) {
     <div class="toolbar">
       <input id="filter" type="search" placeholder="Filtriraj karte…" value="${esc(state.filter[deckId] || "")}">
       <span class="count">${rows.length} / ${deck.cards.length} karata</span>
+      ${d7n < rows.length ? `<span class="count">7d: ${d7n} od ${rows.length} karata ima
+        7 dana povijesti</span>` : ""}
     </div>
     <div class="table-wrap">
       <table>
@@ -774,8 +786,11 @@ function seriesDefs() {
   ];
 }
 
-function sparkline(values, w, h) {
-  const vals = values.filter(v => v != null);
+/** Prima točke (ne samo vrijednosti) da bi i ovdje os bila vremenska, ne po indeksu —
+    inače bi rupa u snimcima izgledala kao ravnomjeran dio serije. */
+function sparkline(points, key, w, h) {
+  const pts0 = (points || []).filter(p => p[key] != null);
+  const vals = pts0.map(p => p[key]);
   if (vals.length < 2) {
     return `<svg width="${w}" height="${h}"><line x1="0" y1="${h - 6}" x2="${w}" y2="${h - 6}"
       stroke="var(--baseline)" stroke-dasharray="3 4"/><text x="0" y="${h - 12}"
@@ -783,9 +798,11 @@ function sparkline(values, w, h) {
   }
   const min = Math.min(...vals), max = Math.max(...vals);
   const span = (max - min) || 1;
-  const pts = vals.map((v, i) => [
-    (i / (vals.length - 1)) * (w - 4) + 2,
-    h - 4 - ((v - min) / span) * (h - 10),
+  const t0 = Date.parse(pts0[0].d);
+  const tSpan = (Date.parse(pts0[pts0.length - 1].d) - t0) || 1;
+  const pts = pts0.map((p, i) => [
+    ((Date.parse(p.d) - t0) / tSpan) * (w - 4) + 2,
+    h - 4 - ((vals[i] - min) / span) * (h - 10),
   ]);
   const d = pts.map((p, i) => `${i ? "L" : "M"}${p[0].toFixed(1)},${p[1].toFixed(1)}`).join("");
   const last = pts[pts.length - 1];
@@ -824,7 +841,13 @@ function priceChart(points) {
   const pad = (max - min) * 0.08;
   min = Math.max(0, min - pad); max += pad;
 
-  const x = i => padL + (i / (points.length - 1)) * (W - padL - padR);
+  // 🍌 Bilo je `i / (points.length - 1)` — razmak po INDEKSU točke, ne po datumu.
+  // Snimci imaju rupe (07-21, 07-22, 07-24…), a crtali su se jednako razmaknuto:
+  // rijetke i guste dionice izgledaju isto → nagib koji podaci ne podupiru.
+  // To je grijeh #4 iz [[Pet grijeha nepoštene statistike]]. Os je sad vremenska.
+  const t = i => Date.parse(points[i].d);
+  const t0 = t(0), tSpan = (t(points.length - 1) - t0) || 1;
+  const x = i => padL + ((t(i) - t0) / tSpan) * (W - padL - padR);
   const y = v => padT + (1 - (v - min) / (max - min)) * (H - padT - padB);
 
   const yTicks = narrow ? 3 : 4;
@@ -897,8 +920,12 @@ function attachChartHover() {
   function onMove(evt) {
     const rect = svg.getBoundingClientRect();
     const sx = ((evt.clientX - rect.left) / rect.width) * W;
-    const frac = (sx - padL) / (W - padL - padR);
-    const i = Math.max(0, Math.min(points.length - 1, Math.round(frac * (points.length - 1))));
+    // Os je vremenska, pa indeks nije linearan u x — traži se najbliža točka po x.
+    let i = 0;
+    for (let k = 1, best = Math.abs(x(0) - sx); k < points.length; k++) {
+      const d = Math.abs(x(k) - sx);
+      if (d < best) { best = d; i = k; }
+    }
     const p = points[i];
     const cx = x(i);
     cross.setAttribute("x1", cx);
