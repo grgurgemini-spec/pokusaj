@@ -38,6 +38,14 @@ jobs:
           cp -r site data index.html /tmp/pub/
           touch /tmp/pub/.nojekyll
           cd /tmp/pub
+          # index.html, app.js i style.css keširaju se neovisno (Pages salje
+          # max-age=600), pa posjetitelj s toplim cacheom moze dobiti novi HTML
+          # uz stari JS - a to je prazna stranica, ne kozmeticki problem.
+          # Verzija u query stringu veze ih uz isti commit.
+          V="${GITHUB_SHA:0:8}"
+          sed -i "s|src=\"app.js\"|src=\"app.js?v=$V\"|; s|href=\"style.css\"|href=\"style.css?v=$V\"|" \
+            site/index.html
+          grep -q "app.js?v=$V" site/index.html || { echo "::error::cache-bust nije primijenjen"; exit 1; }
           git init -q -b gh-pages
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
