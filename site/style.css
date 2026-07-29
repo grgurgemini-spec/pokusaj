@@ -118,28 +118,6 @@ code {
 }
 .update-btn:hover { color: var(--ink); border-color: var(--accent-dim); }
 .update-btn:disabled { color: var(--muted); border-color: var(--line); cursor: wait; }
-.update-panel {
-  position: fixed; top: 54px; right: 16px; z-index: 40; max-width: 420px;
-  background: var(--surface-2); border-radius: var(--r);
-  padding: 16px 18px; font-size: var(--t-md); color: var(--ink-2);
-  box-shadow: 0 6px 16px -8px rgb(0 0 0 / .8);
-}
-.update-panel strong { color: var(--ink); }
-.update-panel ol { padding-left: 20px; margin: 8px 0; }
-.update-panel p { max-width: 60ch; }
-.update-panel .alt { color: var(--muted); margin-bottom: 0; }
-.token-row { display: flex; gap: 8px; margin: 10px 0; }
-.token-row input {
-  flex: 1; background: var(--bg); border: 1px solid var(--line); color: var(--ink);
-  border-radius: var(--r); padding: 6px 9px; font-family: var(--mono);
-  font-size: var(--t-md); min-width: 0;
-}
-.token-row input::placeholder { color: var(--muted); }
-.token-row button {
-  background: var(--accent); color: var(--bg); border: none; border-radius: var(--r);
-  padding: 6px 12px; cursor: pointer; font-family: var(--mono); font-size: var(--t-md);
-  font-weight: 700; white-space: nowrap;
-}
 #toast {
   position: fixed; left: 50%; bottom: 26px; transform: translate(-50%, 12px);
   background: var(--surface-2); color: var(--ink); border: 1px solid var(--line-2);
@@ -466,7 +444,6 @@ td .ext:hover { color: var(--accent); }
   /* Prostor za traku samo kad traka postoji — kad podaci nemaju eur_low, nema ni nje. */
   body:has(.price-toggle:not([hidden])) { padding-bottom: calc(52px + env(safe-area-inset-bottom)); }
   body:has(.price-toggle:not([hidden])) #toast { bottom: calc(66px + env(safe-area-inset-bottom)); }
-  .update-panel { top: calc(var(--topbar-h) + 6px); left: 12px; right: 12px; max-width: none; }
 
   /* --- ticker: cijena OSTAJE, postotak silazi pod nju ---
      Skrivena cijena je bila pola podatka; u dva retka stane cijela, a redak
@@ -534,7 +511,6 @@ td .ext:hover { color: var(--accent); }
   .backlink { display: inline-block; padding: 8px 0; }
   th { padding: 11px 12px; }
   .toolbar input[type="search"], .toolbar select { padding: 10px 12px; }
-  .token-row input, .token-row button { padding: 10px 12px; }
   .set-tile { padding: 20px 14px 16px; }
 }
 

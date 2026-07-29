@@ -1,8 +1,16 @@
-name: Update prices & deploy site
+name: Deploy site
+
+# Podatke NE proizvodi vise ovaj workflow. `fetch_prices.py` je gradio cijene iz
+# `decks/*.txt`, a tamo ih ima 12 — pa je svaki dnevni run pregazio puni izvoz
+# (158 deckova) verzijom s 12 deckova i katalog je izgledao kao da je prazan.
+#
+# Od 2026-07-29 `data/` puni lokalni pipeline:
+#   python scripts/mtg/update.py daily     # svjeze cijene u SQLite
+#   python scripts/mtg/export.py --web     # -> scripts/mtg/data-web/ (povijest 180 dana)
+#   kopiraj data-web/* u ovaj repo pod data/ pa commitaj
+# Ovaj workflow samo objavljuje ono sto je commitano.
 
 on:
-  schedule:
-    - cron: "37 6 * * *"   # daily, 06:37 UTC (off the :00 rush)
   workflow_dispatch: {}
   push:
     branches: [main]
@@ -15,40 +23,12 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  update-and-deploy:
+  deploy:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
         with:
           ref: main
-
-      - uses: actions/setup-python@v5
-        with:
-          python-version: "3.12"
-
-      # A failed fetch (deck source down, API hiccup) must not take the site
-      # down - we still redeploy whatever data is already committed.
-      - name: Fetch today's prices
-        id: fetch
-        continue-on-error: true
-        run: python fetch_prices.py
-
-      - name: Commit updated data
-        if: steps.fetch.outcome == 'success'
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add decks data
-          if ! git diff --cached --quiet; then
-            git commit -m "Daily price snapshot $(date -u +%F)"
-            git push
-          else
-            echo "No data changes today."
-          fi
-
-      - name: Report fetch failure
-        if: steps.fetch.outcome == 'failure'
-        run: echo "::warning::fetch_prices.py failed - deploying previously committed data."
 
       # Publish to the gh-pages branch (pushing this branch auto-enables
       # GitHub Pages; the Actions token may not create a Pages site via API).

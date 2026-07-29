@@ -107,6 +107,18 @@ function esc(s) {
   return String(s ?? "").replace(/[&<>"']/g,
     c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
 }
+/* Web-export (`export.py --web`) izostavlja `image` i `cardmarket_url` jer su izvedivi
+   iz `id`-a — u fajlu su bili 3,6 MB čistog ponavljanja. Lokalni puni export ih i dalje
+   ima, pa oba oblika moraju raditi. Ključno: `undefined` (ključa nema → izvedi) NIJE isto
+   što i `null` (izvoz kaže: ova karta nema sliku → ne izmišljaj URL koji vodi na 404). */
+const cardImage = c => c.image !== undefined ? c.image
+  : (c.id && c.id.length > 1
+      ? `https://cards.scryfall.io/normal/front/${c.id[0]}/${c.id[1]}/${c.id}.jpg` : null);
+const cardmarketUrl = c => c.cardmarket_url !== undefined ? c.cardmarket_url
+  : (c.cardmarket_id
+      ? `https://www.cardmarket.com/en/Magic/Products?idProduct=${c.cardmarket_id}` +
+        `&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall` : null);
+
 const fmtEur = v => v == null ? `<span class="price-na">—</span>` : `€${v.toFixed(2)}`;
 const fmtUsd = v => v == null ? `<span class="price-na">—</span>` : `$${v.toFixed(2)}`;
 
@@ -308,8 +320,8 @@ const eurDelta = (abs, pct) => {
 function moverTile(r) {
   return `
     <a class="mv-row" href="#/card/${esc(r.c.id)}" title="${esc(r.c.name)}">
-      <span class="mv-art">${r.c.image
-        ? `<img src="${esc(r.c.image)}" alt="" loading="lazy">`
+      <span class="mv-art">${cardImage(r.c)
+        ? `<img src="${esc(cardImage(r.c))}" alt="" loading="lazy">`
         : `<span class="mv-noart" aria-hidden="true">${esc((r.c.name || "?")[0])}</span>`}</span>
       <span class="mv-name">${esc(r.c.name)}</span>
       <span class="mv-price">€${(r.now ?? 0).toFixed(2)}</span>
@@ -460,9 +472,6 @@ function renderSet(code) {
 
 /* ---------------- manual price update (GitHub workflow dispatch) ---------- */
 
-const GH_REPO = "grgurgemini-spec/pokusaj";
-const GH_WORKFLOW = "update-and-deploy.yml";
-
 function toast(msg, ms = 6000) {
   let el = document.getElementById("toast");
   if (!el) {
@@ -476,46 +485,8 @@ function toast(msg, ms = 6000) {
   el._t = setTimeout(() => el.classList.remove("show"), ms);
 }
 
-async function dispatchUpdate(btn) {
-  const token = localStorage.getItem("gh_token");
-  if (!token) return showTokenPanel();
-  btn.disabled = true;
-  btn.textContent = "⏳ Pokrećem…";
-  try {
-    const res = await fetch(
-      `https://api.github.com/repos/${GH_REPO}/actions/workflows/${GH_WORKFLOW}/dispatches`,
-      {
-        method: "POST",
-        headers: {
-          "Authorization": `Bearer ${token}`,
-          "Accept": "application/vnd.github+json",
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ ref: "main" }),
-      });
-    if (res.status === 204) {
-      toast("✅ Update pokrenut! Svježe Cardmarket cijene bit će live za ~2–3 min " +
-            "(i spremljene u povijest/statistiku). Onda osvježi stranicu.", 10000);
-    } else if (res.status === 401 || res.status === 403) {
-      localStorage.removeItem("gh_token");
-      toast("❌ Token ne vrijedi ili nema ovlasti (Actions: write). Unesi novi.");
-      showTokenPanel();
-    } else {
-      toast(`❌ GitHub je vratio HTTP ${res.status}.`);
-    }
-  } catch (e) {
-    toast("❌ Ne mogu do GitHuba: " + esc(e.message));
-  }
-  btn.disabled = false;
-  btn.textContent = "⟳ Update";
-}
-
-function showTokenPanel() {
-  document.getElementById("update-panel").hidden = false;
-}
-
-/** Lokalni update: dashboard.py nudi POST /api/job pa gumb radi bez GitHub tokena.
-    Na GitHub Pagesu tog endpointa nema → pada natrag na workflow dispatch. */
+/** Lokalni update: dashboard.py nudi POST /api/job. Na GitHub Pagesu tog endpointa
+    nema, pa se gumb tamo uopce ne prikazuje (vidi wireUpdateButton). */
 async function localUpdate(btn) {
   btn.disabled = true;
   btn.textContent = "⏳ Osvježavam…";
@@ -548,28 +519,17 @@ async function hasLocalBackend() {
   } catch { return false; }
 }
 
-function wireUpdateButton() {
+async function wireUpdateButton() {
   const btn = document.getElementById("update-btn");
-  const panel = document.getElementById("update-panel");
   if (!btn) return;
-  let local = null;
-  btn.addEventListener("click", async () => {
-    if (local === null) local = await hasLocalBackend();
-    if (local) return localUpdate(btn);
-    if (!localStorage.getItem("gh_token")) {
-      panel.hidden = !panel.hidden;
-    } else {
-      dispatchUpdate(btn);
-    }
-  });
-  document.getElementById("token-save").addEventListener("click", () => {
-    const v = document.getElementById("token-input").value.trim();
-    if (!v) return;
-    localStorage.setItem("gh_token", v);
-    document.getElementById("token-input").value = "";
-    panel.hidden = true;
-    dispatchUpdate(btn);
-  });
+  // Od 2026-07-29 deployani `data/` puni lokalni pipeline, a GitHub workflow samo
+  // objavljuje. Na javnoj stranici gumb dakle NE moze povuci svjeze cijene — a gumb
+  // koji obeca osvjezavanje pa ga ne isporuci je kontrola koja laze. Zato postoji
+  // samo tamo gdje doista radi: uz lokalni dashboard.
+  let local = await hasLocalBackend();
+  btn.hidden = !local;
+  if (!local) return;
+  btn.addEventListener("click", () => localUpdate(btn));
 }
 
 function renderDeck(deckId) {
@@ -637,7 +597,7 @@ function renderDeck(deckId) {
           ${rows.map(r => `
             <tr data-card="${r.c.id}">
               <td class="cardcell">
-                ${r.c.image ? `<img loading="lazy" src="${esc(r.c.image)}" alt="">` : ""}
+                ${cardImage(r.c) ? `<img loading="lazy" src="${esc(cardImage(r.c))}" alt="">` : ""}
                 <span><span class="cn">${esc(r.c.name)}</span>${r.c.qty > 1 ? ` ×${r.c.qty}` : ""}<br>
                 <span class="ct">${esc(r.c.type_line || "")}</span></span>
               </td>
@@ -646,8 +606,8 @@ function renderDeck(deckId) {
               <td class="num col-foil">${fmtEur(r.foil)}</td>
               <td class="num col-usd">${fmtUsd(r.usd)}</td>
               <td class="num col-d7">${deltaHtml(r.d7, { arrow: false })}</td>
-              <td class="col-cm">${r.c.cardmarket_url
-                ? `<a class="ext" href="${esc(r.c.cardmarket_url)}" target="_blank" rel="noopener"
+              <td class="col-cm">${cardmarketUrl(r.c)
+                ? `<a class="ext" href="${esc(cardmarketUrl(r.c))}" target="_blank" rel="noopener"
                      title="Otvori na Cardmarketu">CM ↗</a>` : ""}</td>
             </tr>`).join("")}
         </tbody>
@@ -695,9 +655,9 @@ function renderCard(cardId) {
     <a class="backlink" href="#/deck/${deck.id}">← ${esc(deck.name)}</a>
     <div class="card-page">
       <div class="art">
-        ${card.image ? `<img src="${esc(card.image)}" alt="${esc(card.name)}">` : ""}
-        ${card.cardmarket_url
-          ? `<a class="buy-btn" href="${esc(card.cardmarket_url)}" target="_blank" rel="noopener">
+        ${cardImage(card) ? `<img src="${esc(cardImage(card))}" alt="${esc(card.name)}">` : ""}
+        ${cardmarketUrl(card)
+          ? `<a class="buy-btn" href="${esc(cardmarketUrl(card))}" target="_blank" rel="noopener">
                Otvori na Cardmarketu ↗</a>` : ""}
       </div>
       <div>
