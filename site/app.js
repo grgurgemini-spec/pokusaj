@@ -149,6 +149,36 @@ function pctChange(points, key, days) {
 function cardHistory(id) {
   return state.history?.cards?.[id]?.points || [];
 }
+
+/* --- povijest: puni izvoz vs. split web izvoz ---------------------------------
+   Lokalni `export.py` nosi cijelu povijest u history.json. Web izvoz
+   (`export.py --web`) drzi tamo samo zadnje dvije tocke — dovoljno za dnevni
+   pregled — a punih 180 dana seli u `data/history/<xx>.json`, koji se dohvaca tek
+   kad se otvori kartica karte. Oba oblika moraju raditi, pa se sve razlike drze
+   ovdje: `state.history.split` kaze koji je oblik. */
+
+/** 7d promjena za tablicu decka. U split izvozu je predracunata (dvije tocke je ne
+    mogu dati); u punom se racuna iz serije. Vrijednosti su iste — export koristi
+    doslovno isti algoritam, pa cijepanje ne mijenja nijednu prikazanu brojku. */
+function card7d(id, key) {
+  const h = state.history?.cards?.[id];
+  if (!h) return null;
+  const pre = key === "eur_low" ? h.d7_low : h.d7;
+  return pre !== undefined ? pre : pctChange(h.points || [], key, 7);
+}
+
+const shardCache = new Map();
+
+/** Puna serija za graf. U punom izvozu je vec u memoriji; u split izvozu dohvaca
+    shard (~25 kB) i pamti ga, pa je druga kartica iz istog sharda besplatna. */
+async function cardPoints(id) {
+  if (!state.history?.split) return cardHistory(id);
+  const key = id.slice(0, 2);
+  if (!shardCache.has(key)) {
+    shardCache.set(key, loadJSON(`../data/history/${key}.json`).catch(() => ({})));
+  }
+  return (await shardCache.get(key))[id] || cardHistory(id);
+}
 function deckHistory(id) {
   return state.history?.decks?.[id] || [];
 }
@@ -178,7 +208,10 @@ function deckTotal(deck) {
 
 /* ---------------- router ---------------- */
 
+let navToken = 0;
+
 function render() {
+  navToken++;                 // ponisti render kartice koji jos ceka svoj shard
   const hash = location.hash || "#/";
   const [, route, arg] = hash.split("/");
   const deckSet = route === "deck" && arg
@@ -545,7 +578,7 @@ function renderDeck(deckId) {
       price: c.prices.cardmarket[priceKey()],
       foil: c.prices.cardmarket.eur_foil,
       usd: c.prices.tcgplayer.usd,
-      d7: pctChange(cardHistory(c.id), priceKey(), 7),
+      d7: card7d(c.id, priceKey()),
     }))
     .filter(r => !filter
       || r.c.name.toLowerCase().includes(filter)
@@ -639,12 +672,16 @@ function rarityRank(r) {
   return { mythic: 4, rare: 3, uncommon: 2, common: 1 }[r] || 0;
 }
 
-function renderCard(cardId) {
+async function renderCard(cardId) {
   const hit = findCard(cardId);
   if (!hit) { $app.innerHTML = `<p>Nepoznata karta.</p>`; return; }
   const { card, deck } = hit;
   const cm = card.prices.cardmarket, tp = card.prices.tcgplayer;
-  const points = cardHistory(card.id);
+  // ponytail: prethodni prikaz ostaje dok shard stigne (~25 kB s istog origina).
+  // Ako ikad postane primjetno, ovdje ide skeleton umjesto cekanja.
+  const my = navToken;
+  const points = await cardPoints(card.id);
+  if (my !== navToken) return;                 // korisnik je u međuvremenu otišao dalje
   const d1 = pctChange(points, priceKey(), 1);
   const d7 = pctChange(points, priceKey(), 7);
   const d30 = pctChange(points, priceKey(), 30);
