@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-07-29T13:15:59+00:00",
+ "generated_at": "2026-07-29T16:05:38+00:00",
  "sources": {
   "cardmarket": "EUR trend prices via Scryfall (updated daily by Scryfall)",
   "tcgplayer": "USD prices via Scryfall"
@@ -2028,73 +2028,73 @@
      }
     },
     {
-     "id": "426b0211-3d5d-4e53-bcf6-21823c655ffd",
+     "id": "c49d378e-9549-4320-b3c6-1aeb216d1e98",
      "name": "Mountain",
      "qty": 5,
-     "set": "msc",
-     "set_name": "Marvel Super Heroes Commander",
-     "collector_number": "858",
+     "set": "hob",
+     "set_name": "The Hobbit",
+     "collector_number": "192",
      "rarity": "common",
      "type_line": "Basic Land — Mountain",
-     "image": "https://cards.scryfall.io/normal/front/4/2/426b0211-3d5d-4e53-bcf6-21823c655ffd.jpg?1783902988",
-     "cardmarket_id": 892370,
-     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=892370&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
-     "scryfall_url": "https://scryfall.com/card/msc/858/mountain?utm_source=api",
+     "image": "https://cards.scryfall.io/normal/front/c/4/c49d378e-9549-4320-b3c6-1aeb216d1e98.jpg?1785323363",
+     "cardmarket_id": null,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products/Search?referrer=scryfall&searchString=Mountain&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/hob/192/mountain?utm_source=api",
      "prices": {
       "cardmarket": {
-       "eur": 0.38,
+       "eur": null,
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.18,
+       "usd": null,
        "usd_foil": null
       }
      }
     },
     {
-     "id": "5a74175b-2418-4226-8435-1490532e644f",
+     "id": "c6aa89a8-3584-4906-b9a9-41ef2f021f8e",
      "name": "Island",
      "qty": 5,
-     "set": "msh",
-     "set_name": "Marvel Super Heroes",
-     "collector_number": "289",
+     "set": "hob",
+     "set_name": "The Hobbit",
+     "collector_number": "190",
      "rarity": "common",
      "type_line": "Basic Land — Island",
-     "image": "https://cards.scryfall.io/normal/front/5/a/5a74175b-2418-4226-8435-1490532e644f.jpg?1783902875",
-     "cardmarket_id": 890597,
-     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=890597&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
-     "scryfall_url": "https://scryfall.com/card/msh/289/island?utm_source=api",
+     "image": "https://cards.scryfall.io/normal/front/c/6/c6aa89a8-3584-4906-b9a9-41ef2f021f8e.jpg?1785323353",
+     "cardmarket_id": null,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products/Search?referrer=scryfall&searchString=Island&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/hob/190/island?utm_source=api",
      "prices": {
       "cardmarket": {
-       "eur": 0.09,
-       "eur_foil": 0.16
+       "eur": null,
+       "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.18,
-       "usd_foil": 0.16
+       "usd": null,
+       "usd_foil": null
       }
      }
     },
     {
-     "id": "5f9b6584-ad27-410d-b6f1-c25c91630aea",
+     "id": "7b7c408b-8660-4db5-9a16-5003c11b4ac1",
      "name": "Plains",
      "qty": 6,
-     "set": "msc",
-     "set_name": "Marvel Super Heroes Commander",
-     "collector_number": "866",
+     "set": "hob",
+     "set_name": "The Hobbit",
+     "collector_number": "189",
      "rarity": "common",
      "type_line": "Basic Land — Plains",
-     "image": "https://cards.scryfall.io/normal/front/5/f/5f9b6584-ad27-410d-b6f1-c25c91630aea.jpg?1783902990",
-     "cardmarket_id": 892378,
-     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=892378&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
-     "scryfall_url": "https://scryfall.com/card/msc/866/plains?utm_source=api",
+     "image": "https://cards.scryfall.io/normal/front/7/b/7b7c408b-8660-4db5-9a16-5003c11b4ac1.jpg?1785323349",
+     "cardmarket_id": null,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products/Search?referrer=scryfall&searchString=Plains&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/hob/189/plains?utm_source=api",
      "prices": {
       "cardmarket": {
-       "eur": 0.41,
+       "eur": null,
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.11,
+       "usd": null,
        "usd_foil": null
       }
      }
@@ -4028,73 +4028,73 @@
      }
     },
     {
-     "id": "5a74175b-2418-4226-8435-1490532e644f",
+     "id": "c6aa89a8-3584-4906-b9a9-41ef2f021f8e",
      "name": "Island",
      "qty": 5,
-     "set": "msh",
-     "set_name": "Marvel Super Heroes",
-     "collector_number": "289",
+     "set": "hob",
+     "set_name": "The Hobbit",
+     "collector_number": "190",
      "rarity": "common",
      "type_line": "Basic Land — Island",
-     "image": "https://cards.scryfall.io/normal/front/5/a/5a74175b-2418-4226-8435-1490532e644f.jpg?1783902875",
-     "cardmarket_id": 890597,
-     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=890597&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
-     "scryfall_url": "https://scryfall.com/card/msh/289/island?utm_source=api",
+     "image": "https://cards.scryfall.io/normal/front/c/6/c6aa89a8-3584-4906-b9a9-41ef2f021f8e.jpg?1785323353",
+     "cardmarket_id": null,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products/Search?referrer=scryfall&searchString=Island&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/hob/190/island?utm_source=api",
      "prices": {
       "cardmarket": {
-       "eur": 0.09,
-       "eur_foil": 0.16
-      },
-      "tcgplayer": {
-       "usd": 0.18,
-       "usd_foil": 0.16
-      }
-     }
-    },
-    {
-     "id": "426b0211-3d5d-4e53-bcf6-21823c655ffd",
-     "name": "Mountain",
-     "qty": 5,
-     "set": "msc",
-     "set_name": "Marvel Super Heroes Commander",
-     "collector_number": "858",
-     "rarity": "common",
-     "type_line": "Basic Land — Mountain",
-     "image": "https://cards.scryfall.io/normal/front/4/2/426b0211-3d5d-4e53-bcf6-21823c655ffd.jpg?1783902988",
-     "cardmarket_id": 892370,
-     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=892370&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
-     "scryfall_url": "https://scryfall.com/card/msc/858/mountain?utm_source=api",
-     "prices": {
-      "cardmarket": {
-       "eur": 0.38,
+       "eur": null,
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.18,
+       "usd": null,
        "usd_foil": null
       }
      }
     },
     {
-     "id": "5f9b6584-ad27-410d-b6f1-c25c91630aea",
-     "name": "Plains",
-     "qty": 10,
-     "set": "msc",
-     "set_name": "Marvel Super Heroes Commander",
-     "collector_number": "866",
+     "id": "c49d378e-9549-4320-b3c6-1aeb216d1e98",
+     "name": "Mountain",
+     "qty": 5,
+     "set": "hob",
+     "set_name": "The Hobbit",
+     "collector_number": "192",
      "rarity": "common",
-     "type_line": "Basic Land — Plains",
-     "image": "https://cards.scryfall.io/normal/front/5/f/5f9b6584-ad27-410d-b6f1-c25c91630aea.jpg?1783902990",
-     "cardmarket_id": 892378,
-     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=892378&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
-     "scryfall_url": "https://scryfall.com/card/msc/866/plains?utm_source=api",
+     "type_line": "Basic Land — Mountain",
+     "image": "https://cards.scryfall.io/normal/front/c/4/c49d378e-9549-4320-b3c6-1aeb216d1e98.jpg?1785323363",
+     "cardmarket_id": null,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products/Search?referrer=scryfall&searchString=Mountain&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/hob/192/mountain?utm_source=api",
      "prices": {
       "cardmarket": {
-       "eur": 0.41,
+       "eur": null,
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.11,
+       "usd": null,
+       "usd_foil": null
+      }
+     }
+    },
+    {
+     "id": "7b7c408b-8660-4db5-9a16-5003c11b4ac1",
+     "name": "Plains",
+     "qty": 10,
+     "set": "hob",
+     "set_name": "The Hobbit",
+     "collector_number": "189",
+     "rarity": "common",
+     "type_line": "Basic Land — Plains",
+     "image": "https://cards.scryfall.io/normal/front/7/b/7b7c408b-8660-4db5-9a16-5003c11b4ac1.jpg?1785323349",
+     "cardmarket_id": null,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products/Search?referrer=scryfall&searchString=Plains&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/hob/189/plains?utm_source=api",
+     "prices": {
+      "cardmarket": {
+       "eur": null,
+       "eur_foil": null
+      },
+      "tcgplayer": {
+       "usd": null,
        "usd_foil": null
       }
      }
@@ -4108,50 +4108,50 @@
    "commander": "Doctor Doom, King of Latveria",
    "cards": [
     {
-     "id": "426b0211-3d5d-4e53-bcf6-21823c655ffd",
+     "id": "c49d378e-9549-4320-b3c6-1aeb216d1e98",
      "name": "Mountain",
      "qty": 5,
-     "set": "msc",
-     "set_name": "Marvel Super Heroes Commander",
-     "collector_number": "858",
+     "set": "hob",
+     "set_name": "The Hobbit",
+     "collector_number": "192",
      "rarity": "common",
      "type_line": "Basic Land — Mountain",
-     "image": "https://cards.scryfall.io/normal/front/4/2/426b0211-3d5d-4e53-bcf6-21823c655ffd.jpg?1783902988",
-     "cardmarket_id": 892370,
-     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=892370&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
-     "scryfall_url": "https://scryfall.com/card/msc/858/mountain?utm_source=api",
+     "image": "https://cards.scryfall.io/normal/front/c/4/c49d378e-9549-4320-b3c6-1aeb216d1e98.jpg?1785323363",
+     "cardmarket_id": null,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products/Search?referrer=scryfall&searchString=Mountain&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/hob/192/mountain?utm_source=api",
      "prices": {
       "cardmarket": {
-       "eur": 0.38,
+       "eur": null,
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.18,
+       "usd": null,
        "usd_foil": null
       }
      }
     },
     {
-     "id": "74414c62-4b68-4e1b-9241-feff3231b9ee",
+     "id": "4031e5e4-e573-4130-8d20-4a606edef0a0",
      "name": "Swamp",
      "qty": 6,
-     "set": "msh",
-     "set_name": "Marvel Super Heroes",
-     "collector_number": "291",
+     "set": "hob",
+     "set_name": "The Hobbit",
+     "collector_number": "191",
      "rarity": "common",
      "type_line": "Basic Land — Swamp",
-     "image": "https://cards.scryfall.io/normal/front/7/4/74414c62-4b68-4e1b-9241-feff3231b9ee.jpg?1783902875",
-     "cardmarket_id": 890601,
-     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=890601&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
-     "scryfall_url": "https://scryfall.com/card/msh/291/swamp?utm_source=api",
+     "image": "https://cards.scryfall.io/normal/front/4/0/4031e5e4-e573-4130-8d20-4a606edef0a0.jpg?1785323357",
+     "cardmarket_id": null,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products/Search?referrer=scryfall&searchString=Swamp&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/hob/191/swamp?utm_source=api",
      "prices": {
       "cardmarket": {
-       "eur": 0.09,
-       "eur_foil": 0.11
+       "eur": null,
+       "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.14,
-       "usd_foil": 0.18
+       "usd": null,
+       "usd_foil": null
       }
      }
     },
@@ -6052,26 +6052,26 @@
      }
     },
     {
-     "id": "5a74175b-2418-4226-8435-1490532e644f",
+     "id": "c6aa89a8-3584-4906-b9a9-41ef2f021f8e",
      "name": "Island",
      "qty": 4,
-     "set": "msh",
-     "set_name": "Marvel Super Heroes",
-     "collector_number": "289",
+     "set": "hob",
+     "set_name": "The Hobbit",
+     "collector_number": "190",
      "rarity": "common",
      "type_line": "Basic Land — Island",
-     "image": "https://cards.scryfall.io/normal/front/5/a/5a74175b-2418-4226-8435-1490532e644f.jpg?1783902875",
-     "cardmarket_id": 890597,
-     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=890597&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
-     "scryfall_url": "https://scryfall.com/card/msh/289/island?utm_source=api",
+     "image": "https://cards.scryfall.io/normal/front/c/6/c6aa89a8-3584-4906-b9a9-41ef2f021f8e.jpg?1785323353",
+     "cardmarket_id": null,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products/Search?referrer=scryfall&searchString=Island&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/hob/190/island?utm_source=api",
      "prices": {
       "cardmarket": {
-       "eur": 0.09,
-       "eur_foil": 0.16
+       "eur": null,
+       "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.18,
-       "usd_foil": 0.16
+       "usd": null,
+       "usd_foil": null
       }
      }
     },
@@ -6252,122 +6252,122 @@
      }
     },
     {
-     "id": "5a74175b-2418-4226-8435-1490532e644f",
+     "id": "c6aa89a8-3584-4906-b9a9-41ef2f021f8e",
      "name": "Island",
      "qty": 1,
-     "set": "msh",
-     "set_name": "Marvel Super Heroes",
-     "collector_number": "289",
+     "set": "hob",
+     "set_name": "The Hobbit",
+     "collector_number": "190",
      "rarity": "common",
      "type_line": "Basic Land — Island",
-     "image": "https://cards.scryfall.io/normal/front/5/a/5a74175b-2418-4226-8435-1490532e644f.jpg?1783902875",
-     "cardmarket_id": 890597,
-     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=890597&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
-     "scryfall_url": "https://scryfall.com/card/msh/289/island?utm_source=api",
+     "image": "https://cards.scryfall.io/normal/front/c/6/c6aa89a8-3584-4906-b9a9-41ef2f021f8e.jpg?1785323353",
+     "cardmarket_id": null,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products/Search?referrer=scryfall&searchString=Island&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/hob/190/island?utm_source=api",
      "prices": {
       "cardmarket": {
-       "eur": 0.09,
-       "eur_foil": 0.16
+       "eur": null,
+       "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.18,
-       "usd_foil": 0.16
+       "usd": null,
+       "usd_foil": null
       }
      }
     },
     {
-     "id": "426b0211-3d5d-4e53-bcf6-21823c655ffd",
+     "id": "c49d378e-9549-4320-b3c6-1aeb216d1e98",
      "name": "Mountain",
      "qty": 1,
-     "set": "msc",
-     "set_name": "Marvel Super Heroes Commander",
-     "collector_number": "858",
+     "set": "hob",
+     "set_name": "The Hobbit",
+     "collector_number": "192",
      "rarity": "common",
      "type_line": "Basic Land — Mountain",
-     "image": "https://cards.scryfall.io/normal/front/4/2/426b0211-3d5d-4e53-bcf6-21823c655ffd.jpg?1783902988",
-     "cardmarket_id": 892370,
-     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=892370&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
-     "scryfall_url": "https://scryfall.com/card/msc/858/mountain?utm_source=api",
+     "image": "https://cards.scryfall.io/normal/front/c/4/c49d378e-9549-4320-b3c6-1aeb216d1e98.jpg?1785323363",
+     "cardmarket_id": null,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products/Search?referrer=scryfall&searchString=Mountain&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/hob/192/mountain?utm_source=api",
      "prices": {
       "cardmarket": {
-       "eur": 0.38,
+       "eur": null,
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.18,
+       "usd": null,
        "usd_foil": null
       }
      }
     },
     {
-     "id": "5f9b6584-ad27-410d-b6f1-c25c91630aea",
+     "id": "7b7c408b-8660-4db5-9a16-5003c11b4ac1",
      "name": "Plains",
      "qty": 1,
-     "set": "msc",
-     "set_name": "Marvel Super Heroes Commander",
-     "collector_number": "866",
+     "set": "hob",
+     "set_name": "The Hobbit",
+     "collector_number": "189",
      "rarity": "common",
      "type_line": "Basic Land — Plains",
-     "image": "https://cards.scryfall.io/normal/front/5/f/5f9b6584-ad27-410d-b6f1-c25c91630aea.jpg?1783902990",
-     "cardmarket_id": 892378,
-     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=892378&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
-     "scryfall_url": "https://scryfall.com/card/msc/866/plains?utm_source=api",
+     "image": "https://cards.scryfall.io/normal/front/7/b/7b7c408b-8660-4db5-9a16-5003c11b4ac1.jpg?1785323349",
+     "cardmarket_id": null,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products/Search?referrer=scryfall&searchString=Plains&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/hob/189/plains?utm_source=api",
      "prices": {
       "cardmarket": {
-       "eur": 0.41,
+       "eur": null,
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.11,
+       "usd": null,
        "usd_foil": null
       }
      }
     },
     {
-     "id": "22463284-2478-4b1e-9a37-6dd2383266cf",
+     "id": "c3e84b42-5423-4d4d-b8fc-cfbb2c53a4ca",
      "name": "Forest",
      "qty": 1,
-     "set": "msh",
-     "set_name": "Marvel Super Heroes",
-     "collector_number": "295",
+     "set": "hob",
+     "set_name": "The Hobbit",
+     "collector_number": "193",
      "rarity": "common",
      "type_line": "Basic Land — Forest",
-     "image": "https://cards.scryfall.io/normal/front/2/2/22463284-2478-4b1e-9a37-6dd2383266cf.jpg?1783902875",
-     "cardmarket_id": 890609,
-     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=890609&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
-     "scryfall_url": "https://scryfall.com/card/msh/295/forest?utm_source=api",
+     "image": "https://cards.scryfall.io/normal/front/c/3/c3e84b42-5423-4d4d-b8fc-cfbb2c53a4ca.jpg?1785323365",
+     "cardmarket_id": null,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products/Search?referrer=scryfall&searchString=Forest&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/hob/193/forest?utm_source=api",
      "prices": {
       "cardmarket": {
-       "eur": 0.06,
-       "eur_foil": 0.15
+       "eur": null,
+       "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.21,
-       "usd_foil": 0.16
+       "usd": null,
+       "usd_foil": null
       }
      }
     },
     {
-     "id": "74414c62-4b68-4e1b-9241-feff3231b9ee",
+     "id": "4031e5e4-e573-4130-8d20-4a606edef0a0",
      "name": "Swamp",
      "qty": 1,
-     "set": "msh",
-     "set_name": "Marvel Super Heroes",
-     "collector_number": "291",
+     "set": "hob",
+     "set_name": "The Hobbit",
+     "collector_number": "191",
      "rarity": "common",
      "type_line": "Basic Land — Swamp",
-     "image": "https://cards.scryfall.io/normal/front/7/4/74414c62-4b68-4e1b-9241-feff3231b9ee.jpg?1783902875",
-     "cardmarket_id": 890601,
-     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=890601&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
-     "scryfall_url": "https://scryfall.com/card/msh/291/swamp?utm_source=api",
+     "image": "https://cards.scryfall.io/normal/front/4/0/4031e5e4-e573-4130-8d20-4a606edef0a0.jpg?1785323357",
+     "cardmarket_id": null,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products/Search?referrer=scryfall&searchString=Swamp&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/hob/191/swamp?utm_source=api",
      "prices": {
       "cardmarket": {
-       "eur": 0.09,
-       "eur_foil": 0.11
+       "eur": null,
+       "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.14,
-       "usd_foil": 0.18
+       "usd": null,
+       "usd_foil": null
       }
      }
     },
@@ -8660,50 +8660,50 @@
      }
     },
     {
-     "id": "5a74175b-2418-4226-8435-1490532e644f",
+     "id": "c6aa89a8-3584-4906-b9a9-41ef2f021f8e",
      "name": "Island",
      "qty": 11,
-     "set": "msh",
-     "set_name": "Marvel Super Heroes",
-     "collector_number": "289",
+     "set": "hob",
+     "set_name": "The Hobbit",
+     "collector_number": "190",
      "rarity": "common",
      "type_line": "Basic Land — Island",
-     "image": "https://cards.scryfall.io/normal/front/5/a/5a74175b-2418-4226-8435-1490532e644f.jpg?1783902875",
-     "cardmarket_id": 890597,
-     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=890597&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
-     "scryfall_url": "https://scryfall.com/card/msh/289/island?utm_source=api",
+     "image": "https://cards.scryfall.io/normal/front/c/6/c6aa89a8-3584-4906-b9a9-41ef2f021f8e.jpg?1785323353",
+     "cardmarket_id": null,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products/Search?referrer=scryfall&searchString=Island&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/hob/190/island?utm_source=api",
      "prices": {
       "cardmarket": {
-       "eur": 0.09,
-       "eur_foil": 0.16
+       "eur": null,
+       "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.18,
-       "usd_foil": 0.16
+       "usd": null,
+       "usd_foil": null
       }
      }
     },
     {
-     "id": "22463284-2478-4b1e-9a37-6dd2383266cf",
+     "id": "c3e84b42-5423-4d4d-b8fc-cfbb2c53a4ca",
      "name": "Forest",
      "qty": 15,
-     "set": "msh",
-     "set_name": "Marvel Super Heroes",
-     "collector_number": "295",
+     "set": "hob",
+     "set_name": "The Hobbit",
+     "collector_number": "193",
      "rarity": "common",
      "type_line": "Basic Land — Forest",
-     "image": "https://cards.scryfall.io/normal/front/2/2/22463284-2478-4b1e-9a37-6dd2383266cf.jpg?1783902875",
-     "cardmarket_id": 890609,
-     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=890609&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
-     "scryfall_url": "https://scryfall.com/card/msh/295/forest?utm_source=api",
+     "image": "https://cards.scryfall.io/normal/front/c/3/c3e84b42-5423-4d4d-b8fc-cfbb2c53a4ca.jpg?1785323365",
+     "cardmarket_id": null,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products/Search?referrer=scryfall&searchString=Forest&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/hob/193/forest?utm_source=api",
      "prices": {
       "cardmarket": {
-       "eur": 0.06,
-       "eur_foil": 0.15
+       "eur": null,
+       "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.21,
-       "usd_foil": 0.16
+       "usd": null,
+       "usd_foil": null
       }
      }
     },
@@ -10516,74 +10516,74 @@
      }
     },
     {
-     "id": "5f9b6584-ad27-410d-b6f1-c25c91630aea",
+     "id": "7b7c408b-8660-4db5-9a16-5003c11b4ac1",
      "name": "Plains",
      "qty": 4,
-     "set": "msc",
-     "set_name": "Marvel Super Heroes Commander",
-     "collector_number": "866",
+     "set": "hob",
+     "set_name": "The Hobbit",
+     "collector_number": "189",
      "rarity": "common",
      "type_line": "Basic Land — Plains",
-     "image": "https://cards.scryfall.io/normal/front/5/f/5f9b6584-ad27-410d-b6f1-c25c91630aea.jpg?1783902990",
-     "cardmarket_id": 892378,
-     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=892378&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
-     "scryfall_url": "https://scryfall.com/card/msc/866/plains?utm_source=api",
+     "image": "https://cards.scryfall.io/normal/front/7/b/7b7c408b-8660-4db5-9a16-5003c11b4ac1.jpg?1785323349",
+     "cardmarket_id": null,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products/Search?referrer=scryfall&searchString=Plains&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/hob/189/plains?utm_source=api",
      "prices": {
       "cardmarket": {
-       "eur": 0.41,
+       "eur": null,
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.11,
+       "usd": null,
        "usd_foil": null
       }
      }
     },
     {
-     "id": "74414c62-4b68-4e1b-9241-feff3231b9ee",
+     "id": "4031e5e4-e573-4130-8d20-4a606edef0a0",
      "name": "Swamp",
      "qty": 4,
-     "set": "msh",
-     "set_name": "Marvel Super Heroes",
-     "collector_number": "291",
+     "set": "hob",
+     "set_name": "The Hobbit",
+     "collector_number": "191",
      "rarity": "common",
      "type_line": "Basic Land — Swamp",
-     "image": "https://cards.scryfall.io/normal/front/7/4/74414c62-4b68-4e1b-9241-feff3231b9ee.jpg?1783902875",
-     "cardmarket_id": 890601,
-     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=890601&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
-     "scryfall_url": "https://scryfall.com/card/msh/291/swamp?utm_source=api",
+     "image": "https://cards.scryfall.io/normal/front/4/0/4031e5e4-e573-4130-8d20-4a606edef0a0.jpg?1785323357",
+     "cardmarket_id": null,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products/Search?referrer=scryfall&searchString=Swamp&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/hob/191/swamp?utm_source=api",
      "prices": {
       "cardmarket": {
-       "eur": 0.09,
-       "eur_foil": 0.11
+       "eur": null,
+       "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.14,
-       "usd_foil": 0.18
+       "usd": null,
+       "usd_foil": null
       }
      }
     },
     {
-     "id": "22463284-2478-4b1e-9a37-6dd2383266cf",
+     "id": "c3e84b42-5423-4d4d-b8fc-cfbb2c53a4ca",
      "name": "Forest",
      "qty": 8,
-     "set": "msh",
-     "set_name": "Marvel Super Heroes",
-     "collector_number": "295",
+     "set": "hob",
+     "set_name": "The Hobbit",
+     "collector_number": "193",
      "rarity": "common",
      "type_line": "Basic Land — Forest",
-     "image": "https://cards.scryfall.io/normal/front/2/2/22463284-2478-4b1e-9a37-6dd2383266cf.jpg?1783902875",
-     "cardmarket_id": 890609,
-     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=890609&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
-     "scryfall_url": "https://scryfall.com/card/msh/295/forest?utm_source=api",
+     "image": "https://cards.scryfall.io/normal/front/c/3/c3e84b42-5423-4d4d-b8fc-cfbb2c53a4ca.jpg?1785323365",
+     "cardmarket_id": null,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products/Search?referrer=scryfall&searchString=Forest&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/hob/193/forest?utm_source=api",
      "prices": {
       "cardmarket": {
-       "eur": 0.06,
-       "eur_foil": 0.15
+       "eur": null,
+       "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.21,
-       "usd_foil": 0.16
+       "usd": null,
+       "usd_foil": null
       }
      }
     },
@@ -12564,74 +12564,74 @@
      }
     },
     {
-     "id": "426b0211-3d5d-4e53-bcf6-21823c655ffd",
+     "id": "c49d378e-9549-4320-b3c6-1aeb216d1e98",
      "name": "Mountain",
      "qty": 3,
-     "set": "msc",
-     "set_name": "Marvel Super Heroes Commander",
-     "collector_number": "858",
+     "set": "hob",
+     "set_name": "The Hobbit",
+     "collector_number": "192",
      "rarity": "common",
      "type_line": "Basic Land — Mountain",
-     "image": "https://cards.scryfall.io/normal/front/4/2/426b0211-3d5d-4e53-bcf6-21823c655ffd.jpg?1783902988",
-     "cardmarket_id": 892370,
-     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=892370&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
-     "scryfall_url": "https://scryfall.com/card/msc/858/mountain?utm_source=api",
+     "image": "https://cards.scryfall.io/normal/front/c/4/c49d378e-9549-4320-b3c6-1aeb216d1e98.jpg?1785323363",
+     "cardmarket_id": null,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products/Search?referrer=scryfall&searchString=Mountain&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/hob/192/mountain?utm_source=api",
      "prices": {
       "cardmarket": {
-       "eur": 0.38,
+       "eur": null,
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.18,
+       "usd": null,
        "usd_foil": null
       }
      }
     },
     {
-     "id": "22463284-2478-4b1e-9a37-6dd2383266cf",
+     "id": "c3e84b42-5423-4d4d-b8fc-cfbb2c53a4ca",
      "name": "Forest",
      "qty": 5,
-     "set": "msh",
-     "set_name": "Marvel Super Heroes",
-     "collector_number": "295",
+     "set": "hob",
+     "set_name": "The Hobbit",
+     "collector_number": "193",
      "rarity": "common",
      "type_line": "Basic Land — Forest",
-     "image": "https://cards.scryfall.io/normal/front/2/2/22463284-2478-4b1e-9a37-6dd2383266cf.jpg?1783902875",
-     "cardmarket_id": 890609,
-     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=890609&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
-     "scryfall_url": "https://scryfall.com/card/msh/295/forest?utm_source=api",
+     "image": "https://cards.scryfall.io/normal/front/c/3/c3e84b42-5423-4d4d-b8fc-cfbb2c53a4ca.jpg?1785323365",
+     "cardmarket_id": null,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products/Search?referrer=scryfall&searchString=Forest&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/hob/193/forest?utm_source=api",
      "prices": {
       "cardmarket": {
-       "eur": 0.06,
-       "eur_foil": 0.15
+       "eur": null,
+       "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.21,
-       "usd_foil": 0.16
+       "usd": null,
+       "usd_foil": null
       }
      }
     },
     {
-     "id": "74414c62-4b68-4e1b-9241-feff3231b9ee",
+     "id": "4031e5e4-e573-4130-8d20-4a606edef0a0",
      "name": "Swamp",
      "qty": 4,
-     "set": "msh",
-     "set_name": "Marvel Super Heroes",
-     "collector_number": "291",
+     "set": "hob",
+     "set_name": "The Hobbit",
+     "collector_number": "191",
      "rarity": "common",
      "type_line": "Basic Land — Swamp",
-     "image": "https://cards.scryfall.io/normal/front/7/4/74414c62-4b68-4e1b-9241-feff3231b9ee.jpg?1783902875",
-     "cardmarket_id": 890601,
-     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=890601&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
-     "scryfall_url": "https://scryfall.com/card/msh/291/swamp?utm_source=api",
+     "image": "https://cards.scryfall.io/normal/front/4/0/4031e5e4-e573-4130-8d20-4a606edef0a0.jpg?1785323357",
+     "cardmarket_id": null,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products/Search?referrer=scryfall&searchString=Swamp&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/hob/191/swamp?utm_source=api",
      "prices": {
       "cardmarket": {
-       "eur": 0.09,
-       "eur_foil": 0.11
+       "eur": null,
+       "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.14,
-       "usd_foil": 0.18
+       "usd": null,
+       "usd_foil": null
       }
      }
     },
@@ -16628,73 +16628,73 @@
      }
     },
     {
-     "id": "5a74175b-2418-4226-8435-1490532e644f",
+     "id": "c6aa89a8-3584-4906-b9a9-41ef2f021f8e",
      "name": "Island",
      "qty": 5,
-     "set": "msh",
-     "set_name": "Marvel Super Heroes",
-     "collector_number": "289",
+     "set": "hob",
+     "set_name": "The Hobbit",
+     "collector_number": "190",
      "rarity": "common",
      "type_line": "Basic Land — Island",
-     "image": "https://cards.scryfall.io/normal/front/5/a/5a74175b-2418-4226-8435-1490532e644f.jpg?1783902875",
-     "cardmarket_id": 890597,
-     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=890597&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
-     "scryfall_url": "https://scryfall.com/card/msh/289/island?utm_source=api",
+     "image": "https://cards.scryfall.io/normal/front/c/6/c6aa89a8-3584-4906-b9a9-41ef2f021f8e.jpg?1785323353",
+     "cardmarket_id": null,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products/Search?referrer=scryfall&searchString=Island&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/hob/190/island?utm_source=api",
      "prices": {
       "cardmarket": {
-       "eur": 0.09,
-       "eur_foil": 0.16
-      },
-      "tcgplayer": {
-       "usd": 0.18,
-       "usd_foil": 0.16
-      }
-     }
-    },
-    {
-     "id": "426b0211-3d5d-4e53-bcf6-21823c655ffd",
-     "name": "Mountain",
-     "qty": 5,
-     "set": "msc",
-     "set_name": "Marvel Super Heroes Commander",
-     "collector_number": "858",
-     "rarity": "common",
-     "type_line": "Basic Land — Mountain",
-     "image": "https://cards.scryfall.io/normal/front/4/2/426b0211-3d5d-4e53-bcf6-21823c655ffd.jpg?1783902988",
-     "cardmarket_id": 892370,
-     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=892370&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
-     "scryfall_url": "https://scryfall.com/card/msc/858/mountain?utm_source=api",
-     "prices": {
-      "cardmarket": {
-       "eur": 0.38,
+       "eur": null,
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.18,
+       "usd": null,
        "usd_foil": null
       }
      }
     },
     {
-     "id": "5f9b6584-ad27-410d-b6f1-c25c91630aea",
-     "name": "Plains",
-     "qty": 9,
-     "set": "msc",
-     "set_name": "Marvel Super Heroes Commander",
-     "collector_number": "866",
+     "id": "c49d378e-9549-4320-b3c6-1aeb216d1e98",
+     "name": "Mountain",
+     "qty": 5,
+     "set": "hob",
+     "set_name": "The Hobbit",
+     "collector_number": "192",
      "rarity": "common",
-     "type_line": "Basic Land — Plains",
-     "image": "https://cards.scryfall.io/normal/front/5/f/5f9b6584-ad27-410d-b6f1-c25c91630aea.jpg?1783902990",
-     "cardmarket_id": 892378,
-     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=892378&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
-     "scryfall_url": "https://scryfall.com/card/msc/866/plains?utm_source=api",
+     "type_line": "Basic Land — Mountain",
+     "image": "https://cards.scryfall.io/normal/front/c/4/c49d378e-9549-4320-b3c6-1aeb216d1e98.jpg?1785323363",
+     "cardmarket_id": null,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products/Search?referrer=scryfall&searchString=Mountain&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/hob/192/mountain?utm_source=api",
      "prices": {
       "cardmarket": {
-       "eur": 0.41,
+       "eur": null,
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.11,
+       "usd": null,
+       "usd_foil": null
+      }
+     }
+    },
+    {
+     "id": "7b7c408b-8660-4db5-9a16-5003c11b4ac1",
+     "name": "Plains",
+     "qty": 9,
+     "set": "hob",
+     "set_name": "The Hobbit",
+     "collector_number": "189",
+     "rarity": "common",
+     "type_line": "Basic Land — Plains",
+     "image": "https://cards.scryfall.io/normal/front/7/b/7b7c408b-8660-4db5-9a16-5003c11b4ac1.jpg?1785323349",
+     "cardmarket_id": null,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products/Search?referrer=scryfall&searchString=Plains&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/hob/189/plains?utm_source=api",
+     "prices": {
+      "cardmarket": {
+       "eur": null,
+       "eur_foil": null
+      },
+      "tcgplayer": {
+       "usd": null,
        "usd_foil": null
       }
      }
@@ -16756,98 +16756,98 @@
      }
     },
     {
-     "id": "5a74175b-2418-4226-8435-1490532e644f",
+     "id": "c6aa89a8-3584-4906-b9a9-41ef2f021f8e",
      "name": "Island",
      "qty": 4,
-     "set": "msh",
-     "set_name": "Marvel Super Heroes",
-     "collector_number": "289",
+     "set": "hob",
+     "set_name": "The Hobbit",
+     "collector_number": "190",
      "rarity": "common",
      "type_line": "Basic Land — Island",
-     "image": "https://cards.scryfall.io/normal/front/5/a/5a74175b-2418-4226-8435-1490532e644f.jpg?1783902875",
-     "cardmarket_id": 890597,
-     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=890597&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
-     "scryfall_url": "https://scryfall.com/card/msh/289/island?utm_source=api",
+     "image": "https://cards.scryfall.io/normal/front/c/6/c6aa89a8-3584-4906-b9a9-41ef2f021f8e.jpg?1785323353",
+     "cardmarket_id": null,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products/Search?referrer=scryfall&searchString=Island&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/hob/190/island?utm_source=api",
      "prices": {
       "cardmarket": {
-       "eur": 0.09,
-       "eur_foil": 0.16
+       "eur": null,
+       "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.18,
-       "usd_foil": 0.16
+       "usd": null,
+       "usd_foil": null
       }
      }
     },
     {
-     "id": "426b0211-3d5d-4e53-bcf6-21823c655ffd",
+     "id": "c49d378e-9549-4320-b3c6-1aeb216d1e98",
      "name": "Mountain",
      "qty": 3,
-     "set": "msc",
-     "set_name": "Marvel Super Heroes Commander",
-     "collector_number": "858",
+     "set": "hob",
+     "set_name": "The Hobbit",
+     "collector_number": "192",
      "rarity": "common",
      "type_line": "Basic Land — Mountain",
-     "image": "https://cards.scryfall.io/normal/front/4/2/426b0211-3d5d-4e53-bcf6-21823c655ffd.jpg?1783902988",
-     "cardmarket_id": 892370,
-     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=892370&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
-     "scryfall_url": "https://scryfall.com/card/msc/858/mountain?utm_source=api",
+     "image": "https://cards.scryfall.io/normal/front/c/4/c49d378e-9549-4320-b3c6-1aeb216d1e98.jpg?1785323363",
+     "cardmarket_id": null,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products/Search?referrer=scryfall&searchString=Mountain&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/hob/192/mountain?utm_source=api",
      "prices": {
       "cardmarket": {
-       "eur": 0.38,
+       "eur": null,
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.18,
+       "usd": null,
        "usd_foil": null
       }
      }
     },
     {
-     "id": "5f9b6584-ad27-410d-b6f1-c25c91630aea",
+     "id": "7b7c408b-8660-4db5-9a16-5003c11b4ac1",
      "name": "Plains",
      "qty": 5,
-     "set": "msc",
-     "set_name": "Marvel Super Heroes Commander",
-     "collector_number": "866",
+     "set": "hob",
+     "set_name": "The Hobbit",
+     "collector_number": "189",
      "rarity": "common",
      "type_line": "Basic Land — Plains",
-     "image": "https://cards.scryfall.io/normal/front/5/f/5f9b6584-ad27-410d-b6f1-c25c91630aea.jpg?1783902990",
-     "cardmarket_id": 892378,
-     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=892378&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
-     "scryfall_url": "https://scryfall.com/card/msc/866/plains?utm_source=api",
+     "image": "https://cards.scryfall.io/normal/front/7/b/7b7c408b-8660-4db5-9a16-5003c11b4ac1.jpg?1785323349",
+     "cardmarket_id": null,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products/Search?referrer=scryfall&searchString=Plains&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/hob/189/plains?utm_source=api",
      "prices": {
       "cardmarket": {
-       "eur": 0.41,
+       "eur": null,
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.11,
+       "usd": null,
        "usd_foil": null
       }
      }
     },
     {
-     "id": "22463284-2478-4b1e-9a37-6dd2383266cf",
+     "id": "c3e84b42-5423-4d4d-b8fc-cfbb2c53a4ca",
      "name": "Forest",
      "qty": 5,
-     "set": "msh",
-     "set_name": "Marvel Super Heroes",
-     "collector_number": "295",
+     "set": "hob",
+     "set_name": "The Hobbit",
+     "collector_number": "193",
      "rarity": "common",
      "type_line": "Basic Land — Forest",
-     "image": "https://cards.scryfall.io/normal/front/2/2/22463284-2478-4b1e-9a37-6dd2383266cf.jpg?1783902875",
-     "cardmarket_id": 890609,
-     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=890609&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
-     "scryfall_url": "https://scryfall.com/card/msh/295/forest?utm_source=api",
+     "image": "https://cards.scryfall.io/normal/front/c/3/c3e84b42-5423-4d4d-b8fc-cfbb2c53a4ca.jpg?1785323365",
+     "cardmarket_id": null,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products/Search?referrer=scryfall&searchString=Forest&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/hob/193/forest?utm_source=api",
      "prices": {
       "cardmarket": {
-       "eur": 0.06,
-       "eur_foil": 0.15
+       "eur": null,
+       "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.21,
-       "usd_foil": 0.16
+       "usd": null,
+       "usd_foil": null
       }
      }
     },
@@ -18852,73 +18852,73 @@
      }
     },
     {
-     "id": "5a74175b-2418-4226-8435-1490532e644f",
+     "id": "c6aa89a8-3584-4906-b9a9-41ef2f021f8e",
      "name": "Island",
      "qty": 6,
-     "set": "msh",
-     "set_name": "Marvel Super Heroes",
-     "collector_number": "289",
+     "set": "hob",
+     "set_name": "The Hobbit",
+     "collector_number": "190",
      "rarity": "common",
      "type_line": "Basic Land — Island",
-     "image": "https://cards.scryfall.io/normal/front/5/a/5a74175b-2418-4226-8435-1490532e644f.jpg?1783902875",
-     "cardmarket_id": 890597,
-     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=890597&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
-     "scryfall_url": "https://scryfall.com/card/msh/289/island?utm_source=api",
+     "image": "https://cards.scryfall.io/normal/front/c/6/c6aa89a8-3584-4906-b9a9-41ef2f021f8e.jpg?1785323353",
+     "cardmarket_id": null,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products/Search?referrer=scryfall&searchString=Island&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/hob/190/island?utm_source=api",
      "prices": {
       "cardmarket": {
-       "eur": 0.09,
-       "eur_foil": 0.16
-      },
-      "tcgplayer": {
-       "usd": 0.18,
-       "usd_foil": 0.16
-      }
-     }
-    },
-    {
-     "id": "74414c62-4b68-4e1b-9241-feff3231b9ee",
-     "name": "Swamp",
-     "qty": 6,
-     "set": "msh",
-     "set_name": "Marvel Super Heroes",
-     "collector_number": "291",
-     "rarity": "common",
-     "type_line": "Basic Land — Swamp",
-     "image": "https://cards.scryfall.io/normal/front/7/4/74414c62-4b68-4e1b-9241-feff3231b9ee.jpg?1783902875",
-     "cardmarket_id": 890601,
-     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=890601&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
-     "scryfall_url": "https://scryfall.com/card/msh/291/swamp?utm_source=api",
-     "prices": {
-      "cardmarket": {
-       "eur": 0.09,
-       "eur_foil": 0.11
-      },
-      "tcgplayer": {
-       "usd": 0.14,
-       "usd_foil": 0.18
-      }
-     }
-    },
-    {
-     "id": "426b0211-3d5d-4e53-bcf6-21823c655ffd",
-     "name": "Mountain",
-     "qty": 7,
-     "set": "msc",
-     "set_name": "Marvel Super Heroes Commander",
-     "collector_number": "858",
-     "rarity": "common",
-     "type_line": "Basic Land — Mountain",
-     "image": "https://cards.scryfall.io/normal/front/4/2/426b0211-3d5d-4e53-bcf6-21823c655ffd.jpg?1783902988",
-     "cardmarket_id": 892370,
-     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=892370&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
-     "scryfall_url": "https://scryfall.com/card/msc/858/mountain?utm_source=api",
-     "prices": {
-      "cardmarket": {
-       "eur": 0.38,
+       "eur": null,
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.18,
+       "usd": null,
+       "usd_foil": null
+      }
+     }
+    },
+    {
+     "id": "4031e5e4-e573-4130-8d20-4a606edef0a0",
+     "name": "Swamp",
+     "qty": 6,
+     "set": "hob",
+     "set_name": "The Hobbit",
+     "collector_number": "191",
+     "rarity": "common",
+     "type_line": "Basic Land — Swamp",
+     "image": "https://cards.scryfall.io/normal/front/4/0/4031e5e4-e573-4130-8d20-4a606edef0a0.jpg?1785323357",
+     "cardmarket_id": null,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products/Search?referrer=scryfall&searchString=Swamp&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/hob/191/swamp?utm_source=api",
+     "prices": {
+      "cardmarket": {
+       "eur": null,
+       "eur_foil": null
+      },
+      "tcgplayer": {
+       "usd": null,
+       "usd_foil": null
+      }
+     }
+    },
+    {
+     "id": "c49d378e-9549-4320-b3c6-1aeb216d1e98",
+     "name": "Mountain",
+     "qty": 7,
+     "set": "hob",
+     "set_name": "The Hobbit",
+     "collector_number": "192",
+     "rarity": "common",
+     "type_line": "Basic Land — Mountain",
+     "image": "https://cards.scryfall.io/normal/front/c/4/c49d378e-9549-4320-b3c6-1aeb216d1e98.jpg?1785323363",
+     "cardmarket_id": null,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products/Search?referrer=scryfall&searchString=Mountain&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/hob/192/mountain?utm_source=api",
+     "prices": {
+      "cardmarket": {
+       "eur": null,
+       "eur_foil": null
+      },
+      "tcgplayer": {
+       "usd": null,
        "usd_foil": null
       }
      }
@@ -20876,50 +20876,50 @@
      }
     },
     {
-     "id": "5a74175b-2418-4226-8435-1490532e644f",
+     "id": "c6aa89a8-3584-4906-b9a9-41ef2f021f8e",
      "name": "Island",
      "qty": 3,
-     "set": "msh",
-     "set_name": "Marvel Super Heroes",
-     "collector_number": "289",
+     "set": "hob",
+     "set_name": "The Hobbit",
+     "collector_number": "190",
      "rarity": "common",
      "type_line": "Basic Land — Island",
-     "image": "https://cards.scryfall.io/normal/front/5/a/5a74175b-2418-4226-8435-1490532e644f.jpg?1783902875",
-     "cardmarket_id": 890597,
-     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=890597&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
-     "scryfall_url": "https://scryfall.com/card/msh/289/island?utm_source=api",
+     "image": "https://cards.scryfall.io/normal/front/c/6/c6aa89a8-3584-4906-b9a9-41ef2f021f8e.jpg?1785323353",
+     "cardmarket_id": null,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products/Search?referrer=scryfall&searchString=Island&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/hob/190/island?utm_source=api",
      "prices": {
       "cardmarket": {
-       "eur": 0.09,
-       "eur_foil": 0.16
+       "eur": null,
+       "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.18,
-       "usd_foil": 0.16
+       "usd": null,
+       "usd_foil": null
       }
      }
     },
     {
-     "id": "22463284-2478-4b1e-9a37-6dd2383266cf",
+     "id": "c3e84b42-5423-4d4d-b8fc-cfbb2c53a4ca",
      "name": "Forest",
      "qty": 4,
-     "set": "msh",
-     "set_name": "Marvel Super Heroes",
-     "collector_number": "295",
+     "set": "hob",
+     "set_name": "The Hobbit",
+     "collector_number": "193",
      "rarity": "common",
      "type_line": "Basic Land — Forest",
-     "image": "https://cards.scryfall.io/normal/front/2/2/22463284-2478-4b1e-9a37-6dd2383266cf.jpg?1783902875",
-     "cardmarket_id": 890609,
-     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=890609&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
-     "scryfall_url": "https://scryfall.com/card/msh/295/forest?utm_source=api",
+     "image": "https://cards.scryfall.io/normal/front/c/3/c3e84b42-5423-4d4d-b8fc-cfbb2c53a4ca.jpg?1785323365",
+     "cardmarket_id": null,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products/Search?referrer=scryfall&searchString=Forest&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/hob/193/forest?utm_source=api",
      "prices": {
       "cardmarket": {
-       "eur": 0.06,
-       "eur_foil": 0.15
+       "eur": null,
+       "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.21,
-       "usd_foil": 0.16
+       "usd": null,
+       "usd_foil": null
       }
      }
     },
@@ -24964,49 +24964,49 @@
      }
     },
     {
-     "id": "22463284-2478-4b1e-9a37-6dd2383266cf",
+     "id": "c3e84b42-5423-4d4d-b8fc-cfbb2c53a4ca",
      "name": "Forest",
      "qty": 12,
-     "set": "msh",
-     "set_name": "Marvel Super Heroes",
-     "collector_number": "295",
+     "set": "hob",
+     "set_name": "The Hobbit",
+     "collector_number": "193",
      "rarity": "common",
      "type_line": "Basic Land — Forest",
-     "image": "https://cards.scryfall.io/normal/front/2/2/22463284-2478-4b1e-9a37-6dd2383266cf.jpg?1783902875",
-     "cardmarket_id": 890609,
-     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=890609&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
-     "scryfall_url": "https://scryfall.com/card/msh/295/forest?utm_source=api",
+     "image": "https://cards.scryfall.io/normal/front/c/3/c3e84b42-5423-4d4d-b8fc-cfbb2c53a4ca.jpg?1785323365",
+     "cardmarket_id": null,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products/Search?referrer=scryfall&searchString=Forest&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/hob/193/forest?utm_source=api",
      "prices": {
       "cardmarket": {
-       "eur": 0.06,
-       "eur_foil": 0.15
+       "eur": null,
+       "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.21,
-       "usd_foil": 0.16
+       "usd": null,
+       "usd_foil": null
       }
      }
     },
     {
-     "id": "5f9b6584-ad27-410d-b6f1-c25c91630aea",
+     "id": "7b7c408b-8660-4db5-9a16-5003c11b4ac1",
      "name": "Plains",
      "qty": 12,
-     "set": "msc",
-     "set_name": "Marvel Super Heroes Commander",
-     "collector_number": "866",
+     "set": "hob",
+     "set_name": "The Hobbit",
+     "collector_number": "189",
      "rarity": "common",
      "type_line": "Basic Land — Plains",
-     "image": "https://cards.scryfall.io/normal/front/5/f/5f9b6584-ad27-410d-b6f1-c25c91630aea.jpg?1783902990",
-     "cardmarket_id": 892378,
-     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products?idProduct=892378&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
-     "scryfall_url": "https://scryfall.com/card/msc/866/plains?utm_source=api",
+     "image": "https://cards.scryfall.io/normal/front/7/b/7b7c408b-8660-4db5-9a16-5003c11b4ac1.jpg?1785323349",
+     "cardmarket_id": null,
+     "cardmarket_url": "https://www.cardmarket.com/en/Magic/Products/Search?referrer=scryfall&searchString=Plains&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+     "scryfall_url": "https://scryfall.com/card/hob/189/plains?utm_source=api",
      "prices": {
       "cardmarket": {
-       "eur": 0.41,
+       "eur": null,
        "eur_foil": null
       },
       "tcgplayer": {
-       "usd": 0.11,
+       "usd": null,
        "usd_foil": null
       }
      }
