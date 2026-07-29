@@ -67,13 +67,20 @@ async function boot() {
   try { state.catalog = await loadJSON("catalog.json"); } catch { state.catalog = null; }
   if (!state.catalog) {
     // No catalog file: fall back to one pseudo-set holding whatever has data.
-    state.catalog = { sets: [{ code: "", icon: null, name: "Tracked decks", decks: state.cards.decks }] };
+    state.catalog = { sets: [{ code: "", icon: null, name: "Praćeni deckovi", decks: state.cards.decks }] };
   }
 
   const when = state.cards.generated_at ? new Date(state.cards.generated_at) : null;
   // Terminal čita vrijeme, ne rečenicu: lokalni ISO-ish stamp bez sekundi.
-  if (when) $updated.textContent = when.toLocaleString("hr-HR",
-    { day: "2-digit", month: "2-digit", hour: "2-digit", minute: "2-digit" }).replace(",", " ·");
+  // Starost snimka je dio podatka, ne fusnota: preko 2 dana se stamp oboji i sam kaže koliko je star.
+  if (when) {
+    const days = Math.floor((Date.now() - when) / 864e5);
+    const stamp = when.toLocaleString("hr-HR",
+      { day: "2-digit", month: "2-digit", hour: "2-digit", minute: "2-digit" }).replace(",", " ·");
+    $updated.textContent = days > 2 ? `${stamp} · ${days}d star` : stamp;
+    $updated.classList.toggle("stale-stamp", days > 2);
+    $updated.title = `Zadnji snimak cijena: ${when.toLocaleString("hr-HR")}`;
+  }
   $nav.innerHTML = `<a href="#/" data-home="1">Katalog</a>` + state.catalog.sets
     .map(s => `<a href="#/set/${s.code}" data-set="${s.code}"
       class="${setTracked(s) ? "" : "dim"}">${esc(shortSetName(s))}</a>`)
@@ -81,11 +88,20 @@ async function boot() {
 
   wireUpdateButton();
   wirePriceToggle();
+  measureTopbar();                       // tek kad je traka puna — prazna je 11px niža
+  addEventListener("resize", measureTopbar);
   window.addEventListener("hashchange", render);
   render();
 }
 
 /* ---------------- helpers ---------------- */
+
+/** Sticky thead se lijepi ispod sticky trake, ne ispod ruba prozora — a traka mijenja
+    visinu s brojem redaka. Mjeri se umjesto da se pogađa konstantom. */
+function measureTopbar() {
+  const bar = document.querySelector(".topbar");
+  if (bar) document.documentElement.style.setProperty("--topbar-h", bar.offsetHeight + "px");
+}
 
 function esc(s) {
   return String(s ?? "").replace(/[&<>"']/g,
@@ -325,8 +341,8 @@ function renderOverview() {
   const deckBlock = (title, rows) => `
     <div class="dm-block">
       <h2 class="mv-h">${title}</h2>
-      ${rows.length ? rows.map(deckMoverRow).join("")
-        : `<div class="ov-empty">nema podataka</div>`}
+      <div class="mv-list">${rows.length ? rows.map(deckMoverRow).join("")
+        : `<div class="ov-empty">nema podataka</div>`}</div>
     </div>`;
   return `
     <section class="overview">
@@ -435,11 +451,11 @@ function renderSet(code) {
     <div class="set-head">
       ${icon ? `<img class="set-icon" src="${icon}" alt="" onerror="this.remove()">` : ""}
       <div>
-        <h1 style="font-size:22px;margin:0">${esc(set.name)}</h1>
-        <div class="set-sub">${esc(set.released || "")}${set.released ? " · " : ""}${tracked}/${set.decks.length} decks tracked</div>
+        <h1>${esc(set.name)}</h1>
+        <div class="set-sub">${esc(set.released || "")}${set.released ? " · " : ""}${tracked}/${set.decks.length} deckova praćeno</div>
       </div>
     </div>
-    <div class="deck-grid" style="margin-top:16px">${tiles}</div>`;
+    <div class="deck-grid">${tiles}</div>`;
 }
 
 /* ---------------- manual price update (GitHub workflow dispatch) ---------- */
@@ -613,8 +629,8 @@ function renderDeck(deckId) {
       <table>
         <thead><tr>
           ${th("name", "Karta")}${th("rarity", "Rijetkost", false, "col-rarity")}
-          ${th("price", `EUR ${priceLabel()}`, true)}${th("foil", "Foil EUR", true, "col-foil")}
-          ${th("usd", "USD", true, "col-usd")}${th("d7", "7d", true)}
+          ${th("price", `EUR ${priceLabel()}`, true, "col-price")}${th("foil", "Foil EUR", true, "col-foil")}
+          ${th("usd", "USD", true, "col-usd")}${th("d7", "7d", true, "col-d7")}
           <th class="col-cm"></th>
         </tr></thead>
         <tbody>
@@ -626,13 +642,13 @@ function renderDeck(deckId) {
                 <span class="ct">${esc(r.c.type_line || "")}</span></span>
               </td>
               <td class="col-rarity"><span class="rarity ${esc(r.c.rarity)}">${esc(r.c.rarity || "")}</span></td>
-              <td class="num">${fmtEur(r.price)}</td>
+              <td class="num col-price">${fmtEur(r.price)}</td>
               <td class="num col-foil">${fmtEur(r.foil)}</td>
               <td class="num col-usd">${fmtUsd(r.usd)}</td>
-              <td class="num">${deltaHtml(r.d7, { arrow: false })}</td>
+              <td class="num col-d7">${deltaHtml(r.d7, { arrow: false })}</td>
               <td class="col-cm">${r.c.cardmarket_url
                 ? `<a class="ext" href="${esc(r.c.cardmarket_url)}" target="_blank" rel="noopener"
-                     title="Open on Cardmarket">CM ↗</a>` : ""}</td>
+                     title="Otvori na Cardmarketu">CM ↗</a>` : ""}</td>
             </tr>`).join("")}
         </tbody>
       </table>
@@ -698,15 +714,15 @@ function renderCard(cardId) {
           <div class="stat"><div class="lbl">TCGplayer USD</div>
             <div class="val">${fmtUsd(tp.usd)}</div></div>
           <div class="stat"><div class="lbl">1d / 7d / 30d</div>
-            <div class="val" style="font-size:15px">
+            <div class="val val-sm">
               ${deltaHtml(d1, { arrow: false })} / ${deltaHtml(d7, { arrow: false })} / ${deltaHtml(d30, { arrow: false })}
             </div></div>
         </div>
 
-        <h2>Povijest cijene <small style="color:var(--muted);font-weight:400">(EUR, Cardmarket ${priceLabel()})</small></h2>
+        <h2 class="sec-h">Povijest cijene · EUR, Cardmarket ${priceLabel()}</h2>
         ${priceChart(points)}
 
-        ${listingsSection(card, listing)}
+        ${state.listings ? listingsSection(card, listing) : ""}
       </div>
     </div>`;
 
@@ -715,17 +731,14 @@ function renderCard(cardId) {
 
 /* ---------------- listings ---------------- */
 
+// Poziva se samo kad listings.json postoji — inače sekcija ne postoji uopće.
+// Prazno stanje koje upućuje na skriptu koje u pipelineu nema je gora usluga od tišine.
 function listingsSection(card, listing) {
   if (!listing) {
     return `
-      <h2>Najjeftinije ponude</h2>
-      <div class="listing-note">
-        No scraped listings for this card yet. Listing details (10 cheapest offers
-        with card language and seller country, plus the top Croatian sellers) come
-        from the optional scraper:
-        <code>python scrape_cardmarket.py --card "${esc(card.name)}"</code> —
-        see the README for the caveats before using it.
-      </div>`;
+      <h2 class="sec-h">Najjeftinije ponude</h2>
+      <div class="listing-note">Za ovu kartu nema snimljenih ponuda — snimka ponuda pokriva
+        samo dio karata.</div>`;
   }
   const table = (rows) => rows.length ? `
     <div class="table-wrap">
@@ -747,12 +760,12 @@ function listingsSection(card, listing) {
     </div>` : `<div class="listing-note">Nema pronađenih ponuda.</div>`;
 
   return `
-    <h2>10 najjeftinijih ponuda</h2>
+    <h2 class="sec-h">10 najjeftinijih ponuda</h2>
     ${table(listing.cheapest || [])}
-    <h2>Najbolji prodavači u Hrvatskoj <span class="hr-badge">HR</span></h2>
+    <h2 class="sec-h">Najbolji prodavači u Hrvatskoj <span class="hr-badge">HR</span></h2>
     ${table(listing.croatia || [])}
-    <div class="stale">Snimka ponuda od ${esc(listing.scraped_at || "?")}
-      — refresh with <code>python scrape_cardmarket.py --card "${esc(card.name)}"</code></div>`;
+    <div class="stale">Snimka ponuda od ${esc(listing.scraped_at || "?")} — ponude se
+      snimaju odvojeno od dnevnih cijena i mogu biti starije od grafa.</div>`;
 }
 
 /* ---------------- charts (inline SVG) ---------------- */
@@ -769,7 +782,7 @@ function sparkline(values, w, h) {
   if (vals.length < 2) {
     return `<svg width="${w}" height="${h}"><line x1="0" y1="${h - 6}" x2="${w}" y2="${h - 6}"
       stroke="var(--baseline)" stroke-dasharray="3 4"/><text x="0" y="${h - 12}"
-      fill="var(--muted)" font-size="11">history builds up with daily runs</text></svg>`;
+      fill="var(--muted)" font-size="11">povijest raste sa svakim dnevnim snimkom</text></svg>`;
   }
   const min = Math.min(...vals), max = Math.max(...vals);
   const span = (max - min) || 1;
@@ -778,9 +791,12 @@ function sparkline(values, w, h) {
     h - 4 - ((v - min) / span) * (h - 10),
   ]);
   const d = pts.map((p, i) => `${i ? "L" : "M"}${p[0].toFixed(1)},${p[1].toFixed(1)}`).join("");
-  return `<svg width="${w}" height="${h}" role="img" aria-label="deck value trend">
+  const last = pts[pts.length - 1];
+  return `<svg width="${w}" height="${h}" role="img"
+      aria-label="Kretanje vrijednosti decka, ${vals.length} snimaka, €${vals[0].toFixed(2)} → €${vals[vals.length - 1].toFixed(2)}">
     <path d="${d}" fill="none" stroke="var(--series-eur)" stroke-width="2"
-      stroke-linecap="round" stroke-linejoin="round"/></svg>`;
+      stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="${last[0].toFixed(1)}" cy="${last[1].toFixed(1)}" r="2.5" fill="var(--series-eur)"/></svg>`;
 }
 
 let chartState = null; // {points, series, geom} for the hover layer
@@ -791,11 +807,19 @@ function priceChart(points) {
     .filter(s => s.on);
   if (points.length < 2 || !series.length) {
     return `<div class="chart-box"><div class="chart-empty">
-      Not enough history yet — the chart appears once <code>fetch_prices.py</code>
-      has run on at least two different days.</div></div>`;
+      Premalo povijesti — graf se pojavi kad <code>update.py daily</code> odradi
+      barem dva različita dana.</div></div>`;
   }
 
-  const W = 720, H = 260, padL = 46, padR = 14, padT = 10, padB = 26;
+  // SVG se skalira na širinu spremnika, pa se s njim skalira i font osi: na 720px širokom
+  // viewBoxu 11px oznaka na telefonu padne na ~5px. Uži viewBox = oznake ostaju čitljive.
+  // ponytail: mjeri se pri renderu, ne prati rotaciju — okretanje telefona traži re-ulaz u karticu.
+  const narrow = innerWidth < 640;
+  const W = narrow ? 360 : 720, H = narrow ? 210 : 260;
+  const padL = narrow ? 38 : 46, padR = narrow ? 8 : 14, padT = 10, padB = narrow ? 22 : 26;
+  // Oznake osi su u koordinatama viewBoxa: 11 na uzem viewBoxu izlazi manje nego na sirem.
+  // Ova vrijednost drzi obje varijante na ~12px stvarnih, koliko DESIGN.md trazi kao pod.
+  const fs = narrow ? 13 : 11;
   const all = [];
   for (const s of series) for (const p of points) if (p[s.key] != null) all.push(p[s.key]);
   let min = Math.min(...all), max = Math.max(...all);
@@ -806,20 +830,23 @@ function priceChart(points) {
   const x = i => padL + (i / (points.length - 1)) * (W - padL - padR);
   const y = v => padT + (1 - (v - min) / (max - min)) * (H - padT - padB);
 
-  const yTicks = 4;
+  const yTicks = narrow ? 3 : 4;
   let grid = "", labels = "";
   for (let t = 0; t <= yTicks; t++) {
     const v = min + ((max - min) * t) / yTicks;
     const yy = y(v);
     grid += `<line x1="${padL}" y1="${yy}" x2="${W - padR}" y2="${yy}" stroke="var(--grid)"/>`;
     labels += `<text x="${padL - 8}" y="${yy + 4}" text-anchor="end"
-      fill="var(--muted)" font-size="11" style="font-variant-numeric:tabular-nums">€${v.toFixed(2)}</text>`;
+      fill="var(--muted)" font-size="${fs}" style="font-variant-numeric:tabular-nums">€${v.toFixed(2)}</text>`;
   }
-  const xtickEvery = Math.max(1, Math.ceil(points.length / 6));
+  const xtickEvery = Math.max(1, Math.ceil(points.length / (narrow ? 3 : 6)));
   points.forEach((p, i) => {
     if (i % xtickEvery === 0 || i === points.length - 1) {
-      labels += `<text x="${x(i)}" y="${H - 8}" text-anchor="middle"
-        fill="var(--muted)" font-size="11">${p.d.slice(5)}</text>`;
+      // Rubne oznake se sidre uz rub, ne centriraju: centrirana zadnja visi pola izvan
+      // viewBoxa i SVG je odreze (na telefonu je od "07-27" ostajalo "07-2").
+      const anchor = i === points.length - 1 ? "end" : i === 0 ? "start" : "middle";
+      labels += `<text x="${x(i)}" y="${H - 8}" text-anchor="${anchor}"
+        fill="var(--muted)" font-size="${fs}">${p.d.slice(5)}</text>`;
     }
   });
 
@@ -843,7 +870,9 @@ function priceChart(points) {
   return `
     <div class="chart-box" id="chart">
       ${legend}
-      <svg id="chart-svg" viewBox="0 0 ${W} ${H}" style="width:100%;height:auto;display:block">
+      <svg id="chart-svg" viewBox="0 0 ${W} ${H}" role="img"
+        aria-label="Povijest cijene, ${points.length} snimaka od ${esc(points[0].d)} do ${esc(points[points.length - 1].d)}, raspon €${min.toFixed(2)}–€${max.toFixed(2)}"
+        style="width:100%;height:auto;display:block">
         ${grid}
         <line x1="${padL}" y1="${H - padB}" x2="${W - padR}" y2="${H - padB}" stroke="var(--baseline)"/>
         ${labels}

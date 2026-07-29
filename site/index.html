@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#1a1713">
 <title>Precon Price Tracker</title>
 <link rel="stylesheet" href="style.css">
@@ -13,7 +13,9 @@
 <header class="topbar">
   <a class="brand" href="#/">Precon<span>Tracker</span></a>
   <nav id="nav"></nav>
-  <div class="price-toggle" id="price-toggle" role="group" title="Cardmarket cijena: prosjek (trend) ili najjeftinija ponuda (from)">
+  <div class="price-toggle" id="price-toggle" role="group" aria-label="Cardmarket cijena"
+    title="Cardmarket cijena: prosjek (trend) ili najjeftinija ponuda (from)">
+    <span class="pt-lbl" aria-hidden="true">Cijena</span>
     <button data-mode="eur" class="on">Average</button><button data-mode="eur_low">From</button>
   </div>
   <span class="updated" id="updated"></span>
@@ -40,14 +42,14 @@
        target="_blank" rel="noopener">GitHub Actions ↗</a> (gumb "Run workflow").</p>
 </div>
 <main id="app">
-  <div class="loading">Loading data…</div>
+  <div class="loading">Učitavam podatke…</div>
 </main>
-<footer class="foot">
+<footer class="foot"><span>
   Cijene: Cardmarket EUR (<em>trend</em> = Average, <em>from</em> = najjeftinija ponuda) i
   TCGplayer USD preko <a href="https://scryfall.com" target="_blank" rel="noopener">Scryfalla</a>;
   povijest od 2017. iz MTGStocksa. Prikazano je što se dogodilo — ništa ovdje nije prognoza.
   Nije povezano s Cardmarketom, MTGStocksom ni Wizards of the Coast.
-</footer>
+</span></footer>
 <script src="app.js"></script>
 </body>
 </html>
