@@ -530,3 +530,95 @@ td .ext:hover { color: var(--accent); }
 @media (prefers-reduced-motion: reduce) {
   * { transition-duration: .01ms !important; animation-duration: .01ms !important; }
 }
+
+/* ---------- pregled svih karata + statistika (#/cards, #/stats) ---------- */
+
+/* Segmentirani prekidač — isti jezik kao .price-toggle, jer radi istu stvar:
+   bira mjeru, a ne akciju. */
+.seg {
+  display: inline-flex; border: 1px solid var(--line); border-radius: var(--r);
+  overflow: hidden; flex: none;
+}
+.seg button {
+  background: transparent; color: var(--muted); border: none; padding: 4px 10px;
+  font-family: var(--mono); font-size: var(--t-xs); letter-spacing: .05em;
+  text-transform: uppercase; cursor: pointer; transition: color .15s, background .15s;
+}
+.seg button:hover { color: var(--ink); background: var(--surface-2); }
+.seg button.on { background: var(--accent); color: var(--bg); font-weight: 700; }
+
+/* Nalaz koji ograđuje tablicu ispod sebe. Akcentni rub, ne pozadina u boji —
+   paleta drži boju za podatak, ne za ukras. */
+.callout {
+  border: 1px solid var(--line); border-left: 3px solid var(--accent-dim);
+  border-radius: var(--r); background: var(--surface);
+  padding: 12px 14px; margin: 14px 0; color: var(--ink-2); font-size: var(--t-md);
+  line-height: 1.55; max-width: 78ch;
+}
+.callout strong { color: var(--ink); }
+
+/* Pokrivenost ispod praga: mora se vidjeti da bucket nije usporediv s punim. */
+td.warn { color: var(--down); }
+
+.foot-note { max-width: 78ch; margin-top: 14px; }
+
+/* cmc split-karata je zbroj obiju polovica — brojka bez ove oznake laže pri sortiranju. */
+.sigma {
+  color: var(--down); font-family: var(--mono); font-size: var(--t-xs);
+  margin-left: 2px; cursor: help;
+}
+/* Mana cost uz brojku: mono, prigušen, ne otima pažnju cijeni. */
+small.mc {
+  display: block; color: var(--muted); font-family: var(--mono);
+  font-size: var(--t-xs); white-space: nowrap;
+}
+/* Oznaka obrade izdanja (borderless, extendedart…). */
+.vtag {
+  display: inline-block; border: 1px solid var(--line-2); border-radius: var(--r);
+  padding: 1px 6px; color: var(--ink-2);
+  font-family: var(--mono); font-size: var(--t-xs); letter-spacing: .03em;
+}
+
+.more-wrap { display: flex; justify-content: center; margin: 18px 0 4px; }
+.more-btn {
+  background: transparent; color: var(--ink-2); border: 1px solid var(--line);
+  border-radius: var(--r); padding: 8px 18px;
+  font-family: var(--mono); font-size: var(--t-xs); letter-spacing: .05em;
+  text-transform: uppercase; cursor: pointer;
+  transition: color .15s, border-color .15s;
+}
+.more-btn:hover { color: var(--ink); border-color: var(--accent-dim); }
+
+/* ---------- sva izdanja karte ---------- */
+.buy-btn.alt { background: transparent; color: var(--ink-2); border: 1px solid var(--line); }
+.buy-btn.alt:hover { color: var(--ink); border-color: var(--accent-dim); }
+/* Gumb koji NE vodi izravno na izdanje mora i izgledati drukčije — isti izgled na dva
+   različita ponašanja je laž o tome kamo vodi. */
+.buy-btn.alt.dim-btn { color: var(--muted); border-style: dashed; }
+
+.ver-table td { vertical-align: middle; }
+.ver-img { width: 34px; border-radius: 2px; cursor: zoom-in; }
+.ver-img:hover { outline: 1px solid var(--accent-dim); }
+.ver-table .ext + .ext { margin-left: 8px; }
+
+.chart-legend { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 6px; }
+.chart-legend .lg {
+  display: inline-flex; align-items: center; gap: 5px;
+  color: var(--ink-2); font-family: var(--mono); font-size: var(--t-xs);
+}
+.chart-legend i { width: 12px; height: 2px; border-radius: 1px; display: inline-block; }
+.chart-legend i.faint { background: var(--line-2); }
+.chart-note { margin-top: 6px; max-width: 74ch; }
+
+.lightbox {
+  position: fixed; inset: 0; background: rgb(0 0 0 / .82); z-index: 100;
+  display: flex; align-items: center; justify-content: center; cursor: zoom-out; padding: 20px;
+}
+.lightbox img { max-width: min(92vw, 480px); max-height: 92vh; border-radius: 8px; }
+
+/* Foil-only izdanje: cijena JEST poznata, ali je foil — bez oznake bi se citala kao
+   nefoil trend. Mala, prigusena, uz brojku; nikad umjesto brojke. */
+.foil-tag {
+  margin-left: 3px; font-family: var(--mono); font-size: var(--t-xs);
+  color: var(--series-foil); cursor: help;
+}

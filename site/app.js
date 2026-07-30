@@ -8,8 +8,11 @@ const state = {
   history: null,    // data/history.json
   listings: null,   // data/listings.json (optional)
   catalog: null,    // catalog.json - all known precons grouped by set
+  index: null,      // data/cardindex.json — per-name polja, lijeno (samo #/cards, #/stats)
   sort: {},         // per-deck sort state: {key, dir}
   filter: {},       // per-deck text filter
+  cardsUI: null,    // {q, key, dir, limit} za #/cards
+  statsUI: null,    // {pick, assign} za #/stats
   priceMode: localStorage.getItem("priceMode") === "eur_low" ? "eur_low" : "eur",
 };
 
@@ -81,7 +84,10 @@ async function boot() {
     $updated.classList.toggle("stale-stamp", days > 2);
     $updated.title = `Zadnji snimak cijena: ${when.toLocaleString("hr-HR")}`;
   }
-  $nav.innerHTML = `<a href="#/" data-home="1">Katalog</a>` + state.catalog.sets
+  $nav.innerHTML = `<a href="#/" data-home="1">Katalog</a>`
+    + `<a href="#/cards" data-route="cards">Sve karte</a>`
+    + `<a href="#/stats" data-route="stats">Statistika</a>`
+    + state.catalog.sets
     .map(s => `<a href="#/set/${s.code}" data-set="${s.code}"
       class="${setTracked(s) ? "" : "dim"}">${esc(shortSetName(s))}</a>`)
     .join("");
@@ -119,7 +125,26 @@ const cardmarketUrl = c => c.cardmarket_url !== undefined ? c.cardmarket_url
       ? `https://www.cardmarket.com/en/Magic/Products?idProduct=${c.cardmarket_id}` +
         `&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall` : null);
 
+/** JEDINA definicija „cijena ove karte" na frontendu → {v, foil}.
+
+    🍌 138 karata iz naših deckova izlazi SAMO u foilu (C17/C16 legende, 40k, Doctor Who):
+    Scryfall im nema `eur`, ima `eur_foil`. Dok se to nije uzimalo u obzir, prikazivale su
+    se kao „—" iako cijena postoji, a `deckTotal` ih je tiho preskakao — Edgar Markov
+    (28,71 €) nije ulazio u vrijednost vlastitog decka.
+
+    Foil cijena se NE pretvara u `eur` (foil i nonfoil su različiti proizvodi); vraća se uz
+    zastavicu `foil: true` da je prikaz može označiti. */
+function cardPrice(c) {
+  const cm = (c.prices && c.prices.cardmarket) || {};
+  const v = cm[priceKey()];
+  if (v != null) return { v, foil: false };
+  return cm.eur_foil != null ? { v: cm.eur_foil, foil: true } : { v: null, foil: false };
+}
+
 const fmtEur = v => v == null ? `<span class="price-na">—</span>` : `€${v.toFixed(2)}`;
+/** Cijena + oznaka kad dolazi iz foila — bez oznake bi tvrdila da je nefoil trend. */
+const fmtPrice = p => p.v == null ? `<span class="price-na">—</span>`
+  : `€${p.v.toFixed(2)}${p.foil ? `<span class="foil-tag" title="Ovo izdanje postoji samo u foilu — prikazana je foil cijena">F</span>` : ""}`;
 const fmtUsd = v => v == null ? `<span class="price-na">—</span>` : `$${v.toFixed(2)}`;
 
 function deltaHtml(pct, { arrow = true } = {}) {
@@ -203,12 +228,12 @@ function shortSetName(set) {
 const SET_ICON = code =>
   code ? `https://svgs.scryfall.io/sets/${code}.svg` : null;
 function deckTotal(deck) {
-  let t = 0, priced = 0;
+  let t = 0, priced = 0, foilOnly = 0;
   for (const c of deck.cards) {
-    const p = c.prices.cardmarket[priceKey()];
-    if (p != null) { t += p * c.qty; priced++; }
+    const p = cardPrice(c);
+    if (p.v != null) { t += p.v * c.qty; priced++; if (p.foil) foilOnly++; }
   }
-  return { total: t, priced };
+  return { total: t, priced, foilOnly };
 }
 
 /* ---------------- router ---------------- */
@@ -217,7 +242,9 @@ let navToken = 0;
 
 function render() {
   navToken++;                 // ponisti render kartice koji jos ceka svoj shard
-  const hash = location.hash || "#/";
+  // Query se odreze PRIJE splita: bez toga `#/cards?q=sol` daje route "cards?q=sol"
+  // i ruta tiho ne postoji.
+  const hash = (location.hash || "#/").split("?")[0];
   const [, route, arg] = hash.split("/");
   const deckSet = route === "deck" && arg
     ? state.catalog.sets.find(s => s.decks.some(d => d.id === decodeURIComponent(arg)))
@@ -228,11 +255,15 @@ function render() {
   $nav.querySelectorAll("a").forEach(a => a.classList.toggle("active", Boolean(
     (route === "set" && a.dataset.set === arg) ||
     (deckSet && a.dataset.set === deckSet.code) ||
-    (!["set", "deck", "card"].includes(route) && a.dataset.home))));
+    (!["set", "deck", "card", "cards", "stats"].includes(route) && a.dataset.home))));
+  $nav.querySelectorAll("a[data-route]").forEach(a =>
+    a.classList.toggle("active", a.dataset.route === route));
   window.scrollTo(0, 0);
   if (route === "deck" && arg) return renderDeck(decodeURIComponent(arg));
   if (route === "card" && arg) return renderCard(decodeURIComponent(arg));
   if (route === "set" && arg) return renderSet(arg);
+  if (route === "cards") return renderCards();
+  if (route === "stats") return renderStats();
   renderCatalog();
 }
 
@@ -580,7 +611,8 @@ function renderDeck(deckId) {
   const rows = deck.cards
     .map(c => ({
       c,
-      price: c.prices.cardmarket[priceKey()],
+      price: cardPrice(c).v,
+      priceFoil: cardPrice(c).foil,
       foil: c.prices.cardmarket.eur_foil,
       usd: c.prices.tcgplayer.usd,
       d7: card7d(c.id, priceKey()),
@@ -629,6 +661,9 @@ function renderDeck(deckId) {
       <span class="count">${rows.length} / ${deck.cards.length} karata</span>
       ${d7n < rows.length ? `<span class="count">7d: ${d7n} od ${rows.length} karata ima
         7 dana povijesti</span>` : ""}
+      ${deckTotal(deck).foilOnly ? `<span class="count">${deckTotal(deck).foilOnly}
+        ${deckTotal(deck).foilOnly === 1 ? "karta izlazi" : "karata izlazi"} samo u foilu
+        (<span class="foil-tag">F</span>) — u zbroju je foil cijena</span>` : ""}
     </div>
     <div class="table-wrap">
       <table>
@@ -647,7 +682,7 @@ function renderDeck(deckId) {
                 <span class="ct">${esc(r.c.type_line || "")}</span></span>
               </td>
               <td class="col-rarity"><span class="rarity ${esc(r.c.rarity)}">${esc(r.c.rarity || "")}</span></td>
-              <td class="num col-price">${fmtEur(r.price)}</td>
+              <td class="num col-price">${fmtPrice({ v: r.price, foil: r.priceFoil })}</td>
               <td class="num col-foil">${fmtEur(r.foil)}</td>
               <td class="num col-usd">${fmtUsd(r.usd)}</td>
               <td class="num col-d7">${deltaHtml(r.d7, { arrow: false })}</td>
@@ -684,6 +719,301 @@ function rarityRank(r) {
   return { mythic: 4, rare: 3, uncommon: 2, common: 1 }[r] || 0;
 }
 
+/* ================= pregled cijelog skupa + statistika ================= */
+
+/** cardindex.json = per-name polja (cmc, mana_cost, n_prints, edhrec_rank).
+    Odvojen fajl jer naslovnica i deck-stranica ta polja ne trebaju — izmjereno
+    106 kB gzip koje ne plati nitko tko ne otvori ova dva pogleda. */
+async function ensureIndex() {
+  if (!state.index) {
+    try { state.index = await loadJSON("../data/cardindex.json"); }
+    catch { state.index = {}; }
+  }
+  return state.index;
+}
+
+/** Jedan redak po PRINTANJU (to je ono sto ima cijenu), + u koliko se PRECONA pojavljuje.
+    `n_decks` se broji po imenu i po decku jednom — deck koji ima dva izdanja iste karte
+    ne smije se brojati dvaput. */
+function allPrintings() {
+  if (state._flat) return state._flat;
+  const byId = new Map(), decksByName = new Map();
+  for (const d of state.cards.decks) {
+    const names = new Set();
+    for (const c of d.cards) {
+      if (!byId.has(c.id)) byId.set(c.id, c);
+      names.add(c.name);
+    }
+    for (const n of names) decksByName.set(n, (decksByName.get(n) || 0) + 1);
+  }
+  state._flat = [...byId.values()].map(c => ({ c, n_decks: decksByName.get(c.name) || 0 }));
+  return state._flat;
+}
+
+/** Karta koja izlazi u vise izdanja ima vise cijena. Koja je "cijena karte" je
+    UREDNICKA odluka, ne cinjenica — zato prekidac, a ne tiho uzeta prva. */
+function pricesByName(mode) {
+  const per = new Map();
+  for (const { c } of allPrintings()) {
+    const p = cardPrice(c).v;
+    if (p == null) continue;
+    const cur = per.get(c.name);
+    if (!cur) per.set(c.name, { p, c });
+    else if (mode === "max" ? p > cur.p : p < cur.p) per.set(c.name, { p, c });
+  }
+  return per;
+}
+
+// Redoslijed JE pravilo prednosti primarnog tipa. Mijenjanje redoslijeda mijenja
+// rezultat — zato je ispisano na stranici, a ne skriveno u kodu.
+const TYPES = ["Creature", "Planeswalker", "Land", "Instant", "Sorcery",
+               "Artifact", "Enchantment", "Battle"];
+const typesOf = tl => TYPES.filter(t => String(tl || "").split("//")[0].split("—")[0].includes(t));
+const primaryType = tl => typesOf(tl)[0] || "—";
+const isSplit = c => String(c.mana_cost || "").includes("//") ||
+                     String(c.type_line || "").includes("//");
+
+function quant(sorted, q) {
+  if (!sorted.length) return null;
+  const i = (sorted.length - 1) * q, lo = Math.floor(i), hi = Math.ceil(i);
+  return sorted[lo] + (sorted[hi] - sorted[lo]) * (i - lo);
+}
+const median = a => quant(a, 0.5);
+
+/* ---------------- #/cards ---------------- */
+
+const CARDS_PAGE = 200;
+
+async function renderCards() {
+  await ensureIndex();
+  const ui = state.cardsUI || (state.cardsUI = { q: "", key: "price", dir: -1, limit: CARDS_PAGE });
+  const ix = state.index;
+  const q = ui.q.toLowerCase();
+
+  const all = allPrintings().map(({ c, n_decks }) => {
+    const m = ix[c.name] || {};
+    const pr = cardPrice(c);
+    return { c, n_decks, m, price: pr.v, priceFoil: pr.foil,
+             cmc: m.cmc, prints: m.n_prints, edhrec: m.edhrec_rank };
+  });
+  const rows = all.filter(r => !q
+    || r.c.name.toLowerCase().includes(q)
+    || (r.c.type_line || "").toLowerCase().includes(q)
+    || (r.m.mana_cost || "").toLowerCase().includes(q)
+    || (r.c.set || "").toLowerCase().includes(q)
+    || (r.c.variant || "").includes(q));
+
+  const val = r => ({ name: r.c.name.toLowerCase(), set: r.c.set || "",
+                      type: r.c.type_line || "", rarity: rarityRank(r.c.rarity),
+                      variant: r.c.variant || "" }[ui.key]) ?? r[ui.key];
+  rows.sort((a, b) => {
+    const va = val(a), vb = val(b);
+    if (va == null && vb == null) return 0;
+    if (va == null) return 1;                        // null uvijek zadnji
+    if (vb == null) return -1;
+    return (va < vb ? -1 : va > vb ? 1 : 0) * ui.dir;
+  });
+
+  const shown = rows.slice(0, ui.limit);
+  const priced = all.filter(r => r.price != null).length;
+  const th = (key, label, num, cls = "") =>
+    `<th class="${num ? "num" : ""} ${cls}" data-sort="${key}">${label} ${
+      ui.key === key ? `<span class="arrow">${ui.dir > 0 ? "▲" : "▼"}</span>` : ""}</th>`;
+
+  $app.innerHTML = `
+    <h1>Sve karte</h1>
+    <p class="sub">Skup = <strong>158 Commander precona</strong>, ne cijeli Magic.
+      ${all.length} printanja · ${priced} s cijenom (${(100 * priced / all.length).toFixed(1)} %)
+      · cijena je Cardmarket ${priceLabel()}.</p>
+    <div class="toolbar">
+      <input id="cards-q" type="search" placeholder="Ime, tip, mana cost, set…" value="${esc(ui.q)}">
+      <span class="count">${rows.length} / ${all.length} printanja</span>
+      ${rows.length > shown.length
+        ? `<span class="count">prikazano ${shown.length}</span>` : ""}
+    </div>
+    <div class="table-wrap">
+      <table>
+        <thead><tr>
+          ${th("name", "Karta")}${th("set", "Set")}
+          ${th("cmc", "Mana", true)}${th("rarity", "Rijetkost", false, "col-rarity")}
+          ${th("variant", "Obrada")}${th("price", `EUR ${priceLabel()}`, true, "col-price")}
+          ${th("prints", "Izdanja", true)}${th("decks", "Deckova", true)}
+          ${th("edhrec", "EDHREC", true, "col-usd")}
+        </tr></thead>
+        <tbody id="cards-body">${cardsRows(shown)}</tbody>
+      </table>
+    </div>
+    ${rows.length > shown.length ? `<div class="more-wrap">
+      <button id="cards-more" class="more-btn">Prikaži još ${
+        Math.min(CARDS_PAGE, rows.length - shown.length)} (ostalo ${rows.length - shown.length})</button>
+    </div>` : ""}
+    <p class="sub foot-note">„Mana" je Scryfallov <em>cmc</em>. Za split i dvolične karte to je
+      <strong>zbroj obiju polovica</strong> (<code>Dusk // Dawn</code> = 9 uz
+      <code>{2}{W}{W} // {3}{W}{W}</code>) — takvi su redci označeni sa <span class="sigma">Σ</span>,
+      jer sortiranje po toj brojci njih stavlja uz karte za devet many.</p>`;
+
+  const inp = document.getElementById("cards-q");
+  inp.addEventListener("input", e => {
+    ui.q = e.target.value; ui.limit = CARDS_PAGE;
+    // samo tbody + brojaci -> input node ostaje ziv, pa nema hacka s kursorom
+    renderCards();
+  });
+  document.getElementById("cards-more")?.addEventListener("click", () => {
+    ui.limit += CARDS_PAGE; renderCards();
+  });
+  $app.querySelectorAll("th[data-sort]").forEach(el =>
+    el.addEventListener("click", () => {
+      const key = el.dataset.sort;
+      ui.dir = ui.key === key ? -ui.dir : (["name", "set", "type", "variant"].includes(key) ? 1 : -1);
+      ui.key = key; ui.limit = CARDS_PAGE;
+      renderCards();
+    }));
+  $app.querySelectorAll("tbody tr").forEach(el =>
+    el.addEventListener("click", e => {
+      if (e.target.closest("a")) return;
+      location.hash = `#/card/${el.dataset.card}`;
+    }));
+  if (document.activeElement !== inp && ui.q) {
+    inp.focus(); inp.setSelectionRange(inp.value.length, inp.value.length);
+  }
+}
+
+function cardsRows(rows) {
+  return rows.map(r => `
+    <tr data-card="${r.c.id}">
+      <td class="cardcell">
+        ${cardImage(r.c) ? `<img loading="lazy" src="${esc(cardImage(r.c))}" alt="">` : ""}
+        <span><span class="cn">${esc(r.c.name)}</span><br>
+        <span class="ct">${esc(r.c.type_line || "")}</span></span>
+      </td>
+      <td>${esc((r.c.set || "").toUpperCase())}</td>
+      <td class="num">${r.cmc == null ? `<span class="price-na">—</span>`
+        : `${r.cmc}${isSplit({ ...r.c, ...r.m }) ? `<span class="sigma" title="cmc je zbroj obiju polovica">Σ</span>` : ""}`}
+        ${r.m.mana_cost ? `<small class="mc">${esc(r.m.mana_cost)}</small>` : ""}</td>
+      <td class="col-rarity"><span class="rarity ${esc(r.c.rarity)}">${esc(r.c.rarity || "")}</span></td>
+      <td>${r.c.variant ? `<span class="vtag">${esc(r.c.variant)}</span>` : ""}</td>
+      <td class="num col-price">${fmtPrice({ v: r.price, foil: r.priceFoil })}</td>
+      <td class="num">${r.prints ?? `<span class="price-na">—</span>`}</td>
+      <td class="num">${r.n_decks}</td>
+      <td class="num col-usd">${r.edhrec ?? `<span class="price-na">—</span>`}</td>
+    </tr>`).join("");
+}
+
+/* ---------------- #/stats ---------------- */
+
+async function renderStats() {
+  await ensureIndex();
+  const ui = state.statsUI || (state.statsUI = { pick: "min", assign: "primary" });
+  const per = pricesByName(ui.pick);
+
+  // svi nazivi u skupu (i oni bez cijene) — da se pokrivenost moze priznati
+  const names = new Map();
+  for (const { c } of allPrintings()) if (!names.has(c.name)) names.set(c.name, c);
+
+  const buckets = new Map();
+  for (const [name, c] of names) {
+    const types = ui.assign === "primary" ? [primaryType(c.type_line)] : typesOf(c.type_line);
+    for (const t of (types.length ? types : ["—"])) {
+      const b = buckets.get(t) || { n: 0, vals: [], top: null };
+      b.n++;
+      const hit = per.get(name);
+      if (hit) {
+        b.vals.push(hit.p);
+        if (!b.top || hit.p > b.top.p) b.top = { p: hit.p, name, id: hit.c.id };
+      }
+      buckets.set(t, b);
+    }
+  }
+
+  const rows = [...buckets.entries()]
+    .filter(([, b]) => b.vals.length)          // prazan bucket se NE renderira
+    .map(([t, b]) => {
+      const s = [...b.vals].sort((x, y) => x - y);
+      return { t, n: b.n, priced: s.length, mean: s.reduce((a, x) => a + x, 0) / s.length,
+               med: median(s), p90: quant(s, 0.9), max: s[s.length - 1], top: b.top };
+    })
+    .sort((a, b) => b.med - a.med);
+
+  const sumN = rows.reduce((a, r) => a + r.n, 0);
+  const totalPriced = per.size;
+  const label = ui.pick === "min" ? "najjeftinije izdanje" : "najskuplje izdanje";
+
+  $app.innerHTML = `
+    <h1>Statistika po tipu karte</h1>
+    <p class="sub">Skup = <strong>158 Commander precona</strong>, ne cijeli Magic —
+      najskuplja karta u skupu je oko 56 €, pa ovo nije presjek Magica.
+      ${names.size} različitih karata, ${totalPriced} s cijenom
+      (${(100 * totalPriced / names.size).toFixed(1)} %). Cijena po karti =
+      <strong>${label}</strong>, Cardmarket ${priceLabel()}.</p>
+
+    <div class="toolbar">
+      <span class="seg" id="seg-pick">
+        <button data-v="min" class="${ui.pick === "min" ? "on" : ""}">Najjeftinije izdanje</button
+        ><button data-v="max" class="${ui.pick === "max" ? "on" : ""}">Najskuplje</button>
+      </span>
+      <span class="seg" id="seg-assign">
+        <button data-v="primary" class="${ui.assign === "primary" ? "on" : ""}">Primarni tip</button
+        ><button data-v="all" class="${ui.assign === "all" ? "on" : ""}">Svaki tip koji nosi</button>
+      </span>
+    </div>
+
+    <div class="callout">
+      <strong>Nema jednog „najskupljeg tipa".</strong> Odgovor se mijenja s odabranom
+      statistikom i s pravilom razvrstavanja: po <em>prosjeku</em> vodi Artifact, po
+      <em>medijanu</em> Planeswalker, a Artifact i Enchantment dijeli oko 0,02 € na uzorku
+      od ~500 karata — to je unutar šuma. Zato je tablica sortirana po medijanu i prikazuje
+      i prosjek i medijan i p90, bez proglašavanja pobjednika.
+    </div>
+
+    <div class="table-wrap">
+      <table>
+        <thead><tr>
+          <th>Tip</th><th class="num">Karata</th><th class="num">S cijenom</th>
+          <th class="num">Prosjek</th><th class="num">Medijan</th><th class="num">p90</th>
+          <th class="num">Max</th><th>Najskuplja</th>
+        </tr></thead>
+        <tbody>
+          ${rows.map(r => `
+            <tr>
+              <td><strong>${esc(r.t)}</strong></td>
+              <td class="num">${r.n}</td>
+              <td class="num ${r.priced / r.n < 0.95 ? "warn" : ""}">${r.priced}
+                <small>(${(100 * r.priced / r.n).toFixed(0)} %)</small></td>
+              <td class="num">${fmtEur(r.mean)}</td>
+              <td class="num"><strong>${fmtEur(r.med)}</strong></td>
+              <td class="num">${fmtEur(r.p90)}</td>
+              <td class="num">${fmtEur(r.max)}</td>
+              <td>${r.top ? `<a href="#/card/${r.top.id}">${esc(r.top.name)}</a>` : "—"}</td>
+            </tr>`).join("")}
+        </tbody>
+      </table>
+    </div>
+
+    <h2 class="sec-h">Kako je tip određen</h2>
+    <p class="sub">Pravilo prednosti: ${TYPES.join(" → ")}. Uzima se lice prije
+      <code>//</code> i prije <code>—</code>.
+      ${ui.assign === "primary"
+        ? `U ovom načinu karta ulazi u <strong>točno jedan</strong> tip, pa npr. svi
+           <em>Artifact Creature</em> idu u Creature i bucket Artifact ih ne sadrži —
+           a Artifact je upravo tip koji po prosjeku ispada najskuplji. Prebaci na
+           „svaki tip koji nosi" da vidiš koliko to mijenja.`
+        : `U ovom načinu karta ulazi u <strong>svaki</strong> tip koji nosi, pa je zbroj
+           stupca „Karata" ${sumN} — više od ${names.size} različitih karata. Zbroj
+           namjerno premašuje 100 %.`}</p>
+    <p class="sub foot-note">Rangiranje je po medijanu jer je prosjek 3–5× veći od medijana
+      u svakom tipu — raspodjela ima dugi rep i prosjek sam zavarava. Postotak pokrivenosti
+      ispod 95 % je označen: bucket s 92 % i bucket sa 100 % nisu usporedivi.</p>`;
+
+  document.getElementById("seg-pick").addEventListener("click", e => {
+    const b = e.target.closest("button"); if (!b) return;
+    ui.pick = b.dataset.v; renderStats();
+  });
+  document.getElementById("seg-assign").addEventListener("click", e => {
+    const b = e.target.closest("button"); if (!b) return;
+    ui.assign = b.dataset.v; renderStats();
+  });
+}
+
 async function renderCard(cardId) {
   const hit = findCard(cardId);
   if (!hit) { $app.innerHTML = `<p>Nepoznata karta.</p>`; return; }
@@ -693,6 +1023,8 @@ async function renderCard(cardId) {
   // Ako ikad postane primjetno, ovdje ide skeleton umjesto cekanja.
   const my = navToken;
   const points = await cardPoints(card.id);
+  const vers = await cardVersions(card);
+  const syn = await cardSynergy(card.name);
   if (my !== navToken) return;                 // korisnik je u međuvremenu otišao dalje
   const d1 = pctChange(points, priceKey(), 1);
   const d7 = pctChange(points, priceKey(), 7);
@@ -708,6 +1040,9 @@ async function renderCard(cardId) {
         ${cardmarketUrl(card)
           ? `<a class="buy-btn" href="${esc(cardmarketUrl(card))}" target="_blank" rel="noopener">
                Otvori na Cardmarketu ↗</a>` : ""}
+        <a class="buy-btn alt" href="https://scryfall.com/card/${esc((card.set || "").toLowerCase())
+          }/${esc(card.collector_number || "")}" target="_blank" rel="noopener">Scryfall ↗</a>
+        ${msLink(card, vers)}
       </div>
       <div>
         <h1>${esc(card.name)}</h1>
@@ -717,7 +1052,7 @@ async function renderCard(cardId) {
 
         <div class="stat-row">
           <div class="stat"><div class="lbl">Cardmarket ${priceLabel()}</div>
-            <div class="val">${fmtEur(cm[priceKey()])}</div></div>
+            <div class="val">${fmtPrice(cardPrice(card))}</div></div>
           <div class="stat"><div class="lbl">Foil trend</div>
             <div class="val">${fmtEur(cm.eur_foil)}</div></div>
           <div class="stat"><div class="lbl">TCGplayer USD</div>
@@ -731,11 +1066,184 @@ async function renderCard(cardId) {
         <h2 class="sec-h">Povijest cijene · EUR, Cardmarket ${priceLabel()}</h2>
         ${priceChart(points)}
 
+        ${synergySection(syn)}
+        ${versionsSection(vers)}
         ${state.listings ? listingsSection(card, listing) : ""}
       </div>
     </div>`;
 
   attachChartHover();
+  wireVersions(vers);
+}
+
+/* ---------------- sinergija (EDHREC) ---------------- */
+
+/** MORA biti identično `synergy.shard_key()` u Pythonu — inače shard ne postoji i
+    sekcija tiho nestane. */
+const synShard = name => {
+  const c = (name || "").trim()[0]?.toLowerCase() || "";
+  return (c >= "a" && c <= "z") || (c >= "0" && c <= "9") ? c : "_";
+};
+
+async function cardSynergy(name) {
+  const k = synShard(name);
+  state._syn = state._syn || {};
+  if (!(k in state._syn)) {
+    try { state._syn[k] = await loadJSON(`../data/synergy/${k}.json`); }
+    catch { state._syn[k] = {}; }
+  }
+  return state._syn[k][name] || null;
+}
+
+/** Formulacija je namjerna: „odgovaraju istim commanderima", NE „igraju se zajedno".
+    EDHREC daje uključenost po commanderu, a ne parove karata iz istih deckova — pa je
+    druga tvrdnja jača od podataka. */
+function synergySection(list) {
+  if (!list || !list.length) return "";
+  return `
+    <h2 class="sec-h">Odgovaraju istim commanderima · ${list.length}</h2>
+    <p class="sub">Karte koje se pojavljuju uz <strong>iste commandere</strong> kao ova.
+      Nije isto što i „igraju se zajedno u istom decku" — EDHREC daje udio po commanderu,
+      ne parove karata iz istih lista. Sličnost je skupljena prema broju zajedničkih
+      commandera, pa par s puno dokaza pobjeđuje par s malo.</p>
+    <div class="table-wrap">
+      <table>
+        <thead><tr>
+          <th>Karta</th><th class="num">Sličnost</th><th class="num">Zajedničkih</th>
+          <th>Isti keywordi</th><th class="num">EUR</th>
+        </tr></thead>
+        <tbody>
+          ${list.map(s => `
+            <tr>
+              <td><span class="cn">${esc(s.name)}</span></td>
+              <td class="num">${s.sim.toFixed(3)}</td>
+              <td class="num">${s.shared}</td>
+              <td>${(s.kw || []).map(k => `<span class="vtag">${esc(k)}</span>`).join(" ")}</td>
+              <td class="num">${s.eur == null ? `<span class="price-na">—</span>`
+                : `€${s.eur.toFixed(2)}`}</td>
+            </tr>`).join("")}
+        </tbody>
+      </table>
+    </div>
+    <p class="sub foot-note">„Isti keywordi" dolazi iz Scryfall podataka i <strong>nezavisan</strong>
+      je od EDHREC-a. Izmjereno: parovi koji dijele keyword imaju prosječnu sličnost
+      <strong>0,279</strong> naspram <strong>0,109</strong> za one koji ne dijele — dvije
+      nepovezane metode pokazuju isto, pa mjera hvata mehaničku srodnost, a ne samo popularnost.</p>`;
+}
+
+/* ---------------- sva izdanja karte (MTGStocks) ---------------- */
+
+/** versions/<ms_card_id>.json — jedan fajl PO KARTI, jer je popis izdanja zajednički
+    svim njenim printanjima. Ključ `ms_card` postoji samo ako su podaci dohvaćeni. */
+async function cardVersions(card) {
+  if (!card.ms_card) return null;
+  state._vers = state._vers || {};
+  if (!(card.ms_card in state._vers)) {
+    try { state._vers[card.ms_card] = await loadJSON(`../data/versions/${card.ms_card}.json`); }
+    catch { state._vers[card.ms_card] = null; }
+  }
+  return state._vers[card.ms_card];
+}
+
+/** Gumb na MTGStocks. `prints/<ms_id>` preusmjeri na slug, pa je dovoljan broj.
+    Bez podataka NE glumi izravan link — vodi na pretragu i to i piše, jer bi isti
+    izgled na dva različita ponašanja bio laž. */
+function msLink(card, vers) {
+  const mine = vers?.versions?.find(v => v.id === card.id);
+  if (mine) return `<a class="buy-btn alt" href="https://www.mtgstocks.com/prints/${mine.ms_id}"
+      target="_blank" rel="noopener">MTGStocks ↗</a>`;
+  return `<a class="buy-btn alt dim-btn"
+    href="https://www.mtgstocks.com/search?q=${encodeURIComponent(card.name)}"
+    target="_blank" rel="noopener" title="Ovo izdanje još nije povezano — otvara pretragu">
+    MTGStocks (pretraga) ↗</a>`;
+}
+
+/** Legenda je TABLICA, ne 153 boje. Redak od 40 px je klik-cilj; polilinija od 2 px
+    nije, a na dodiru je nepogodiva. Tablica je ujedno i odgovor na „usporedi sve verzije". */
+function versionsSection(vers) {
+  if (!vers) {
+    return `<h2 class="sec-h">Sva izdanja</h2>
+      <p class="sub">Izdanja ove karte još nisu dohvaćena. Lokalno:
+        <code>python scripts/mtg/mtgstocks.py versions &lt;id&gt; --history 10</code>
+        (popis izdanja je jedan zahtjev, povijest ide 1 izdanje/s).</p>`;
+  }
+  const vs = vers.versions;
+  const withHist = vs.filter(v => v.points.length >= 2);
+  const prices = vs.map(v => v.eur).filter(v => v != null);
+  const spread = prices.length > 1
+    ? `raspon <strong>€${Math.min(...prices).toFixed(2)}–€${Math.max(...prices).toFixed(2)}</strong>
+       (${(Math.max(...prices) / Math.max(Math.min(...prices), 0.01)).toFixed(1)}×)` : "";
+  return `
+    <h2 class="sec-h">Sva izdanja · ${vs.length}</h2>
+    <p class="sub">${spread}${spread ? " · " : ""}povijest ima
+      <strong>${withHist.length} od ${vs.length}</strong> izdanja — ostala su poznata, ali im
+      serija još nije povučena (nije isto što i „nema podataka").
+      Cijena je MTGStocksov zadnji Cardmarket podatak i <em>nije</em> ista veličina kao
+      cijena gore (drugi izvor, drugi trenutak).</p>
+    ${withHist.length >= 1 ? `
+      <div class="toolbar">
+        <span class="seg" id="seg-scale">
+          <button data-v="log" class="on">Log os</button><button data-v="lin">Linearna</button
+          ><button data-v="idx">Indeks =100</button>
+        </span>
+      </div>
+      <div id="multi-chart">${multiChart(withHist, "log")}</div>` : ""}
+    <div class="table-wrap">
+      <table class="ver-table">
+        <thead><tr>
+          <th>Izdanje</th><th>Foil</th><th class="num">EUR</th>
+          <th class="num">Točaka</th><th class="num">Od</th><th></th>
+        </tr></thead>
+        <tbody>
+          ${vs.map((v, i) => `
+            <tr data-ms="${v.ms_id}">
+              <td class="cardcell">
+                ${v.image ? `<img loading="lazy" class="ver-img" src="${esc(v.image)}"
+                     alt="" data-full="${esc(v.image)}">` : ""}
+                <span><span class="cn">${esc(v.set || "—")} #${esc(v.cn || "?")}</span><br>
+                <span class="ct">${esc(v.set_name || "")}</span></span>
+              </td>
+              <td>${v.foil ? `<span class="vtag">foil</span>` : ""}</td>
+              <td class="num">${fmtEur(v.eur)}</td>
+              <td class="num">${v.points.length || `<span class="price-na">—</span>`}</td>
+              <td class="num"><small>${v.points.length ? esc(v.points[0].d) : ""}</small></td>
+              <td class="num">
+                ${v.mkm_url ? `<a class="ext" href="${esc(v.mkm_url)}" target="_blank"
+                   rel="noopener" title="Cardmarket za OVU verziju">CM ↗</a>` : ""}
+                ${v.slug ? `<a class="ext" href="https://www.mtgstocks.com/prints/${v.ms_id}"
+                   target="_blank" rel="noopener" title="MTGStocks">MS ↗</a>` : ""}
+              </td>
+            </tr>`).join("")}
+        </tbody>
+      </table>
+    </div>`;
+}
+
+function wireVersions(vers) {
+  if (!vers) return;
+  const withHist = vers.versions.filter(v => v.points.length >= 2);
+  document.getElementById("seg-scale")?.addEventListener("click", e => {
+    const b = e.target.closest("button"); if (!b) return;
+    e.currentTarget.querySelectorAll("button").forEach(x => x.classList.toggle("on", x === b));
+    document.getElementById("multi-chart").innerHTML = multiChart(withHist, b.dataset.v);
+  });
+  // klik na sliku izdanja → povećana slika s MTGStocksa
+  $app.querySelectorAll(".ver-img").forEach(img =>
+    img.addEventListener("click", ev => {
+      ev.stopPropagation();
+      showLightbox(img.dataset.full);
+    }));
+}
+
+function showLightbox(src) {
+  const box = document.createElement("div");
+  box.className = "lightbox";
+  box.innerHTML = `<img src="${esc(src)}" alt="">`;
+  box.addEventListener("click", () => box.remove());
+  document.addEventListener("keydown", function esc2(e) {
+    if (e.key === "Escape") { box.remove(); document.removeEventListener("keydown", esc2); }
+  });
+  document.body.appendChild(box);
 }
 
 /* ---------------- listings ---------------- */
@@ -811,6 +1319,103 @@ function sparkline(points, key, w, h) {
     <path d="${d}" fill="none" stroke="var(--series-eur)" stroke-width="2"
       stroke-linecap="round" stroke-linejoin="round"/>
     <circle cx="${last[0].toFixed(1)}" cy="${last[1].toFixed(1)}" r="2.5" fill="var(--series-eur)"/></svg>`;
+}
+
+/* ---------------- graf sa svim izdanjima ---------------- */
+
+/* Boje su LITERALI, nikad `var(--series-${i})`: check_design.py traži var() reference
+   regexom nad tekstom app.js, pa mu je sastavljeno ime nevidljivo — a nedefiniran var()
+   u `stroke` tiho postane `stroke:none` (jednom je već sakrio cijeli grid).
+   Više od tri istaknute serije se ne boja: 11 (ili 153) nijansi nije legenda. Ostale idu
+   prigušeno, a identifikacija se radi u tablici ispod, gdje je redak klik-cilj. */
+const RAMP = ["var(--series-eur)", "var(--series-foil)", "var(--series-usd)"];
+
+/** N serija s RAZLIČITIM datumskim mrežama. priceChart to ne može: ondje je x funkcija
+    INDEKSA jedne zajedničke liste. Zato zasebna funkcija — priceChart se ne dira. */
+function multiChart(series, scale = "log") {
+  const pts = s => s.points.filter(p => p.avg != null);
+  const live = series.filter(s => pts(s).length >= 2);
+  if (!live.length) return `<div class="chart-box"><div class="chart-empty">
+    Nijedno izdanje nema barem dvije točke povijesti.</div></div>`;
+
+  const narrow = innerWidth < 640;
+  const W = narrow ? 360 : 720, H = narrow ? 240 : 300;
+  const padL = narrow ? 42 : 52, padR = narrow ? 8 : 14, padT = 10, padB = narrow ? 22 : 26;
+  const fs = narrow ? 13 : 11;
+
+  // indeks: svaka serija kreće od 100 → usporediva je oblikom, ne razinom
+  const val = (s, p) => scale === "idx" ? (p.avg / pts(s)[0].avg) * 100 : p.avg;
+  const tAll = live.flatMap(s => pts(s).map(p => Date.parse(p.d)));
+  const t0 = Math.min(...tAll), tSpan = (Math.max(...tAll) - t0) || 1;
+  const vAll = live.flatMap(s => pts(s).map(p => val(s, p))).filter(v => v > 0);
+  let lo = Math.min(...vAll), hi = Math.max(...vAll);
+  if (lo === hi) { lo *= 0.9; hi *= 1.1; }
+
+  // Log os jer raspon unutar iste karte zna biti 10× i više (Sol Ring 0,40–129,95 €):
+  // na linearnoj bi gotovo sve serije bile ravna crta na dnu — točno, a bez informacije.
+  const useLog = scale === "log" && lo > 0;
+  const f = v => useLog ? Math.log10(v) : v;
+  const fLo = f(lo) - (f(hi) - f(lo)) * 0.06, fHi = f(hi) + (f(hi) - f(lo)) * 0.06;
+  const x = ms => padL + ((ms - t0) / tSpan) * (W - padL - padR);
+  const y = v => padT + (1 - (f(v) - fLo) / ((fHi - fLo) || 1)) * (H - padT - padB);
+
+  let grid = "", labels = "";
+  const ticks = narrow ? 3 : 4;
+  for (let i = 0; i <= ticks; i++) {
+    const fv = fLo + ((fHi - fLo) * i) / ticks;
+    const v = useLog ? Math.pow(10, fv) : fv;
+    const yy = y(v);
+    grid += `<line x1="${padL}" y1="${yy}" x2="${W - padR}" y2="${yy}" stroke="var(--grid)"/>`;
+    labels += `<text x="${padL - 8}" y="${yy + 4}" text-anchor="end" fill="var(--muted)"
+      font-size="${fs}" style="font-variant-numeric:tabular-nums">${
+        scale === "idx" ? v.toFixed(0) : "€" + (v >= 10 ? v.toFixed(0) : v.toFixed(2))}</text>`;
+  }
+  const yr = ms => new Date(ms).getFullYear();
+  for (let i = 0; i <= (narrow ? 2 : 5); i++) {
+    const ms = t0 + (tSpan * i) / (narrow ? 2 : 5);
+    labels += `<text x="${x(ms)}" y="${H - 6}" text-anchor="${
+      i === 0 ? "start" : i === (narrow ? 2 : 5) ? "end" : "middle"}"
+      fill="var(--muted)" font-size="${fs}">${yr(ms)}</text>`;
+  }
+
+  // Rupa u seriji NE smije se premostiti ravnom crtom — to je isti izmišljeni nagib
+  // zbog kojeg je x-os prebačena s indeksa na datum. Serija koja počinje 2024. mora
+  // POČETI 2024., a ne biti povučena unatrag do ruba grafa.
+  const GAP_MS = 45 * 864e5;
+  const paths = live.map((s, i) => {
+    const P = pts(s);
+    let d = "", prev = null;
+    for (const p of P) {
+      const ms = Date.parse(p.d);
+      d += (prev == null || ms - prev > GAP_MS ? "M" : "L") + x(ms).toFixed(1) + " "
+         + y(val(s, p)).toFixed(1) + " ";
+      prev = ms;
+    }
+    const hot = i < RAMP.length;
+    return `<path d="${d}" fill="none" stroke="${hot ? RAMP[i] : "var(--line-2)"}"
+      stroke-width="${hot ? 1.8 : 1}" opacity="${hot ? 1 : 0.45}"
+      stroke-linejoin="round" stroke-linecap="round"/>`;
+  }).join("");
+
+  const legend = live.slice(0, RAMP.length).map((s, i) =>
+    `<span class="lg"><i style="background:${RAMP[i]}"></i>${esc(s.set || "?")} #${esc(s.cn || "")}${
+      s.foil ? " foil" : ""}</span>`).join("");
+
+  return `<div class="chart-box">
+    <div class="chart-legend">${legend}${live.length > RAMP.length
+      ? `<span class="lg"><i class="faint"></i>+${live.length - RAMP.length} ostalih izdanja</span>`
+      : ""}</div>
+    <svg viewBox="0 0 ${W} ${H}" style="width:100%;height:auto" role="img"
+      aria-label="Povijest cijena svih izdanja">
+      ${grid}<line x1="${padL}" y1="${padT}" x2="${padL}" y2="${H - padB}" stroke="var(--baseline)"/>
+      ${paths}${labels}
+    </svg>
+    <p class="sub chart-note">${
+      scale === "idx" ? "Svako izdanje kreće od 100 — uspoređuje se oblik, ne razina."
+      : useLog ? "Logaritamska os: jednak razmak = jednak POSTOTNI pomak. Raspon među izdanjima je prevelik za linearnu."
+      : "Linearna os — izdanja jeftinija od najskupljeg izgledaju spljošteno uz dno."}
+      Prekid linije znači da izdanje tada nije imalo kotaciju; serija počinje kad je izdanje izašlo.</p>
+  </div>`;
 }
 
 let chartState = null; // {points, series, geom} for the hover layer
